@@ -1,0 +1,16 @@
+#!/bin/sh
+
+VERSION=0.1
+
+basedir="$(dirname "$0")"
+cd "$basedir"
+./espa -v A1_PrimaryNeeds_V1 || exit 1
+touch -t 201208151853 A1_PrimaryNeeds_V1.esp
+#iconv -f UTF-8 -t CP1251 README | perl -p -e 's/\n/\r\n/' > Readme.txt
+#iconv -f UTF-8 -t CP1251 VERSIONS | perl -p -e 's/\n/\r\n/' > Versions.txt
+rm -rf A1_PrimaryNeeds_${VERSION}
+rm -f A1_PrimaryNeeds_${VERSION}.zip
+mkdir -p "A1_PrimaryNeeds_${VERSION}/Data Files"
+#cp -a Screenshots Readme.txt Versions.txt A1_Alchemy_${VERSION}
+cp -a A1_PrimaryNeeds_V1.esp "A1_PrimaryNeeds_${VERSION}/Data Files"
+zip -v -X -9 -r A1_PrimaryNeeds_${VERSION}.zip A1_PrimaryNeeds_${VERSION} || exit 1

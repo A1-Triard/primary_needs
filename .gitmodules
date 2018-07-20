@@ -1,0 +1,3 @@
+[submodule "esp-assembler"]
+	path = esp-assembler
+	url = https://github.com/A1-Triard/esp-assembler.git

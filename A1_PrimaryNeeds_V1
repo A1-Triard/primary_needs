@@ -1,0 +1,4123 @@
+TES3
+HEDR ESP 1067869798
+    A1
+    Дорожные мешки и сундуки, позволяющие быстро выкладывать предопределенные наборы предметов.
+MAST Morrowind.esm
+DATA 79764287
+MAST Tribunal.esm
+DATA 6616539
+MAST Bloodmoon.esm
+DATA 11799703
+
+GLOB
+NAME A1V6_RoadBagX
+FNAM f%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagY
+FNAM f%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagZ
+FNAM f%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagAngle
+FNAM f%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagIngrExt
+FNAM s%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagAlchExt
+FNAM s%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagIncpExt
+FNAM s%
+FLTV 0.0
+
+GLOB
+NAME A1V6_RoadBagMiscExt
+FNAM s%
+FLTV 0.0
+
+SCPT
+SCHD A1V6_RoadBagAlchCont_1_sc 7 8 5 1435 152
+SCVR doOnce;doRemove;doDisable;temp;temp2;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invName;invNextRef;cx;cy;cz;ca;invWeight;;
+SCDT BgEGCSBzAwAgPiAyMAYBBAkgWNwQID09IDEFAXMEAB4gMiBHE0ExVjZfUm9hZEJhZ0FsY2hFeHQgMiAvICoFAUcTQTFWNl9Sb2FkQmFnQWxjaEV4dAUgcwQAAKsRAQAkAQkBCQEGAQIJIHMDACA+IDIw2xAkAQkBBgEDCCBzAwAgPiAw1BAWQTFWNl9Sb2FkQmFnRmFrZUluZ3JlZAIABQFzAwAIIHMDACAxICskAQkBBgECCSBY3BAgPT0gMdoQBQFzAwACIDEJAQYBBwkgcwcAID09IDIGAQQJIFggECA9PSAwBQFzBwACIDAGAQEiIFj9ECBvFkExVjZfUm9hZEJhZ0FsY2hJdGVtXzEgPT0gMAUBcwMAAiAxCQEJASQBCAEECSBzBwAgPT0gMQYBAQkgWCAQID09IDEFAXMHAAIgMgkBJAEJAQYBAQkgWCAQID09IDEkAQkBEzgAABM4cwAAPA84BAAMOG8BCjjTAgUBcwQAIiAyIEcTQTFWNl9Sb2FkQmFnQWxjaEV4dCAyIC8gKiAxICsFAUcTQTFWNl9Sb2FkQmFnQWxjaEV4dAUgcwQAAN4QBQFzAQACIDEFAWYBABEgRw1BMVY2X1JvYWRCYWdYAAUBZgIAESBHDUExVjZfUm9hZEJhZ1kABQFmAwARIEcNQTFWNl9Sb2FkQmFnWgAFAWYEABUgRxFBMVY2X1JvYWRCYWdBbmdsZQALEFhmAQAACxBZZgIAAAsQWmYDAAANEFpmBAAAKjwTOAAAEzhsAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAEAEzhsAAA8DzgEAAw4pgITOAEAEzhsAAA8EzgAABM4bAAAPCk8KjwTOAAAEzhsAAI8EzgBABM4bAACPBM4AgATOGwAAjwKOFoC1BAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMQEABQFsAwACIDAFAXMCAAIgMSQBBgEECSBzBgAgPT0gMQUBcwcAAiAxBQFzBgACIDAXECQBCQEGAQQKIHMCACA9PSAxMAUBcwIAAiAwABAOAMfl6/z/IOL76+7m5e37AADdECQBCQEGAQEIIHMCACA+IDUFAXMEAAIgMQcBAQUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4YgUTOGEDCjhpAwZwbGF5ZXIAHTwTOAMAEzhsAAI8EzgDABM4bAAAPA84BAAMOGAFEzgCABM4bAAAPBM4AwATOGwAADwYPAM/EzgAABM4bAACPBM4AQATOGwAAjwTOAQAEzhsAAI8EzgFABM4bAACPBM4BAATOGYAAjwTOAYAEzhsAAI8EzgHABM4bAACPBM4AAATOGwAADwPOAQADDgjBQYBARIgbAUAID09IDEyMTIzNjk5ODUFAXMEAAIgMQcBAQUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4wQQTODwECjhABAIxLwATOAYAEzhsAAA8LzwTOAUAEzhsAAI8BgEBCCBsBgAgPiAwBQFzBQACIDEHAQEFAXMFAAIgMAkBEzgEABM4cwAAPA84BAAMOMEEEziRBAo4lQQDMS9hEzgGABM4bAAAPC88EzgFABM4bAACPAYBAQggbAYAIDwgMAUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4IwUTOAEAEzhsAAA8EzgAABM4bAAAPBM4AwATOGwAADwYPCk8EzgBABM4bAAAPBM4AAATOGwAADwoPAUBbAMAAiAwBQFsBAACIDAFAXMCAAIgMQYBAQggcwIAID4gMQUBbAMABSBsCAAACQEGAQIJIGwIACA9PSAwBQFsBAACIDAFAXMCAAMgMTAJAQo4dQMkAQYBAgggcwIAID4gMAUBcwIACCBzAgAgMSArJAEJAQYBAgkgWBgQID09IDEFAXMGAAIgMSQBCQEBAQ==
+SCTX
+    Begin A1V6_RoadBagAlchCont_1_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    short temp2
+    float cx
+    float cy
+    float cz
+    float ca
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invName
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to 2 * ( A1V6_RoadBagAlchExt / 2 )
+    		set A1V6_RoadBagAlchExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagAlchItem_1 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to 2 * ( A1V6_RoadBagAlchExt / 2 ) + 1
+    	set A1V6_RoadBagAlchExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	set ca to A1V6_RoadBagAngle
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	SetAngle Z ca
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagAlchItem_1", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Зелья выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,invName,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1212369985 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/"
+    				if ( tempLong > 0 )
+    					set temp2 to 1
+    				else
+    					set temp2 to 0
+    				endif
+    				ifx ( temp2 )
+    					setx tempLong to xStringCompare invName, "1/a"
+    					if ( tempLong < 0 )
+    						set temp to 0
+    					endif
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchCont_2_sc 7 8 5 1551 152
+SCVR doOnce;doRemove;doDisable;temp;temp2;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invName;invNextRef;cx;cy;cz;ca;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagAlchCont_2_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    short temp2
+    float cx
+    float cy
+    float cz
+    float ca
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invName
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagAlchExt / 2
+    		set temp to temp - 2 * ( temp / 2 )
+    		set temp to A1V6_RoadBagAlchExt - 2 * temp
+    		set A1V6_RoadBagAlchExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagAlchItem_2 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagAlchExt / 2
+    	set temp to temp - 2 * ( temp / 2 )
+    	set temp to A1V6_RoadBagAlchExt - 2 * temp + 2
+    	set A1V6_RoadBagAlchExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	set ca to A1V6_RoadBagAngle
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	SetAngle Z ca
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagAlchItem_2", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Зелья выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,invName,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1212369985 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/"
+    				if ( tempLong > 0 )
+    					set temp2 to 1
+    				else
+    					set temp2 to 0
+    				endif
+    				ifx ( temp2 )
+    					setx tempLong to xStringCompare invName, "1/a"
+    					if ( tempLong < 0 )
+    						set temp to 0
+    					endif
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchCont_3_sc 7 8 5 1503 152
+SCVR doOnce;doRemove;doDisable;temp;temp2;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invName;invNextRef;cx;cy;cz;ca;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagAlchCont_3_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    short temp2
+    float cx
+    float cy
+    float cz
+    float ca
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invName
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagAlchExt / 4
+    		set temp to A1V6_RoadBagAlchExt - 4 * temp
+    		set A1V6_RoadBagAlchExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagAlchItem_3 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagAlchExt / 4
+    	set temp to A1V6_RoadBagAlchExt - 4 * temp + 4
+    	set A1V6_RoadBagAlchExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	set ca to A1V6_RoadBagAngle
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	SetAngle Z ca
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagAlchItem_3", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Зелья выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,invName,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1212369985 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/"
+    				if ( tempLong > 0 )
+    					set temp2 to 1
+    				else
+    					set temp2 to 0
+    				endif
+    				ifx ( temp2 )
+    					setx tempLong to xStringCompare invName, "1/a"
+    					if ( tempLong < 0 )
+    						set temp to 0
+    					endif
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchDel_1_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xAQAJARwQGEExVjZfUm9hZEJhZ0FsY2hEZWxfMV9zYwEB
+SCTX
+    Begin A1V6_RoadBagAlchDel_1_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagAlchItem_1 == 1 )
+    	player->RemoveItem A1V6_RoadBagAlchItem_1, 1
+    endif
+    
+    StopScript A1V6_RoadBagAlchDel_1_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchDel_2_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdBbGNoSXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8yAQAJARwQGEExVjZfUm9hZEJhZ0FsY2hEZWxfMl9zYwEB
+SCTX
+    Begin A1V6_RoadBagAlchDel_2_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagAlchItem_2 == 1 )
+    	player->RemoveItem A1V6_RoadBagAlchItem_2, 1
+    endif
+    
+    StopScript A1V6_RoadBagAlchDel_2_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchDel_3_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdBbGNoSXRlbV8zID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8zAQAJARwQGEExVjZfUm9hZEJhZ0FsY2hEZWxfM19zYwEB
+SCTX
+    Begin A1V6_RoadBagAlchDel_3_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagAlchItem_3 == 1 )
+    	player->RemoveItem A1V6_RoadBagAlchItem_3, 1
+    endif
+    
+    StopScript A1V6_RoadBagAlchDel_3_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchItem_1_sc 6 0 0 828 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnQWxjaERlbF8xX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdBbGNoSXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8yAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMwEACQEJAQYBDwkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAAUBRxFBMVY2X1JvYWRCYWdBbmdsZQYgWAwQWgDmEBZBMVY2X1JvYWRCYWdBbGNoQ29udF8xAQAAAEhCAAAFAXMFABogRxNBMVY2X1JvYWRCYWdBbGNoRXh0IDIgLwUBcwYACCBzBQAgMiAvBQFzBQAOIHMFACAyIHMGACAqIC0GAQEJIHMFACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMgEACAEBCSBzBgAgPT0gMAwBBnBsYXllctQQFkExVjZfUm9hZEJhZ0FsY2hJdGVtXzMBAAkB2xAJAQYBBwkgcwIAID09IDEFAXMCAAIgMAYBAhsgRxNBMVY2X1JvYWRCYWdBbGNoRXh0ID09IDAAEDsAwvsg5OXp8fLi6PLl6/zt7iDt5SD17vLo8uUg7+7r/Ofu4uDy/PH/IPHz7eTz6u7sIOTr/yDn5evo6T8AAgPE4AAEzeXyAAUBcwEAAiAxBwEBABAqAM/uIOzo8PMg8ODn4fDu8eDt+yDi4PjoIPHz7eTz6ugg8SDn5ev8/+zoLgAACQEJAQEB
+SCTX
+    Begin A1V6_RoadBagAlchItem_1_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagAlchDel_1_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagAlchItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagAlchItem_2, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagAlchItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagAlchItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	set A1V6_RoadBagAngle to GetAngle Z
+    	PlaceAtPC A1V6_RoadBagAlchCont_1 1, 50, 0
+    	set temp1 to A1V6_RoadBagAlchExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2 ~ flags & 0b100
+    	set temp1 to temp1 - 2 * temp2							; temp1 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagAlchItem_2, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagAlchItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagAlchExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться сундуком для зелий?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши сундуки с зельями."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchItem_2_sc 6 0 0 846 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnQWxjaERlbF8yX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMwEACQEJAQYBDwkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAAUBRxFBMVY2X1JvYWRCYWdBbmdsZQYgWAwQWgDmEBZBMVY2X1JvYWRCYWdBbGNoQ29udF8yAQAAAEhCAAAFAXMFABogRxNBMVY2X1JvYWRCYWdBbGNoRXh0IDIgLwUBcwYAICBHE0ExVjZfUm9hZEJhZ0FsY2hFeHQgMiBzBQAgKiAtBQFzBQAIIHMFACAyIC8GAQEJIHMGACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMQEACAEBCSBzBQAgPT0gMAwBBnBsYXllctQQFkExVjZfUm9hZEJhZ0FsY2hJdGVtXzMBAAkB2xAJAQYBBwkgcwIAID09IDEFAXMCAAIgMAYBAhsgRxNBMVY2X1JvYWRCYWdBbGNoRXh0ID09IDAAEDsAwvsg5OXp8fLi6PLl6/zt7iDt5SD17vLo8uUg7+7r/Ofu4uDy/PH/IPHz7eTz6u7sIOTr/yDn5evo6T8AAgPE4AAEzeXyAAUBcwEAAiAxBwEBABAqAM/uIOzo8PMg8ODn4fDu8eDt+yDi4PjoIPHz7eTz6ugg8SDn5ev8/+zoLgAACQEJAQEB
+SCTX
+    Begin A1V6_RoadBagAlchItem_2_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagAlchDel_2_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagAlchItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagAlchItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagAlchItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagAlchItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	set A1V6_RoadBagAngle to GetAngle Z
+    	PlaceAtPC A1V6_RoadBagAlchCont_2 1, 50, 0
+    	set temp1 to A1V6_RoadBagAlchExt / 2				; temp1 = flags div 2
+    	set temp2 to A1V6_RoadBagAlchExt - 2 * temp1	; temp2 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	set temp1 to temp1 / 2									; temp1 = (flags div 2) div 2 ~ flags & 0b100
+    	if ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagAlchItem_1, 1
+    	elseif ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagAlchItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagAlchExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться сундуком для зелий?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши сундуки с зельями."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagAlchItem_3_sc 6 0 0 866 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnQWxjaERlbF8zX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMiA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMgEACQEJAQYBEAkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAAUBRxFBMVY2X1JvYWRCYWdBbmdsZQYgWAwQWgDmEBZBMVY2X1JvYWRCYWdBbGNoQ29udF8zAQAAAEhCAAAFAXMFABogRxNBMVY2X1JvYWRCYWdBbGNoRXh0IDIgLwUBcwYACCBzBQAgMiAvBQFzBgAOIHMFACAyIHMGACAqIC0FAXMFACAgRxNBMVY2X1JvYWRCYWdBbGNoRXh0IDIgcwUAICogLQYBAQkgcwUAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdBbGNoSXRlbV8xAQAIAQEJIHMGACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMgEACQHbEAkBBgEHCSBzAgAgPT0gMQUBcwIAAiAwBgECGyBHE0ExVjZfUm9hZEJhZ0FsY2hFeHQgPT0gMAAQOwDC+yDk5enx8uLo8uXr/O3uIO3lIPXu8ujy5SDv7uv85+7i4PL88f8g8fPt5PPq7uwg5Ov/IOfl6+jpPwACA8TgAATN5fIABQFzAQACIDEHAQEAECoAz+4g7Ojw8yDw4Ofh8O7x4O37IOLg+Ogg8fPt5PPq6CDxIOfl6/z/7OguAAAJAQkBAQE=
+SCTX
+    Begin A1V6_RoadBagAlchItem_3_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagAlchDel_3_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagAlchItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagAlchItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagAlchItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagAlchItem_2, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	set A1V6_RoadBagAngle to GetAngle Z
+    	PlaceAtPC A1V6_RoadBagAlchCont_3 1, 50, 0
+    	set temp1 to A1V6_RoadBagAlchExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2
+    	set temp2 to temp1 - 2 * temp2							; temp2 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	set temp1 to A1V6_RoadBagAlchExt - 2 * temp1	; temp1 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagAlchItem_1, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagAlchItem_2, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagAlchExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться сундуком для зелий?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши сундуки с зельями."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpCont_1_sc 6 8 5 1426 146
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invName;invNextRef;cx;cy;cz;ca;invWeight;;
+SCDT BgEGCSBzAwAgPiAyMAYBBAkgWNwQID09IDEFAXMEAB4gMiBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgMiAvICoFAUcTQTFWNl9Sb2FkQmFnSW5jcEV4dAUgcwQAAKsRAQAkAQkBCQEGAQIJIHMDACA+IDIw2xAkAQkBBgEDCCBzAwAgPiAw1BAWQTFWNl9Sb2FkQmFnRmFrZUluZ3JlZAIABQFzAwAIIHMDACAxICskAQkBBgECCSBY3BAgPT0gMdoQBQFzAwACIDEJAQYBBwkgcwYAID09IDIGAQQJIFggECA9PSAwBQFzBgACIDAGAQEiIFj9ECBvFkExVjZfUm9hZEJhZ0luY3BJdGVtXzEgPT0gMAUBcwMAAiAxCQEJASQBCAEECSBzBgAgPT0gMQYBAQkgWCAQID09IDEFAXMGAAIgMgkBJAEJAQYBAQkgWCAQID09IDEkAQkBEzgAABM4cwAAPA84BAAMOG8BCjjTAgUBcwQAIiAyIEcTQTFWNl9Sb2FkQmFnSW5jcEV4dCAyIC8gKiAxICsFAUcTQTFWNl9Sb2FkQmFnSW5jcEV4dAUgcwQAAN4QBQFzAQACIDEFAWYBABEgRw1BMVY2X1JvYWRCYWdYAAUBZgIAESBHDUExVjZfUm9hZEJhZ1kABQFmAwARIEcNQTFWNl9Sb2FkQmFnWgAFAWYEABUgRxFBMVY2X1JvYWRCYWdBbmdsZQALEFhmAQAACxBZZgIAAAsQWmYDAAANEFpmBAAAKjwTOAAAEzhsAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAEAEzhsAAA8DzgEAAw4pgITOAEAEzhsAAA8EzgAABM4bAAAPCk8KjwTOAAAEzhsAAI8EzgBABM4bAACPBM4AgATOGwAAjwKOFoC1BAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMQEABQFsAwACIDAFAXMCAAIgMSQBBgEECSBzBQAgPT0gMQUBcwYAAiAxBQFzBQACIDAXECQBCQEGAQQKIHMCACA9PSAxMAUBcwIAAiAwABAOAMfl6/z/IOL76+7m5e37AADdECQBCQEGAQEIIHMCACA+IDUFAXMEAAIgMQcBAQUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4WQUTOGEDCjhpAwZwbGF5ZXIAHTwTOAMAEzhsAAI8EzgDABM4bAAAPA84BAAMOFcFEzgCABM4bAAAPBM4AwATOGwAADwYPAM/EzgAABM4bAACPBM4AQATOGwAAjwTOAQAEzhsAAI8EzgFABM4bAACPBM4BAATOGYAAjwTOAYAEzhsAAI8EzgHABM4bAACPBM4AAATOGwAADwPOAQADDgaBQYBARIgbAUAID09IDEyMTIzNjk5ODUFAXMEAAIgMQcBAQUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4bQQTODwECjhABAIxLwATOAYAEzhsAAA8LzwTOAUAEzhsAAI8BgEBCSBsBgAgPD0gMAUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4uAQTOIcECjiLBAMxL2ETOAYAEzhsAAA8LzwTOAUAEzhsAAI8BgEBCSBsBgAgPj0gMAUBcwQAAiAwCQETOAMAEzhzAAA8DzgEAAw4GgUTOAEAEzhsAAA8EzgAABM4bAAAPBM4AwATOGwAADwYPCk8EzgBABM4bAAAPBM4AAATOGwAADwoPAUBbAMAAiAwBQFsBAACIDAFAXMCAAIgMQYBAQggcwIAID4gMQUBbAMABSBsCAAACQEGAQIJIGwIACA9PSAwBQFsBAACIDAFAXMCAAMgMTAJAQo4dQMkAQYBAgggcwIAID4gMAUBcwIACCBzAgAgMSArJAEJAQYBAgkgWBgQID09IDEFAXMFAAIgMSQBCQEBAQ==
+SCTX
+    Begin A1V6_RoadBagIncpCont_1_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    float ca
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invName
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to 2 * ( A1V6_RoadBagIncpExt / 2 )
+    		set A1V6_RoadBagIncpExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagIncpItem_1 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to 2 * ( A1V6_RoadBagIncpExt / 2 ) + 1
+    	set A1V6_RoadBagIncpExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	set ca to A1V6_RoadBagAngle
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	SetAngle Z ca
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagIncpItem_1", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Зелья выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,invName,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1212369985 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/"
+    				if ( tempLong <= 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/a"
+    				if ( tempLong >= 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpCont_2_sc 6 8 5 1542 146
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invName;invNextRef;cx;cy;cz;ca;invWeight;;
+SCDT BgEICSBzAwAgPiAyMAYBBgkgWNwQID09IDEFAXMEABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDIgLwUBcwQAEiBzBAAgMiBzBAAgMiAvICogLQUBcwQAICBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgMiBzBAAgKiAtBQFHE0ExVjZfUm9hZEJhZ0luY3BFeHQFIHMEAACrEQEAJAEJAQkBBgECCSBzAwAgPiAyMNsQJAEJAQYBAwggcwMAID4gMNQQFkExVjZfUm9hZEJhZ0Zha2VJbmdyZWQCAAUBcwMACCBzAwAgMSArJAEJAQYBAgkgWNwQID09IDHaEAUBcwMAAiAxCQEGAQcJIHMGACA9PSAyBgEECSBYIBAgPT0gMAUBcwYAAiAwBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8yID09IDAFAXMDAAIgMQkBCQEkAQgBBAkgcwYAID09IDEGAQEJIFggECA9PSAxBQFzBgACIDIJASQBCQEGAQEJIFggECA9PSAxJAEJARM4AAATOHMAADwPOAQADDipAQo4RwMFAXMEABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDIgLwUBcwQAEiBzBAAgMiBzBAAgMiAvICogLQUBcwQAJCBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgMiBzBAAgKiAtIDIgKwUBRxNBMVY2X1JvYWRCYWdJbmNwRXh0BSBzBAAA3hAFAXMBAAIgMQUBZgEAESBHDUExVjZfUm9hZEJhZ1gABQFmAgARIEcNQTFWNl9Sb2FkQmFnWQAFAWYDABEgRw1BMVY2X1JvYWRCYWdaAAUBZgQAFSBHEUExVjZfUm9hZEJhZ0FuZ2xlAAsQWGYBAAALEFlmAgAACxBaZgMAAA0QWmYEAAAqPBM4AAATOGwAAjwTOAEAEzhsAAI8EzgCABM4bAACPBM4AQATOGwAADwPOAQADDgaAxM4AQATOGwAADwTOAAAEzhsAAA8KTwqPBM4AAATOGwAAjwTOAEAEzhsAAI8EzgCABM4bAACPAo4zgLUEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8yAQAFAWwDAAIgMAUBcwIAAiAxJAEGAQQJIHMFACA9PSAxBQFzBgACIDEFAXMFAAIgMBcQJAEJAQYBBAogcwIAID09IDEwBQFzAgACIDAAEA4Ax+Xr/P8g4vvr7ubl7fsAAN0QJAEJAQYBAQggcwIAID4gNQUBcwQAAiAxBwEBBQFzBAACIDAJARM4AwATOHMAADwPOAQADDjNBRM41QMKON0DBnBsYXllcgAdPBM4AwATOGwAAjwTOAMAEzhsAAA8DzgEAAw4ywUTOAIAEzhsAAA8EzgDABM4bAAAPBg8Az8TOAAAEzhsAAI8EzgBABM4bAACPBM4BAATOGwAAjwTOAUAEzhsAAI8EzgEABM4ZgACPBM4BgATOGwAAjwTOAcAEzhsAAI8EzgAABM4bAAAPA84BAAMOI4FBgEBEiBsBQAgPT0gMTIxMjM2OTk4NQUBcwQAAiAxBwEBBQFzBAACIDAJARM4AwATOHMAADwPOAQADDjhBBM4sAQKOLQEAjEvABM4BgATOGwAADwvPBM4BQATOGwAAjwGAQEJIGwGACA8PSAwBQFzBAACIDAJARM4AwATOHMAADwPOAQADDgsBRM4+wQKOP8EAzEvYRM4BgATOGwAADwvPBM4BQATOGwAAjwGAQEJIGwGACA+PSAwBQFzBAACIDAJARM4AwATOHMAADwPOAQADDiOBRM4AQATOGwAADwTOAAAEzhsAAA8EzgDABM4bAAAPBg8KTwTOAEAEzhsAAA8EzgAABM4bAAAPCg8BQFsAwACIDAFAWwEAAIgMAUBcwIAAiAxBgEBCCBzAgAgPiAxBQFsAwAFIGwIAAAJAQYBAgkgbAgAID09IDAFAWwEAAIgMAUBcwIAAyAxMAkBCjjpAyQBBgECCCBzAgAgPiAwBQFzAgAIIHMCACAxICskAQkBBgECCSBYGBAgPT0gMQUBcwUAAiAxJAEJAQEB
+SCTX
+    Begin A1V6_RoadBagIncpCont_2_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    float ca
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invName
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagIncpExt / 2
+    		set temp to temp - 2 * ( temp / 2 )
+    		set temp to A1V6_RoadBagIncpExt - 2 * temp
+    		set A1V6_RoadBagIncpExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagIncpItem_2 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagIncpExt / 2
+    	set temp to temp - 2 * ( temp / 2 )
+    	set temp to A1V6_RoadBagIncpExt - 2 * temp + 2
+    	set A1V6_RoadBagIncpExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	set ca to A1V6_RoadBagAngle
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	SetAngle Z ca
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagIncpItem_2", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Зелья выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,invName,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1212369985 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/"
+    				if ( tempLong <= 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/a"
+    				if ( tempLong >= 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpCont_3_sc 6 8 5 1494 146
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invName;invNextRef;cx;cy;cz;ca;invWeight;;
+SCDT BgEHCSBzAwAgPiAyMAYBBQkgWNwQID09IDEFAXMEABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDQgLwUBcwQAICBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgNCBzBAAgKiAtBQFHE0ExVjZfUm9hZEJhZ0luY3BFeHQFIHMEAACrEQEAJAEJAQkBBgECCSBzAwAgPiAyMNsQJAEJAQYBAwggcwMAID4gMNQQFkExVjZfUm9hZEJhZ0Zha2VJbmdyZWQCAAUBcwMACCBzAwAgMSArJAEJAQYBAgkgWNwQID09IDHaEAUBcwMAAiAxCQEGAQcJIHMGACA9PSAyBgEECSBYIBAgPT0gMAUBcwYAAiAwBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8zID09IDAFAXMDAAIgMQkBCQEkAQgBBAkgcwYAID09IDEGAQEJIFggECA9PSAxBQFzBgACIDIJASQBCQEGAQEJIFggECA9PSAxJAEJARM4AAATOHMAADwPOAQADDiRAQo4FwMFAXMEABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDQgLwUBcwQAJCBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgNCBzBAAgKiAtIDQgKwUBRxNBMVY2X1JvYWRCYWdJbmNwRXh0BSBzBAAA3hAFAXMBAAIgMQUBZgEAESBHDUExVjZfUm9hZEJhZ1gABQFmAgARIEcNQTFWNl9Sb2FkQmFnWQAFAWYDABEgRw1BMVY2X1JvYWRCYWdaAAUBZgQAFSBHEUExVjZfUm9hZEJhZ0FuZ2xlAAsQWGYBAAALEFlmAgAACxBaZgMAAA0QWmYEAAAqPBM4AAATOGwAAjwTOAEAEzhsAAI8EzgCABM4bAACPBM4AQATOGwAADwPOAQADDjqAhM4AQATOGwAADwTOAAAEzhsAAA8KTwqPBM4AAATOGwAAjwTOAEAEzhsAAI8EzgCABM4bAACPAo4ngLUEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8zAQAFAWwDAAIgMAUBcwIAAiAxJAEGAQQJIHMFACA9PSAxBQFzBgACIDEFAXMFAAIgMBcQJAEJAQYBBAogcwIAID09IDEwBQFzAgACIDAAEA4Ax+Xr/P8g4vvr7ubl7fsAAN0QJAEJAQYBAQggcwIAID4gNQUBcwQAAiAxBwEBBQFzBAACIDAJARM4AwATOHMAADwPOAQADDidBRM4pQMKOK0DBnBsYXllcgAdPBM4AwATOGwAAjwTOAMAEzhsAAA8DzgEAAw4mwUTOAIAEzhsAAA8EzgDABM4bAAAPBg8Az8TOAAAEzhsAAI8EzgBABM4bAACPBM4BAATOGwAAjwTOAUAEzhsAAI8EzgEABM4ZgACPBM4BgATOGwAAjwTOAcAEzhsAAI8EzgAABM4bAAAPA84BAAMOF4FBgEBEiBsBQAgPT0gMTIxMjM2OTk4NQUBcwQAAiAxBwEBBQFzBAACIDAJARM4AwATOHMAADwPOAQADDixBBM4gAQKOIQEAjEvABM4BgATOGwAADwvPBM4BQATOGwAAjwGAQEJIGwGACA8PSAwBQFzBAACIDAJARM4AwATOHMAADwPOAQADDj8BBM4ywQKOM8EAzEvYRM4BgATOGwAADwvPBM4BQATOGwAAjwGAQEJIGwGACA+PSAwBQFzBAACIDAJARM4AwATOHMAADwPOAQADDheBRM4AQATOGwAADwTOAAAEzhsAAA8EzgDABM4bAAAPBg8KTwTOAEAEzhsAAA8EzgAABM4bAAAPCg8BQFsAwACIDAFAWwEAAIgMAUBcwIAAiAxBgEBCCBzAgAgPiAxBQFsAwAFIGwIAAAJAQYBAgkgbAgAID09IDAFAWwEAAIgMAUBcwIAAyAxMAkBCji5AyQBBgECCCBzAgAgPiAwBQFzAgAIIHMCACAxICskAQkBBgECCSBYGBAgPT0gMQUBcwUAAiAxJAEJAQEB
+SCTX
+    Begin A1V6_RoadBagIncpCont_3_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    float ca
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invName
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagIncpExt / 4
+    		set temp to A1V6_RoadBagIncpExt - 4 * temp
+    		set A1V6_RoadBagIncpExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagIncpItem_3 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagIncpExt / 4
+    	set temp to A1V6_RoadBagIncpExt - 4 * temp + 4
+    	set A1V6_RoadBagIncpExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	set ca to A1V6_RoadBagAngle
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	SetAngle Z ca
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagIncpItem_3", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Зелья выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,invName,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1212369985 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/"
+    				if ( tempLong <= 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invName, "1/a"
+    				if ( tempLong >= 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpDel_1_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xAQAJARwQGEExVjZfUm9hZEJhZ0luY3BEZWxfMV9zYwEB
+SCTX
+    Begin A1V6_RoadBagIncpDel_1_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagIncpItem_1 == 1 )
+    	player->RemoveItem A1V6_RoadBagIncpItem_1, 1
+    endif
+    
+    StopScript A1V6_RoadBagIncpDel_1_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpDel_2_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8yAQAJARwQGEExVjZfUm9hZEJhZ0luY3BEZWxfMl9zYwEB
+SCTX
+    Begin A1V6_RoadBagIncpDel_2_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagIncpItem_2 == 1 )
+    	player->RemoveItem A1V6_RoadBagIncpItem_2, 1
+    endif
+    
+    StopScript A1V6_RoadBagIncpDel_2_sc
+    
+    End
+    
+
+SCPT
+SCHD A1V6_RoadBagIncpDel_3_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8zID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8zAQAJARwQGEExVjZfUm9hZEJhZ0luY3BEZWxfM19zYwEB
+SCTX
+    Begin A1V6_RoadBagIncpDel_3_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagIncpItem_3 == 1 )
+    	player->RemoveItem A1V6_RoadBagIncpItem_3, 1
+    endif
+    
+    StopScript A1V6_RoadBagIncpDel_3_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpItem_1_sc 6 0 0 847 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnSW5jcERlbF8xX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8yAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMwEACQEJAQYBDwkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAAUBRxFBMVY2X1JvYWRCYWdBbmdsZQYgWAwQWgDmEBZBMVY2X1JvYWRCYWdJbmNwQ29udF8xAQAAAEhCAAAFAXMFABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDIgLwUBcwYACCBzBQAgMiAvBQFzBQAOIHMFACAyIHMGACAqIC0GAQEJIHMFACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMgEACAEBCSBzBgAgPT0gMAwBBnBsYXllctQQFkExVjZfUm9hZEJhZ0luY3BJdGVtXzMBAAkB2xAJAQYBBwkgcwIAID09IDEFAXMCAAIgMAYBAhsgRxNBMVY2X1JvYWRCYWdJbmNwRXh0ID09IDAAEEQAwvsg5OXp8fLi6PLl6/zt7iDt5SD17vLo8uUg7+7r/Ofu4uDy/PH/IPHz7eTz6u7sIOTr/yDt5e/u6+379SDn5evo6T8AAgPE4AAEzeXyAAUBcwEAAiAxBwEBABA0AM/uIOzo8PMg8ODn4fDu8eDt+yDi4PjoIPHz7eTz6ugg8SDt5e/u6+377Ogg5+Xr/P/s6C4AAAkBCQEBAQ==
+SCTX
+    Begin A1V6_RoadBagIncpItem_1_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagIncpDel_1_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagIncpItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagIncpItem_2, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagIncpItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagIncpItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	set A1V6_RoadBagAngle to GetAngle Z
+    	PlaceAtPC A1V6_RoadBagIncpCont_1 1, 50, 0
+    	set temp1 to A1V6_RoadBagIncpExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2 ~ flags & 0b100
+    	set temp1 to temp1 - 2 * temp2							; temp1 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagIncpItem_2, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagIncpItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagIncpExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться сундуком для неполных зелий?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши сундуки с неполными зельями."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpItem_2_sc 6 0 0 865 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnSW5jcERlbF8yX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMwEACQEJAQYBDwkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAAUBRxFBMVY2X1JvYWRCYWdBbmdsZQYgWAwQWgDmEBZBMVY2X1JvYWRCYWdJbmNwQ29udF8yAQAAAEhCAAAFAXMFABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDIgLwUBcwYAICBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgMiBzBQAgKiAtBQFzBQAIIHMFACAyIC8GAQEJIHMGACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMQEACAEBCSBzBQAgPT0gMAwBBnBsYXllctQQFkExVjZfUm9hZEJhZ0luY3BJdGVtXzMBAAkB2xAJAQYBBwkgcwIAID09IDEFAXMCAAIgMAYBAhsgRxNBMVY2X1JvYWRCYWdJbmNwRXh0ID09IDAAEEQAwvsg5OXp8fLi6PLl6/zt7iDt5SD17vLo8uUg7+7r/Ofu4uDy/PH/IPHz7eTz6u7sIOTr/yDt5e/u6+379SDn5evo6T8AAgPE4AAEzeXyAAUBcwEAAiAxBwEBABA0AM/uIOzo8PMg8ODn4fDu8eDt+yDi4PjoIPHz7eTz6ugg8SDt5e/u6+377Ogg5+Xr/P/s6C4AAAkBCQEBAQ==
+SCTX
+    Begin A1V6_RoadBagIncpItem_2_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagIncpDel_2_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagIncpItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagIncpItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagIncpItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagIncpItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	set A1V6_RoadBagAngle to GetAngle Z
+    	PlaceAtPC A1V6_RoadBagIncpCont_2 1, 50, 0
+    	set temp1 to A1V6_RoadBagIncpExt / 2				; temp1 = flags div 2
+    	set temp2 to A1V6_RoadBagIncpExt - 2 * temp1	; temp2 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	set temp1 to temp1 / 2									; temp1 = (flags div 2) div 2 ~ flags & 0b100
+    	if ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagIncpItem_1, 1
+    	elseif ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagIncpItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagIncpExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться сундуком для неполных зелий?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши сундуки с неполными зельями."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIncpItem_3_sc 6 0 0 885 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnSW5jcERlbF8zX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMiA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMgEACQEJAQYBEAkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAAUBRxFBMVY2X1JvYWRCYWdBbmdsZQYgWAwQWgDmEBZBMVY2X1JvYWRCYWdJbmNwQ29udF8zAQAAAEhCAAAFAXMFABogRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDIgLwUBcwYACCBzBQAgMiAvBQFzBgAOIHMFACAyIHMGACAqIC0FAXMFACAgRxNBMVY2X1JvYWRCYWdJbmNwRXh0IDIgcwUAICogLQYBAQkgcwUAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdJbmNwSXRlbV8xAQAIAQEJIHMGACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMgEACQHbEAkBBgEHCSBzAgAgPT0gMQUBcwIAAiAwBgECGyBHE0ExVjZfUm9hZEJhZ0luY3BFeHQgPT0gMAAQRADC+yDk5enx8uLo8uXr/O3uIO3lIPXu8ujy5SDv7uv85+7i4PL88f8g8fPt5PPq7uwg5Ov/IO3l7+7r7fv1IOfl6+jpPwACA8TgAATN5fIABQFzAQACIDEHAQEAEDQAz+4g7Ojw8yDw4Ofh8O7x4O37IOLg+Ogg8fPt5PPq6CDxIO3l7+7r7fvs6CDn5ev8/+zoLgAACQEJAQEB
+SCTX
+    Begin A1V6_RoadBagIncpItem_3_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagIncpDel_3_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagIncpItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagIncpItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagIncpItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagIncpItem_2, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	set A1V6_RoadBagAngle to GetAngle Z
+    	PlaceAtPC A1V6_RoadBagIncpCont_3 1, 50, 0
+    	set temp1 to A1V6_RoadBagIncpExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2
+    	set temp2 to temp1 - 2 * temp2							; temp2 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	set temp1 to A1V6_RoadBagIncpExt - 2 * temp1	; temp1 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagIncpItem_1, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagIncpItem_2, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagIncpExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться сундуком для неполных зелий?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши сундуки с неполными зельями."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrCont_1_sc 6 7 4 3252 135
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invNextRef;cx;cy;cz;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagIngrCont_1_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to 2 * ( A1V6_RoadBagIngrExt / 2 )
+    		set A1V6_RoadBagIngrExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagIngrItem_1 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to 2 * ( A1V6_RoadBagIngrExt / 2 ) + 1
+    	set A1V6_RoadBagIngrExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagIngrItem_1", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Ингредиенты выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1380404809 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_Stalhrim_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_tinos"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_ebony_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_adamantium_ore_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ruby_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_pinetear"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_pearl_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_diamond_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_travelFood"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_bread_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_02"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ash_yam_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scrib_jerky_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_crab_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_hound_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_human_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_rat_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scuttle_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_saltrice_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrCont_2_sc 6 7 4 3368 135
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invNextRef;cx;cy;cz;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagIngrCont_2_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagIngrExt / 2
+    		set temp to temp - 2 * ( temp / 2 )
+    		set temp to A1V6_RoadBagIngrExt - 2 * temp
+    		set A1V6_RoadBagIngrExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagIngrItem_2 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagIngrExt / 2
+    	set temp to temp - 2 * ( temp / 2 )
+    	set temp to A1V6_RoadBagIngrExt - 2 * temp + 2
+    	set A1V6_RoadBagIngrExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagIngrItem_2", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Ингредиенты выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1380404809 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_Stalhrim_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_tinos"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_ebony_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_adamantium_ore_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ruby_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_pinetear"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_pearl_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_diamond_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_travelFood"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_bread_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_02"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ash_yam_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scrib_jerky_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_crab_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_hound_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_human_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_rat_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scuttle_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_saltrice_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrCont_3_sc 6 7 4 3320 135
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invNextRef;cx;cy;cz;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagIngrCont_3_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagIngrExt / 4
+    		set temp to A1V6_RoadBagIngrExt - 4 * temp
+    		set A1V6_RoadBagIngrExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagIngrItem_3 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagIngrExt / 4
+    	set temp to A1V6_RoadBagIngrExt - 4 * temp + 4
+    	set A1V6_RoadBagIngrExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagIngrItem_3", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Ингредиенты выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			if ( invRefType == 1380404809 )
+    				set temp to 1
+    			else
+    				set temp to 0
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_Stalhrim_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_tinos"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_ebony_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_adamantium_ore_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ruby_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_pinetear"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_pearl_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_diamond_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_travelFood"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_bread_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_02"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ash_yam_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scrib_jerky_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_crab_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_hound_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_human_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_rat_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scuttle_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_saltrice_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrDel_1_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmdySXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8xAQAJARwQGEExVjZfUm9hZEJhZ0luZ3JEZWxfMV9zYwEB
+SCTX
+    Begin A1V6_RoadBagIngrDel_1_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagIngrItem_1 == 1 )
+    	player->RemoveItem A1V6_RoadBagIngrItem_1, 1
+    endif
+    
+    StopScript A1V6_RoadBagIngrDel_1_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrDel_2_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmdySXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8yAQAJARwQGEExVjZfUm9hZEJhZ0luZ3JEZWxfMl9zYwEB
+SCTX
+    Begin A1V6_RoadBagIngrDel_2_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagIngrItem_2 == 1 )
+    	player->RemoveItem A1V6_RoadBagIngrItem_2, 1
+    endif
+    
+    StopScript A1V6_RoadBagIngrDel_2_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrDel_3_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmdySXRlbV8zID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8zAQAJARwQGEExVjZfUm9hZEJhZ0luZ3JEZWxfM19zYwEB
+SCTX
+    Begin A1V6_RoadBagIngrDel_3_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagIngrItem_3 == 1 )
+    	player->RemoveItem A1V6_RoadBagIngrItem_3, 1
+    endif
+    
+    StopScript A1V6_RoadBagIngrDel_3_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrItem_1_sc 6 0 0 809 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnSW5nckRlbF8xX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmdySXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8yAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMwEACQEJAQYBDgkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAOYQFkExVjZfUm9hZEJhZ0luZ3JDb250XzEBAAAASEIAAAUBcwUAGiBHE0ExVjZfUm9hZEJhZ0luZ3JFeHQgMiAvBQFzBgAIIHMFACAyIC8FAXMFAA4gcwUAIDIgcwYAICogLQYBAQkgcwUAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8yAQAIAQEJIHMGACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMwEACQHbEAkBBgEHCSBzAgAgPT0gMQUBcwIAAiAwBgECGyBHE0ExVjZfUm9hZEJhZ0luZ3JFeHQgPT0gMAAQQADC+yDk5enx8uLo8uXr/O3uIO3lIPXu8ujy5SDv7uv85+7i4PL88f8g7OX46u7sIOTr/yDo7ePw5eTo5e3y7uI/AAIDxOAABM3l8gAFAXMBAAIgMQcBAQAQLgDP7iDs6PDzIPDg5+Hw7vHg7fsg4uD46CDs5fjq6CDxIOjt4/Dl5Ojl7fLg7OguAAAJAQkBAQE=
+SCTX
+    Begin A1V6_RoadBagIngrItem_1_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagIngrDel_1_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagIngrItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagIngrItem_2, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagIngrItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagIngrItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	PlaceAtPC A1V6_RoadBagIngrCont_1 1, 50, 0
+    	set temp1 to A1V6_RoadBagIngrExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2 ~ flags & 0b100
+    	set temp1 to temp1 - 2 * temp2							; temp1 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagIngrItem_2, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagIngrItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagIngrExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться мешком для ингредиентов?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши мешки с ингредиентами."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrItem_2_sc 6 0 0 827 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnSW5nckRlbF8yX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmdySXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMwEACQEJAQYBDgkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAOYQFkExVjZfUm9hZEJhZ0luZ3JDb250XzIBAAAASEIAAAUBcwUAGiBHE0ExVjZfUm9hZEJhZ0luZ3JFeHQgMiAvBQFzBgAgIEcTQTFWNl9Sb2FkQmFnSW5nckV4dCAyIHMFACAqIC0FAXMFAAggcwUAIDIgLwYBAQkgcwYAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8xAQAIAQEJIHMFACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMwEACQHbEAkBBgEHCSBzAgAgPT0gMQUBcwIAAiAwBgECGyBHE0ExVjZfUm9hZEJhZ0luZ3JFeHQgPT0gMAAQQADC+yDk5enx8uLo8uXr/O3uIO3lIPXu8ujy5SDv7uv85+7i4PL88f8g7OX46u7sIOTr/yDo7ePw5eTo5e3y7uI/AAIDxOAABM3l8gAFAXMBAAIgMQcBAQAQLgDP7iDs6PDzIPDg5+Hw7vHg7fsg4uD46CDs5fjq6CDxIOjt4/Dl5Ojl7fLg7OguAAAJAQkBAQE=
+SCTX
+    Begin A1V6_RoadBagIngrItem_2_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagIngrDel_2_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagIngrItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagIngrItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagIngrItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagIngrItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	PlaceAtPC A1V6_RoadBagIngrCont_2 1, 50, 0
+    	set temp1 to A1V6_RoadBagIngrExt / 2				; temp1 = flags div 2
+    	set temp2 to A1V6_RoadBagIngrExt - 2 * temp1	; temp2 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	set temp1 to temp1 / 2									; temp1 = (flags div 2) div 2 ~ flags & 0b100
+    	if ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagIngrItem_1, 1
+    	elseif ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagIngrItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagIngrExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться мешком для ингредиентов?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши мешки с ингредиентами."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagIngrItem_3_sc 6 0 0 847 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnSW5nckRlbF8zX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdJbmdySXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMiA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMgEACQEJAQYBDwkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAOYQFkExVjZfUm9hZEJhZ0luZ3JDb250XzMBAAAASEIAAAUBcwUAGiBHE0ExVjZfUm9hZEJhZ0luZ3JFeHQgMiAvBQFzBgAIIHMFACAyIC8FAXMGAA4gcwUAIDIgcwYAICogLQUBcwUAICBHE0ExVjZfUm9hZEJhZ0luZ3JFeHQgMiBzBQAgKiAtBgEBCSBzBQAgPT0gMAwBBnBsYXllctQQFkExVjZfUm9hZEJhZ0luZ3JJdGVtXzEBAAgBAQkgcwYAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdJbmdySXRlbV8yAQAJAdsQCQEGAQcJIHMCACA9PSAxBQFzAgACIDAGAQIbIEcTQTFWNl9Sb2FkQmFnSW5nckV4dCA9PSAwABBAAML7IOTl6fHy4ujy5ev87e4g7eUg9e7y6PLlIO/u6/zn7uLg8vzx/yDs5fjq7uwg5Ov/IOjt4/Dl5Ojl7fLu4j8AAgPE4AAEzeXyAAUBcwEAAiAxBwEBABAuAM/uIOzo8PMg8ODn4fDu8eDt+yDi4PjoIOzl+OroIPEg6O3j8OXk6OXt8uDs6C4AAAkBCQEBAQ==
+SCTX
+    Begin A1V6_RoadBagIngrItem_3_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagIngrDel_3_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagIngrItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagIngrItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagIngrItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagIngrItem_2, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	PlaceAtPC A1V6_RoadBagIngrCont_3 1, 50, 0
+    	set temp1 to A1V6_RoadBagIngrExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2
+    	set temp2 to temp1 - 2 * temp2							; temp2 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	set temp1 to A1V6_RoadBagIngrExt - 2 * temp1	; temp1 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagIngrItem_1, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagIngrItem_2, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagIngrExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться мешком для ингредиентов?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши мешки с ингредиентами."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscCont_1_sc 6 7 4 4119 135
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invNextRef;cx;cy;cz;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagMiscCont_1_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to 2 * ( A1V6_RoadBagMiscExt / 2 )
+    		set A1V6_RoadBagMiscExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagMiscItem_1 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to 2 * ( A1V6_RoadBagMiscExt / 2 ) + 1
+    	set A1V6_RoadBagMiscExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagMiscItem_1", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Предметы выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			set temp to 1
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_Stalhrim_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_tinos"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_ebony_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_adamantium_ore_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ruby_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_pinetear"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_pearl_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_diamond_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_travelFood"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_bread_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_02"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ash_yam_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scrib_jerky_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_crab_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_hound_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_human_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_rat_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scuttle_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_saltrice_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_campement01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "Balors_portable_Bedroll"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "misc_de_muck_shovel_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "full_waterskin"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "halffull_waterskin"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "nearlyfull_waterskin"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "nearlyempty_waterskin"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "empty_waterskin"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "index_"
+    				if ( tempLong > 0 )
+    					set tempLong to 1
+    				else
+    					set tempLong to 0
+    				endif
+    				ifx ( tempLong )
+    					setx tempLong to xStringCompare invItem, "index_z"
+    					if ( tempLong < 0 )
+    						set temp to 0
+    					endif
+    				endif
+    			endif
+    			ifx ( temp )
+    			else
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscCont_2_sc 6 7 4 3501 135
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invNextRef;cx;cy;cz;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagMiscCont_2_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagMiscExt / 2
+    		set temp to temp - 2 * ( temp / 2 )
+    		set temp to A1V6_RoadBagMiscExt - 2 * temp
+    		set A1V6_RoadBagMiscExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagMiscItem_2 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagMiscExt / 2
+    	set temp to temp - 2 * ( temp / 2 )
+    	set temp to A1V6_RoadBagMiscExt - 2 * temp + 2
+    	set A1V6_RoadBagMiscExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagMiscItem_2", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Предметы выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			set temp to 1
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_Stalhrim_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_tinos"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_ebony_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_adamantium_ore_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ruby_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_pinetear"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_pearl_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_diamond_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_travelFood"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_bread_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_02"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ash_yam_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scrib_jerky_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_crab_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_hound_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_human_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_rat_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scuttle_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_saltrice_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "index_"
+    				if ( tempLong > 0 )
+    					set tempLong to 1
+    				else
+    					set tempLong to 0
+    				endif
+    				ifx ( tempLong )
+    					setx tempLong to xStringCompare invItem, "index_z"
+    					if ( tempLong < 0 )
+    						set temp to 0
+    					endif
+    				endif
+    			endif
+    			ifx ( temp )
+    			else
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscCont_3_sc 6 7 4 3453 135
+SCVR doOnce;doRemove;doDisable;temp;doActivate;waitActivate;invItem;invCount;invRef;pcRef;invRefType;tempLong;invNextRef;cx;cy;cz;invWeight;;
+SCDT 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
+SCTX
+    Begin A1V6_RoadBagMiscCont_3_sc
+    
+    short doOnce
+    short doRemove
+    short doDisable
+    short temp
+    float cx
+    float cy
+    float cz
+    long invItem
+    long invCount
+    long invRef
+    long pcRef
+    long invRefType
+    long tempLong
+    float invWeight
+    long invNextRef
+    short doActivate
+    short waitActivate
+    
+    if ( doDisable > 20 )
+    	if ( GetDisabled == 1 )
+    		set temp to A1V6_RoadBagMiscExt / 4
+    		set temp to A1V6_RoadBagMiscExt - 4 * temp
+    		set A1V6_RoadBagMiscExt to temp
+    		SetDelete 1
+    		return
+    	endif
+    endif
+    
+    if ( doDisable > 20 )
+    	Disable
+    	return
+    endif
+    
+    if ( doDisable > 0 )
+    	AddItem "A1V6_RoadBagFakeIngred", 2
+    	set doDisable to ( doDisable + 1 )
+    	return
+    endif
+    
+    if ( GetDisabled == 1 )
+    	Enable
+    	set doDisable to 1
+    endif
+    
+    if ( waitActivate == 2 )
+    	if ( MenuMode == 0 )
+    		set waitActivate to 0
+    		if ( GetItemCount A1V6_RoadBagMiscItem_3 == 0 )
+    			set doDisable to 1
+    		endif
+    	endif
+    	return
+    elseif ( waitActivate == 1 )
+    	if ( MenuMode == 1 )
+    		set waitActivate to 2
+    	endif
+    	return
+    endif
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    ifx ( doOnce )
+    else
+    	set temp to A1V6_RoadBagMiscExt / 4
+    	set temp to A1V6_RoadBagMiscExt - 4 * temp + 4
+    	set A1V6_RoadBagMiscExt to temp
+    	DisablePlayerControls
+    	set doOnce to 1
+    	set cx to A1V6_RoadBagX
+    	set cy to A1V6_RoadBagY
+    	set cz to A1V6_RoadBagZ
+    	SetPos X cx
+    	SetPos Y cy
+    	SetPos Z cz
+    	setx invItem,invCount,invRef to xInventory
+    	whilex ( invCount )
+    		xRemoveItem invItem invCount
+    		setx invItem,invCount,invRef to xInventory
+    	endwhile
+    	AddItem "A1V6_RoadBagMiscItem_3", 1
+    	set invRef to 0
+    	set doRemove to 1
+    	return
+    endif
+    
+    if ( doActivate == 1 )
+    	set waitActivate to 1
+    	set doActivate to 0
+    	Activate
+    	return
+    endif
+    
+    if ( doRemove == 10 )
+    	set doRemove to 0
+    	MessageBox "Предметы выложены"
+    	EnablePlayerControls
+    	return
+    endif
+    
+    if ( doRemove > 5 )
+    	set temp to 1
+    else
+    	set temp to 0
+    endif
+    
+    ifx ( temp )
+    	setx pcRef to xGetRef "player"
+    	whilex ( pcRef )
+    		setx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef
+    		ifx ( invItem )
+    			set temp to 1
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_Stalhrim_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_glass_tinos"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_raw_ebony_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_adamantium_ore_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ruby_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_emerald_pinetear"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_pearl_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_diamond_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "deepnight_travelFood"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_bread_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "food_kwama_egg_02"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_ash_yam_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scrib_jerky_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_crab_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_hound_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_human_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_rat_meat_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_scuttle_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "ingred_saltrice_01"
+    				if ( tempLong == 0 )
+    					set temp to 0
+    				endif
+    			endif
+    			ifx ( temp )
+    				setx tempLong to xStringCompare invItem, "index_"
+    				if ( tempLong > 0 )
+    					set tempLong to 1
+    				else
+    					set tempLong to 0
+    				endif
+    				ifx ( tempLong )
+    					setx tempLong to xStringCompare invItem, "index_z"
+    					if ( tempLong < 0 )
+    						set temp to 0
+    					endif
+    				endif
+    			endif
+    			ifx ( temp )
+    			else
+    				pcRef->xRemoveItem invItem invCount
+    				xAddItem invItem invCount
+    				set invRef to 0
+    				set pcRef to 0
+    				set doRemove to 1
+    			endif
+    		endif
+    		if ( doRemove > 1 )
+    			set invRef to invNextRef
+    		endif
+    		if ( invNextRef == 0 )
+    			set pcRef to 0
+    			set doRemove to 10
+    		endif
+    	endwhile
+    	return
+    endif
+    
+    if ( doRemove > 0 )
+    	set doRemove to ( doRemove + 1 )
+    	return
+    endif
+    
+    if ( OnActivate == 1 )
+    	set doActivate to 1
+    	return
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscDel_1_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xAQAJARwQGEExVjZfUm9hZEJhZ01pc2NEZWxfMV9zYwEB
+SCTX
+    Begin A1V6_RoadBagMiscDel_1_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagMiscItem_1 == 1 )
+    	player->RemoveItem A1V6_RoadBagMiscItem_1, 1
+    endif
+    
+    StopScript A1V6_RoadBagMiscDel_1_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscDel_2_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdNaXNjSXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8yAQAJARwQGEExVjZfUm9hZEJhZ01pc2NEZWxfMl9zYwEB
+SCTX
+    Begin A1V6_RoadBagMiscDel_2_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagMiscItem_2 == 1 )
+    	player->RemoveItem A1V6_RoadBagMiscItem_2, 1
+    endif
+    
+    StopScript A1V6_RoadBagMiscDel_2_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscDel_3_sc 0 0 0 114 0
+SCDT DAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdNaXNjSXRlbV8zID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8zAQAJARwQGEExVjZfUm9hZEJhZ01pc2NEZWxfM19zYwEB
+SCTX
+    Begin A1V6_RoadBagMiscDel_3_sc
+    
+    if ( player->GetItemCount A1V6_RoadBagMiscItem_3 == 1 )
+    	player->RemoveItem A1V6_RoadBagMiscItem_3, 1
+    endif
+    
+    StopScript A1V6_RoadBagMiscDel_3_sc
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscItem_1_sc 6 0 0 794 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnTWlzY0RlbF8xX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdNaXNjSXRlbV8yID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8yAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMwEACQEJAQYBDgkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAOYQFkExVjZfUm9hZEJhZ01pc2NDb250XzEBAAAASEIAAAUBcwUAGiBHE0ExVjZfUm9hZEJhZ01pc2NFeHQgMiAvBQFzBgAIIHMFACAyIC8FAXMFAA4gcwUAIDIgcwYAICogLQYBAQkgcwUAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8yAQAIAQEJIHMGACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMwEACQHbEAkBBgEHCSBzAgAgPT0gMQUBcwIAAiAwBgECGyBHE0ExVjZfUm9hZEJhZ01pc2NFeHQgPT0gMAAQOADC+yDk5enx8uLo8uXr/O3uIO3lIPXu8ujy5SDv7uv85+7i4PL88f8g7+717uTt++wg7OX46u7sPwACA8TgAATN5fIABQFzAQACIDEHAQEAECcAz+4g7Ojw8yDw4Ofh8O7x4O37IOLg+Ogg7+717uTt++Ug7OX46uguAAAJAQkBAQE=
+SCTX
+    Begin A1V6_RoadBagMiscItem_1_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagMiscDel_1_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagMiscItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagMiscItem_2, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagMiscItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagMiscItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	PlaceAtPC A1V6_RoadBagMiscCont_1 1, 50, 0
+    	set temp1 to A1V6_RoadBagMiscExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2 ~ flags & 0b100
+    	set temp1 to temp1 - 2 * temp2							; temp1 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagMiscItem_2, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagMiscItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagMiscExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться походным мешком?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши походные мешки."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscItem_2_sc 6 0 0 812 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnTWlzY0RlbF8yX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMyA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMwEACQEJAQYBDgkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAOYQFkExVjZfUm9hZEJhZ01pc2NDb250XzIBAAAASEIAAAUBcwUAGiBHE0ExVjZfUm9hZEJhZ01pc2NFeHQgMiAvBQFzBgAgIEcTQTFWNl9Sb2FkQmFnTWlzY0V4dCAyIHMFACAqIC0FAXMFAAggcwUAIDIgLwYBAQkgcwYAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xAQAIAQEJIHMFACA9PSAwDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMwEACQHbEAkBBgEHCSBzAgAgPT0gMQUBcwIAAiAwBgECGyBHE0ExVjZfUm9hZEJhZ01pc2NFeHQgPT0gMAAQOADC+yDk5enx8uLo8uXr/O3uIO3lIPXu8ujy5SDv7uv85+7i4PL88f8g7+717uTt++wg7OX46u7sPwACA8TgAATN5fIABQFzAQACIDEHAQEAECcAz+4g7Ojw8yDw4Ofh8O7x4O37IOLg+Ogg7+717uTt++Ug7OX46uguAAAJAQkBAQE=
+SCTX
+    Begin A1V6_RoadBagMiscItem_2_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagMiscDel_2_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagMiscItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagMiscItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagMiscItem_3 == 1 )
+    		player->RemoveItem A1V6_RoadBagMiscItem_3, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	PlaceAtPC A1V6_RoadBagMiscCont_2 1, 50, 0
+    	set temp1 to A1V6_RoadBagMiscExt / 2				; temp1 = flags div 2
+    	set temp2 to A1V6_RoadBagMiscExt - 2 * temp1	; temp2 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	set temp1 to temp1 / 2									; temp1 = (flags div 2) div 2 ~ flags & 0b100
+    	if ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagMiscItem_1, 1
+    	elseif ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagMiscItem_3, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagMiscExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться походным мешком?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши походные мешки."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_RoadBagMiscItem_3_sc 6 0 0 832 44
+SCVR wait;OnPCEquip;OnPCAdd;OnPCDrop;temp1;temp2;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEICSBzAQAgPT0gMQUBcwUABSBYHhAABgECCSBzBQAgPT0gMAUBcwEAAiAwGxAYQTFWNl9Sb2FkQmFnTWlzY0RlbF8zX3NjCAEBCSBzBQAgPT0gMQUBcwEAAiAwCQEkAQkBBgEHCSBzAwAgPT0gMQUBcwMAAiAwDAEGcGxheWVyBgEBIiBY/RAgbxZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xID09IDEMAQZwbGF5ZXLVEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8xAQAJAQwBBnBsYXllcgYBASIgWP0QIG8WQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMiA9PSAxDAEGcGxheWVy1RAWQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMgEACQEJAQYBDwkgcwQAID09IDEFAXMEAAIgMAUBRw1BMVY2X1JvYWRCYWdYBiBYChBYAAUBRw1BMVY2X1JvYWRCYWdZBiBYChBZAAUBRw1BMVY2X1JvYWRCYWdaBiBYChBaAOYQFkExVjZfUm9hZEJhZ01pc2NDb250XzMBAAAASEIAAAUBcwUAGiBHE0ExVjZfUm9hZEJhZ01pc2NFeHQgMiAvBQFzBgAIIHMFACAyIC8FAXMGAA4gcwUAIDIgcwYAICogLQUBcwUAICBHE0ExVjZfUm9hZEJhZ01pc2NFeHQgMiBzBQAgKiAtBgEBCSBzBQAgPT0gMAwBBnBsYXllctQQFkExVjZfUm9hZEJhZ01pc2NJdGVtXzEBAAgBAQkgcwYAID09IDAMAQZwbGF5ZXLUEBZBMVY2X1JvYWRCYWdNaXNjSXRlbV8yAQAJAdsQCQEGAQcJIHMCACA9PSAxBQFzAgACIDAGAQIbIEcTQTFWNl9Sb2FkQmFnTWlzY0V4dCA9PSAwABA4AML7IOTl6fHy4ujy5ev87e4g7eUg9e7y6PLlIO/u6/zn7uLg8vzx/yDv7vXu5O377CDs5fjq7uw/AAIDxOAABM3l8gAFAXMBAAIgMQcBAQAQJwDP7iDs6PDzIPDg5+Hw7vHg7fsg4uD46CDv7vXu5O375SDs5fjq6C4AAAkBCQEBAQ==
+SCTX
+    Begin A1V6_RoadBagMiscItem_3_sc
+    
+    short wait
+    short OnPCEquip
+    short OnPCAdd
+    short OnPCDrop
+    short temp1
+    short temp2
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( wait == 1 )
+    	set temp1 to GetButtonPressed
+    	if ( temp1 == 0 )
+    		set wait to 0
+    		StartScript A1V6_RoadBagMiscDel_3_sc
+    	elseif ( temp1 == 1 )
+    		set wait to 0
+    	endif
+    	return
+    endif
+    
+    if ( OnPCAdd == 1 )
+    	set OnPCAdd to 0
+    	if ( player->GetItemCount A1V6_RoadBagMiscItem_1 == 1 )
+    		player->RemoveItem A1V6_RoadBagMiscItem_1, 1
+    	endif
+    	if ( player->GetItemCount A1V6_RoadBagMiscItem_2 == 1 )
+    		player->RemoveItem A1V6_RoadBagMiscItem_2, 1
+    	endif
+    endif
+    
+    if ( OnPCDrop == 1 )
+    	set OnPCDrop to 0
+    	set A1V6_RoadBagX to GetPos X
+    	set A1V6_RoadBagY to GetPos Y
+    	set A1V6_RoadBagZ to GetPos Z
+    	PlaceAtPC A1V6_RoadBagMiscCont_3 1, 50, 0
+    	set temp1 to A1V6_RoadBagMiscExt / 2				; temp1 = flags div 2
+    	set temp2 to temp1 / 2									; temp2 = (flags div 2) div 2
+    	set temp2 to temp1 - 2 * temp2							; temp2 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010
+    	set temp1 to A1V6_RoadBagMiscExt - 2 * temp1	; temp1 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001
+    	if ( temp1 == 0 )
+    		player->AddItem A1V6_RoadBagMiscItem_1, 1
+    	elseif ( temp2 == 0 )
+    		player->AddItem A1V6_RoadBagMiscItem_2, 1
+    	endif
+    	Disable
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	if ( A1V6_RoadBagMiscExt == 0 )
+    		MessageBox "Вы действительно не хотите пользоваться походным мешком?" "Да" "Нет"
+    		set wait to 1
+    	else
+    		MessageBox "По миру разбросаны ваши походные мешки."
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V6_StartContainers 1 0 0 192 7
+SCVR doOnce;;
+SCDT BgEFCSBzAQAgPT0gMAUBcwEAAiAxDAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnQWxjaEl0ZW1fMQEADAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5jcEl0ZW1fMQEADAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnSW5nckl0ZW1fMQEADAEGcGxheWVy1BAWQTFWNl9Sb2FkQmFnTWlzY0l0ZW1fMQEACQEcEBRBMVY2X1N0YXJ0Q29udGFpbmVycwEB
+SCTX
+    Begin A1V6_StartContainers
+    
+    short doOnce
+    
+    if ( doOnce == 0 )
+    	set doOnce to 1
+    	player->AddItem A1V6_RoadBagAlchItem_1, 1
+    	player->AddItem A1V6_RoadBagIncpItem_1, 1
+    	player->AddItem A1V6_RoadBagIngrItem_1, 1
+    	player->AddItem A1V6_RoadBagMiscItem_1, 1
+    endif
+    
+    StopScript A1V6_StartContainers
+    
+    End
+
+SSCR
+DATA 789011789164707584%
+NAME A1V6_StartContainers%
+
+INGR
+NAME A1V6_RoadBagFakeIngred
+MODL n\\ingred_bittergreen_01.nif
+FNAM ERROR
+IRDT
+    0.1 20
+    41 -1 -1 -1
+    -1 -1 -1 -1
+    -1 -1 -1 -1
+ITEX n\\tx_bittergreen_petal_01.dds
+
+CONT
+NAME A1V6_RoadBagIngrCont_1
+MODL o\\Contain_Com_Sack_02.NIF
+FNAM Мешок с ингредиентами
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagIngrCont_1_sc
+
+CONT
+NAME A1V6_RoadBagIngrCont_2
+MODL o\\Contain_Com_Sack_02.NIF
+FNAM Мешок с ингредиентами
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagIngrCont_2_sc
+
+CONT
+NAME A1V6_RoadBagIngrCont_3
+MODL o\\Contain_Com_Sack_02.NIF
+FNAM Мешок с ингредиентами
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagIngrCont_3_sc
+
+CONT
+NAME A1V6_RoadBagMiscCont_1
+MODL o\\Contain_Com_Sack_02.NIF
+FNAM Походный мешок
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagMiscCont_1_sc
+
+CONT
+NAME A1V6_RoadBagMiscCont_2
+MODL o\\Contain_Com_Sack_02.NIF
+FNAM Походный мешок
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagMiscCont_2_sc
+
+CONT
+NAME A1V6_RoadBagMiscCont_3
+MODL o\\Contain_Com_Sack_02.NIF
+FNAM Походный мешок
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagMiscCont_3_sc
+
+MISC
+NAME A1V6_RoadBagIngrItem_1
+MODL o\\contain_com_sack_02.nif
+FNAM Мешок с ингредиентами
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagIngrItem_1_sc
+ITEX m\\Misc_LW_Flask.tga
+
+MISC
+NAME A1V6_RoadBagIngrItem_2
+MODL o\\contain_com_sack_02.nif
+FNAM Мешок с ингредиентами
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagIngrItem_2_sc
+ITEX m\\Misc_LW_Flask.tga
+
+MISC
+NAME A1V6_RoadBagIngrItem_3
+MODL o\\contain_com_sack_02.nif
+FNAM Мешок с ингредиентами
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagIngrItem_3_sc
+ITEX m\\Misc_LW_Flask.tga
+
+MISC
+NAME A1V6_RoadBagMiscItem_1
+MODL o\\contain_com_sack_02.nif
+FNAM Походный мешок
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagMiscItem_1_sc
+ITEX m\\Misc_LW_Flask.tga
+
+MISC
+NAME A1V6_RoadBagMiscItem_2
+MODL o\\contain_com_sack_02.nif
+FNAM Походный мешок
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagMiscItem_2_sc
+ITEX m\\Misc_LW_Flask.tga
+
+MISC
+NAME A1V6_RoadBagMiscItem_3
+MODL o\\contain_com_sack_02.nif
+FNAM Походный мешок
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagMiscItem_3_sc
+ITEX m\\Misc_LW_Flask.tga
+
+CONT
+NAME A1V6_RoadBagIncpCont_1
+MODL o\\contain_chest10.nif
+FNAM Сундук с неполными зельями
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagIncpCont_1_sc
+
+MISC
+NAME A1V6_RoadBagAlchItem_1
+MODL o\\contain_chest10.nif
+FNAM Сундук с зельями
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagAlchItem_1_sc
+ITEX m\\Tx_clothbolt_02.tga
+
+CONT
+NAME A1V6_RoadBagAlchCont_1
+MODL o\\contain_chest10.nif
+FNAM Сундук с зельями
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagAlchCont_1_sc
+
+MISC
+NAME A1V6_RoadBagIncpItem_1
+MODL o\\contain_chest10.nif
+FNAM Сундук с неполными зельями
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagIncpItem_1_sc
+ITEX m\\Tx_clothbolt_02.tga
+
+CONT
+NAME A1V6_RoadBagAlchCont_2
+MODL o\\contain_chest10.nif
+FNAM Сундук с зельями
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagAlchCont_2_sc
+
+CONT
+NAME A1V6_RoadBagAlchCont_3
+MODL o\\contain_chest10.nif
+FNAM Сундук с зельями
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagAlchCont_3_sc
+
+MISC
+NAME A1V6_RoadBagAlchItem_2
+MODL o\\contain_chest10.nif
+FNAM Сундук с зельями
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagAlchItem_2_sc
+ITEX m\\Tx_clothbolt_02.tga
+
+MISC
+NAME A1V6_RoadBagAlchItem_3
+MODL o\\contain_chest10.nif
+FNAM Сундук с зельями
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagAlchItem_3_sc
+ITEX m\\Tx_clothbolt_02.tga
+
+CONT
+NAME A1V6_RoadBagIncpCont_2
+MODL o\\contain_chest10.nif
+FNAM Сундук с неполными зельями
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagIncpCont_2_sc
+
+CONT
+NAME A1V6_RoadBagIncpCont_3
+MODL o\\contain_chest10.nif
+FNAM Сундук с неполными зельями
+CNDT AEAcRg==
+FLAG 8
+SCRI A1V6_RoadBagIncpCont_3_sc
+
+MISC
+NAME A1V6_RoadBagIncpItem_2
+MODL o\\contain_chest10.nif
+FNAM Сундук с неполными зельями
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagIncpItem_2_sc
+ITEX m\\Tx_clothbolt_02.tga
+
+MISC
+NAME A1V6_RoadBagIncpItem_3
+MODL o\\contain_chest10.nif
+FNAM Сундук с неполными зельями 
+MCDT AAAAAAAAAAAAAAAA
+SCRI A1V6_RoadBagIncpItem_3_sc
+ITEX m\\Tx_clothbolt_02.tga
