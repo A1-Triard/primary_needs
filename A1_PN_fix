@@ -1,0 +1,1532 @@
+TES3
+HEDR ESP 1067869798
+    
+    
+MAST Morrowind.esm
+DATA 79764287
+MAST Tribunal.esm
+DATA 6616539
+MAST Bloodmoon.esm
+DATA 11799703
+MAST Trib_BM_patch_1C.esm
+DATA 23382
+
+GLOB
+NAME sixh_playertransformed
+FNAM s%
+FLTV 0.0
+
+SCPT
+SCHD Bal_hunger 8 0 9 2308 165
+SCVR WhileCheck;WhileCounter;Interval;done;DayDone;warning1;htemp;ctemp;CurrentDay;CurrentHour;HourCounter;loststrength;lostagility;lostspeed;lostpersonality;btemp;dtemp;;
+SCDT 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
+SCTX
+    Begin Bal_hunger
+    
+    ; Created by ModMan, modified by Balor.
+    ; This script tracks character hunger and currently works depending on constitution:
+    ; Starting with 30 con - 5 hours to get hungry, plus one to each extra 10 con.
+    ; During rest, your metabolism slow down, therefore you get hungry at 1/2 speed.
+    ; Eating a food ration satisfies and reduces hunger.  
+    ; You starve to death after 15 days without food. (That would be 360 hours) (Now depends on your constitution).
+    
+    float CurrentDay							; just a counter 
+    float CurrentHour							; just a counter 
+    float HourCounter							; just a counter 
+    ;float hungry									; hungry level, scaled from 0 (full ) to 60 (dead) 
+    													; Went to globals (Stooooopid system of exchanging vars dont work anymore...)
+    float loststrength							; stores lost strength points
+    float lostagility								; stores lost agility points
+    float lostspeed								; stores lost speed points
+    float lostpersonality						; stores lost intelligence points
+    short WhileCheck							; Self-explanatory, isnot it? :)
+    short WhileCounter						; see above /|\\
+    short Interval								; Time to get hungry
+    short done									; used only 1st time to set beginning day
+    short DayDone								; flag to to see if day has passed
+    short warning1								; used to warn of been hungry
+    short htemp									; counter for each 6 hours passed 
+    short ctemp									; for while
+    float btemp									; bogus temp var
+    float dtemp									; Yet an other temp, for dividing
+    
+    if ( MenuMode == 1 )
+    	if ( InvEatCheck == 1 )
+    		set InvEatCheck to 0
+    	else
+    		return
+    	endif
+    endif
+    
+    if ( CharGenState != -1 )
+    	return
+    endif
+    
+    if ( PCInJail == 1 )
+    	return
+    endif
+    
+    ; Vampires dont have to eat, however if you was hungry before...
+    set ctemp to 0
+    if ( PCVampire == 1 )
+    	set ctemp to 1
+    elseif ( sixh_playertransformed != 0 )
+    	set ctemp to 1
+    endif
+    if ( ctemp == 1 )
+    	if ( hungry > 0 )
+    		set hungry to 0
+    		if loststrength > 0					; recover lost abilities
+    			Player->ModStrength loststrength
+    			set loststrength to 0
+    		endif
+    		if lostagility > 0
+    			Player->ModAgility lostagility
+    			set lostagility to 0
+    		endif
+    		if lostspeed > 0
+    			Player->ModSpeed lostspeed
+    			set lostspeed to 0
+    		endif
+    		if lostpersonality > 0
+    			Player->Modpersonality lostpersonality
+    			set lostpersonality to 0
+    		endif
+    	endif
+    	return
+    endif
+    
+    if ( done == 0 )
+    	set CurrentHour to GameHour
+    	set CurrentDay to Day
+    	set done to 1
+    	set WhileCheck to 5
+    	set WhileCounter to 30
+    	while ( WhileCheck > 0 )
+    		If ( player->GetEndurance <= WhileCounter )
+    			Set Interval to WhileCheck
+    			set WhileCheck to 0
+    			else 
+    				set WhileCheck to WhileCheck + 1
+    				set WhileCounter to WhileCounter + 10
+    		endif
+    	endwhile
+    endif
+    
+    
+    if ( CurrentDay != Day )
+    	set CurrentDay to Day
+    	set DayDone to 1
+    	set WhileCheck to 5
+    	set WhileCounter to 30
+    	while ( WhileCheck > 0 )
+    		If ( player->GetEndurance <= WhileCounter )
+    			Set Interval to WhileCheck
+    			set WhileCheck to 0
+    			else 
+    				set WhileCheck to WhileCheck + 1
+    				set WhileCounter to WhileCounter + 10
+    		endif
+    	endwhile
+    endif
+    
+    
+    if ( DayDone == 1 )							; If Day has changed.
+    													; Calculate HourCounter.
+    	set DayDone to 0
+    	if ( PlayerSlept == 1 )						; You have rested.
+    													; And while you were resting, day passed.
+    		set HourCounter to  HourCounter + ( ( GameHour - CurrentHour + 24 ) / 2 )
+    		set CurrentHour to GameHour
+    	elseif ( PlayerSlept == 0 )						; You have NOT rested, day passed.
+    		set HourCounter to ( HourCounter + GameHour - CurrentHour + 24  )
+    		set CurrentHour to GameHour
+    	endif			;Endif for sleep check.
+    else																	; Now check for hour change, in case day stays the same.
+    	set btemp to ( GameHour - CurrentHour )					; Stupid "If" dont take math operations.
+    	if ( btemp >= 1 )												; At least one hour has passed.
+    																		; Update timer.
+    		if ( PlayerSlept == 1 )										; You have rested.
+    																		;Calculate hours of sleep.
+    			set HourCounter to  HourCounter + ( ( GameHour - CurrentHour ) / 2 )
+    
+    			set CurrentHour to GameHour
+    		else												; You have NOT rested.
+    			set HourCounter to ( HourCounter + GameHour - CurrentHour )
+    			set CurrentHour to GameHour
+    		endif			;Endif for sleep check.
+    	endif				;Endif for hour change check.
+    endif					;Endif for day change check.
+    
+    
+    if ( HourCounter >=  Interval )														; Interval or more hours has passed and I'm hungry
+    	while ( HourCounter >=  Interval )
+    		Set HourCounter to ( HourCounter - Interval )
+    		set hungry to ( hungry + 1 )
+    		set htemp to ( htemp + 1)
+    	endwhile
+    endif
+    
+    ; Save some CPU time
+    if (ToEat > 0)
+    	if (ToEat == 17)
+    		set warning1 to 1
+    		set ToEat to 0
+    	endif
+    endif
+    
+    if (hungry == 0)
+    	return
+    endif
+    
+    if ( hungry > 0 )										; each Interval hours i lose abilities
+    	if ( htemp > 0 )
+    	while ( htemp > 0 )
+    		if ( Player->GetStrength >= 1 )
+    			Player->ModStrength -1
+    			set loststrength to ( loststrength + 1 )
+    		endif
+    		if ( Player->GetAgility >= 1 )
+    			Player->ModAgility -1
+    			set lostagility to ( lostagility + 1 )
+    		endif
+    		if ( Player->Getpersonality >= 1 )
+    			Player->Modpersonality -1
+    			set lostpersonality to ( lostpersonality + 1 )
+    		endif
+    		if ( Player->GetSpeed >= 1 ) 
+    			Player->ModSpeed -1
+    			set lostspeed to ( lostspeed + 1 )
+    		endif
+    		set htemp to ( htemp - 1 )
+    	endwhile
+    	set warning1 to 1
+    	endif
+    endif
+    
+    while ( ToEat > 0 )
+    	set ToEat to ToEat - 1
+    	set hungry to hungry - 1
+    	if loststrength >= 1					; recover lost abilities
+    		set loststrength to ( loststrength - 1 )
+    		Player->ModStrength 1 
+    	endif
+    	if lostagility >= 1
+    		set lostagility to ( lostagility - 1 )
+    		Player->ModAgility 1
+    	endif
+    	if lostspeed >= 1
+    		set lostspeed to ( lostspeed - 1 )
+    		Player->ModSpeed 1
+    	endif
+    	if lostpersonality >= 1
+    		set lostpersonality to ( lostpersonality - 1 )
+    		Player->Modpersonality 1
+    	endif
+    	if ( hungry == 0)
+    		if (ToEat > 0)
+    			set ToEat to 0
+    			messagebox "Вы объелись, и теперь более чем сыты."
+    			cast, bloated player
+    		endif
+    	endif
+    endwhile
+    
+    if ( warning1 == 1 )
+    	if ( hungry <= 6 )
+    		MessageBox, "Кажется Вы слегка проголодались."
+    		elseif ( hungry <= 14 )
+    			MessageBox, "Да, Вы проголодались."
+    			elseif ( hungry <= 24 )
+    				MessageBox, "Вы действитнльно голодны."
+    				elseif ( hungry <= 40  )
+    					MessageBox, "Ваш голод очень силен!"
+    					elseif ( hungry <= 50 )
+    						MessageBox, "Вы смертельно голодны, срочно требуется питание!"
+    						elseif ( hungry == 59 )
+    							MessageBox, "Вы должны срочно что-то съесть, иначе помрете с голоду."
+    							elseif (hungry >= 60 )
+    								MessageBox, "Вы умерли голодной смертью. RIP."
+    								Player->SetHealth 0
+    	endif
+    	set warning1 to 0
+    endif
+    End Balors_hunger
+
+SCPT
+SCHD Bal_stamina_drain 1 0 8 615 77
+SCVR jDis;bogustemp;deathly_tired;drain_timer;fTimer;fRatio;fMaxFat;fCurFat;fDiff;;
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQERIEcJUENWYW1waXJlID09IDEkAQkBBgEBHiBHFnNpeGhfcGxheWVydHJhbnNmb3JtZWQgIT0gMCQBCQEMAQZwbGF5ZXIGAQEJIFiMECA8PSAwJAEJAQwBBnBsYXllcjQRbxKDugUBZgQACiBmBAAgWBIQICsGARUIIGYEACA+IDIFAWYEAAIgMAwBBnBsYXllcgUBZgcABSBYkhAABgEGCCBmBwAgPiAwDAEGcGxheWVyNBEAQBxGDAEGcGxheWVyBQFmBgAFIFiSEAAFAWYFAAogZgcAIGYGACAvBQFmCAAKIGYGACBmBwAgLQUBZggACSBmCAAgLTEgKgwBBnBsYXllcjQRZggAAAkBBgEECiBmBQAgPCAwLjEGAQIJIHMBACAhPSAxQBEFAXMBAAIgMQkBCAEECyBmBQAgPiAwLjE1BgECCSBzAQAgPT0gMT8RBQFzAQACIDAJAQkBCQEMAQZwbGF5ZXIGAQEJIFiSECA8PSAwBQFmAgAKIGYCACBYEhAgKwcBAQUBZgIAAiAwCQEGAQMJIGYCACA+PSA4ABA2AML7IPPy7uzr5e37IO3g8fLu6/zq7iwg9/Lu7eUg7O7m5fLlIO/u5O3/8vzx/yDt4CDt7uPoLgAABQFmAgACIDDlEAkBBgEBFSBHDURyYWluX2ZhdGlxdWUgPj0gMCQBCQEFAWYBABEgRw1EcmFpbl9mYXRpcXVlAAUBZgMACiBmAwAgWBIQICsGAQIJIGYDACA+PS4yDAEGcGxheWVyNBFmAQAABQFmAwACIDAJAQEB
+SCTX
+    Begin Bal_stamina_drain
+    											;Drain stamina if PC is tired.
+    float bogustemp						;Local vars only in mod stat! What the hell? Oh well...
+    float deathly_tired
+    float drain_timer
+    float fTimer
+    float fRatio 
+    float fMaxFat 
+    float fCurFat 
+    float fDiff 
+    short jDis
+    
+    if ( MenuMode == 1 ) 					;Bad idea to do that in MenuMode...
+    	return
+    endif
+    
+    if ( PCVampire == 1 )					;Vamps are undead... And therefore immune to stamina drains and such (at least supposed to).
+    	return
+    endif
+    
+    if ( sixh_playertransformed != 0 )
+    	return
+    endif
+    
+    if ( player->gethealth <= 0 )
+    	return
+    endif
+    
+    player->ModCurrentFatigue -0.001 ;That little tweak fixes unlimited running on zero stamina.
+    
+    set fTimer to ( fTimer + GetSecondsPassed ) 
+    if ( fTimer > 2 ) 
+    	set fTimer to 0 
+    	set fCurFat to ( player->GetFatigue ) 
+    	if ( fCurFat > 0 ) 
+    		player->ModCurrentFatigue, 10000 
+    		set fMaxFat to ( player->GetFatigue ) 
+    		set fRatio to ( fCurFat / fMaxFat ) 
+    
+    		set fDiff to ( fMaxFat - fCurFat ) 
+    		set fDiff to ( fDiff * -1 ) 
+    		player->ModCurrentFatigue, fDiff 
+    	endif 
+    	if ( fRatio < 0.1 )
+    		if ( jDis != 1 )
+    			DisablePlayerJumping
+    ;			MessageBox, "Вы устали и не можете прыгать!"
+    			set jDis to 1
+    		endif
+    	elseif ( fRatio > 0.15 )
+    		if ( jDis == 1 )
+    			EnablePlayerJumping
+    ;			MessageBox, "Теперь Вы способны прыгать"
+    			set jDis to 0
+    		endif
+    	endif
+    
+    endif 
+    if ( player->getfatigue <= 0 )
+    	set deathly_tired to deathly_tired + GetSecondsPassed
+    else
+    	set deathly_tired to 0
+    endif
+    
+    if ( deathly_tired >= 8 )
+    	messagebox, "Вы утомлены настолько, чтоне можете подняться на ноги."
+    	set deathly_tired to 0
+    	ShowRestMenu
+    endif
+    
+    if ( Drain_fatique >= 0 )				;So you are not tired... yet.
+    	return
+    endif
+    
+    set bogustemp to Drain_fatique
+    
+    set drain_timer to drain_timer + GetSecondsPassed
+    if ( drain_timer >= .2 )
+    	player->ModCurrentFatigue bogustemp
+    	set drain_timer to 0
+    endif
+    End Balor_stamina_drain
+
+SCPT
+SCHD Bal_thirst 9 0 9 11664 173
+SCVR done;Interval;WhileCheck;WhileCounter;DayDone;warning1;imdead;htemp;ctemp;CurrentDay;CurrentHour;HourCounter;thirst;loststrength;lostagility;lostspeed;lostpersonality;btemp;;
+SCDT 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
+SCTX
+    Begin Bal_thirst
+    
+    ; This script tracks character thirst and currently works depending on constitution:
+    ; Starting with 30 con - 4 hours to get thirsty, plus one to each extra 10 con.
+    ; Drinking a water ration satisfies and reduces thirst.  
+    ; You thirst to death after 7 days without water. (That would be 168 hours)
+    
+    float CurrentDay							; just a counter 
+    float CurrentHour							; just a counter 
+    float HourCounter							; just a counter 
+    float thirst									; thirst level, scaled from 0 (full ) to 28 (dead)
+    float loststrength							; stores lost strength points
+    float lostagility								; stores lost agility points
+    float lostspeed								; stores lost speed points
+    float lostpersonality						; stores lost intelligence points
+    short done									; used only 1st time to set beginning day
+    short Interval								; Con-based interval to get mor tired.
+    short WhileCheck							; Self-explanatory, isnot it? :)
+    short WhileCounter						; see above /|\\
+    short DayDone								; flag to to see if day has passed
+    short warning1								; used to warn of getting thirsty
+    short imdead								; used once when dead
+    short htemp									; counter for each 6 hours passed 
+    short ctemp									; for while
+    float btemp									; bogus temp var
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    if ( CharGenState != -1 )
+    	return
+    endif
+    
+    if ( PCInJail == 1 )
+    	return
+    endif
+    
+    ; Vampires dont have to drink... At least they dont have to drink water!
+    ; However if you was thirsty before...
+    set ctemp to 0
+    if ( PCVampire == 1 )
+    	set ctemp to 1
+    elseif ( sixh_playertransformed != 0 )
+    	set ctemp to 1
+    endif
+    if ( ctemp == 1 )
+    	if ( thirst > 0 )
+    		set thirst to 0
+    		if loststrength > 0					; recover lost abilities
+    			Player->ModStrength loststrength
+    			set loststrength to 0
+    		endif
+    		if lostagility > 0
+    			Player->ModAgility lostagility
+    			set lostagility to 0
+    		endif
+    		if lostspeed > 0
+    			Player->ModSpeed lostspeed
+    			set lostspeed to 0
+    		endif
+    		if lostpersonality > 0
+    			Player->Modpersonality lostpersonality
+    			set lostpersonality to 0
+    		endif
+    	endif
+    	return
+    endif
+    
+    
+    if ( done == 0 )
+    	set CurrentHour to GameHour
+    	set CurrentDay to Day
+    	set done to 1
+    	set WhileCheck to 4
+    	set WhileCounter to 30
+    	while ( WhileCheck > 0 )
+    		If ( player->GetEndurance <= WhileCounter )
+    			Set Interval to WhileCheck
+    			set WhileCheck to 0
+    			else 
+    				set WhileCheck to WhileCheck + 1
+    				set WhileCounter to WhileCounter + 10
+    		endif
+    	endwhile
+    endif
+    
+    
+    if ( CurrentDay != Day )
+    	set CurrentDay to Day
+    	set DayDone to 1
+    	set WhileCheck to 4
+    	set WhileCounter to 30
+    	while ( WhileCheck > 0 )
+    		If ( player->GetEndurance <= WhileCounter )
+    			Set Interval to WhileCheck
+    			set WhileCheck to 0
+    			else 
+    				set WhileCheck to WhileCheck + 1
+    				set WhileCounter to WhileCounter + 10
+    		endif
+    	endwhile
+    endif
+    
+    
+    if ( DayDone == 1 )							; If Day has changed.
+    													; Calculate HourCounter.
+    	set DayDone to 0
+    	if ( PlayerSlept == 1 )						; You have rested.
+    													; And while you were resting, day passed.
+    		set HourCounter to  HourCounter + ( ( GameHour - CurrentHour + 24 ) / 2 )
+    		set CurrentHour to GameHour
+    	elseif ( PlayerSlept == 0 )						; You have NOT rested, day passed.
+    		set HourCounter to ( HourCounter + GameHour - CurrentHour + 24  )
+    		set CurrentHour to GameHour
+    	endif			;Endif for sleep check.
+    else																	; Now check for hour change, in case day stays the same.
+    	set btemp to ( GameHour - CurrentHour )					; Stupid "If" dont take math operations.
+    	if ( btemp >= 1 )												; At least one hour has passed.
+    																		; Update timer.
+    		if ( PlayerSlept == 1 )										; You have rested.
+    																		;Calculate hours of sleep.
+    			set HourCounter to HourCounter + ( ( GameHour - CurrentHour ) / 2 )
+    			set CurrentHour to GameHour
+    		else												; You have NOT rested.
+    			set HourCounter to ( HourCounter + GameHour - CurrentHour )
+    			set CurrentHour to GameHour
+    		endif			;Endif for sleep check.
+    	endif				;Endif for hour change check.
+    endif					;Endif for day change check.
+    
+    if ( HourCounter >=  Interval )														; Interval or more hours has passed and I'm thirsty
+    	while ( HourCounter >=  Interval )
+    		Set HourCounter to ( HourCounter - Interval )
+    		set thirst to ( thirst + 1 )
+    		set htemp to ( htemp + 1)
+    	endwhile
+    endif
+    
+    ; Save some CPU time
+    if (thirst == 0 )								
+    	return
+    endif
+    
+    
+    if ( thirst > 0 )										; each 6 hours i lose abilities
+    	if ( htemp > 0 )
+    	while ( htemp > 0 )
+    		if ( Player->GetStrength >= 1 )
+    			Player->ModStrength -1
+    			set loststrength to ( loststrength + 1 )
+    		endif
+    		if ( Player->GetAgility >= 1 )
+    			Player->ModAgility -1
+    			set lostagility to ( lostagility + 1 )
+    		endif
+    		if ( Player->Getpersonality >= 1 )
+    			Player->Modpersonality -1
+    			set lostpersonality to ( lostpersonality + 1 )
+    		endif
+    		if ( Player->GetSpeed >= 1 ) 
+    			Player->ModSpeed -1
+    			set lostspeed to ( lostspeed + 1 )
+    		endif
+    		set htemp to ( htemp - 1 )
+    	endwhile
+    	set warning1 to 1
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Drunk_from_well == 1)
+    		MessageBox, "Вы напились вдоволь и подавили жажду."
+    		while ( thirst > 0 )
+    			if loststrength > 0					; recover lost abilities
+    				set loststrength to ( loststrength - 1 )
+    				Player->ModStrength 1 
+    			endif
+    			if lostagility > 0
+    				set lostagility to ( lostagility - 1 )
+    				Player->ModAgility 1
+    			endif
+    			if lostspeed > 0
+    				set lostspeed to ( lostspeed - 1 )
+    				Player->ModSpeed 1
+    			endif
+    			if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    				Player->Modpersonality 1
+    			endif
+    			set thirst to (thirst - 1 )
+    		endwhile
+    		set warning1 to 0
+    		set Drunk_from_well to 0
+    	endif
+    endif	
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "full_waterskin" > 0 )			
+    		Player->RemoveItem "full_waterskin" 1
+               MessageBox, "Вы выпили немного жидкости из бурдюка и утолили жажду."
+    		Player->AddItem "nearlyfull_waterskin" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "nearlyfull_waterskin" > 0 )			
+    		Player->RemoveItem "nearlyfull_waterskin" 1
+               MessageBox, "Вы выпили немного из бурдюка, утолили жажду. Бурдюк теперь полон наполовину."
+    		Player->AddItem "halffull_waterskin" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "halffull_waterskin" > 0 )			
+    		Player->RemoveItem "halffull_waterskin" 1
+               MessageBox, "Вы выпили немного из бурдюка, утолили жажду. Бурдюк теперь больше чем наполовину пуст."
+    		Player->AddItem "nearlyhalf_waterskin" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "nearlyhalf_waterskin" > 0 )			
+    		Player->RemoveItem "nearlyhalf_waterskin" 1
+               MessageBox, "Вы выпили немного из бурдюка, утолили жажду. Бурдюк теперь почти пуст."
+    		Player->AddItem "nearlyempty_waterskin" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "nearlyempty_waterskin" > 0 )			
+    		Player->RemoveItem "nearlyempty_waterskin" 1
+               MessageBox, "Вы выпили немного из бурдюка, утолили жажду. Бурдюк пуст теперь совсем. Нужно найти воду!"
+    		Player->AddItem "empty_waterskin" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_01f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_01f" 1
+               MessageBox, "Вы испили из бутылки и слегка утолили жажду."
+    		Player->AddItem "misc_com_bottle_01" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_02f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_02f" 1
+               MessageBox, "Вы опустошили бутылку для утоления жажды."
+    		Player->AddItem "misc_com_bottle_02" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    \x0Cif (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_03f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_03f" 1
+               MessageBox, "Вы опустошили бутылку для утоления жажды."
+    		Player->AddItem "misc_com_bottle_03" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_04f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_04f" 1
+               MessageBox, "Вы опустошили бутылку для утоления жажды."
+    		Player->AddItem "misc_com_bottle_04" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_05f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_05f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_05" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_06f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_06f" 1
+               MessageBox, "Вы опустошили бутылку для утоления жажды."
+    		Player->AddItem "misc_com_bottle_06" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_07f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_07f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_07" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_08f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_08f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_08" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_09f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_09f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_09" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_10f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_10f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_10" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_11f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_11f" 1
+               MessageBox, "Вы выдули все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_11" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_12f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_12f" 1
+               MessageBox, "Вы вылакали все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_12" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_13f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_13f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_13" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_14f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_14f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_14" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bottle_15f" > 0 )			
+    		Player->RemoveItem "misc_com_bottle_15f" 1
+               MessageBox, "Вы выпили все содержимое бутылки, утоляя жажду."
+    		Player->AddItem "misc_com_bottle_15" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_bucket_01f" > 0 )			
+    		Player->RemoveItem "misc_com_bucket_01f" 1
+               MessageBox, "Вы выпили все содержимое кадушки, утоляя жажду."
+    		Player->AddItem "misc_com_bucket_01" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "Misc_Com_Bucket_Metalf" > 0 )			
+    		Player->RemoveItem "Misc_Com_Bucket_Metalf" 1
+               MessageBox, "Вы выпили все содержимое ведерка, утоляя жажду."
+    		Player->AddItem "Misc_Com_Bucket_Metal" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_com_redware_pitcherf" > 0 )			
+    		Player->RemoveItem "misc_com_redware_pitcherf" 1
+               MessageBox, "Вы выпили все содержимое кувшина, утоляя жажду."
+    		Player->AddItem "misc_com_redware_pitcher" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "misc_imp_silverware_pitcherf" > 0 )			
+    		Player->RemoveItem "misc_imp_silverware_pitcherf" 1
+               MessageBox, "Вы выпили все содержимое кувшина, утоляя жажду."
+    		Player->AddItem "misc_imp_silverware_pitcher" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if (thirst > 0 )								
+    	if ( Player->GetItemCount "Misc_Com_Pitcher_Metal_01f" > 0 )			
+    		Player->RemoveItem "Misc_Com_Pitcher_Metal_01f" 1
+               MessageBox, "Вы выпили все содержимое кувшина, утоляя жажду."
+    		Player->AddItem "Misc_Com_Pitcher_Metal_01" 1
+               set thirst to (thirst - 1 )
+    		if loststrength > 0					; recover lost abilities
+    			set loststrength to ( loststrength - 1 )
+    			Player->ModStrength 1 
+    		endif
+    		if lostagility > 0
+    			set lostagility to ( lostagility - 1 )
+    			Player->ModAgility 1
+    		endif
+    		if lostspeed > 0
+    			set lostspeed to ( lostspeed - 1 )
+    			Player->ModSpeed 1
+    		endif
+    		if lostpersonality > 0
+    			set lostpersonality to ( lostpersonality - 1 )
+    			Player->Modpersonality 1
+    		endif
+    		set warning1 to 0
+    	endif
+    endif
+    
+    if ( warning1 == 1 )
+    	if ( thirst <= 3 )
+    		MessageBox, "Кажется Вам захотелось промочить горло."
+    		elseif ( thirst <= 7 )
+    			MessageBox, "Вы хотите пить."
+    			elseif ( thirst <= 12 )
+    				MessageBox, "Да, вы ощущаете сильную жажду."
+    				elseif ( thirst <= 20  )
+    					MessageBox, "Жажда очень сильно допекает Вас!"
+    					elseif ( thirst <= 26 )
+    						MessageBox, "Жажда смертельно замучила Вас. Найдите и выпейте что-нибудь!"
+    						elseif ( thirst == 27 )
+    							MessageBox, "Вам немедленно нужно выпить что-нибудь, иначе умрете от обезвоживания"
+    							elseif (thirst == 28 )
+    								MessageBox, "Вы умерли от обезвоживания. RIP."
+    								Player->SetHealth 0
+    	endif
+    	set warning1 to 0
+    endif 
+    if ( Global_thirst != thirst )
+    	set Global_thirst  to thirst  ; Second Patch "fixed" a issue which formerly allowed me to drink from wells without any globals...
+    endif
+    
+    End Balors_thirst
+
+SCPT
+SCHD Bal_weariness 9 0 10 3876 194
+SCVR Interval;WhileCheck;WhileCounter;done;DayDone;warning1;RestMessage;ttemp;ctemp;CurrentDay;CurrentHour;HourCounter;HoursRested;weariness;loststrength;lostagility;lostspeed;lostintelligence;btemp;;
+SCDT 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
+SCTX
+    Begin Bal_weariness
+    
+    ; This script tracks character weariness and currently works depending on constitution:
+    ; Starting with 20 con - 4 hours to get tired, plus one to each extra 10 con.
+    ; Resting (Not waiting) restores lost stats and stamina regen.
+    ; You die from undersleep after 120 hours.
+    
+    float CurrentDay							; just a counter 
+    float CurrentHour							; just a counter 
+    float HourCounter							; just a counter 
+    float HoursRested							; How many hours you have rested
+    float weariness								; weariness level, scaled from 0 (full ) to 20 (dead)
+    float loststrength							; stores lost strength points
+    float lostagility								; stores lost agility points
+    float lostspeed								; stores lost speed points
+    float lostintelligence						; stores lost intelligence points
+    short Interval								; Con-based interval to get mor tired.
+    short WhileCheck							; Self-explanatory, isnot it? :)
+    short WhileCounter						; see above /|\\
+    short done									; used only 1st time to set beginning day
+    short DayDone								; flag to to see if day has passed
+    short warning1								; used to warn of been weary
+    short RestMessage 						; rest messages
+    short ttemp									; counter for each con-based interval passed 
+    short ctemp									; for while
+    float btemp									; bogus temp var
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    if ( CharGenState != -1 )
+    	return
+    endif
+    
+    if ( PCInJail == 1 )
+    	return
+    endif
+    
+    ; Vampires are undead, and need no rest (from my point of view). However if you were tired before becoming a vamp...
+    set ctemp to 0
+    if ( PCVampire == 1 )
+    	set ctemp to 1
+    elseif ( sixh_playertransformed != 0 )
+    	set ctemp to 1
+    endif
+    if ( ctemp == 1 )
+    	if ( weariness > 0 )
+    		set weariness to 0
+    		set Drain_fatique to 0
+    		if loststrength > 0					; recover lost abilities
+    			Player->ModStrength loststrength
+    			set loststrength to 0
+    		endif
+    		if lostagility > 0
+    			Player->ModAgility lostagility
+    			set lostagility to 0
+    		endif
+    		if lostspeed > 0
+    			Player->ModSpeed lostspeed
+    			set lostspeed to 0
+    		endif
+    		if lostintelligence > 0
+    			Player->ModIntelligence lostintelligence
+    			set lostintelligence to 0
+    		endif
+    	endif
+    	return
+    endif
+    
+    if ( done == 0 )
+    	set CurrentHour to GameHour
+    	set CurrentDay to Day
+    	set done to 1
+    	set WhileCheck to 4
+    	set WhileCounter to 20
+    	while ( WhileCheck > 0 )
+    		If ( player->GetEndurance <= WhileCounter )
+    			Set Interval to WhileCheck
+    			set WhileCheck to 0
+    			else 
+    				set WhileCheck to WhileCheck + 1
+    				set WhileCounter to WhileCounter + 10
+    		endif
+    	endwhile
+    endif
+    
+    
+    if ( CurrentDay != Day )
+    	set CurrentDay to Day
+    	set DayDone to 1
+    	set WhileCheck to 4
+    	set WhileCounter to 20
+    	while ( WhileCheck > 0 )
+    		If ( player->GetEndurance <= WhileCounter )
+    			Set Interval to WhileCheck
+    			set WhileCheck to 0
+    			else 
+    				set WhileCheck to WhileCheck + 1
+    				set WhileCounter to WhileCounter + 10
+    		endif
+    	endwhile
+    endif
+    
+    
+    if ( DayDone == 1 )							; If Day has changed.
+    													; Calculate HourCounter.
+    	set DayDone to 0
+    	if ( PlayerSlept == 1 )						; You have rested.
+    													; And while you were resting, day passed.
+    		set HourCounter to ( GameHour - CurrentHour + 24 )
+    		set CurrentHour to GameHour
+    			if (weariness  > 0 )								
+    				set HoursRested to HourCounter * sleep_mod
+    			endif	
+    		set HourCounter to 0
+    	elseif ( PlayerSlept == 0 )						; You have NOT rested, day passed.
+    		set HourCounter to ( HourCounter + GameHour - CurrentHour + 24 )
+    		set CurrentHour to GameHour
+    		if ( HourCounter >=  Interval )														; Interval or more hours has passed and I'm tired
+    			while ( HourCounter >=  Interval )
+    				Set HourCounter to ( HourCounter - Interval )
+    				set weariness to ( weariness + 1 )
+    				set ttemp to ( ttemp + 1)
+    			endwhile
+    		endif		;Endif for hour counter check.
+    	endif			;Endif for sleep check.
+    else																	; Now check for hour change, in case day stays the same.
+    	set btemp to ( GameHour - CurrentHour )					; Stupid "If" dont take math operations.
+    	if ( btemp >= 1 )												; At least one hour has passed.
+    																		; Update timer.
+    		if ( PlayerSlept == 1 )										; You have rested.
+    																		; Calculate hours of sleep.
+    			set HourCounter to ( GameHour - CurrentHour )
+    			set CurrentHour to GameHour
+    			if (weariness  > 0 )								
+    				set HoursRested to HourCounter * sleep_mod
+    			endif	
+    			set HourCounter to 0
+    		else												; You have NOT rested.
+    			set HourCounter to ( HourCounter + GameHour - CurrentHour )
+    			set CurrentHour to GameHour
+    			if ( HourCounter >=  Interval )														; Interval or more hours has passed and I'm tired
+    				while ( HourCounter >=  Interval )
+    					Set HourCounter to ( HourCounter - Interval )
+    					set weariness to ( weariness + 1 )
+    					set ttemp to ( ttemp + 1)
+    				endwhile
+    			endif		;Endif for hour counter check.
+    		endif			;Endif for sleep check.
+    	endif				;Endif for hour change check.
+    endif					;Endif for day change check.
+    
+    ; Save some CPU time
+    if (weariness  == 0 )
+    	if ( Glo_energize == 1 )
+    		set Glo_energize to 0
+    		messagebox, "Вы не утомлены"
+    	endif
+    	if ( PlayerSlept != 1 )
+    		return
+    	endif
+    endif
+    
+    if ( Glo_energize == 1 )
+    	Set PlayerSlept to 1
+    	Set HoursRested to 1
+    endif
+    
+    if ( weariness > 0 )								;That one to manage sleep refreshment.
+    	if ( PlayerSlept == 1 )
+    		if ( HoursRested >= 1 )
+    			while ( weariness > 0 )
+    				set weariness to ( weariness - 1 )
+    				set HoursRested to ( HoursRested - 1 )
+    				set Drain_fatique to ( Drain_fatique + 0.05 )
+    				if loststrength > 0					; recover lost abilities
+    					set loststrength to ( loststrength - 1 )
+    					Player->ModStrength 1 
+    				endif
+    				if lostagility > 0
+    					set lostagility to ( lostagility - 1 )
+    					Player->ModAgility 1
+    				endif
+    				if lostspeed > 0
+    					set lostspeed to ( lostspeed - 1 )
+    					Player->ModSpeed 1
+    				endif
+    				if lostintelligence > 0
+    					set lostintelligence to ( lostintelligence - 1 )
+    					Player->Modintelligence 1
+    				endif
+    				if ( HoursRested < 1 )
+    					if ( Glo_energize == 1 )
+    						Set Glo_energize to 2
+    					endif
+    					return
+    				endif
+    			endwhile
+    		endif
+    	endif
+    endif
+    
+    if ( PlayerSlept == 1 )
+    	Set PlayerSlept to 0
+    
+    	if ( weariness < 4 )
+    		player->removespell, "Sleepy_little"
+    		player->removespell,"Sleepy_really"
+    		player->removespell, "Sleepy_extremely"
+    		player->removespell, "Sleepy_deadly"
+    		set RestMessage to 3
+    		elseif ( weariness < 8 )
+    			set RestMessage to 7
+    			player->addspell, "Sleepy_little"
+    			player->removespell,"Sleepy_really"
+    			player->removespell, "Sleepy_extremely"
+    			player->removespell, "Sleepy_deadly"
+    			elseif ( weariness < 12 )
+    				set RestMessage to 11
+    				player->addspell, "Sleepy_really"
+    				player->removespell, "Sleepy_extremely"
+    				player->removespell, "Sleepy_deadly"
+    				elseif ( weariness < 16  )
+    					set RestMessage to 15
+    					player->addspell, "Sleepy_extremely"
+    					player->removespell, "Sleepy_deadly"
+    	endif
+    	if ( Glo_energize == 2 )
+    		MessageBox, "Заклинание взбодрило Вас, сонливость прошла... За счет здоровья."
+    		Set Glo_energize to 0
+    		set RestMessage to 0
+    		return
+    	endif
+    
+    	if ( RestMessage == 3 )
+    		MessageBox, "Вы пробуждаетесь с посвежевшими чувствами, с высокой активностью и готовность идти."
+    		set RestMessage to 0
+    		elseif ( RestMessage == 7 )
+    			MessageBox, "Вы проснулись посвежевшим, однако все еще немного сонным созданием."
+    			set RestMessage to 0
+    			elseif ( RestMessage == 11 )
+    				MessageBox, "Ваш отдых был недостаточен, Вы все еще утомлены. Стоит отдохнуть несколько больше."
+    				set RestMessage to 0
+    				elseif ( RestMessage == 15  )
+    					MessageBox, "Вы понимаете, насколько устали, хоть и чувствуете себя чуть лучше. Не вредно проспать еще минуточек семьсот."
+    					set RestMessage to 0
+    					else 
+    						MessageBox, "Вы пробуждаетесь с неохотой и с трудом встаете. Так мало отдыха после очень длительной активности не спасают."
+    	endif
+    endif
+    
+    if ( weariness > 0 )										; each Interval hours i lose abilities
+    	if ( ttemp > 0 )
+    	while ( ttemp > 0 )
+    		set Drain_fatique to ( Drain_fatique - 0.05 )
+    		if ( Player->GetStrength > 1 )
+    			Player->ModStrength -1
+    			set loststrength to ( loststrength + 1 )
+    		endif
+    		if ( Player->GetAgility > 1 )
+    			Player->ModAgility -1
+    			set lostagility to ( lostagility + 1 )
+    		endif
+    		if ( Player->Getintelligence > 1 )
+    			Player->Modintelligence -1
+    			set lostintelligence to ( lostintelligence + 1 )
+    		endif
+    		if ( Player->GetSpeed > 1 ) 
+    			Player->ModSpeed -1
+    			set lostspeed to ( lostspeed + 1 )
+    		endif
+    		set ttemp to ( ttemp - 1 )
+    	endwhile
+    	set warning1 to 1 
+    	endif
+    endif
+    
+    if ( warning1 == 1 )
+    	if ( weariness <= 3 )
+    		MessageBox, "Кажется Вы слегка устали."
+    		elseif ( weariness <= 4 )
+    			MessageBox, "Вы устали."
+    			player->addspell, "Sleepy_little"
+    			elseif ( weariness <= 8 )
+    				MessageBox, "Вы реально устали!."
+    				player->addspell, "Sleepy_really"
+    				player->removespell, "Sleepy_little"
+    				elseif ( weariness <= 12  )
+    					MessageBox, "Вы чрезвычайно устали!"
+    					player->addspell, "Sleepy_extremely"
+    					player->removespell, "Sleepy_really"
+    					player->removespell, "Sleepy_little"
+    					elseif ( weariness <= 16 )
+    						MessageBox, "Вы смертельно устали. Нужно срочно отдыхать!"
+    						player->addspell, "Sleepy_deadly"
+    						player->removespell, "Sleepy_extremely"
+    						player->removespell, "Sleepy_really"
+    						elseif ( weariness == 19 )
+    							MessageBox, "Вы должны остановиться и отдохнуть, иначе загоните себя в гроб."
+    							elseif (weariness >= 20 )
+    								MessageBox, "Вы умерли от усталости. RIP."
+    								Player->SetHealth 0
+    	endif
+    	set warning1 to 0
+    endif 
+    
+    End balors_weariness
