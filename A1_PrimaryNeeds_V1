@@ -1,8 +1,8 @@
 TES3
 HEDR ESP 1067869798
     A1
-    Самое необходимое (почти по Стивену Кингу :)). Или: кушать, пить, спать, что ещё нехватает человеку в игре?
-    Основан на GL_Primary_Needs_2.7_MTB_RUSv1.0, созданном Balor <balor_abyss@mail.ru> и адаптированном Galib<Galleobor@yandex.ru>
+    Кушать, пить, спать, что ещё не хватает человеку в игре?
+    Основан на GL_Primary_Needs_2.7_MTB_RUSv1.0, созданном Balor <balor_abyss@mail.ru> и адаптированном Galib <Galleobor@yandex.ru>
 MAST Morrowind.esm
 DATA 79764287
 MAST Tribunal.esm
@@ -401,7 +401,7 @@ SCTX
     	return
     endif
     
-    End\0
+    End
 
 SCPT
 SCHD A1V1_MesskitDel_sc 0 0 0 96 0
@@ -415,7 +415,7 @@ SCTX
     
     StopScript A1V1_MesskitDel_sc
     
-    End\0
+    End
 
 SCPT
 SCHD A1V1_MesskitEat 0 0 0 20 0
@@ -425,7 +425,7 @@ SCTX
     
     StopScript A1V1_MesskitEat
     
-    End\0
+    End
 
 SCPT
 SCHD A1V1_MesskitItem_sc 1 0 0 147 9
@@ -450,7 +450,7 @@ SCTX
     	Disable
     endif
     
-    End\0
+    End
 
 SCPT
 SCHD A1V1_StartPriNe 1 0 0 73 7
@@ -468,11 +468,11 @@ SCTX
     
     StopScript A1V1_StartPriNe
     
-    End\0
+    End
 
 SSCR
-DATA 789011789164707584
-NAME A1V1_StartPriNe
+DATA 789011789164707584%
+NAME A1V1_StartPriNe%
 
 MISC
 NAME A1V1_MesskitItem
@@ -511,53 +511,6 @@ IRDT
     -1 -1 -1 -1
     -1 -1 -1 -1
 ITEX m\\Tx_bread_01.tga
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAA0AAAD1////
-RGNN Azura's Coast Region
-
-CELL
-NAME Yansirramus
-DATA QgAAAAwAAAAEAAAA
-RGNN Azura's Coast Region
-NAM5 6333898
-
-CELL
-NAME \0\0\0\0\0
-DATA QgAAAAcAAAD3////
-RGNN Ascadian Isles Region
-NAM5 7216750
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAAIAAAAJAAAA
-RGNN Red Mountain Region
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAAEAAAARAAAA
-RGNN Ashlands Region
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAAAAAAAAAAAA
-RGNN Ashlands Region
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAAAAAAD3////
-RGNN Ascadian Isles Region
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAP3///8FAAAA
-RGNN Ashlands Region
-
-CELL
-NAME \0\0\0\0\0
-DATA AgAAAPj////8////
-RGNN Bitter Coast Region
 
 SCPT
 SCHD A1V1_MesskitUpdate_sc 0 2 0 1920 15
@@ -706,6 +659,4 @@ SCTX
     
     StopScript A1V1_MesskitUpdate_sc
     
-    End\0
-
-# 27
+    End
