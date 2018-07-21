@@ -11,61 +11,6 @@ DATA 6616539
 MAST Bloodmoon.esm
 DATA 11799703
 
-BOOK
-NAME deepnight_labelAdvCrate
-MODL m\\Misc_paper_plain_01.nif
-FNAM Заметка
-BKDT CtcjPAAAAAABAAAA/////zIAAAA=
-ITEX m\\Tx_paper_plain_01.tga
-TEXT
-    <DIV ALIGN="CENTER"><FONT COLOR="000000" SIZE="3" FACE="Волшебные карты"><BR>
-    Обращаться с осторожностью<BR>
-
-BOOK
-NAME bk_MessKitInstructions
-MODL m\\Text_Octavo_06.nif
-FNAM О потреблении пищи
-BKDT AAAAQMgAAAAAAAAAEAAAAOgDAAA=
-ITEX m\\Tx_book_03.tga
-TEXT
-    <DIV ALIGN="CENTER"><FONT COLOR="000000" SIZE="3" FACE="Magic Cards"><BR>
-    Познание Столового комплекта: ваш руководство к правильному питанию (по Полю Брэггу)!<BR><BR>
-    <DIV ALIGN="LEFT"><BR><BR>
-    Обычно, когда компоненты используются в сыром виде и без явного намерения утолить голод (без использования столовых приборов) питательные вещества не усваиваются, и не производят должного питательного эффекта на потребителя. Из-за этого, потребитель будет не в состоянии использовать питательные вещества, чтобы восстановить свою конституцию. При еде из блюд (в вашем Столовом Комплекте) или приготовлении пищи на огне, питательные вещества дистиллируются намеренно или флеймом, для питания организма.
-    <BR>
-    Если Вы используете Столовый комплект для потребления пищи Вам, вероятно, понадобится по крайней мере вилка, хотя Вы можете есть и пальцами, и прямо с земли. Вилка будет всегда разрешать успешную еду; хотя вилка одна - недостаточно удобна, чтобы резать пищу на куски, и в конечном счете - будет часто ломаться. Для большего успеха, Вы должны иметь и вилку и нож в вашем комплекте. Ножи и вилки имеют неприятное свойство затупляться и даже ломаться при большом усердии едока, потому рекомендуется использовать качественные приборы и посуду.
-    <BR>
-    Для принятия пищи необходимо установить ваш Столовый комплект на плоской поверхности и поместить в него посуду. Затем выбрать продовольствие, которое Вы желаете потребить и разместить его в комплект. Теперь закопайте!
-    <BR>
-    <BR>
-    <BR>
-    Что Вы можете съесть: <BR>
-    1 хлеб <BR>
-    1 скаттл <BR>
-    1 маленькое яйцо квама <BR>
-    2 соленый рис <BR>
-    1 большое яйцо квама <BR>
-    2 пепельный батат <BR>
-    1 вяленая скрибятина <BR>
-    1 скрибовое желе <BR>
-    1 пробочник <BR>
-    2 комунику <BR>
-    1 мясо краба <BR>
-    1 мясо собаки <BR>
-    1 человеческое мясо <BR>
-    1 шкуру кагути <BR>
-    2 муск <BR>
-    1 мясо крысы <BR>
-    1 корень трамы<BR>
-    <BR>
-    <BR>
-    <BR>
-    Некоторые дополнительные блюда могут быть сделаны у походного костра ... <BR>
-    <BR>
-    Не забудьте захватить с собой ткань (салфетки), тем более, при еде без посуды. Ваше проворство может пострадать от скользких рук, не говоря уже о людях, которым, вероятно будет смешно видеть вымазанную пищей физиономию ... <BR>
-    <BR>
-    
-
 GLOB
 NAME TimeScale
 FNAM f%
@@ -887,51 +832,9 @@ SCTX
     End
 
 SCPT
-SCHD Bal_messkit_misc 3 0 0 305 25
-SCVR OnPCDrop;OnPCEquip;state;;
-SCDT BgEFCSBzAQAgPT0gMdsQqxEBAOYQC0JhbF9tZXNza2l0AQAAAAAAAAAFAXMBAAIgMAAQSgDD6//t/PLlIOLt6Ocg6CDn4O/o9eDp8uUg4uD46CDv8Ojh7vD7IOgg7/Du5O7i7uv88fLi6OUg4iDR8u7r7uL76SDK7uzv6+Xq8gAACQEGAQYJIHMCACA9PSAxBgEBDSBHBmh1bmdyeSA+IDAFAXMDAAIgMQcBAQAQMQDC+yDt5eTu8fLg8u737e4g4+7r7uTt+ywg9/Lu4fsg5fHy/CDv8P/s7iDx5en34PEuAAAJAQUBcwIAAiAwCQEGAQMJIHMDACA9PSAxGxAVQmFsX2NoZWNrX21vcnNlbF9taXNjGxAOQmFsX3BsYXRlX21pc2MFAXMDAAIgMAkBAQE=
-SCTX
-    Begin Bal_messkit_misc
-    
-    short OnPCDrop
-    short OnPCEquip
-    short state
-    
-    	if ( OnPCDrop == 1 )
-    		Disable
-    		setdelete 1
-    		PlaceAtPC, "Bal_messkit", 1, 0, 0
-    		Set OnPCDrop to 0
-    		messagebox "Гляньте вниз и запихайте ваши приборы и продовольствие в Столовый Комплект"
-    	endif
-    
-    
-    if ( OnPCEquip == 1 )
-    	if ( hungry > 0 )
-    		set state to 1
-    	else
-    		MessageBox "Вы недостаточно голодны, чтобы есть прямо сейчас."
-    	endif
-    	set OnPCEquip to 0
-    endif
-    
-    if ( state == 1 )
-    	startscript Bal_check_morsel_misc
-    	StartScript Bal_plate_misc
-    	set state to 0
-    ;	if ( hungry > 0 )
-    ;		MessageBox "Вы заморили червячка, но неплохо бы поесть еще."
-    ;	else
-    ;		MessageBox "Вы утолили голод."
-    ;	endif
-    
-    endif
-    End
-
-SCPT
-SCHD Bal_messkit_script 4 0 0 439 37
+SCHD Bal_messkit_script 4 0 0 405 37
 SCVR total_weight;message;button;AddCheck;;
-SCDT BgEBCSBY3BAgPT0gMSQBCQEGAQEJIFggECA9PSAxJAEJAQYBAQkgWBgQID09IDEFAXMCAAIgMQkBBgEBCSBzAgAgPT0gMCQBCQEGAQIJIHMCACA9PSAxABAWANfy7iDC+yD17vLo8uUg8eTl6+Dy/D8AAyLE7uHg4ujy/CDv8O7k7uLu6/zx8uLo5SDoIO/u8fPk8y4AGcrz+ODy/CEgxfHy/CEgzeDx+/ng8vzx/wAVx+Dv4Oru4uDy/CDK7uzv6+Xq8i4ABQFzAgACIDMJAQYBFQkgcwIAID09IDMFAXMDAAUgWB4QAAYBAgkgcwMAID09IDAFAXMCAAIgMBcQCQEGAQMJIHMDACA9PSAxBQFzAgACIDAbEBBCYWxfY2hlY2tfbW9yc2VsGxAJQmFsX3BsYXRlCQEGAQYJIHMDACA9PSAyBQFzAgACIDAbEA9CYWxfcmVtb3ZlX2Zvb2QCEAxJdGVtIE1pc2MgVXAMAQZwbGF5ZXLUEA1CYWxfbWVzc2tpdF8wAQDbEBsQDUJhbF9TaG93X2Zvb2QJAQYBAQkgcwMAID49IDAFAXMCAAIgMAkBCQEBAQ==
+SCDT BgEBCSBY3BAgPT0gMSQBCQEGAQEJIFggECA9PSAxJAEJAQYBAQkgWBgQID09IDEFAXMCAAIgMQkBBgEBCSBzAgAgPT0gMCQBCQEGAQIJIHMCACA9PSAxABAWANfy7iDC+yD17vLo8uUg8eTl6+Dy/D8AAyLE7uHg4ujy/CDv8O7k7uLu6/zx8uLo5SDoIO/u8fPk8y4AGcrz+ODy/CEgxfHy/CEgzeDx+/ng8vzx/wAVx+Dv4Oru4uDy/CDK7uzv6+Xq8i4ABQFzAgACIDMJAQYBEwkgcwIAID09IDMFAXMDAAUgWB4QAAYBAgkgcwMAID09IDAFAXMCAAIgMBcQCQEGAQMJIHMDACA9PSAxBQFzAgACIDAbEBBCYWxfY2hlY2tfbW9yc2VsGxAJQmFsX3BsYXRlCQEGAQQJIHMDACA9PSAyBQFzAgACIDACEAxJdGVtIE1pc2MgVXAMAQZwbGF5ZXLUEA1CYWxfbWVzc2tpdF8wAQDbEAkBBgEBCSBzAwAgPj0gMAUBcwIAAiAwCQEJAQEB
 SCTX
     Begin Bal_messkit_script
     
@@ -979,11 +882,9 @@ SCTX
     
     	if ( button == 2 )
     		set message to 0
-    		startscript Bal_remove_food
     		playSound "Item Misc Up"
     		player->AddItem "Bal_messkit_0" 1
     		disable
-    		startscript Bal_Show_food
     ;		SetDelete 1	Not Working? Crashes game? Why so? Looks like it doesnot work on containers.
     
     	endif
@@ -1219,120 +1120,6 @@ SCTX
     end Balors_PocketWatch
 
 SCPT
-SCHD Bal_remove_food 0 0 0 2004 0
-SCDT HBAPQmFsX3JlbW92ZV9mb29kCgECHyBY/RAgbxRkZWVwbmlnaHRfdHJhdmVsRm9vZCA+IDDVEBRkZWVwbmlnaHRfdHJhdmVsRm9vZAEABQFHCmJhbF9yYXRpb24RIEcKYmFsX3JhdGlvbiAxICsLAQoBAhogWP0QIG8PaW5ncmVkX2JyZWFkXzAxID4gMNUQD2luZ3JlZF9icmVhZF8wMQEABQFHCWJhbF9icmVhZBAgRwliYWxfYnJlYWQgMSArCwEKAQIcIFj9ECBvEWZvb2Rfa3dhbWFfZWdnXzAxID4gMNUQEWZvb2Rfa3dhbWFfZWdnXzAxAQAFAUcKYmFsX2VnZ18wMREgRwpiYWxfZWdnXzAxIDEgKwsBCgECHSBY/RAgbxJpbmdyZWRfc2FsdHJpY2VfMDEgPiAw1RASaW5ncmVkX3NhbHRyaWNlXzAxAQAFAUcMYmFsX3NhbHRyaWNlEyBHDGJhbF9zYWx0cmljZSAxICsLAQoBAhwgWP0QIG8RZm9vZF9rd2FtYV9lZ2dfMDIgPiAw1RARZm9vZF9rd2FtYV9lZ2dfMDIBAAUBRwpiYWxfZWdnXzAyESBHCmJhbF9lZ2dfMDIgMSArCwEKAQIcIFj9ECBvEWluZ3JlZF9hc2hfeWFtXzAxID4gMNUQEWluZ3JlZF9hc2hfeWFtXzAxAQAFAUcHYmFsX3lhbQ4gRwdiYWxfeWFtIDEgKwsBCgECICBY/RAgbxVpbmdyZWRfc2NyaWJfamVya3lfMDEgPiAw1RAVaW5ncmVkX3NjcmliX2plcmt5XzAxAQAFAUcJYmFsX2plcmt5ECBHCWJhbF9qZXJreSAxICsLAQoBAiAgWP0QIG8VaW5ncmVkX3NjcmliX2plbGx5XzAxID4gMNUQFWluZ3JlZF9zY3JpYl9qZWxseV8wMQEABQFHCWJhbF9qZWxseRAgRwliYWxfamVsbHkgMSArCwEKAQIiIFj9ECBvF2luZ3JlZF9jb3JrYnVsYl9yb290XzAxID4gMNUQF2luZ3JlZF9jb3JrYnVsYl9yb290XzAxAQAFAUcMYmFsX2NvcmtidWxiEyBHDGJhbF9jb3JrYnVsYiAxICsLAQoBAh0gWP0QIG8SaW5ncmVkX2NvbWJlcnJ5XzAxID4gMNUQEmluZ3JlZF9jb21iZXJyeV8wMQEABQFHDGJhbF9jb21iZXJyeRMgRwxiYWxfY29tYmVycnkgMSArCwEKAQIeIFj9ECBvE2luZ3JlZF9jcmFiX21lYXRfMDEgPiAw1RATaW5ncmVkX2NyYWJfbWVhdF8wMQEABQFHDWJhbF9jcmFiX21lYXQUIEcNYmFsX2NyYWJfbWVhdCAxICsLAQoBAh8gWP0QIG8UaW5ncmVkX2hvdW5kX21lYXRfMDEgPiAw1RAUaW5ncmVkX2hvdW5kX21lYXRfMDEBAAUBRw5iYWxfaG91bmRfbWVhdBUgRw5iYWxfaG91bmRfbWVhdCAxICsLAQoBAh8gWP0QIG8UaW5ncmVkX2h1bWFuX21lYXRfMDEgPiAw1RAUaW5ncmVkX2h1bWFuX21lYXRfMDEBAAUBRw5iYWxfaHVtYW5fbWVhdBUgRw5iYWxfaHVtYW5fbWVhdCAxICsLAQoBAiEgWP0QIG8WaW5ncmVkX2thZ291dGlfaGlkZV8wMSA+IDDVEBZpbmdyZWRfa2Fnb3V0aV9oaWRlXzAxAQAFAUcQYmFsX2thZ291dGlfaGlkZRcgRxBiYWxfa2Fnb3V0aV9oaWRlIDEgKwsBCgECGSBY/RAgbw5pbmdyZWRfbXVja18wMSA+IDDVEA5pbmdyZWRfbXVja18wMQEABQFHCGJhbF9tdWNrDyBHCGJhbF9tdWNrIDEgKwsBCgECHSBY/RAgbxJpbmdyZWRfcmF0X21lYXRfMDEgPiAw1RASaW5ncmVkX3JhdF9tZWF0XzAxAQAFAUcMYmFsX3JhdF9tZWF0EyBHDGJhbF9yYXRfbWVhdCAxICsLAQoBAh8gWP0QIG8UaW5ncmVkX3RyYW1hX3Jvb3RfMDEgPiAw1RAUaW5ncmVkX3RyYW1hX3Jvb3RfMDEBAAUBRw5iYWxfdHJhbWFfcm9vdBUgRw5iYWxfdHJhbWFfcm9vdCAxICsLAQoBAiQgWP0QIG8ZbWlzY19jb21fc2lsdmVyd2FyZV9rbmlmZSA+IDDVEBltaXNjX2NvbV9zaWx2ZXJ3YXJlX2tuaWZlAQAFAUcKYmFsX2tuaWZlcxEgRwpiYWxfa25pZmVzIDEgKwsBCgECIyBY/RAgbxhtaXNjX2NvbV9zaWx2ZXJ3YXJlX2ZvcmsgPiAw1RAYbWlzY19jb21fc2lsdmVyd2FyZV9mb3JrAQAFAUcJYmFsX2ZvcmtzECBHCWJhbF9mb3JrcyAxICsLAQoBAh4gWP0QIG8TbWlzY19jb21fd29vZF9rbmlmZSA+IDDVEBNtaXNjX2NvbV93b29kX2tuaWZlAQAFAUcKYmFsX2tuaWZldxEgRwpiYWxfa25pZmV3IDEgKwsBCgECHSBY/RAgbxJtaXNjX2NvbV93b29kX2ZvcmsgPiAw1RASbWlzY19jb21fd29vZF9mb3JrAQAFAUcJYmFsX2Zvcmt3ECBHCWJhbF9mb3JrdyAxICsLAQEB
-SCTX
-    Begin Bal_remove_food
-    stopscript Bal_remove_food
-    
-    	while ( GetItemCount "deepnight_travelFood" > 0 )
-    		RemoveItem "deepnight_travelFood" 1
-    		set bal_ration to ( bal_ration + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_bread_01" > 0 )
-    		RemoveItem "ingred_bread_01" 1
-    		set bal_bread to ( bal_bread + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "food_kwama_egg_01" > 0 )
-    		RemoveItem "food_kwama_egg_01" 1
-    		set bal_egg_01 to ( bal_egg_01 + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_saltrice_01" > 0 )
-    		RemoveItem "ingred_saltrice_01" 1
-    		set bal_saltrice to ( bal_saltrice + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "food_kwama_egg_02" > 0 )
-    		RemoveItem "food_kwama_egg_02" 1
-    		set bal_egg_02 to ( bal_egg_02 + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_ash_yam_01" > 0 )
-    		RemoveItem "ingred_ash_yam_01" 1
-    		set bal_yam to ( bal_yam + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_scrib_jerky_01" > 0 )
-    		RemoveItem "ingred_scrib_jerky_01" 1
-    		set bal_jerky to ( bal_jerky + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_scrib_jelly_01" > 0 )
-    		RemoveItem "ingred_scrib_jelly_01" 1
-    		set bal_jelly to ( bal_jelly + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_corkbulb_root_01" > 0 )
-    		RemoveItem "ingred_corkbulb_root_01" 1
-    		set bal_corkbulb to ( bal_corkbulb + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_comberry_01" > 0 )
-    		RemoveItem "ingred_comberry_01" 1
-    		set bal_comberry to ( bal_comberry + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_crab_meat_01" > 0 )
-    		RemoveItem "ingred_crab_meat_01" 1
-    		set bal_crab_meat to ( bal_crab_meat + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_hound_meat_01" > 0 )
-    		RemoveItem "ingred_hound_meat_01" 1
-    		set bal_hound_meat to ( bal_hound_meat + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_human_meat_01" > 0 )
-    		RemoveItem "ingred_human_meat_01" 1
-    		set bal_human_meat to ( bal_human_meat + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_kagouti_hide_01" > 0 )
-    		RemoveItem "ingred_kagouti_hide_01" 1
-    		set bal_kagouti_hide to ( bal_kagouti_hide + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_muck_01" > 0 )
-    		RemoveItem "ingred_muck_01" 1
-    		set bal_muck to ( bal_muck + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_rat_meat_01" > 0 )
-    		RemoveItem "ingred_rat_meat_01" 1
-    		set bal_rat_meat to ( bal_rat_meat + 1 )
-    	endwhile
-    
-    	while ( GetItemCount "ingred_trama_root_01" > 0 )
-    		RemoveItem "ingred_trama_root_01" 1
-    		set bal_trama_root to  ( bal_trama_root + 1 )
-    	endwhile
-    
-        while ( GetItemCount "misc_com_silverware_knife" > 0 )
-    		RemoveItem "misc_com_silverware_knife" 1
-    		set bal_knifes to  ( bal_knifes + 1 )
-    	endwhile
-    
-         while ( GetItemCount "misc_com_silverware_fork" > 0 )
-    		RemoveItem "misc_com_silverware_fork" 1
-    		set bal_forks to  ( bal_forks + 1 )
-    	endwhile
-    
-        while ( GetItemCount "misc_com_wood_knife" > 0 )
-    		RemoveItem "misc_com_wood_knife" 1
-    		set bal_knifew to  ( bal_knifew + 1 )
-    	endwhile
-    
-        while ( GetItemCount "misc_com_wood_fork" > 0 )
-    		RemoveItem "misc_com_wood_fork" 1
-    		set bal_forkw to  ( bal_forkw + 1 )
-    	endwhile
-    
-    End
-
-SCPT
 SCHD Bal_stamina_drain 1 0 8 615 77
 SCVR jDis;bogustemp;deathly_tired;drain_timer;fTimer;fRatio;fMaxFat;fCurFat;fDiff;;
 SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQERIEcJUENWYW1waXJlID09IDEkAQkBBgEBHiBHFnNpeGhfcGxheWVydHJhbnNmb3JtZWQgIT0gMCQBCQEMAQZwbGF5ZXIGAQEJIFiMECA8PSAwJAEJAQwBBnBsYXllcjQRbxKDugUBZgQACiBmBAAgWBIQICsGARUIIGYEACA+IDIFAWYEAAIgMAwBBnBsYXllcgUBZgcABSBYkhAABgEGCCBmBwAgPiAwDAEGcGxheWVyNBEAQBxGDAEGcGxheWVyBQFmBgAFIFiSEAAFAWYFAAogZgcAIGYGACAvBQFmCAAKIGYGACBmBwAgLQUBZggACSBmCAAgLTEgKgwBBnBsYXllcjQRZggAAAkBBgEECiBmBQAgPCAwLjEGAQIJIHMBACAhPSAxQBEFAXMBAAIgMQkBCAEECyBmBQAgPiAwLjE1BgECCSBzAQAgPT0gMT8RBQFzAQACIDAJAQkBCQEMAQZwbGF5ZXIGAQEJIFiSECA8PSAwBQFmAgAKIGYCACBYEhAgKwcBAQUBZgIAAiAwCQEGAQMJIGYCACA+PSA4ABA2AML7IPPy7uzr5e37IO3g8fLu6/zq7iwg9/Lu7eUg7O7m5fLlIO/u5O3/8vzx/yDt4CDt7uPoLgAABQFmAgACIDDlEAkBBgEBFSBHDURyYWluX2ZhdGlxdWUgPj0gMCQBCQEFAWYBABEgRw1EcmFpbl9mYXRpcXVlAAUBZgMACiBmAwAgWBIQICsGAQIJIGYDACA+PS4yDAEGcGxheWVyNBFmAQAABQFmAwACIDAJAQEB
@@ -1421,16 +1208,11 @@ SCTX
     End
 
 SCPT
-SCHD Bal_startscript 0 0 0 356 0
-SCDT BgEBFyBYHRAsIG0KQmFsX2h1bmdlciA9PSAwGxAKQmFsX2h1bmdlcgkBBgEBFyBYHRAsIG0KQmFsX3RoaXJzdCA9PSAwGxAKQmFsX3RoaXJzdAkBBgEBFyBYHRAsIG0KQmFsX3NwZWxscyA9PSAwGxAKQmFsX3NwZWxscwkBBgEBGiBYHRAsIG0NQmFsX3dlYXJpbmVzcyA9PSAwGxANQmFsX3dlYXJpbmVzcwkBBgEBGCBYHRAsIG0LU2xlZXBEZXRlY3QgPT0gMBsQC1NsZWVwRGV0ZWN0CQEGAQEeIFgdECwgbRFCYWxfc3RhbWluYV9kcmFpbiA9PSAwGxARQmFsX3N0YW1pbmFfZHJhaW4JAQYBASEgWB0QLCBtFEJhbF92YW1wX2Jsb29kdGhpcnN0ID09IDAbEBRCYWxfdmFtcF9ibG9vZHRoaXJzdAkBHBAPQmFsX3N0YXJ0c2NyaXB0AQE=
+SCHD Bal_startscript 0 0 0 314 0
+SCDT BgEBFyBYHRAsIG0KQmFsX2h1bmdlciA9PSAwGxAKQmFsX2h1bmdlcgkBBgEBFyBYHRAsIG0KQmFsX3RoaXJzdCA9PSAwGxAKQmFsX3RoaXJzdAkBBgEBGiBYHRAsIG0NQmFsX3dlYXJpbmVzcyA9PSAwGxANQmFsX3dlYXJpbmVzcwkBBgEBGCBYHRAsIG0LU2xlZXBEZXRlY3QgPT0gMBsQC1NsZWVwRGV0ZWN0CQEGAQEeIFgdECwgbRFCYWxfc3RhbWluYV9kcmFpbiA9PSAwGxARQmFsX3N0YW1pbmFfZHJhaW4JAQYBASEgWB0QLCBtFEJhbF92YW1wX2Jsb29kdGhpcnN0ID09IDAbEBRCYWxfdmFtcF9ibG9vZHRoaXJzdAkBHBAPQmFsX3N0YXJ0c2NyaXB0AQE=
 SCTX
-    begin Bal_startscript
+    Begin Bal_startscript
     
-    ;************************************************************************************
-    ;
-    ;Primary needs - Food, Water, Rest. Sex not included... yet. Kidding. :)
-    ;
-    ;************************************************************************************
     ;Hunger
     if ( ScriptRunning, Bal_hunger == 0)
     	StartScript Bal_hunger
@@ -1439,11 +1221,6 @@ SCTX
     ;Thirst
     if ( ScriptRunning, Bal_thirst == 0)
     	StartScript Bal_thirst
-    endif
-    
-    ; Required for Create water, food spells
-    if ( ScriptRunning, Bal_spells == 0)
-    	StartScript Bal_spells
     endif
     
     ;Weariness
@@ -1465,16 +1242,10 @@ SCTX
     if ( ScriptRunning, Bal_vamp_bloodthirst == 0)
     	StartScript Bal_vamp_bloodthirst
     endif
-    ; Mana regen
-    ;Got rid of it.
-    ;if ( ScriptRunning, Bal_mana_regen == 0)
-    ;	StartScript Bal_mana_regen
-    ;endif
-    
     
     StopScript Bal_startscript
     
-    end Bal_startscript
+    End
 
 SCPT
 SCHD Bal_thirst 9 0 9 11664 173
@@ -3358,6 +3129,61 @@ INTV 1
 INAM deepnight_travelFood
 INTV 1
 
+BOOK
+NAME deepnight_labelAdvCrate
+MODL m\\Misc_paper_plain_01.nif
+FNAM Заметка
+BKDT CtcjPAAAAAABAAAA/////zIAAAA=
+ITEX m\\Tx_paper_plain_01.tga
+TEXT
+    <DIV ALIGN="CENTER"><FONT COLOR="000000" SIZE="3" FACE="Волшебные карты"><BR>
+    Обращаться с осторожностью<BR>
+
+BOOK
+NAME bk_MessKitInstructions
+MODL m\\Text_Octavo_06.nif
+FNAM О потреблении пищи
+BKDT AAAAQMgAAAAAAAAAEAAAAOgDAAA=
+ITEX m\\Tx_book_03.tga
+TEXT
+    <DIV ALIGN="CENTER"><FONT COLOR="000000" SIZE="3" FACE="Magic Cards"><BR>
+    Познание Столового комплекта: ваш руководство к правильному питанию (по Полю Брэггу)!<BR><BR>
+    <DIV ALIGN="LEFT"><BR><BR>
+    Обычно, когда компоненты используются в сыром виде и без явного намерения утолить голод (без использования столовых приборов) питательные вещества не усваиваются, и не производят должного питательного эффекта на потребителя. Из-за этого, потребитель будет не в состоянии использовать питательные вещества, чтобы восстановить свою конституцию. При еде из блюд (в вашем Столовом Комплекте) или приготовлении пищи на огне, питательные вещества дистиллируются намеренно или флеймом, для питания организма.
+    <BR>
+    Если Вы используете Столовый комплект для потребления пищи Вам, вероятно, понадобится по крайней мере вилка, хотя Вы можете есть и пальцами, и прямо с земли. Вилка будет всегда разрешать успешную еду; хотя вилка одна - недостаточно удобна, чтобы резать пищу на куски, и в конечном счете - будет часто ломаться. Для большего успеха, Вы должны иметь и вилку и нож в вашем комплекте. Ножи и вилки имеют неприятное свойство затупляться и даже ломаться при большом усердии едока, потому рекомендуется использовать качественные приборы и посуду.
+    <BR>
+    Для принятия пищи необходимо установить ваш Столовый комплект на плоской поверхности и поместить в него посуду. Затем выбрать продовольствие, которое Вы желаете потребить и разместить его в комплект. Теперь закопайте!
+    <BR>
+    <BR>
+    <BR>
+    Что Вы можете съесть: <BR>
+    1 хлеб <BR>
+    1 скаттл <BR>
+    1 маленькое яйцо квама <BR>
+    2 соленый рис <BR>
+    1 большое яйцо квама <BR>
+    2 пепельный батат <BR>
+    1 вяленая скрибятина <BR>
+    1 скрибовое желе <BR>
+    1 пробочник <BR>
+    2 комунику <BR>
+    1 мясо краба <BR>
+    1 мясо собаки <BR>
+    1 человеческое мясо <BR>
+    1 шкуру кагути <BR>
+    2 муск <BR>
+    1 мясо крысы <BR>
+    1 корень трамы<BR>
+    <BR>
+    <BR>
+    <BR>
+    Некоторые дополнительные блюда могут быть сделаны у походного костра ... <BR>
+    <BR>
+    Не забудьте захватить с собой ткань (салфетки), тем более, при еде без посуды. Ваше проворство может пострадать от скользких рук, не говоря уже о людях, которым, вероятно будет смешно видеть вымазанную пищей физиономию ... <BR>
+    <BR>
+    
+
 LIGH
 NAME deepnight_campement01
 MODL l\\light_pitfire00.NIF
@@ -3403,9 +3229,6 @@ MODL o\\Contain_De_Chest_01.nif
 FNAM Деревянный сундучок
 CNDT AABIQw==
 FLAG 8
-NPCO 1 _bal_sc_create_food
-NPCO 1 _bal_sc_create_water
-NPCO 1 _bal_sc_energize
 NPCO 1 deepnight_campement01
 NPCO 5 Balors_portable_Bedroll
 NPCO 5 empty_waterskin
@@ -3613,7 +3436,6 @@ NAME Bal_messkit_0
 MODL m\\Misc_pot_blue_02.nif
 FNAM Магический Столовый Комплект
 MCDT AAAAQH0AAAAAAAAA
-SCRI Bal_messkit_misc
 ITEX m\\tx_pot_blue_02.dds
 
 ACTI
@@ -3712,6 +3534,11 @@ NAME a_waterwell
 DATA MWjUR4rthcW1PRFEAAAAAAAAAADeD6lA
 
 CELL
+NAME 
+DATA AgAAAA0AAAD1////
+RGNN Azura's Coast Region
+
+CELL
 NAME Vos
 DATA RgAAAAwAAAANAAAA
 RGNN Azura's Coast Region
@@ -3720,6 +3547,12 @@ NAM0 1
 FRMR 9
 NAME a_waterwell
 DATA 32HAR2Uk3EeegAxDAAAAAAAAAADYzMw+
+
+CELL
+NAME Yansirramus
+DATA QgAAAAwAAAAEAAAA
+RGNN Azura's Coast Region
+NAM5 6333898
 
 CELL
 NAME Molag Mar
@@ -3855,6 +3688,12 @@ NAM0 1
 FRMR 24
 NAME a_waterwell
 DATA Z1ZmR0H5c8fkYjdDAAAAAAAAAAAAAIA/
+
+CELL
+NAME 
+DATA QgAAAAcAAAD3////
+RGNN Ascadian Isles Region
+NAM5 7216750
 
 CELL
 NAME Mzuleft Ruin
@@ -4000,6 +3839,11 @@ NAME a_waterwell
 DATA +i30Rs17jMf/cnFEAAAAAAAAAACscpc/
 
 CELL
+NAME 
+DATA AgAAAAIAAAAJAAAA
+RGNN Red Mountain Region
+
+CELL
 NAME Dagoth Ur
 DATA QgAAAAIAAAAIAAAA
 RGNN Red Mountain Region
@@ -4063,6 +3907,11 @@ DATA pvs7RphMKUgLDe9EAAAAAAAAAABBdq9A
 
 CELL
 NAME 
+DATA AgAAAAEAAAARAAAA
+RGNN Ashlands Region
+
+CELL
+NAME 
 DATA AgAAAAEAAAD4////
 RGNN Ascadian Isles Region
 NAM0 1
@@ -4091,6 +3940,11 @@ NAME a_waterwell
 DATA jsnIRdbp60dyU7dEAAAAAAAAAABnZuY/
 
 CELL
+NAME 
+DATA AgAAAAAAAAAAAAAA
+RGNN Ashlands Region
+
+CELL
 NAME Pelagiad
 DATA RgAAAAAAAAD5////
 RGNN Ascadian Isles Region
@@ -4112,6 +3966,11 @@ NAM0 1
 FRMR 52
 NAME _Balors_items_chest
 DATA d+CGRVleZMdOzK1EAAAAAAAAAAAAAAAA
+
+CELL
+NAME 
+DATA AgAAAAAAAAD3////
+RGNN Ascadian Isles Region
 
 CELL
 NAME Valenvaryon
@@ -4219,6 +4078,11 @@ NAME a_waterwell
 DATA dmirxsvoxkfJbQBFAAAAAAAAAAA2M1NA
 
 CELL
+NAME 
+DATA AgAAAP3///8FAAAA
+RGNN Ashlands Region
+
+CELL
 NAME Balmora
 DATA BgAAAP3////+////
 RGNN West Gash Region
@@ -4310,6 +4174,11 @@ DATA 135tx2nr0EbxPylEAAAAAAAAAABPuUtA
 FRMR 74
 NAME a_waterwell
 DATA ENFwx4hL20bN4QNEAAAAAAAAAADNzLxA
+
+CELL
+NAME 
+DATA AgAAAPj////8////
+RGNN Bitter Coast Region
 
 CELL
 NAME Khuul
@@ -4513,7 +4382,7 @@ DATA Greeting
 INFO
 INAM 20172142971264027114
 PNAM 2768210666929210763
-NNAM 1393717472313595141
+NNAM 17814103293101015617
 DATA AgAAAAAAAAD///8A
 CNAM Guard
 NAME Теперь тебе придется заняться тяжелым трудом. Но, как говориться "Labor corpus firmat", используй время с пользой, и оплати свой долг обществу.%
