@@ -499,16 +499,6 @@ SCTX
     End
 
 SCPT
-SCHD A1V1_MesskitEat 0 0 0 20 0
-SCDT HBAPQTFWMV9NZXNza2l0RWF0AQE=
-SCTX
-    Begin A1V1_MesskitEat
-    
-    StopScript A1V1_MesskitEat
-    
-    End
-
-SCPT
 SCHD A1V1_MesskitItem_sc 1 0 0 147 9
 SCVR OnPCDrop;;
 SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEGCSBzAQAgPT0gMQUBcwEAAiAwBQFHDUExVjFfTWVzc2tpdFgGIFgKEFgABQFHDUExVjFfTWVzc2tpdFkGIFgKEFkABQFHDUExVjFfTWVzc2tpdFoGIFgKEFoA5hAQQTFWMV9NZXNza2l0Q29udAEAAABIQgAA2xAJAQEB
@@ -679,24 +669,6 @@ SCTX
     set A1V1_MesskitCont3 to invRef
     
     StopScript A1V1_MesskitUpdate_sc
-    
-    End
-
-SCPT
-SCHD A1V1_StartPriNe 1 0 0 73 7
-SCVR doOnce;;
-SCDT BgECCSBzAQAgPT0gMAUBcwEAAiAxDAEGcGxheWVy1BAQQTFWMV9NZXNza2l0SXRlbQEACQEcEA9BMVYxX1N0YXJ0UHJpTmUBAQ==
-SCTX
-    Begin A1V1_StartPriNe
-    
-    short doOnce
-    
-    if ( doOnce == 0 )
-    	set doOnce to 1
-    	player->AddItem A1V1_MesskitItem, 1
-    endif
-    
-    StopScript A1V1_StartPriNe
     
     End
 
@@ -1439,74 +1411,6 @@ SCTX
     	set warning1 to 0
     endif
     End
-
-SCPT
-SCHD Bal_messkit_script 4 0 0 405 37
-SCVR total_weight;message;button;AddCheck;;
-SCDT BgEBCSBY3BAgPT0gMSQBCQEGAQEJIFggECA9PSAxJAEJAQYBAQkgWBgQID09IDEFAXMCAAIgMQkBBgEBCSBzAgAgPT0gMCQBCQEGAQIJIHMCACA9PSAxABAWANfy7iDC+yD17vLo8uUg8eTl6+Dy/D8AAyLE7uHg4ujy/CDv8O7k7uLu6/zx8uLo5SDoIO/u8fPk8y4AGcrz+ODy/CEgxfHy/CEgzeDx+/ng8vzx/wAVx+Dv4Oru4uDy/CDK7uzv6+Xq8i4ABQFzAgACIDMJAQYBEwkgcwIAID09IDMFAXMDAAUgWB4QAAYBAgkgcwMAID09IDAFAXMCAAIgMBcQCQEGAQMJIHMDACA9PSAxBQFzAgACIDAbEBBCYWxfY2hlY2tfbW9yc2VsGxAJQmFsX3BsYXRlCQEGAQQJIHMDACA9PSAyBQFzAgACIDACEAxJdGVtIE1pc2MgVXAMAQZwbGF5ZXLUEA1CYWxfbWVzc2tpdF8wAQDbEAkBBgEBCSBzAwAgPj0gMAUBcwIAAiAwCQEJAQEB
-SCTX
-    Begin Bal_messkit_script
-    
-    ; Originally created by Shanjak, modded by me, Balor :)
-    short total_weight
-    short message
-    short button
-    short AddCheck
-    
-    if ( GetDisabled == 1 )
-    	return
-    endif
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
-    
-    if ( OnActivate == 1 )
-    	Set message to 1
-    endif
-    
-    if ( message == 0 )
-    	return
-    endif
-    
-    if ( message == 1 )
-    	MessageBox "Что Вы хотите сделать?" "Добавить продовольствие и посуду." "Кушать! Есть! Насыщаться" "Запаковать Комплект."
-    	set message to 3
-    endif
-    
-    if ( message == 3 )
-    
-    	set button to GetButtonPressed
-    
-    	if ( button == 0 )
-    		set message to 0
-    		Activate
-    	endif
-    
-    	if ( button == 1 )
-    		set message to 0
-    		startscript Bal_check_morsel
-    		StartScript Bal_plate
-    	endif
-    
-    	if ( button == 2 )
-    		set message to 0
-    		playSound "Item Misc Up"
-    		player->AddItem "Bal_messkit_0" 1
-    		disable
-    ;		SetDelete 1	Not Working? Crashes game? Why so? Looks like it doesnot work on containers.
-    
-    	endif
-    
-    	if ( button >= 0 )
-    		set message to 0
-    	endif
-    
-    endif
-    
-    
-    End
-    
 
 SCPT
 SCHD Bal_plate 5 0 0 1598 45
@@ -3607,10 +3511,6 @@ SCTX
     end SleepDetect
 
 SSCR
-DATA 789011789164707584%
-NAME A1V1_StartPriNe%
-
-SSCR
 DATA 385431384142845816%
 NAME Bal_startscript%
 
@@ -5019,5 +4919,3 @@ BNAM
     StartScript "PCJail"
     GotoJail
     Goodbye
-
-# 190
