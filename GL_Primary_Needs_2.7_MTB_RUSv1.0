@@ -28,24 +28,22 @@ NAME bk_MessKitInstructions
 MODL m\\Text_Octavo_06.nif
 FNAM О потреблении пищи
 BKDT AAAAQMgAAAAAAAAAEAAAAOgDAAA=
-SCRI BROctavo_06
 ITEX m\\Tx_book_03.tga
 TEXT
     <DIV ALIGN="CENTER"><FONT COLOR="000000" SIZE="3" FACE="Magic Cards"><BR>
-    Познание Столового Комплекта: ваш руководство к правильному питанию (По полю Брэггу)!<BR><BR>
+    Познание Столового комплекта: ваш руководство к правильному питанию (по Полю Брэггу)!<BR><BR>
     <DIV ALIGN="LEFT"><BR><BR>
     Обычно, когда компоненты используются в сыром виде и без явного намерения утолить голод (без использования столовых приборов) питательные вещества не усваиваются, и не производят должного питательного эффекта на потребителя. Из-за этого, потребитель будет не в состоянии использовать питательные вещества, чтобы восстановить свою конституцию. При еде из блюд (в вашем Столовом Комплекте) или приготовлении пищи на огне, питательные вещества дистиллируются намеренно или флеймом, для питания организма.
     <BR>
-    Если Вы используете  Столовый Комплект для потребления пищи Вам, вероятно, понадобится по крайней мере вилка, хотя Вы можете есть и пальцами, и прямо с земли. Вилка будет всегда разрешать успешную еду; хотя вилка одна - недостаточно удобна, чтобы резать пищу на куски, и в конечном счете - будет часто ломаться. Для большего успеха, Вы должны иметь и вилку и нож в вашем комплекте. Ножи и вилки имеют неприятное свойство затупляться и даже ломаться при большом усердии едока, потому рекомендуется использовать качественные приборы и посуду.
+    Если Вы используете Столовый комплект для потребления пищи Вам, вероятно, понадобится по крайней мере вилка, хотя Вы можете есть и пальцами, и прямо с земли. Вилка будет всегда разрешать успешную еду; хотя вилка одна - недостаточно удобна, чтобы резать пищу на куски, и в конечном счете - будет часто ломаться. Для большего успеха, Вы должны иметь и вилку и нож в вашем комплекте. Ножи и вилки имеют неприятное свойство затупляться и даже ломаться при большом усердии едока, потому рекомендуется использовать качественные приборы и посуду.
     <BR>
-    Для принятия пищи необходимо установить ваш  Столовый Комплект на плоской поверхности и поместить в него посуду. Затем выбрать продовольствие, которое Вы желаете потребить и разместить его в комплект. Теперь закопайте!
-    <BR>
-    Чтобы экономить место в вашем инвентаре, Вы можете оставлять вашу посуду внутри комплекта, когда Вы упаковываете его. Она останется внутри, пока будет пригодна к использованию.
+    Для принятия пищи необходимо установить ваш Столовый комплект на плоской поверхности и поместить в него посуду. Затем выбрать продовольствие, которое Вы желаете потребить и разместить его в комплект. Теперь закопайте!
     <BR>
     <BR>
     <BR>
     Что Вы можете съесть: <BR>
     1 хлеб <BR>
+    1 скаттл <BR>
     1 маленькое яйцо квама <BR>
     2 соленый рис <BR>
     1 большое яйцо квама <BR>
@@ -68,43 +66,7 @@ TEXT
     <BR>
     Не забудьте захватить с собой ткань (салфетки), тем более, при еде без посуды. Ваше проворство может пострадать от скользких рук, не говоря уже о людях, которым, вероятно будет смешно видеть вымазанную пищей физиономию ... <BR>
     <BR>
-    О, и еще одна вещь ... <BR>
-    Эта модель  Столового Комплекта наполнена ограниченными магическими способностями: <BR>
-    Он содержит зачарование, однако, как я уже упомянул, это имеет ограничения: <BR>
-    1. В него помещается только продовольствие и столовый прибор, что - нибудь другое, помещенное внутрь, просто исчезнет, когда Вы уберете комплект в Ваш инвентарь ... <BR>
-    2. Продовольствие и столовые приборы, после помещения в Комплект, вынуть обратно будет невозможно, но все запихнутое в него будет доступно, чтобы использовать это для еды. <BR>
-    Учтите эти предупреждения, и удостоверитесь, что, когда Вы упаковываете в инвентарь ваш комплект беспорядка, он содержит только продовольствие, которое Вы намереваетесь есть. <BR>
     
-
-BOOK
-NAME _bal_sc_energize
-MODL m\\text_scroll_01.nif
-FNAM Свиток "Об Энергиях"
-BKDT zcxMPiwBAAAAAAAADwAAADIAAAA=
-SCRI Bal_energize_sc_script
-ITEX m\\tx_scroll_open_01.tga
-TEXT
-    <DIV ALIGN="center"><FONT COLOR="000000" SIZE="2" FACE="Daedric">WHY DONT YOU JUST REST</FONT><BR>
-
-BOOK
-NAME _bal_sc_create_food
-MODL m\\text_scroll_01.nif
-FNAM Свиток "Осоздании пищи"
-BKDT zcxMPiwBAAAAAAAADQAAADIAAAA=
-SCRI Bal_food_sc_script
-ITEX m\\tx_scroll_open_01.tga
-TEXT
-    <DIV ALIGN="center"><FONT COLOR="000000" SIZE="2" FACE="Daedric">MANNA DIVINE</FONT><BR>
-
-BOOK
-NAME _bal_sc_create_water
-MODL m\\text_scroll_01.nif
-FNAM Свиток "О питье"
-BKDT zcxMPiwBAAAAAAAADQAAADIAAAA=
-SCRI Bal_water_sc_script
-ITEX m\\tx_scroll_open_01.tga
-TEXT
-    <DIV ALIGN="center"><FONT COLOR="000000" SIZE="2" FACE="Daedric">TO CREATE WATER CONJURE A RAINSTORM AND OPEN YOUR MOUTH</FONT><BR>
 
 GLOB
 NAME TimeScale
@@ -165,111 +127,6 @@ GLOB
 NAME sleep_mod
 FNAM f%
 FLTV 0.5
-
-GLOB
-NAME bal_ration
-FNAM s%
-FLTV 1.8309724467274927e-38
-
-GLOB
-NAME bal_bread
-FNAM s%
-FLTV 1.8309724467274927e-38
-
-GLOB
-NAME bal_egg_01
-FNAM s%
-FLTV 1.8309724467274927e-38
-
-GLOB
-NAME bal_saltrice
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_egg_02
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_yam
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_jerky
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_jelly
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_corkbulb
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_comberry
-FNAM s%
-FLTV 7.397329865567183e20
-
-GLOB
-NAME bal_crab_meat
-FNAM s%
-FLTV 1.6255062186167878e-43
-
-GLOB
-NAME bal_hound_meat
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_human_meat
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_kagouti_hide
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_muck
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_rat_meat
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_trama_root
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_forks
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_knifew
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_forkw
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME bal_knifes
-FNAM s%
-FLTV 0.0
 
 GLOB
 NAME InvEatCheck
@@ -508,13 +365,17 @@ SCTX
     end
 
 SCPT
-SCHD Bal_check_morsel 0 0 0 970 0
-SCDT HBAQQmFsX2NoZWNrX21vcnNlbAUBRwpmb3VuZF9mb29kAiAwBgECHyBY/RAgbxRkZWVwbmlnaHRfdHJhdmVsRm9vZCA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIaIFj9ECBvD2luZ3JlZF9icmVhZF8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIcIFj9ECBvEWZvb2Rfa3dhbWFfZWdnXzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAh0gWP0QIG8SaW5ncmVkX3NhbHRyaWNlXzAxID4gMQUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhwgWP0QIG8RZm9vZF9rd2FtYV9lZ2dfMDIgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHCBY/RAgbxFpbmdyZWRfYXNoX3lhbV8wMSA+IDEFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIgIFj9ECBvFWluZ3JlZF9zY3JpYl9qZXJreV8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIgIFj9ECBvFWluZ3JlZF9zY3JpYl9qZWxseV8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIiIFj9ECBvF2luZ3JlZF9jb3JrYnVsYl9yb290XzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAh0gWP0QIG8SaW5ncmVkX2NvbWJlcnJ5XzAxID4gMQUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAh4gWP0QIG8TaW5ncmVkX2NyYWJfbWVhdF8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIfIFj9ECBvFGluZ3JlZF9ob3VuZF9tZWF0XzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAh8gWP0QIG8UaW5ncmVkX2h1bWFuX21lYXRfMDEgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECISBY/RAgbxZpbmdyZWRfa2Fnb3V0aV9oaWRlXzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhkgWP0QIG8OaW5ncmVkX211Y2tfMDEgPiAxBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHSBY/RAgbxJpbmdyZWRfcmF0X21lYXRfMDEgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHyBY/RAgbxRpbmdyZWRfdHJhbWFfcm9vdF8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEBAQ==
+SCHD Bal_check_morsel 0 0 0 1023 0
+SCDT HBAQQmFsX2NoZWNrX21vcnNlbAUBRwpmb3VuZF9mb29kAiAwBgECHCBY/RAgbxFpbmdyZWRfc2N1dHRsZV8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIfIFj9ECBvFGRlZXBuaWdodF90cmF2ZWxGb29kID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhogWP0QIG8PaW5ncmVkX2JyZWFkXzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhwgWP0QIG8RZm9vZF9rd2FtYV9lZ2dfMDEgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHSBY/RAgbxJpbmdyZWRfc2FsdHJpY2VfMDEgPiAxBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHCBY/RAgbxFmb29kX2t3YW1hX2VnZ18wMiA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIcIFj9ECBvEWluZ3JlZF9hc2hfeWFtXzAxID4gMQUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAiAgWP0QIG8VaW5ncmVkX3NjcmliX2plcmt5XzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAiAgWP0QIG8VaW5ncmVkX3NjcmliX2plbGx5XzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAiIgWP0QIG8XaW5ncmVkX2NvcmtidWxiX3Jvb3RfMDEgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHSBY/RAgbxJpbmdyZWRfY29tYmVycnlfMDEgPiAxBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHiBY/RAgbxNpbmdyZWRfY3JhYl9tZWF0XzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAh8gWP0QIG8UaW5ncmVkX2hvdW5kX21lYXRfMDEgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECHyBY/RAgbxRpbmdyZWRfaHVtYW5fbWVhdF8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIhIFj9ECBvFmluZ3JlZF9rYWdvdXRpX2hpZGVfMDEgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECGSBY/RAgbw5pbmdyZWRfbXVja18wMSA+IDEFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIdIFj9ECBvEmluZ3JlZF9yYXRfbWVhdF8wMSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIfIFj9ECBvFGluZ3JlZF90cmFtYV9yb290XzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQEB
 SCTX
     Begin Bal_check_morsel
     
     	stopscript Bal_check_morsel
     	set found_food to 0
+    	if ( GetItemCount "ingred_scuttle_01" > 0 )
+    		set found_food to 1
+    		return
+    	endif
     	if ( GetItemCount "deepnight_travelFood" > 0 )
     		set found_food to 1
     		return
@@ -587,93 +448,16 @@ SCTX
     end
 
 SCPT
-SCHD Bal_check_morsel_misc 0 0 0 778 0
-SCDT HBAVQmFsX2NoZWNrX21vcnNlbF9taXNjBQFHCmZvdW5kX2Zvb2QCIDAGAQIRIEcKYmFsX3JhdGlvbiA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIQIEcJYmFsX2JyZWFkID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhEgRwpiYWxfZWdnXzAxID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhMgRwxiYWxfc2FsdHJpY2UgPiAxBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECESBHCmJhbF9lZ2dfMDIgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECDiBHB2JhbF95YW0gPiAxBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECECBHCWJhbF9qZXJreSA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIQIEcJYmFsX2plbGx5ID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhMgRwxiYWxfY29ya2J1bGIgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECEyBHDGJhbF9jb21iZXJyeSA+IDEFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIUIEcNYmFsX2NyYWJfbWVhdCA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQIVIEcOYmFsX2hvdW5kX21lYXQgPiAwBQFHCmZvdW5kX2Zvb2QCIDEkAQkBBgECFSBHDmJhbF9odW1hbl9tZWF0ID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhcgRxBiYWxfa2Fnb3V0aV9oaWRlID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAg8gRwhiYWxfbXVjayA+IDEFAUcKZm91bmRfZm9vZAIgMSQBCQEGAQITIEcMYmFsX3JhdF9tZWF0ID4gMAUBRwpmb3VuZF9mb29kAiAxJAEJAQYBAhUgRw5iYWxfdHJhbWFfcm9vdCA+IDAFAUcKZm91bmRfZm9vZAIgMSQBCQEBAQ==
-SCTX
-    Begin Bal_check_morsel_misc
-    
-    	stopscript Bal_check_morsel_misc
-    	set found_food to 0
-    
-    	if ( bal_ration > 0 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_bread > 0 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_egg_01 > 0 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_saltrice > 1 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_egg_02 > 0 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_yam > 1 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_jerky > 0 )
-    		set found_food to 1
-    		return
-    	endif
-    	if ( bal_jelly > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_corkbulb > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_comberry > 1 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_crab_meat > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_hound_meat > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_human_meat > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_kagouti_hide > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_muck > 1 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_rat_meat > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    	if ( bal_trama_root > 0 )
-    		set found_food to 1
-    		return	
-    	endif
-    
-    end
-    
-
-SCPT
-SCHD Bal_dump_morsel 0 0 0 1068 0
-SCDT HBAPQmFsX2R1bXBfbW9yc2VsBgECHyBY/RAgbxRkZWVwbmlnaHRfdHJhdmVsRm9vZCA+IDDVEBRkZWVwbmlnaHRfdHJhdmVsRm9vZAEAJAEJAQYBAhogWP0QIG8PaW5ncmVkX2JyZWFkXzAxID4gMNUQD2luZ3JlZF9icmVhZF8wMQEAJAEJAQYBAhwgWP0QIG8RZm9vZF9rd2FtYV9lZ2dfMDEgPiAw1RARZm9vZF9rd2FtYV9lZ2dfMDEBACQBCQEGAQIdIFj9ECBvEmluZ3JlZF9zYWx0cmljZV8wMSA+IDHVEBJpbmdyZWRfc2FsdHJpY2VfMDECACQBCQEGAQIcIFj9ECBvEWZvb2Rfa3dhbWFfZWdnXzAyID4gMNUQEWZvb2Rfa3dhbWFfZWdnXzAyAQAkAQkBBgECHCBY/RAgbxFpbmdyZWRfYXNoX3lhbV8wMSA+IDHVEBFpbmdyZWRfYXNoX3lhbV8wMQIAJAEJAQYBAiAgWP0QIG8VaW5ncmVkX3NjcmliX2plcmt5XzAxID4gMNUQFWluZ3JlZF9zY3JpYl9qZXJreV8wMQEAJAEJAQYBAiAgWP0QIG8VaW5ncmVkX3NjcmliX2plbGx5XzAxID4gMNUQFWluZ3JlZF9zY3JpYl9qZWxseV8wMQEAJAEJAQYBAiIgWP0QIG8XaW5ncmVkX2NvcmtidWxiX3Jvb3RfMDEgPiAw1RAXaW5ncmVkX2NvcmtidWxiX3Jvb3RfMDEBACQBCQEGAQIdIFj9ECBvEmluZ3JlZF9jb21iZXJyeV8wMSA+IDHVEBJpbmdyZWRfY29tYmVycnlfMDECACQBCQEGAQIeIFj9ECBvE2luZ3JlZF9jcmFiX21lYXRfMDEgPiAw1RATaW5ncmVkX2NyYWJfbWVhdF8wMQEAJAEJAQYBAh8gWP0QIG8UaW5ncmVkX2hvdW5kX21lYXRfMDEgPiAw1RAUaW5ncmVkX2hvdW5kX21lYXRfMDEBACQBCQEGAQIfIFj9ECBvFGluZ3JlZF9odW1hbl9tZWF0XzAxID4gMNUQFGluZ3JlZF9odW1hbl9tZWF0XzAxAQAkAQkBBgECISBY/RAgbxZpbmdyZWRfa2Fnb3V0aV9oaWRlXzAxID4gMNUQFmluZ3JlZF9rYWdvdXRpX2hpZGVfMDEBACQBCQEGAQIZIFj9ECBvDmluZ3JlZF9tdWNrXzAxID4gMdUQDmluZ3JlZF9tdWNrXzAxAgAkAQkBBgECHSBY/RAgbxJpbmdyZWRfcmF0X21lYXRfMDEgPiAw1RASaW5ncmVkX3JhdF9tZWF0XzAxAQAkAQkBBgECHyBY/RAgbxRpbmdyZWRfdHJhbWFfcm9vdF8wMSA+IDDVEBRpbmdyZWRfdHJhbWFfcm9vdF8wMQEAJAEJAQEB
+SCHD Bal_dump_morsel 0 0 0 1126 0
+SCDT HBAPQmFsX2R1bXBfbW9yc2VsBgECHCBY/RAgbxFpbmdyZWRfc2N1dHRsZV8wMSA+IDDVEBFpbmdyZWRfc2N1dHRsZV8wMQEAJAEJAQYBAh8gWP0QIG8UZGVlcG5pZ2h0X3RyYXZlbEZvb2QgPiAw1RAUZGVlcG5pZ2h0X3RyYXZlbEZvb2QBACQBCQEGAQIaIFj9ECBvD2luZ3JlZF9icmVhZF8wMSA+IDDVEA9pbmdyZWRfYnJlYWRfMDEBACQBCQEGAQIcIFj9ECBvEWZvb2Rfa3dhbWFfZWdnXzAxID4gMNUQEWZvb2Rfa3dhbWFfZWdnXzAxAQAkAQkBBgECHSBY/RAgbxJpbmdyZWRfc2FsdHJpY2VfMDEgPiAx1RASaW5ncmVkX3NhbHRyaWNlXzAxAgAkAQkBBgECHCBY/RAgbxFmb29kX2t3YW1hX2VnZ18wMiA+IDDVEBFmb29kX2t3YW1hX2VnZ18wMgEAJAEJAQYBAhwgWP0QIG8RaW5ncmVkX2FzaF95YW1fMDEgPiAx1RARaW5ncmVkX2FzaF95YW1fMDECACQBCQEGAQIgIFj9ECBvFWluZ3JlZF9zY3JpYl9qZXJreV8wMSA+IDDVEBVpbmdyZWRfc2NyaWJfamVya3lfMDEBACQBCQEGAQIgIFj9ECBvFWluZ3JlZF9zY3JpYl9qZWxseV8wMSA+IDDVEBVpbmdyZWRfc2NyaWJfamVsbHlfMDEBACQBCQEGAQIiIFj9ECBvF2luZ3JlZF9jb3JrYnVsYl9yb290XzAxID4gMNUQF2luZ3JlZF9jb3JrYnVsYl9yb290XzAxAQAkAQkBBgECHSBY/RAgbxJpbmdyZWRfY29tYmVycnlfMDEgPiAx1RASaW5ncmVkX2NvbWJlcnJ5XzAxAgAkAQkBBgECHiBY/RAgbxNpbmdyZWRfY3JhYl9tZWF0XzAxID4gMNUQE2luZ3JlZF9jcmFiX21lYXRfMDEBACQBCQEGAQIfIFj9ECBvFGluZ3JlZF9ob3VuZF9tZWF0XzAxID4gMNUQFGluZ3JlZF9ob3VuZF9tZWF0XzAxAQAkAQkBBgECHyBY/RAgbxRpbmdyZWRfaHVtYW5fbWVhdF8wMSA+IDDVEBRpbmdyZWRfaHVtYW5fbWVhdF8wMQEAJAEJAQYBAiEgWP0QIG8WaW5ncmVkX2thZ291dGlfaGlkZV8wMSA+IDDVEBZpbmdyZWRfa2Fnb3V0aV9oaWRlXzAxAQAkAQkBBgECGSBY/RAgbw5pbmdyZWRfbXVja18wMSA+IDHVEA5pbmdyZWRfbXVja18wMQIAJAEJAQYBAh0gWP0QIG8SaW5ncmVkX3JhdF9tZWF0XzAxID4gMNUQEmluZ3JlZF9yYXRfbWVhdF8wMQEAJAEJAQYBAh8gWP0QIG8UaW5ncmVkX3RyYW1hX3Jvb3RfMDEgPiAw1RAUaW5ncmVkX3RyYW1hX3Jvb3RfMDEBACQBCQEBAQ==
 SCTX
     Begin Bal_dump_morsel
     StopScript Bal_dump_morsel
     ;Initially created by Shanjak
+    	if ( GetItemCount "ingred_scuttle_01" > 0 )
+    		RemoveItem "ingred_scuttle_01" 1
+    		return
+    	endif
     	if ( GetItemCount "deepnight_travelFood" > 0 )
     		RemoveItem "deepnight_travelFood" 1
     		return
@@ -743,97 +527,21 @@ SCTX
     		return
     	endif
     End
-    
 
 SCPT
-SCHD Bal_dump_morsel_misc 0 0 0 1057 0
-SCDT HBAUQmFsX2R1bXBfbW9yc2VsX21pc2MGAQIRIEcKYmFsX3JhdGlvbiA+IDAFAUcKYmFsX3JhdGlvbhEgRwpiYWxfcmF0aW9uIDEgLSQBCQEGAQIQIEcJYmFsX2JyZWFkID4gMAUBRwliYWxfYnJlYWQQIEcJYmFsX2JyZWFkIDEgLSQBCQEGAQIRIEcKYmFsX2VnZ18wMSA+IDAFAUcKYmFsX2VnZ18wMREgRwpiYWxfZWdnXzAxIDEgLSQBCQEGAQITIEcMYmFsX3NhbHRyaWNlID4gMQUBRwxiYWxfc2FsdHJpY2UTIEcMYmFsX3NhbHRyaWNlIDIgLSQBCQEGAQIRIEcKYmFsX2VnZ18wMiA+IDAFAUcKYmFsX2VnZ18wMhEgRwpiYWxfZWdnXzAyIDEgLSQBCQEGAQIOIEcHYmFsX3lhbSA+IDEFAUcHYmFsX3lhbQ4gRwdiYWxfeWFtIDIgLSQBCQEGAQIQIEcJYmFsX2plcmt5ID4gMAUBRwliYWxfamVya3kQIEcJYmFsX2plcmt5IDEgLSQBCQEGAQIQIEcJYmFsX2plbGx5ID4gMAUBRwliYWxfamVsbHkQIEcJYmFsX2plbGx5IDEgLSQBCQEGAQITIEcMYmFsX2NvcmtidWxiID4gMAUBRwxiYWxfY29ya2J1bGITIEcMYmFsX2NvcmtidWxiIDEgLSQBCQEGAQITIEcMYmFsX2NvbWJlcnJ5ID4gMQUBRwxiYWxfY29tYmVycnkTIEcMYmFsX2NvbWJlcnJ5IDEgLSQBCQEGAQIUIEcNYmFsX2NyYWJfbWVhdCA+IDAFAUcNYmFsX2NyYWJfbWVhdBQgRw1iYWxfY3JhYl9tZWF0IDEgLSQBCQEGAQIVIEcOYmFsX2hvdW5kX21lYXQgPiAwBQFHDmJhbF9ob3VuZF9tZWF0FSBHDmJhbF9ob3VuZF9tZWF0IDEgLSQBCQEGAQIVIEcOYmFsX2h1bWFuX21lYXQgPiAwBQFHDmJhbF9odW1hbl9tZWF0FSBHDmJhbF9odW1hbl9tZWF0IDEgLSQBCQEGAQIXIEcQYmFsX2thZ291dGlfaGlkZSA+IDAFAUcQYmFsX2thZ291dGlfaGlkZRcgRxBiYWxfa2Fnb3V0aV9oaWRlIDEgLSQBCQEGAQIPIEcIYmFsX211Y2sgPiAxBQFHCGJhbF9tdWNrDyBHCGJhbF9tdWNrIDIgLSQBCQEGAQITIEcMYmFsX3JhdF9tZWF0ID4gMAUBRwxiYWxfcmF0X21lYXQTIEcMYmFsX3JhdF9tZWF0IDEgLSQBCQEGAQIVIEcOYmFsX3RyYW1hX3Jvb3QgPiAwBQFHDmJhbF90cmFtYV9yb290FSBHDmJhbF90cmFtYV9yb290IDEgLSQBCQEBAQ==
-SCTX
-    Begin Bal_dump_morsel_misc
-    StopScript Bal_dump_morsel_misc
-    
-    ;Initially created by Shanjaq
-    
-    	if ( bal_ration > 0 )
-    		set bal_ration to bal_ration - 1
-    		return
-    	endif
-    	if ( bal_bread > 0 )
-    		set bal_bread to bal_bread - 1
-    		return
-    	endif
-    	if ( bal_egg_01 > 0 )
-    		set bal_egg_01 to bal_egg_01 - 1
-    		return
-    	endif
-    	if ( bal_saltrice > 1 )
-    		set bal_saltrice to bal_saltrice - 2
-    		return
-    	endif
-    	if ( bal_egg_02 > 0 )
-    		set bal_egg_02 to bal_egg_02 - 1
-    		return
-    	endif
-    	if ( bal_yam > 1 )
-    		set bal_yam to bal_yam - 2
-    		return
-    	endif
-    	if ( bal_jerky > 0 )
-    		set bal_jerky to bal_jerky - 1
-    		return
-    	endif
-    	if ( bal_jelly > 0 )
-    		set bal_jelly to bal_jelly - 1
-    		return	
-    	endif
-    	if ( bal_corkbulb > 0 )
-    		set bal_corkbulb to bal_corkbulb - 1
-    		return	
-    	endif
-    	if ( bal_comberry > 1 )
-    		set bal_comberry to bal_comberry - 1
-    		return	
-    	endif
-    	if ( bal_crab_meat > 0 )
-    		set bal_crab_meat to bal_crab_meat - 1
-    		return	
-    	endif
-    	if ( bal_hound_meat > 0 )
-    		set bal_hound_meat to bal_hound_meat - 1
-    		return	
-    	endif
-    	if ( bal_human_meat > 0 )
-    		set bal_human_meat to bal_human_meat - 1
-    		return	
-    	endif
-    	if ( bal_kagouti_hide > 0 )
-    		set bal_kagouti_hide to bal_kagouti_hide - 1
-    		return	
-    	endif
-    	if ( bal_muck > 1 )
-    		set bal_muck to bal_muck - 2
-    		return	
-    	endif
-    	if ( bal_rat_meat > 0 )
-    		set bal_rat_meat to bal_rat_meat - 1
-    		return	
-    	endif
-    	if ( bal_trama_root > 0 )
-    		set bal_trama_root to bal_trama_root - 1
-    		return	
-    	endif
-    
-    End
-    
-
-SCPT
-SCHD Bal_eat_morsel 0 0 0 2143 0
-SCDT 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
+SCHD Bal_eat_morsel 0 0 0 2252 0
+SCDT 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
 SCTX
     Begin Bal_eat_morsel
     StopScript Bal_eat_morsel
     ;Initially created by Shanjak
     
+    	if ( GetItemCount "ingred_scuttle_01" > 0 )
+    		MessageBox, "Вы съели порцию скаттла, чтобы утолить голод."
+    		set ToEat to 1
+    		playSound "Swallow"
+    		return
+    	endif
     	if ( GetItemCount "deepnight_travelFood" > 0 )
     		MessageBox, "Вы съели порцию походного рациона, дабы заморить червячка."
     		set ToEat to 1
@@ -937,173 +645,6 @@ SCTX
     		return
     	endif
     End
-    
-
-SCPT
-SCHD Bal_eat_morsel_misc 0 0 0 2257 0
-SCDT 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
-SCTX
-    Begin Bal_eat_morsel_misc
-    StopScript Bal_eat_morsel_misc
-     
-    ;Initially created by Shanjak
-    
-    	if ( bal_ration > 0 )
-    		MessageBox, "Вы съели порцию походного рациона, дабы заморить червячка."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_bread > 0 )		
-    		MessageBox, "Вы замяли ломоть хлеба, чтобы утолить голод."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_egg_01 > 0 )		
-    		MessageBox, "Вы закинули маленькое яйцо квама, чтобы немного подкрепиться."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_saltrice > 1 )		
-    		MessageBox, "Вы умяли немного соленого риса, дабы подкрепить расшатанное здоровье."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_egg_02 > 0 )
-    		MessageBox, "Вы проглотили большое яйцо квама, чтобы удовлетворить ваш голод."
-    		set ToEat to 2
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_yam > 1 )
-    		MessageBox, "Вы убрали два сладких пепельных батата, для подавления голода."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_jerky > 0 )			
-    		MessageBox, "Вы зажевали вяленную скрибятину, чтобы удовлетворить ваш растущий аппетит."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_jelly > 0 )	
-    		MessageBox, "Вы поглотили немного скрибового желе, для подавления голода."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_corkbulb > 0 )			
-    		MessageBox, "Вы давились жестким пробочником, чтобы слегка насытить урчащий желудок."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_comberry > 1 )			
-    		MessageBox, "Вы запитались парой веточек комимуники, для сладости и сытости."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_crab_meat > 0 )			
-    		MessageBox, "Вы потребили деликатесное крабовое мясо. Это было и вкусно и сытно."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_hound_meat > 0 )
-    		MessageBox, "Вы зажевали сального мяса гончей, чтобы подавить голод."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_human_meat > 0 )			
-    		MessageBox, "Вы давитесь человеченой, чтобы задушить голод."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_kagouti_hide > 0 )			
-    		MessageBox, "Вы грызете кожу кагути, чтоб как-то уморить голод."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_muck > 1 )			
-    		MessageBox, "Вы задегустировали муск, голод не тетка."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_rat_meat > 0 )			
-    		MessageBox, "Вы проглотили вонючего крысиного мяса, и голод отступил."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    	if ( bal_trama_root > 0 )			
-    		MessageBox, "Вы прибегаете к уптреблению корня трамы, только б задавить голод."
-    		set ToEat to 1
-    		set InvEatCheck to 1
-    		playSound "Swallow"
-    		return
-    	endif
-    End
-    
-    
-
-SCPT
-SCHD Bal_energize_sc_script 0 0 0 141 0
-SCDT DAEGcGxheWVyBgEEHCBY/RAsIG8QX2JhbF9zY19lbmVyZ2l6ZSA+IDAMAQZwbGF5ZXIGAQIUIFgfESBvCGVuZXJnaXplID09IDAAECMAwvsg4vvz9+jr6CDn4Orr6O3g7ejlIN3t5fDj6Pft7vHy/CEAAAwBBnBsYXllch0RCGVuZXJnaXplCQEJAQEB
-SCTX
-    Begin Bal_energize_sc_script
-    
-    if ( player->getitemcount, "_bal_sc_energize" > 0 )
-    	if ( player->getspell "energize" == 0 )
-    		messageBox "Вы выучили заклинание Энергичность!"
-    		player->addspell "energize"
-    	endif
-    endif
-    
-    End
-    
-
-SCPT
-SCHD Bal_food_sc_script 0 0 0 153 0
-SCDT DAEGcGxheWVyBgEEHyBY/RAsIG8TX2JhbF9zY19jcmVhdGVfZm9vZCA+IDAMAQZwbGF5ZXIGAQIXIFgfESBvC2NyZWF0ZSBmb29kID09IDAAECYAwiDi+yDi+/P36OvoIOfg6uvo7eDt6OUg0e7n5ODt6P8g7+j56CEAAAwBBnBsYXllch0RC2NyZWF0ZSBmb29kCQEJAQEB
-SCTX
-    Begin Bal_food_sc_script
-    
-    if ( player->getitemcount, "_bal_sc_create_food" > 0 )
-    	if ( player->getspell "create food" == 0 )
-    		messageBox "В вы выучили заклинание Создания пищи!"
-    		player->addspell "create food"
-    	endif
-    endif
-    
-    End
-    
-    
-    
 
 SCPT
 SCHD Bal_hunger 8 0 9 2235 165
@@ -1577,135 +1118,6 @@ SCTX
     End
 
 SCPT
-SCHD Bal_plate_misc 5 0 0 1711 45
-SCVR silverfork;woodfork;chance1;chance2;HasKnife;;
-SCDT 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
-SCTX
-    Begin Bal_plate_misc
-    
-    StopScript Bal_plate_misc
-    
-    ;Initially created by Shanjaq
-    short silverfork
-    short woodfork
-    short chance1
-    short chance2
-    short HasKnife
-    ;0 = has no knife
-    ;1 = has wood knife
-    ;2 = has silverware knife
-    
-    if ( found_food == 0 )
-    	messagebox "Сначала положите продовольствие в Столовый Комплект"
-    	return
-    endif
-    
-    if ( hungry  == 0 )
-    	MessageBox "Вам не хочется есть настолько, что-бы делать это немедленно."
-    	return
-    endif
-    
-    if ( bal_knifes > 0 )
-    	set HasKnife to 2
-    elseif ( bal_knifew > 0 )
-    	set HasKnife to 1
-    else
-    	set HasKnife to 0
-    endif
-    
-    	Set chance1 to Random, 10
-    	Set chance2 to Random, 40
-    
-    	if ( chance2 > 38 )
-    		if ( HasKnife == 0 )
-    			set silverfork to 1
-    		endif
-    	else
-    		set silverfork to 0
-    	endif
-    	if ( chance1 > 8 )
-    		if ( HasKnife == 0 )
-    			set woodfork to 1
-    		endif
-    	else
-    		set woodfork to 0
-    	endif
-    
-    
-    if ( bal_forks > 0 )
-    ;	if ( ( chance2 > 38) && (HasKnife == 0))
-    	if ( silverfork == 1)
-    		MessageBox "Вы бесповоротно затупили и испортили чудную вилку!"
-    		playSound "Item Ring Up"
-    		set bal_forks to bal_forks - 1
-    	else
-    		if ( HasKnife == 1 )
-    			if ( chance1 > 8 )
-    				MessageBox "Вы окончательно затупили и испортили нож!!"
-    				playSound "repair fail"
-    				set bal_knifew to bal_knifew - 1
-    			endif
-    		endif
-    		if ( HasKnife == 2 )
-    			if ( chance2 > 38 )
-    				MessageBox "Вы окончательно испортили нож!!"
-    				playSound "Item Ring Up"
-    				set bal_knifes to bal_knifes - 1
-    			endif
-    		endif
-    		StartScript Bal_eat_morsel_misc
-    		StartScript Bal_dump_morsel_misc
-    	endif
-    elseif ( bal_forkw > 0 )
-    ;	if ((chance1 > 8) && (HasKnife == 0))
-    	if (woodfork == 1)
-    		MessageBox "Вы бесповоротно испортили хорошую вилку!"
-    		playSound "repair fail"
-    		set bal_forkw to bal_forkw - 1
-    	else
-    		if ( HasKnife == 1 )
-    			if ( chance1 > 8 )
-    				MessageBox "Вы окончательно затупили и испортили нож!"
-    				playSound "repair fail"
-    				set bal_knifew to bal_knifew - 1
-    			endif
-    		endif
-    		if ( HasKnife == 2 )
-    			if ( chance2 > 38 )
-    				MessageBox "Вы затупили и испортили нож!!"
-    				playSound "Item Ring Up"
-    				set bal_knifes to bal_knifes - 1
-    			endif
-    		endif
-    		StartScript Bal_eat_morsel_misc
-    		StartScript Bal_dump_morsel_misc
-    	endif
-    else
-    	if ( chance1 > 1 )
-    		if ( "player"->GetItemCount "misc_de_foldedcloth00" > 0 )
-    		messagebox "Вы пользуетесь салфеткой, вытирая ей лицо и руки."
-    		elseif ( "player"->GetItemCount "misc_de_cloth10" > 0 )
-    		messagebox "Вы стираете пищу с лица и рук куском ткани."
-    		elseif ( "player"->GetItemCount "misc_de_cloth11" > 0 )
-    		messagebox "Вы вытираетесь куском ткани от замазавшей лицо и руки пищи."
-    		else
-    			Cast needed_napkin player
-    		endif
-    	endif
-    	if (chance1 > 8 )
-    		MessageBox "Пища выскальзывает из Ваших жирнючих грязных пальцев!"
-    		playSound "DefaultLand"
-    		StartScript Bal_dump_morsel_misc
-    		return
-    	else
-    		StartScript Bal_eat_morsel_misc
-    		StartScript Bal_dump_morsel_misc
-    	endif
-    endif
-    End
-    
-
-SCPT
 SCHD Bal_PocketWatch 2 0 1 2562 32
 SCVR OnPCEquip;ClockHour;ClockMinute;;
 SCDT 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
@@ -1910,251 +1322,6 @@ SCTX
     	endwhile
     
     End
-    
-
-SCPT
-SCHD Bal_show_food 0 0 0 2125 0
-SCDT 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
-SCTX
-    Begin Bal_show_food
-    stopscript Bal_show_food
-    
-    	if ( bal_ration > 0 )
-    		messagebox "У Вас есть % .0f порций походного рациона  в Столовом Комплекте" Bal_ration
-    	endif
-    
-    	if ( bal_bread > 0 )
-    		messagebox "У Вас есть % .0f порций хлеба  в Столовом Комплекте" bal_bread
-    	endif
-    
-    	if ( bal_egg_01 > 0 )
-    		messagebox "У Вас есть % .0f маленьких яиц квама  в Столовом Комплекте" bal_egg_01
-    	endif
-    
-    	if ( bal_saltrice > 0 )
-    		messagebox "У Вас есть % .0f порций солеоного риса  в Столовом Комплекте" bal_saltrice
-    	endif
-    
-    	if ( bal_egg_02 > 0 )
-    		messagebox "У Вас есть % .0f больших яиц квама  в Столовом Комплекте" bal_egg_02
-    	endif
-    
-    	if ( bal_yam > 0 )
-    		messagebox "У Вас есть % .0f порций пепельног батата  в Столовом Комплекте" bal_yam
-    	endif
-    
-    	if ( bal_jerky > 0 )
-    		messagebox "У Вас есть % .0f порций вячленой скрибятины  в Столовом Комплекте" bal_jerky
-    	endif
-    
-    	if ( bal_jelly > 0 )
-    		messagebox "У Вас есть % .0f порций для скрибового желе  в Столовом Комплекте" bal_jelly
-    	endif
-    
-    	if ( bal_corkbulb > 0 )
-    		messagebox "У Вас есть % .0f порций пробочника  в Столовом Комплекте" bal_corkbulb
-    	endif
-    
-    	if ( bal_comberry > 0 )
-    		messagebox "У Вас есть % .0f кисточек коммуники  в Столовом Комплекте" bal_comberry
-    	endif
-    
-    	if ( bal_crab_meat > 0 )
-    		messagebox "У Вас есть % .0f кусков крабового мяса  в Столовом Комплекте" bal_crab_meat
-    	endif
-    
-    	if ( bal_hound_meat > 0 )
-    		messagebox "У Вас есть % .0f кусков мяса гончей  в Столовом Комплекте" bal_hound_meat
-    	endif
-    
-    	if ( bal_human_meat > 0 )
-    		messagebox "У Вас есть % .0f кусков мяса гуманоида  в Столовом Комплекте" bal_human_meat
-    	endif
-    
-    	if ( bal_kagouti_hide > 0 )
-    		messagebox "У Вас есть % .0f шкур кагути  в Столовом Комплекте" bal_kagouti_hide
-    	endif
-    
-    	if ( bal_muck > 0 )
-    		messagebox "У Вас есть % .0f порций муска  в Столовом Комплекте" bal_muck
-    	endif
-    
-    	if ( bal_rat_meat > 0 )
-    		messagebox "У Вас есть % .0f кусков крысятины  в Столовом Комплекте" bal_rat_meat
-    	endif
-    
-    	if ( bal_trama_root > 0 )
-    		messagebox "У Вас есть % .0f корешков трамы  в Столовом Комплекте" bal_trama_root
-    	endif
-    
-         if ( bal_knifes > 0 )
-    		messagebox "У Вас есть % .0f серебрянных ножей  в Столовом Комплекте" bal_knifes
-    	endif
-    
-         if ( bal_forks > 0 )
-    		messagebox "У Вас есть % .0f серебрянных вилок  в Столовом Комплекте" bal_forks
-    	endif
-    
-         if ( bal_knifew > 0 )
-    		messagebox "У Вас есть % .0f ножей с деревяной ручкой в Столовом Комплекте" bal_knifew
-    	endif
-    
-         if ( bal_forkw > 0 )
-    		messagebox "У Вас есть % .0f деревянных вилок  в Столовом Комплекте" bal_forkw
-    	endif
-    
-    End
-
-SCPT
-SCHD Bal_spells 0 0 1 2345 12
-SCVR CreateTimer;;
-SCDT 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
-SCTX
-    Begin Bal_spells
-    
-    float CreateTimer
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
-    
-    if ( player->GetSpell, "Create food" > 0 )
-    	Set CreateTimer  to ( CreateTimer  + GetSecondsPassed )
-    	if ( CreateTimer  > 60 )
-    		Set CreateTimer  to 1
-    	endif
-    elseif ( player->GetSpell, "Create water" > 0 )
-    	Set CreateTimer  to ( CreateTimer  + GetSecondsPassed )
-    	if ( CreateTimer  > 60 )
-    		Set CreateTimer  to 1
-    	endif
-    elseif ( player->GetSpell, "Energize" > 0 )
-    	Set CreateTimer  to ( CreateTimer  + GetSecondsPassed )
-    	if ( CreateTimer  > 60 )
-    		Set CreateTimer  to 1
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create food"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		MessageBox, "Вы наколдовали кусок хлеба!"
-    		set CreateTimer  to 0
-    		player->additem, ingred_bread_01, 1
-    		player->modcurrenthealth, -5
-    		player->modcurrentfatigue, -20
-    		playsound, "Conjuration hit"
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, empty_waterskin >= 1)
-    			MessageBox, "Вы заполнили бурдюк водой!"
-    			set CreateTimer  to 0
-    			player->removeitem, empty_waterskin, 1
-    			player->additem, nearlyempty_waterskin, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, nearlyempty_waterskin >= 1)
-    			MessageBox, "Вы пополнили бурдюк водой!"
-    			set CreateTimer  to 0
-    			player->removeitem, nearlyempty_waterskin, 1
-    			player->additem, nearlyhalf_waterskin, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, nearlyhalf_waterskin >= 1)
-    			MessageBox, "Вам удалось создать немного воды в бурдюке!"
-    			set CreateTimer  to 0
-    			player->removeitem, nearlyhalf_waterskin, 1
-    			player->additem, halffull_waterskin, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, halffull_waterskin >= 1)
-    			MessageBox, "В бурдюке появилось немного воды!"
-    			set CreateTimer  to 0
-    			player->removeitem, halffull_waterskin, 1
-    			player->additem, nearlyfull_waterskin, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, nearlyfull_waterskin >= 1)
-    			MessageBox, "В бурдюке появилась вода!"
-    			set CreateTimer  to 0
-    			player->removeitem, nearlyfull_waterskin, 1
-    			player->additem, full_waterskin, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, misc_com_bucket_01 >= 1)
-    			MessageBox, "Вы получили воду в кадушке!"
-    			set CreateTimer  to 0
-    			player->removeitem, misc_com_bucket_01, 1
-    			player->additem, misc_com_bucket_01f, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Create water"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		if ("player"->GetItemCount, Misc_Com_Bucket_Metal >= 1)
-    			MessageBox, "Вы получили воду в ведерке!"
-    			set CreateTimer  to 0
-    			player->removeitem, Misc_Com_Bucket_Metal, 1
-    			player->additem, Misc_Com_Bucket_Metalf, 1
-    			player->modcurrenthealth, -5
-    			player->modcurrentfatigue, -20
-    			playsound, "Conjuration hit"
-    		endif
-    	endif
-    endif
-    
-    if ( player->GetSpellEffects, "Energize"  == 1 )
-    	if ( CreateTimer >= 2 )
-    		set Glo_energize to 1
-    		set CreateTimer  to 0
-    		player->modcurrenthealth, -5
-    		playsound, "Restoration hit"
-    	endif
-    endif
-    
-    end Balors_spells
 
 SCPT
 SCHD Bal_stamina_drain 1 0 8 577 77
@@ -3361,23 +2528,6 @@ SCTX
     End Balors_vamp_bloothirst
 
 SCPT
-SCHD Bal_water_sc_script 0 0 0 155 0
-SCDT DAEGcGxheWVyBgEEICBY/RAsIG8UX2JhbF9zY19jcmVhdGVfd2F0ZXIgPiAwDAEGcGxheWVyBgECGCBYHxEgbwxjcmVhdGUgd2F0ZXIgPT0gMAAQJQDC+yDi+/P36OvoIOfg6uvo7eDt6OUg0e7n5ODt6OUg7+jy/P8hAAAMAQZwbGF5ZXIdEQxjcmVhdGUgd2F0ZXIJAQkBAQE=
-SCTX
-    Begin Bal_water_sc_script
-    
-    if ( player->getitemcount, "_bal_sc_create_water" > 0 )
-    	if ( player->getspell "create water" == 0 )
-    		messageBox "Вы выучили заклинание Создание питья!"
-    		player->addspell "create water"
-    	endif
-    endif
-    
-    End
-    
-    
-
-SCPT
 SCHD Bal_weariness 9 0 10 3783 194
 SCVR Interval;WhileCheck;WhileCounter;done;DayDone;warning1;RestMessage;ttemp;ctemp;CurrentDay;CurrentHour;HourCounter;HoursRested;weariness;loststrength;lostagility;lostspeed;lostintelligence;btemp;;
 SCDT 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
@@ -4066,18 +3216,6 @@ NAME vamp restoration damage
 FNAM Ущерб восстановления Вампа
 SPDT AQAAAAAAAAAAAAAA
 ENAM FwD//wAAAAAAAAAAAQAAAAUAAAAKAAAA
-
-SPEL
-NAME create food
-FNAM Приготовление Пищи
-SPDT AAAAAA8AAAAEAAAA
-ENAM QwD//wAAAAAAAAAAAQAAAAAAAAAAAAAA
-
-SPEL
-NAME create water
-FNAM Приготовление Питья
-SPDT AAAAAA8AAAAEAAAA
-ENAM QwD//wAAAAAAAAAAAQAAAAAAAAAAAAAA
 
 SPEL
 NAME Sleepy_really
