@@ -1,1 +1,6 @@
 /espa
+*.esp
+/A1_PrimaryNeeds_*.*/
+/A1_PrimaryNeeds_*.*.*/
+*.zip
+*.txt
