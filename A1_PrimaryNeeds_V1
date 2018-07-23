@@ -2140,7 +2140,8 @@ SCTX
     		set warning1 to 0
     	endif
     endif
-    \x0Cif (thirst > 0 )								
+    
+    if (thirst > 0 )
     	if ( Player->GetItemCount "misc_com_bottle_03f" > 0 )			
     		Player->RemoveItem "misc_com_bottle_03f" 1
                MessageBox, "Вы опустошили бутылку для утоления жажды."
