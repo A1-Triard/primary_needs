@@ -1645,6 +1645,7 @@ SCTX
     float fCurFat 
     float fDiff 
     short jDis
+    short fall
     
     if ( MenuMode == 1 ) 					;Bad idea to do that in MenuMode...
     	return
@@ -1662,7 +1663,17 @@ SCTX
     	return
     endif
     
-    player->ModCurrentFatigue -0.001 ;That little tweak fixes unlimited running on zero stamina.
+    ;Fix unlimited running on zero stamina.
+    if ( fall == 0 )
+    	if ( player->GetFatigue <= 0 )
+    		set fall to 1
+    		player->ModCurrentFatigue -0.1 ; -0.001 is enough for legacy Morrowind, but not for OpenMW
+    	endif
+    else
+    	if ( player->GetFatigue >= 0.1 )
+    		set fall to 0
+    	endif
+    endif
     
     set fTimer to ( fTimer + GetSecondsPassed ) 
     if ( fTimer > 2 ) 
@@ -2140,7 +2151,8 @@ SCTX
     		set warning1 to 0
     	endif
     endif
-    \x0Cif (thirst > 0 )								
+    
+    if (thirst > 0 )								
     	if ( Player->GetItemCount "misc_com_bottle_03f" > 0 )			
     		Player->RemoveItem "misc_com_bottle_03f" 1
                MessageBox, "Вы опустошили бутылку для утоления жажды."
