@@ -1,7 +1,0 @@
-#!/bin/sh
-
-basedir="$(dirname "$0")"
-cd "$basedir/esp-assembler"
-stack build || exit 1
-root_path="$(stack path --local-install-root)"
-cp "$root_path/bin/espa" .. || exit 1
