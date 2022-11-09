@@ -132,7 +132,7 @@
         shorts: 6
         longs: 3
         floats: 3
-      data_size: 5656
+      data_size: 5541
       var_table_size: 88
   - SCVR:
     - doOnce
@@ -147,7 +147,7 @@
     - cx
     - cy
     - cz
-  - SCDT: eJy1mG9oG2Ucx+8uf5o8TdtL07SrVfeoRdaJmGSoj5pN7GRjwmRvHOl8cV6SS5vlkpTLtaUv9KWivhB1bwVlr3QyBiK+G4KwiSCoTARntVZnM+vSWRAmnejv/qVPmns2rokUenfP/b7f5/f5Pc/dc3mCvD+Maz4OH8CpRJAXwjjzg4j378fJM1GeG+fD8Gc2OzGXxXGzyReymxKXxOGnkseT0lGlVisV9UNySTlSmdaUvMAFeIixApP4gXHHy+nie9EMEHDSuBGGToKccSMV5IMQhc2oBMQEIQay4+/EmX9EXBXp/o7oStmJM716eH5MjNMhz83mZV2RajmDZpwPmcxWV0lwbXaVtLtKGVFGStQtoyFGOC5GahyXHiB+LkIO8og8LvxoUPBGzwG+wHNRfLiP7jwDVSgIbc1TRrOvrfkE1ytmwAUOU6CCwwmI4vamrb5VToAzvnkmbGtzMosJWy2OkktPpG/ng8hF/pLYVl8eklWN4hpFFgzUcaiOUcUARxfOOAaMsBF7lvgRhngzxJEmOPEZ7rO1f6/d3LiCV67VV3Edry6v1/9avmo0LN+o4/Xr9Z8b1zexcdb4tbHSWLv558ZKHe7irzcaa42Vzav4i8Yf62tXft/guCW7Lz5k9nUAPww9+e2ZYJ8mjMHztQze2bjJFMeHozTuwWpFTxq4AkxcuI8JfgiueK7fvoIbeC9+0BQHjCsuwgdnVXlR0UzVXdYcjRfNZwAmnVbMSicVVV2UEkkO0uw1LdIYPDnT2XJxptfWIG76tlpi5JwPkQs+d9tmBhNpWvILSP5mSPaku8+olTwz/uSnEz7lR+QDv7stg/EiSJYYko4YRy3GqO0s12akRbnsle+TAJ2sHkDk5UC7JYPtNIR/7BLeEdcdFtegUzFZ1bViTvEKdipIZ3o0iIgcdPNkoL0EgrdcBV0ZtEK1mpdKC3JZlpTpaSmR8sSm9tCpTvQg8kRPuyWDLAPhJ13C/xcub2P2dIhOlA8hEgu1WzK4EhA+6RLeEdeIxTVgz4Ospsh5r1TDYTrN7yDN1dB2QwaTP4zIUHh7sEnkvjKkOlkZtj15mqxLZQX+eeTtRy3vP0C4HHbzZDDfAEEEuQk6GslhC67f9i3P5Uqe14IWsHcRIufQdj8G1JcQvNQW3BHQ3RbQsO1Zkqerc3pRminmPb8rP++lc13sReTNXpYvA/AsiC4wRR2B2h/VQ7b3THWukt/RxDwToTN+IYLIfMTdlQH5NkjeZ0g6QhyzEGO2c06TszsifLWPTneyD5HjfW6mDL4aCF5xFXRzRc9Vy1lF0zx/ihX66Vx39yOyr9/NkwF3DAR5V0FHcLstuJGmr1bKzqlZSatWPQ/fsYGW9W8AkdEBljGD8hEQPcsU3WLl2EevHKmWIqRuW4R7rCKMlou1nFFaqVZU5xVtQdYUqVQpFhRPZXhepIlCIiL3imxrRiGeBNnULWQtg+6V13lem+4L5leHZ9LHonTKG5ByMOpmymC8L4rIo66CjuiwRbfLrXYFmFGeEPcM0hl/CxmvR9nODNDIICL3D7JlHeE6r6fWMnoGDcTojM9Dxt8MunkyENdB4Iu5CbqyeOYVZbZSnJ7RJV2T5xX1ENh7wqu34L0TQ+SjmLsrA/ArkPzGkHTzh3AtN6frqudvoE+H6GRfHELkjaF2SwbbhxB+3iW8m989UC74TbOTZeV0nM41E0ekEnd3ZeC9DpL3GBIDEba1fLCBZuy5Cc4ml7WdZl0191Z7YL9yl0jta74WdbZGA9aGmDAmipOyKuVmFPhGLle1mqKOiWGjCTLTFWvnk+f/A3j5uAY=
+  - SCDT: eJy1mF9oW1Ucx+/Nn9vmJG1vmqTt7NxOoQ86mSYR9cjaoVM25tjTnHQFudwkt02am6bc3KwUBj4p4oP4Bx+GL4rgi4KC6JsgTEREGIM9bVZqtS6zNt0qotKJ/u6fxJPmnMptMgpN7rm/7/d8P+ec5NwcSQyEcMUv4KM4nZREXwhPfSfjyUmc+iAqCuNiCP7s5kbNdXncbvL3uk3Jq/LQk6nnUspprVIpFszjalE7OT9raDmfEBShxilM4QfGG16NLq7JdoEPp6wbIehEEqwbaUmUoArbVUmokaAG0on78dTfMi7LdH8nTa3UqLO9ekRxVE7QJWcXcqqpKZWsRTMu9trMTlcpcG12lXK7SltVViTqltMQAaFoC5PfW+FFq8OgOCMKUXyij+5zCuBnfG3N56xmf1vztBCWp8AFXs6BCl6moUq4KrehimCgW5wWr8/q3klmIQUFmsJ6DVqFw+6UBRAGhV3SECcF+Rnh0vo/G3e21vDqRu0GruEbK5u131duWg0rf9bw5q3aD/Vb29h6V/+pvlpfv3N7a7UGd/GVrfp6fXX7Jv6m/uvm+tovW4Kw7PYl9tp9HcWPQE8Bd1rct8mQGCN+IUYqgjAxQAJChBxJ2FQJfCJKAz9VnjdTFrAPVhHcxwQ/BFei0O9ewQ18CB+2xUHrSoiI0oKuLmmGrbrXWTCJgr0gYQUYhYwyp+n6kpJMCRAzbFtMYPAUbGfHxUooQEK9mfBl/38tMTLpR+SMn23bTHD/BC1ZAMlLHMl9E91nNIqeGfUAHXgsgMhjAbYth/FZkMxxJB0x7nMYo66zWskrS2rJK9/TQTqsGEQkFmy35LAlofwYo7wjrnscrsHGiKm6aRSymlewMYlOeg2S1oMsTw5aWELkoMQSdGXSZsrlnFJcVEuqos3OKsm0J7a/Wtg+g6hfS+2WHLI1KP+DUX5XuLzN2ZUeOuirPYi809NuyeH6HMovM8o74hp2uAbcdZAxNDXnleq9XjpmrhcRs3enIYfpdSh+t63YJmLvDOlOdoYdnzxDNZWSBv888r4davn+CyGSD7E8OcwvguAiU9DRTA45cP2ub6maLXreCxCd8zBCZBLt9ONATUPxXFtxR0AHHKAh17OozparZkHJF3KevyvPhumsUhiRA2GeLwfwCIjOcEUdgbpPuHHXO1+uzuf2tDBJhE68AYn9EbYrBxJHEHmUI+kIcdRBjLnOWUPN7IlwqI+Oexni/hhhmXL4hD5E4n0sQTd39Gy5lNEMw/Oj2G8tcB9C1i/6WJ4cuGUQ3GYKOoI76MANN32NYqaqZxSjXPY8fcv9LftfPyLv9/OMOZSXQHSdK9pl53iY3jnSLYOQ/t9BGHMGYV+pUMlaQ6tUCvp5zVhUDU0pzhdmNE/DUBugid4aQOSjAb41ZyC+BdnPu8haJt0rb+Pz2nRftJ86PJN+JdORX5AReVNmmXIYPwbBl0xBR3TYoRthjd0MrChPiJ9G6cSZKCIXonxnDuhFkH2yi6wj3MbXU+swegZ9Y5BOfGoQEWWQ5clBvACC15iCrmyeOU1bmC/M5k3FNNTzmn4c7D3hVWN02kMxRJ6IsV05gM+DpMKRdPOHcCVbNU3d8zPQ6TgdFsUR2R9vt+SwPQ7lpxjl3XzugeGC3zR72VaSCTrrGmTdjrNdOXgjCUQeTLAlFiIca/nhAG3cOspsHHI5x2nOVfOgswcOD0dk6pDxlWjjnDLoHIj5RmX5mKor2bwGz8ilslHR9FE5ZDVBMlNzjiFF8V9izqcn
   - SCTX:
     - Begin A1V1_MesskitCont_sc
     - ''
@@ -208,8 +208,7 @@
     - "\treturn"
     - endif
     - ''
-    - ifx ( doOnce )
-    - else
+    - if ( doOnce == 0 )
     - "\tDisablePlayerControls"
     - "\tset doOnce to 1"
     - "\tset cx to A1V1_MesskitX"
@@ -218,11 +217,11 @@
     - "\tSetPos X cx"
     - "\tSetPos Y cy"
     - "\tSetPos Z cz"
-    - "\tsetx invItem,invCount,invRef to xInventory"
-    - "\twhilex ( invCount )"
-    - "\t\txRemoveItem invItem invCount"
-    - "\t\tsetx invItem,invCount,invRef to xInventory"
-    - "\tendwhile"
+    - ";\tsetx invItem,invCount,invRef to xInventory"
+    - ";\twhilex ( invCount )"
+    - ";\t\txRemoveItem invItem invCount"
+    - ";\t\tsetx invItem,invCount,invRef to xInventory"
+    - ";\tendwhile"
     - "\tAddItem \"A1V1_MesskitItem\", 1"
     - "\tset invRef to 0"
     - "\tset doRemove to 1"
