@@ -6,42 +6,42 @@
       description:
       - Кушать, пить, спать, что ещё не хватает человеку в игре?
       - Основан на GL_Primary_Needs_2.7_MTB_RUSv1.0, созданном Balor <balor_abyss@mail.ru> и адаптированном Galib <Galleobor@yandex.ru>
-      records: 184
+      records: 182
   - MAST: Morrowind.esm
-  - DATA: 79764287
-  - MAST: Tribunal.esm
-  - DATA: 6616539
+  - DATA: 79765994
   - MAST: Bloodmoon.esm
-  - DATA: 11799703
+  - DATA: 11801192
+  - MAST: Tribunal.esm
+  - DATA: 6618333
   
 - GLOB:
-  - NAME: A1V1_MesskitX
+  - NAME: A1V1_MessKitX
   - FNAM: f
   - FLTV: 0.0
   
 - GLOB:
-  - NAME: A1V1_MesskitY
+  - NAME: A1V1_MessKitY
   - FNAM: f
   - FLTV: 0.0
   
 - GLOB:
-  - NAME: A1V1_MesskitZ
+  - NAME: A1V1_MessKitZ
   - FNAM: f
   - FLTV: 0.0
   
 - GLOB:
-  - NAME: A1V1_MesskitCont1
-  - FNAM: s
+  - NAME: A1V1_MessKitCont1
+  - FNAM: l
   - FLTV: 0.0
   
 - GLOB:
-  - NAME: A1V1_MesskitCont2
-  - FNAM: s
+  - NAME: A1V1_MessKitCont2
+  - FNAM: l
   - FLTV: 0.0
   
 - GLOB:
-  - NAME: A1V1_MesskitCont3
-  - FNAM: s
+  - NAME: A1V1_MessKitCont3
+  - FNAM: l
   - FLTV: 0.0
   
 - GLOB:
@@ -90,11 +90,6 @@
   - FLTV: 0.0
   
 - GLOB:
-  - NAME: found_food
-  - FNAM: s
-  - FLTV: 0.0
-  
-- GLOB:
   - NAME: sleep_mod
   - FNAM: f
   - FLTV: 0.5
@@ -127,80 +122,53 @@
   
 - SCPT:
   - SCHD:
-      name: A1V1_MesskitCont_sc
+      name: A1V1_MessKit_sc
       vars:
-        shorts: 6
-        longs: 3
-        floats: 3
-      data_size: 5541
-      var_table_size: 88
+        shorts: 2
+        longs: 0
+        floats: 1
+      data_size: 465
+      var_table_size: 21
   - SCVR:
-    - doOnce
-    - doRemove
-    - doDisable
-    - temp
-    - doActivate
-    - waitActivate
-    - invItem
-    - invCount
-    - invRef
-    - cx
-    - cy
-    - cz
-  - SCDT: eJy1mF9oW1Ucx+/Nn9vmJG1vmqTt7NxOoQ86mSYR9cjaoVM25tjTnHQFudwkt02am6bc3KwUBj4p4oP4Bx+GL4rgi4KC6JsgTEREGIM9bVZqtS6zNt0qotKJ/u6fxJPmnMptMgpN7rm/7/d8P+ec5NwcSQyEcMUv4KM4nZREXwhPfSfjyUmc+iAqCuNiCP7s5kbNdXncbvL3uk3Jq/LQk6nnUspprVIpFszjalE7OT9raDmfEBShxilM4QfGG16NLq7JdoEPp6wbIehEEqwbaUmUoArbVUmokaAG0on78dTfMi7LdH8nTa3UqLO9ekRxVE7QJWcXcqqpKZWsRTMu9trMTlcpcG12lXK7SltVViTqltMQAaFoC5PfW+FFq8OgOCMKUXyij+5zCuBnfG3N56xmf1vztBCWp8AFXs6BCl6moUq4KrehimCgW5wWr8/q3klmIQUFmsJ6DVqFw+6UBRAGhV3SECcF+Rnh0vo/G3e21vDqRu0GruEbK5u131duWg0rf9bw5q3aD/Vb29h6V/+pvlpfv3N7a7UGd/GVrfp6fXX7Jv6m/uvm+tovW4Kw7PYl9tp9HcWPQE8Bd1rct8mQGCN+IUYqgjAxQAJChBxJ2FQJfCJKAz9VnjdTFrAPVhHcxwQ/BFei0O9ewQ18CB+2xUHrSoiI0oKuLmmGrbrXWTCJgr0gYQUYhYwyp+n6kpJMCRAzbFtMYPAUbGfHxUooQEK9mfBl/38tMTLpR+SMn23bTHD/BC1ZAMlLHMl9E91nNIqeGfUAHXgsgMhjAbYth/FZkMxxJB0x7nMYo66zWskrS2rJK9/TQTqsGEQkFmy35LAlofwYo7wjrnscrsHGiKm6aRSymlewMYlOeg2S1oMsTw5aWELkoMQSdGXSZsrlnFJcVEuqos3OKsm0J7a/Wtg+g6hfS+2WHLI1KP+DUX5XuLzN2ZUeOuirPYi809NuyeH6HMovM8o74hp2uAbcdZAxNDXnleq9XjpmrhcRs3enIYfpdSh+t63YJmLvDOlOdoYdnzxDNZWSBv888r4davn+CyGSD7E8OcwvguAiU9DRTA45cP2ub6maLXreCxCd8zBCZBLt9ONATUPxXFtxR0AHHKAh17OozparZkHJF3KevyvPhumsUhiRA2GeLwfwCIjOcEUdgbpPuHHXO1+uzuf2tDBJhE68AYn9EbYrBxJHEHmUI+kIcdRBjLnOWUPN7IlwqI+Oexni/hhhmXL4hD5E4n0sQTd39Gy5lNEMw/Oj2G8tcB9C1i/6WJ4cuGUQ3GYKOoI76MANN32NYqaqZxSjXPY8fcv9LftfPyLv9/OMOZSXQHSdK9pl53iY3jnSLYOQ/t9BGHMGYV+pUMlaQ6tUCvp5zVhUDU0pzhdmNE/DUBugid4aQOSjAb41ZyC+BdnPu8haJt0rb+Pz2nRftJ86PJN+JdORX5AReVNmmXIYPwbBl0xBR3TYoRthjd0MrChPiJ9G6cSZKCIXonxnDuhFkH2yi6wj3MbXU+swegZ9Y5BOfGoQEWWQ5clBvACC15iCrmyeOU1bmC/M5k3FNNTzmn4c7D3hVWN02kMxRJ6IsV05gM+DpMKRdPOHcCVbNU3d8zPQ6TgdFsUR2R9vt+SwPQ7lpxjl3XzugeGC3zR72VaSCTrrGmTdjrNdOXgjCUQeTLAlFiIca/nhAG3cOspsHHI5x2nOVfOgswcOD0dk6pDxlWjjnDLoHIj5RmX5mKor2bwGz8ilslHR9FE5ZDVBMlNzjiFF8V9izqcn
+    - init
+    - actiStage
+    - tempF
+  - SCDT: eJyFkcFqwkAUReemNTItwguUtmAXb9EPcHTtot2UUrqpUKKbICUFQVGc+Qp/xd9xp/gngi+ZJARU3N5zZ+5794UINMc74n6fzTqCeoVGiDvNNlCZ2AvRFAfnjk4DIgfcCYEXjg/Ec3ozvyb5Tq39mrhPl85y35aaCPbUpoccD9x8mRaexP5pyfA5t1VOV76sckyR0yt9N5WvRN0n8qj2ygst8UKV40K8Zk8N/ENF/NGqjxure4pFV2fpUOjwIh0JHWX0WhUbOtGhNNr0mMs/1i0LNHBGyvFLZJ0/+638iquofgBT1Kvfx9NkMR271DcFHAGfnFod
   - SCTX:
-    - Begin A1V1_MesskitCont_sc
+    - begin A1V1_MessKit_sc
     - ''
-    - short doOnce
-    - short doRemove
-    - short doDisable
-    - short temp
-    - float cx
-    - float cy
-    - float cz
-    - long invItem
-    - long invCount
-    - long invRef
-    - short doActivate
-    - short waitActivate
-    - ''
-    - if ( doDisable > 20 )
-    - "\tif ( GetDisabled == 1 )"
-    - "\t\tSetDelete 1"
-    - "\t\treturn"
-    - "\tendif"
-    - endif
-    - ''
-    - if ( doDisable > 20 )
-    - "\tDisable"
-    - "\treturn"
-    - endif
-    - ''
-    - if ( doDisable > 0 )
-    - "\tAddItem \"A1V1_MesskitFakeIngred\", 2"
-    - "\tset doDisable to ( doDisable + 1 )"
-    - "\treturn"
-    - endif
+    - short init
+    - float tempF
+    - short actiStage
     - ''
     - if ( GetDisabled == 1 )
-    - "\tEnable"
-    - "\tset doDisable to 1"
+    - "\tSetDelete 1"
+    - "\treturn"
     - endif
     - ''
-    - if ( waitActivate == 2 )
+    - if ( actiStage == 3 )
     - "\tif ( MenuMode == 0 )"
-    - "\t\tset waitActivate to 0"
-    - "\t\tif ( GetItemCount A1V1_MesskitItem == 0 )"
-    - "\t\t\tset doDisable to 1"
+    - "\t\tset actiStage to 0"
+    - "\t\tif ( GetItemCount A1V1_MessKitItem == 0 )"
+    - "\t\t\tDisable"
     - "\t\telse"
-    - "\t\t\tStartScript A1V1_MesskitUpdate_sc"
+    - "\t\t\tDisablePlayerControls"
+    - "\t\t\tStartScript A1V1_StoreMessKit_sc"
     - "\t\tendif"
     - "\tendif"
     - "\treturn"
-    - elseif ( waitActivate == 1 )
+    - endif
+    - ''
+    - if ( actiStage == 2 )
     - "\tif ( MenuMode == 1 )"
-    - "\t\tset waitActivate to 2"
+    - "\t\tset actiStage to 3"
     - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( actiStage == 1 )
+    - "\tset actiStage to 2"
+    - "\tActivate"
     - "\treturn"
     - endif
     - ''
@@ -208,343 +176,50 @@
     - "\treturn"
     - endif
     - ''
-    - if ( doOnce == 0 )
+    - if ( init == 0 )
+    - "\tset init to 1"
     - "\tDisablePlayerControls"
-    - "\tset doOnce to 1"
-    - "\tset cx to A1V1_MesskitX"
-    - "\tset cy to A1V1_MesskitY"
-    - "\tset cz to A1V1_MesskitZ"
-    - "\tSetPos X cx"
-    - "\tSetPos Y cy"
-    - "\tSetPos Z cz"
-    - ";\tsetx invItem,invCount,invRef to xInventory"
-    - ";\twhilex ( invCount )"
-    - ";\t\txRemoveItem invItem invCount"
-    - ";\t\tsetx invItem,invCount,invRef to xInventory"
-    - ";\tendwhile"
-    - "\tAddItem \"A1V1_MesskitItem\", 1"
-    - "\tset invRef to 0"
-    - "\tset doRemove to 1"
-    - "\treturn"
-    - endif
-    - ''
-    - if ( doActivate == 1 )
-    - "\tset waitActivate to 1"
-    - "\tset doActivate to 0"
-    - "\tActivate"
-    - "\treturn"
-    - endif
-    - ''
-    - if ( doRemove == 10 )
-    - "\tset doRemove to 0"
-    - "\tMessageBox \"Гляньте вниз и запихайте ваши приборы и продовольствие в Столовый Комплект\""
-    - "\tEnablePlayerControls"
-    - "\treturn"
-    - endif
-    - ''
-    - if ( doRemove > 5 )
-    - "\tset temp to 1"
-    - else
-    - "\tset temp to 0"
-    - endif
-    - ''
-    - ifx ( temp )
-    - "\tset invRef to A1V1_MesskitCont1"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_scrib_jelly_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
+    - "\tset tempF to A1V1_MessKitX"
+    - "\tSetPos X tempF"
+    - "\tset tempF to A1V1_MessKitY"
+    - "\tSetPos Y tempF"
+    - "\tset tempF to A1V1_MessKitZ"
+    - "\tSetPos Z tempF"
+    - "\tif ( GetItemCount A1V1_MessKitItem == 0 )"
+    - "\t\tAddItem A1V1_MessKitItem, 1"
     - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_scrib_jelly_01\", invItem"
-    - "\t\txAddItem \"ingred_scrib_jelly_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_scrib_jerky_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_scrib_jerky_01\", invItem"
-    - "\t\txAddItem \"ingred_scrib_jerky_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_ash_yam_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_ash_yam_01\", invItem"
-    - "\t\txAddItem \"ingred_ash_yam_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_saltrice_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_saltrice_01\", invItem"
-    - "\t\txAddItem \"ingred_saltrice_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"food_kwama_egg_02\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"food_kwama_egg_02\", invItem"
-    - "\t\txAddItem \"food_kwama_egg_02\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"food_kwama_egg_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"food_kwama_egg_01\", invItem"
-    - "\t\txAddItem \"food_kwama_egg_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_bread_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_bread_01\", invItem"
-    - "\t\txAddItem \"ingred_bread_01\", invItem"
-    - "\tendif"
-    - ''
-    - "\tset invRef to A1V1_MesskitCont2"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_rat_meat_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_rat_meat_01\", invItem"
-    - "\t\txAddItem \"ingred_rat_meat_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_muck_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_muck_01\", invItem"
-    - "\t\txAddItem \"ingred_muck_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_kagouti_hide_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_kagouti_hide_01\", invItem"
-    - "\t\txAddItem \"ingred_kagouti_hide_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_hound_meat_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_hound_meat_01\", invItem"
-    - "\t\txAddItem \"ingred_hound_meat_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_crab_meat_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_crab_meat_01\", invItem"
-    - "\t\txAddItem \"ingred_crab_meat_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_comberry_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_comberry_01\", invItem"
-    - "\t\txAddItem \"ingred_comberry_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_corkbulb_root_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_corkbulb_root_01\", invItem"
-    - "\t\txAddItem \"ingred_corkbulb_root_01\", invItem"
-    - "\tendif"
-    - ''
-    - "\tset invRef to A1V1_MesskitCont3"
-    - "\tset invCount to ( invRef / 2 )"
-    - "\tset invItem to (invRef - 2 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"misc_com_silverware_knife\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"misc_com_silverware_knife\", invItem"
-    - "\t\txAddItem \"misc_com_silverware_knife\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 2 )"
-    - "\tset invItem to (invRef - 2 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"misc_com_wood_knife\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"misc_com_wood_knife\", invItem"
-    - "\t\txAddItem \"misc_com_wood_knife\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 2 )"
-    - "\tset invItem to (invRef - 2 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"misc_com_silverware_fork\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"misc_com_silverware_fork\", invItem"
-    - "\t\txAddItem \"misc_com_silverware_fork\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 2 )"
-    - "\tset invItem to (invRef - 2 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"misc_com_wood_fork\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"misc_com_wood_fork\", invItem"
-    - "\t\txAddItem \"misc_com_wood_fork\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"deepnight_travelFood\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"deepnight_travelFood\", invItem"
-    - "\t\txAddItem \"deepnight_travelFood\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_scuttle_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_scuttle_01\", invItem"
-    - "\t\txAddItem \"ingred_scuttle_01\", invItem"
-    - "\tendif"
-    - "\tset invCount to ( invRef / 8 )"
-    - "\tset invItem to (invRef - 8 * invCount )"
-    - "\tset invRef to invCount"
-    - "\tset invCount to player->GetItemCount \"ingred_trama_root_01\""
-    - "\tif ( invCount < invItem )"
-    - "\t\tset invItem to invCount"
-    - "\tendif"
-    - "\tifx ( invItem )"
-    - "\t\tplayer->xRemoveItem \"ingred_trama_root_01\", invItem"
-    - "\t\txAddItem \"ingred_trama_root_01\", invItem"
-    - "\tendif"
-    - ''
-    - "\tset doRemove to 10"
-    - "\treturn"
-    - endif
-    - ''
-    - if ( doRemove > 0 )
-    - "\tset doRemove to ( doRemove + 1 )"
+    - "\tStartScript A1V1_RstrMessKitSt1_sc"
     - "\treturn"
     - endif
     - ''
     - if ( OnActivate == 1 )
     - "\tif ( GetPCSneaking == 0 )"
-    - "\t\tset doActivate to 1"
+    - "\t\tset actiStage to 1"
     - "\telse"
-    - "\t\tStartScript Bal_check_morsel"
+    - "\t\tDisablePlayerControls"
     - "\t\tStartScript Bal_plate"
     - "\tendif"
     - "\treturn"
     - endif
     - ''
-    - End
+    - end
   
 - SCPT:
   - SCHD:
-      name: A1V1_MesskitDel_sc
-      vars:
-        shorts: 0
-        longs: 0
-        floats: 0
-      data_size: 96
-      var_table_size: 0
-  - SCDT: eJxlyiEKgDAUBmD/MhAWHuaFd4UdYEGwGKxiGyIviBPFt+JBPY5gEgTrx2dh9jSechjA8XATb1T73sdOVJc5t1lWDoG9feNFv4CihKPqy42kqBPwACbkG8Q=
-  - SCTX:
-    - Begin A1V1_MesskitDel_sc
-    - ''
-    - if ( player->GetItemCount A1V1_MesskitItem == 1 )
-    - "\tplayer->RemoveItem A1V1_MesskitItem, 1"
-    - endif
-    - ''
-    - StopScript A1V1_MesskitDel_sc
-    - ''
-    - End
-  
-- SCPT:
-  - SCHD:
-      name: A1V1_MesskitItem_sc
+      name: A1V1_MessKitItem_sc
       vars:
         shorts: 1
         longs: 0
         floats: 0
-      data_size: 147
+      data_size: 143
       var_table_size: 9
   - SCVR:
     - OnPCDrop
-  - SCDT: eJxlyDEKg0AQBdD/BRc2EJjcYIocIHsAiyRF0tjKamNlIYIW6608ktaeQ9lKtHs8w8SqX0SzTN30IJ60NDRWAxEz5a5EXyl/97crXJ03IXTt6I36m3icv4xfXr6KX2EVOfZ36EcC+H+AWSzJDUbpH5c=
+  - SCDT: eJxlyDEORUAUBdB7JSaZny8ZO3iFBZgFKGhIRCtDo1Kox64sido6yFRCd3IUIy3uMFIUYreUyKipqLR4ImTMW5HkMeuktL2dutn7dlmdEvczDu8fwg+fH8OPOM3/2QTQVMBuNMkLoIkdfw==
   - SCTX:
-    - Begin A1V1_MesskitItem_sc
+    - begin A1V1_MessKitItem_sc
     - ''
     - short OnPCDrop
-    - ''
     - if ( GetDisabled == 1 )
     - "\tSetDelete 1"
     - "\treturn"
@@ -552,174 +227,570 @@
     - ''
     - if ( OnPCDrop == 1 )
     - "\tset OnPCDrop to 0"
-    - "\tset A1V1_MesskitX to GetPos X"
-    - "\tset A1V1_MesskitY to GetPos Y"
-    - "\tset A1V1_MesskitZ to GetPos Z"
-    - "\tPlaceAtPC A1V1_MesskitCont 1, 50, 0"
+    - "\tset A1V1_MessKitX to ( GetPos X )"
+    - "\tset A1V1_MessKitY to ( GetPos Y )"
+    - "\tset A1V1_MessKitZ to ( GetPos Z )"
+    - "\tPlaceAtPC A1V1_MessKit 1, 50, 0"
     - "\tDisable"
     - endif
     - ''
-    - End
+    - end
   
 - SCPT:
   - SCHD:
-      name: A1V1_MesskitUpdate_sc
+      name: A1V1_RstrMessKitSt1_sc
       vars:
-        shorts: 0
+        shorts: 1
+        longs: 0
+        floats: 0
+      data_size: 1572
+      var_table_size: 6
+  - SCVR:
+    - count
+  - SCDT: eJyNlLtOwzAUhpuhSF2g3FpKC6Rv0HRnYGFBLCAhNstJ3MTkYnTstOqD8jhIpDguJTlOu2Q5n7/z+9hx15FO58Z9/+674pLnEbCQyAC4Tz5Ymq7JzOscOU7PLSl3eu/OvvoWqtNzui0uSA5xVZRxjbTrtKKojMmaZogHIYzjWjvOTCeaKuABQyQYUk+yECIkyYpmlLAoIrN5I0mT2Ofw9jr+cgy146SK6gOjIWJo1C3TAKpIxsqPfRq7iLEMtOW4QrIiSBBDvWxW3+rVg6qc0EgUipOYh9ip2DBjm2jbRYXFoshD255wyJjG2nReQQFQ3yZCGcuMA5H5DGDdMuNdxFjutGW4RSDxi9QnIASWyMoZ31T7RhmXwaYhkTxdMlhRYCTJ+YLVjS1kfWJbcvV7cTEbyhiPqz1XWMdFuaG6zA7Wz+B/V8yFIZb3RwaFUilreX92CMv9VLD5qy2HiEN1U8jYZ86jWG24JUsfy9wNEwqVpnF/8OC9eeRFKnhmUj5x9armZfAJVvDKguP8AOCSuZ8=
+  - SCTX:
+    - begin A1V1_RstrMessKitSt1_sc
+    - ''
+    - short count
+    - ''
+    - set count to ( GetItemCount "ingred_scrib_jelly_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_scrib_jelly_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_scrib_jerky_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_scrib_jerky_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_ash_yam_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_ash_yam_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_saltrice_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_saltrice_01\", count"
+    - endif
+    - set count to ( GetItemCount "food_kwama_egg_02" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"food_kwama_egg_02\", count"
+    - endif
+    - set count to ( GetItemCount "food_kwama_egg_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"food_kwama_egg_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_bread_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_bread_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_rat_meat_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_rat_meat_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_muck_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_muck_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_kagouti_hide_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_kagouti_hide_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_hound_meat_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_hound_meat_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_crab_meat_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_crab_meat_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_comberry_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_comberry_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_corkbulb_root_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_corkbulb_root_01\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_silverware_knife" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"misc_com_silverware_knife\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_wood_knife" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"misc_com_wood_knife\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_silverware_fork" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"misc_com_silverware_fork\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_wood_fork" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"misc_com_wood_fork\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_scuttle_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_scuttle_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_trama_root_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_trama_root_01\", count"
+    - endif
+    - set count to ( GetItemCount "deepnight_travelFood" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"deepnight_travelFood\", count"
+    - endif
+    - ''
+    - StartScript A1V1_RstrMessKitSt2_sc
+    - StopScript A1V1_RstrMessKitSt1_sc
+    - ''
+    - end
+  
+- SCPT:
+  - SCHD:
+      name: A1V1_RstrMessKitSt2_sc
+      vars:
+        shorts: 2
+        longs: 3
+        floats: 0
+      data_size: 4360
+      var_table_size: 33
+  - SCVR:
+    - count
+    - tempS
+    - countL
+    - content
+    - tempL
+  - SCDT: eJy1l+9r00AYx+86OizK7NR1Tqfe3gpiU9/4Ql+IoKD4RkF8d+THtY1JmnFJV/r3+S/oS6EWx7LVpVtBEDbRpEm3pL0Err2+KUm+z6/PPbnn0iI0C2ADvV5/IX2U8DviOG9196XdciVQhOYKuIICHT1Fj4M7CNbiu0BAD9GjInQgKKJACI0L4eUKANfg6q4pdwkN5AK4hz79LSN7Q281KNGwo1JdwZ+JaXZxVQKrEF5FgRV6hpxxlHHA4AEowVVYKIVP0c5zVP1azohwme5bpkkJLpWFGouyxBHyWCYmoli2Ipb1OI3sNHFXtjg5GN5JBpYsqv47Uf03Jsskmy7VVcIJwHJPEjB10S2o27aGjY5syZg0Grha42rBrHeqBQx52fVLC9Uv5dcvcP03o/qvxz1WKJE1zupnfJO1z4rjytnztiZo3k7tCyq72CLBz3z7IunO2hcpXVRfKhHCWpzDaqsGZ/nTrsnSZzRRZd+Pyq7E8Q25YbddHTd1jXcqZYVIYmTaiMLZjnBuxXmadrulzfMqsQMkUTIsRIHcjUBuxllUKivzcDD9kxhsgyWdd6ptKYRS3g8PljtrX6d0UQgPIoTNixzUUNqmgqlt8zYjM0YSJtsoZw4/Sc7hWgq2xgO7E8FuWbqjhsuJHd3cI7QjU4KNll4nPLg5UZLAeWapJi7ANdlNF6k64wOal4jpn9pNTANRFCiiuM1asHrwuvCgZAdJ8uRYiYKajIj0yvHisNxTI4KlL+lfiaO2XdfkPT4Z3qlPSoa8pEPTpeF36xzzjR2AdWhOWYgG0QjZbemNphsm2iPmq6DnXCDMACkQtkUJfi+D8hvwZfDv+Hy0j/rH3gHy0EFv6P3uHYYPen88NDzxfvgnZyi88n/6fX9wfjrqe4GKTkf+wO+fHaIj/9dwsH80AmC7XBmP+/eOS+OR/8GtBS8ChP8BirThxA==
+  - SCTX:
+    - begin A1V1_RstrMessKitSt2_sc
+    - ''
+    - short count
+    - long countL
+    - long content
+    - long tempL
+    - short tempS
+    - ''
+    - set content to A1V1_MessKitCont1
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_scrib_jelly_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_scrib_jelly_01\", count"
+    - "\tplayer->RemoveItem \"ingred_scrib_jelly_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_scrib_jerky_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_scrib_jerky_01\", count"
+    - "\tplayer->RemoveItem \"ingred_scrib_jerky_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_ash_yam_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_ash_yam_01\", count"
+    - "\tplayer->RemoveItem \"ingred_ash_yam_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_saltrice_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_saltrice_01\", count"
+    - "\tplayer->RemoveItem \"ingred_saltrice_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "food_kwama_egg_02" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"food_kwama_egg_02\", count"
+    - "\tplayer->RemoveItem \"food_kwama_egg_02\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "food_kwama_egg_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"food_kwama_egg_01\", count"
+    - "\tplayer->RemoveItem \"food_kwama_egg_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_bread_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_bread_01\", count"
+    - "\tplayer->RemoveItem \"ingred_bread_01\", count"
+    - endif
+    - set content to A1V1_MessKitCont2
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_rat_meat_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_rat_meat_01\", count"
+    - "\tplayer->RemoveItem \"ingred_rat_meat_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_muck_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_muck_01\", count"
+    - "\tplayer->RemoveItem \"ingred_muck_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_kagouti_hide_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_kagouti_hide_01\", count"
+    - "\tplayer->RemoveItem \"ingred_kagouti_hide_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_hound_meat_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_hound_meat_01\", count"
+    - "\tplayer->RemoveItem \"ingred_hound_meat_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_crab_meat_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_crab_meat_01\", count"
+    - "\tplayer->RemoveItem \"ingred_crab_meat_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_comberry_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_comberry_01\", count"
+    - "\tplayer->RemoveItem \"ingred_comberry_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_corkbulb_root_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_corkbulb_root_01\", count"
+    - "\tplayer->RemoveItem \"ingred_corkbulb_root_01\", count"
+    - endif
+    - set content to A1V1_MessKitCont3
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_silverware_knife" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"misc_com_silverware_knife\", count"
+    - "\tplayer->RemoveItem \"misc_com_silverware_knife\", count"
+    - endif
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_wood_knife" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"misc_com_wood_knife\", count"
+    - "\tplayer->RemoveItem \"misc_com_wood_knife\", count"
+    - endif
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_silverware_fork" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"misc_com_silverware_fork\", count"
+    - "\tplayer->RemoveItem \"misc_com_silverware_fork\", count"
+    - endif
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_wood_fork" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"misc_com_wood_fork\", count"
+    - "\tplayer->RemoveItem \"misc_com_wood_fork\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_scuttle_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_scuttle_01\", count"
+    - "\tplayer->RemoveItem \"ingred_scuttle_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_trama_root_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_trama_root_01\", count"
+    - "\tplayer->RemoveItem \"ingred_trama_root_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "deepnight_travelFood" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"deepnight_travelFood\", count"
+    - "\tplayer->RemoveItem \"deepnight_travelFood\", count"
+    - endif
+    - ''
+    - EnablePlayerControls
+    - MessageBox "Гляньте вниз и запихайте ваши приборы и продовольствие в столовый комплект"
+    - ''
+    - StopScript A1V1_RstrMessKitSt2_sc
+    - ''
+    - end
+  
+- SCPT:
+  - SCHD:
+      name: A1V1_StoreMessKit_sc
+      vars:
+        shorts: 1
         longs: 2
         floats: 0
-      data_size: 1967
-      var_table_size: 15
+      data_size: 1989
+      var_table_size: 21
   - SCVR:
-    - invItem
-    - invRef
-  - SCDT: eJy11E1PwjAYB/CNZEY9KL6/az2qF4cHPZkYEz151Hhruq2Mum41XSfxUxq/gTGaIBhEPKrRjQ6CQDxQOG1Lu1+ftv/W0GlGy4BdQ6e6tgAuv7OATZLA5diBFsfIgbumNqLroyBuB4dgv9ExA/bHdCP5dRQcgPgBthtf4433pOdOo9+SBKfyjDnQKyIfQey6QyFz/ZPLkpxOpx0iKjix8UDKTE0UFuAt8pXINUnONcu0ObHgFebe7TBYShXY06kj88KEZzgMPSKOWSBMI2nXjPa4bciRF9KRbcY9K6IW5IwJpSl1bKjNfAtzrrZMK9KcaZocWdDHSK3QVYnOpmiBRYGjrq5LdT5VPeSySBBYII5apuelO5G6fmR7g9wmHk9bbe7dscv1iF3Hogue3CHKmes48KEdCUHxQNLhYHwdELcgklpvMD2Jrz71VfdJaCdHAxaTmzQfH75200xNs2Xm/jGBNBdbZkjoDeZFxLGi3Dx2f6v1ApLH/aObEl3qVa4K3Z2/PZk/Lbul3dVK7z9PX/VnUAIP5XrpsVT7eIm/7uvVSvXx8wWUq69vledyXdNWs3Pt0Pm1gwSOI6XrvwyhkK4=
+    - count
+    - countL
+    - content
+  - SCDT: eJy11EtL7DAUAOBkoJd7N97xXt/PuFQ3dlzoShBBF+JKEHchbTOd2LSRNHWYXyn+AEFEYRxl1HGpou2kM/iYXeqqNBy+nOScHAvyEiihFQvGEMygw9cyEiMepccR82sKK0lOKN8WwgO/IPyN0iC0gda60SW09gdakENgZevAyqghtI7SD1pC6Tpa/sSyyJfUy8yQYCmEwiu2ATup2eGcjd1EKU7NzClt/gtZ7GJXhLieHh1XhQw+onaO2oPQyjcUaXSij8aMn1BZJ5Ka0tOa/v853yBiVWqgLmh1clDCRvbO8KZ9YOM9Gse7TG2JSK1aWYQO77XhvN5+PC+sm16Rk3CngJbplbcvhw6VsmGG9mrQQyVxcEiJYapfHk1NJJFXADun2bGcDYgvEsVwjXmGL2dMw0M5HCZuUGitZHpyw+N/777KgO4b1/v+zfd1JCVeMYOq2n2b9Wz6Ud//GbNS3I3HhCvJXFpMojlK4hpukNDMnNXmaH/yS+bgIyqDxo+4nDcK7Tpbd915GZQXwelD8/Ht6qVzjZrootVpXjYfnm7Sv7NO+7Z9+XyDWu27+9vrVgeAmfJIl9pXQtLcS5OE8B3IKpL7
   - SCTX:
-    - Begin A1V1_MesskitUpdate_sc
+    - begin A1V1_StoreMessKit_sc
     - ''
-    - long invItem
-    - long invRef
+    - short count
+    - long countL
+    - long content
     - ''
-    - set invRef to 0
-    - set invItem to GetItemCount "ingred_bread_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set content to 0
+    - set count to ( GetItemCount "deepnight_travelFood" )
+    - if ( count > 7 )
+    - "\tset count to 7"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "food_kwama_egg_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_trama_root_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "food_kwama_egg_02"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_scuttle_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_saltrice_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "misc_com_wood_fork" )
+    - if ( count > 1 )
+    - "\tset count to 1"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_ash_yam_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set countL to count
+    - set content to ( 2 * content + countL )
+    - set count to ( GetItemCount "misc_com_silverware_fork" )
+    - if ( count > 1 )
+    - "\tset count to 1"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_scrib_jerky_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set countL to count
+    - set content to ( 2 * content + countL )
+    - set count to ( GetItemCount "misc_com_wood_knife" )
+    - if ( count > 1 )
+    - "\tset count to 1"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_scrib_jelly_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
+    - set countL to count
+    - set content to ( 2 * content + countL )
+    - set count to ( GetItemCount "misc_com_silverware_knife" )
+    - if ( count > 1 )
+    - "\tset count to 1"
     - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set A1V1_MesskitCont1 to invRef
+    - set countL to count
+    - set content to ( 2 * content + countL )
+    - set A1V1_MessKitCont3 to content
+    - set content to 0
+    - set count to ( GetItemCount "ingred_corkbulb_root_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_comberry_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_crab_meat_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_hound_meat_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_kagouti_hide_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_muck_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_rat_meat_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set A1V1_MessKitCont2 to content
+    - set content to 0
+    - set count to ( GetItemCount "ingred_bread_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "food_kwama_egg_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "food_kwama_egg_02" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_saltrice_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_ash_yam_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_scrib_jerky_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set count to ( GetItemCount "ingred_scrib_jelly_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
+    - set A1V1_MessKitCont1 to content
     - ''
-    - set invRef to 0
-    - set invItem to GetItemCount "ingred_corkbulb_root_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_comberry_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_crab_meat_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_hound_meat_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_kagouti_hide_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_muck_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_rat_meat_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set A1V1_MesskitCont2 to invRef
-    - ''
-    - set invRef to 0
-    - set invItem to GetItemCount "ingred_trama_root_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "ingred_scuttle_01"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "deepnight_travelFood"
-    - if ( invItem > 7 )
-    - "\tset invItem to 7"
-    - endif
-    - set invRef to ( 8 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "misc_com_wood_fork"
-    - if ( invItem > 1 )
-    - "\tset invItem to 1"
-    - endif
-    - set invRef to ( 2 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "misc_com_silverware_fork"
-    - if ( invItem > 1 )
-    - "\tset invItem to 1"
-    - endif
-    - set invRef to ( 2 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "misc_com_wood_knife"
-    - if ( invItem > 1 )
-    - "\tset invItem to 1"
-    - endif
-    - set invRef to ( 2 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set invItem to GetItemCount "misc_com_silverware_knife"
-    - if ( invItem > 1 )
-    - "\tset invItem to 1"
-    - endif
-    - set invRef to ( 2 * invRef )
-    - set invRef to ( invRef + invItem )
-    - set A1V1_MesskitCont3 to invRef
-    - ''
+    - EnablePlayerControls
     - MessageBox "Присядьте и активируйте Столовый комплект"
     - ''
-    - StopScript A1V1_MesskitUpdate_sc
+    - StopScript A1V1_StoreMessKit_sc
     - ''
-    - End
+    - end
   
 - SCPT:
   - SCHD:
@@ -961,107 +1032,18 @@
   
 - SCPT:
   - SCHD:
-      name: Bal_check_morsel
-      vars:
-        shorts: 0
-        longs: 0
-        floats: 0
-      data_size: 1023
-      var_table_size: 0
-  - SCDT: eJyd081KxDAQB3C6oKAHrd8oq1bxAVofwIMHfQVvQ762jU0amSZKH14wmtTDgpvWa8iPmf8ks8zzR6KANYK1oA32Qm1lz7sr4zoOK2P4oii3s8WyePnMC3MguxoFh545a5WAsioeinIdVHfZTubRdUDHXIi3TtaNBYvkXagnf2uTuwhuPxajKAhPlBr7+z6F9oNoAqKuE+gyoMMxFFEWJYupqrml7qf0F0uRvoGB6ESlIqCT36GjpPAqsB0Swf6ASqXgbYBnETKDLXWKAhpj5w2TGU0F4pCIeBXU0aiQUNCC2Ik/K7Lm58o/nNOkm+JugjuNriW1cVZCI3lqB86D3ItSO79mm0eyNkj0zc1P5hfN/8vUs2XZF1UYHQw=
-  - SCTX:
-    - Begin Bal_check_morsel
-    - ''
-    - "\tstopscript Bal_check_morsel"
-    - "\tset found_food to 0"
-    - "\tif ( GetItemCount \"ingred_scuttle_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"deepnight_travelFood\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_bread_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"food_kwama_egg_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_saltrice_01\" > 1 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"food_kwama_egg_02\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_ash_yam_01\" > 1 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_scrib_jerky_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_scrib_jelly_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_corkbulb_root_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_comberry_01\" > 1 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_crab_meat_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_hound_meat_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_human_meat_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_kagouti_hide_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_muck_01\" > 1 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_rat_meat_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - "\tif ( GetItemCount \"ingred_trama_root_01\" > 0 )"
-    - "\t\tset found_food to 1"
-    - "\t\treturn\t"
-    - "\tendif"
-    - ''
-    - end
-  
-- SCPT:
-  - SCHD:
       name: Bal_dump_morsel
       vars:
         shorts: 0
         longs: 0
         floats: 0
-      data_size: 1126
+      data_size: 1128
       var_table_size: 0
-  - SCDT: eJyFk01OwzAQhXEXSGxo+BeoQEAcoO0BWLDgDOwsJzZJiB1XUxvUg/Y4SI1kZ9I0trqdN99747E9S6YfTFJu1YoqDWshT8lkln79J6m+qJoCBKfr3BojBZ0v0vd0vk3GdXLyRs5ISz478poLsWqqojTUAPsV8lNr7uCghPyD46c+IQPBOOYeVpHq5v1urWj9xxSjoij6eUd1JB8dedmdiEkDVe6PutgmAWFyLHUZSV2O5vXmbF3SDVMYOq5jZurIG7wBqDL6I6De4GnDGjniIGXcwWno8Ooc7nxXrqHOrMwoaG3QI6bGNp9rlQmAzWjzewJu4cmxV10LsIwqwfr0kDJ6o76n1LbhQzwoRXmrWBPh9yXkXxx/65tqVmhrKlpWvP9iERE97p3HuW9TNq9xcwfFSWTj0E41mDogxM7c/tz2VQ8uPCg5npAd5LVVOQ==
+  - SCDT: eJyFk01OwzAQhXEXSGxo+BeoQEAcoO0BWLDgDOwsJzZJiB1XUxvUg3bJUZCIZGfSNLa6nTffe+OxPUumb0xSbtWKKg1rIX+TYzKZpR9/SarPqqYAwek6t8ZIQeeL9DWdb5NxnRy9kBPSko+OvORCrJqqKA01wL6FfNeaOzgoIX/n+KlPyEAwjrn7VaS6eT9bK1r/MMWoKIp+3lEdyXtHnncnYtJAlfujLrZJQJgcSl1GUpejeb05W5d0wxSGjuuYmTryCm8Aqox+Cag3eNqwRg44SBl3cBo6PDuHG9+Va6gzKzMKWhv0iKmxzedaZQJgM9r8joBbeHDsRdcCLKNKsD49pIzeqO8ptW34EA9KUd4q1kT4XQn5J8df+6aaFdqaipYV779YRESPW+dx6tuUzWvc3F5xEtk4tFMNpg4IsTO3P7d91YMLD0qOJ+Qf9SFWJg==
   - SCTX:
     - Begin Bal_dump_morsel
     - StopScript Bal_dump_morsel
+    - "\tEnablePlayerControls"
     - ;Initially created by Shanjak
     - "\tif ( GetItemCount \"ingred_scuttle_01\" > 0 )"
     - "\t\tRemoveItem \"ingred_scuttle_01\" 1"
@@ -1144,12 +1126,13 @@
         shorts: 0
         longs: 0
         floats: 0
-      data_size: 2252
+      data_size: 2270
       var_table_size: 0
-  - SCDT: eJydlV1v40QUhpMVC+JmCd8CLTAgLrjIVtvegBAsX1pW4hYuuLOcxKQhTo3chKp/j/+BNHY87XTGPrbHal1IqDmTiV267Cpt7xwpmuc973nPOfc79761Xcuxp9bE8/cd98X2C/fJz/90iPfqaG/oOwNrvz+bTl3HerhNHpGHrc6D1h8Lkv/NJCcpZGf8guSCKiVpl5QKggUpFEiulmQOEqKtVutu+8ndn7zH9vQO2b7TeenHA9t1vYOP2y+3EfaBgb0xcJzf9kbD3ak19e3fHfd7zxsY3uf/46VwClECcyAZPeOQIDmiCD6mMWSaXLIsrEpBN8HfNfBX1pX2fMceNHV2NRefrBAsIQZ891Sy4HZl1p7+gmVZ4wN7YlvOcGhY263Ol4YleFIgLaaSJUsBjFQnZ0BESOOGmrB4VXkKkchYigLyahP8PQN/rW6o7U79Ud9p6I81vVgVWj+fA0pYOczz2t5LJPqen1NFkwQ1HkeQQbhkt7Vgx9j9tRaRZjCXoDgqCUAuz59pQRFBKJkKTa9Dev6sFuw8l792wd7ftQ7tSWPCo5UJQUaRHYWU5JJGgp+SlKVMLpPFKQmwYqXNkJX2gqKIhFcGvjFqxNDfbIbKH/WsXx1/fNgE7gcTgiMWag1hhc8nhZ6ujAeVwmg83wDshyr+4ieEpilTXN1Sjeteqvli1Y+mHU0wtBoI9ecRk+yWbnxk+G+v+X3PH/dmbs/yPW/aKHiiFeDDiM+XSMuV4LGOSABlwgXEtR+5ZHNBSULzhdKOFFlJtRkoEK0SNxyPvjfpOb5/2CTjK9MXDD5dKUlpBickZApKJgjq4HGBerjxQucGcsUJJyhHf23iv2/4r9d83+5ZE8e+NOI70wqVsUC3IsJViBuX5Xr6REZ1OxiJqxy2yJ8KSLCQgPRQFPgPIyOB6+7htYhdb7Y3uKri0yvxzCkOhU4Bcil2PSnZSd2PVRxufAFq8mxi710lb9VBwJr1cpcQshLXUwM8plFxfm3ghwb41ho4tofebDqydkeDyyO3o5HzbHHMFHoMRwURdF4oboj4QzxAp4v1vbkW9h2DvbfGTmb9cROxT4y3EZsXGBhcp9riuMhF17yN40cUU5sv2lNZ9vVd/6+Vnz21ZUNILkqGbRTZIudNQ7sYGwMGhZsl5fKGXcQjjvv9yjh/Y9A8YHO6cpUUqY603hsX6HGWVERlNF50CV5WPH8k0JZcN0nt9r8OdWtv
+  - SCDT: eJydlV1v40QUhpMVC+JmN3wLWGBAXHCRrba9ASFYvrSsxC1ccGc5iUlDnHrlOlT9e/wPpLHjaace+9geq3XZZOs9k4nd7X4obe+SKJrnPe95zzl3Ord+Nm3DMj1j4ri7lv1x57b6YTCdPFr98nr7tTvkzycd4rw12hm61sDY7U89z7aMe5vkPrnX6txt/Tsn+WMmOEkhO+FnJI+olIJ2SSnBn5NCguByQWYgINxotW62H978w3lgejfI5o3OG7/vmbbt7H3ZfrONsM807N2BZT3aGQ23PcNzzX8s+1fHGWjety/wUjiGMIEZkIyecEiQHFIEH9IYMkUuWRZUZUTXwT/S8NurSnuuZQ6aOruKi09WCBYQA757LJh/vTJrT//CsozxnjkxDWs41KzNVud7zYp4UiAtpoIliwgYqY5OgEQBjRtqwuJl5SmEUcZSFJBX6+CfaPjbdUNN23NHfauhP1D0Yllo/XwOKGHpMM9re8+R6Ht+SiVNEtR4GEIGwYJd14ItbfePSkSawUyA5KjEB7E4fakFRQiBYDLQvQ7o6ctasPVK/soFc3fb2DcnjQn3lyb4GUV2GFCSCxpG/JikLGVikcyPiY8VS2WGqJQXFEUkvNLwtVEjmv5eM1TuqGf8bbnj/SZwv+kQHLBAaQgqfD4p1HRl3K8kRuPVBmA/ZPE/PyI0TZnk8ppqbPtczXfLfjTtaIKh1ECgPh4wwa7pxhea/8GK33fccW9q9wzXcbxGwUOlAB9GfL5AWi4jHquI+FAmPIK49iMXbBZRktB8LpUjRVZSZQYKRKuiK45H35n0LNfdb5Lxg+4LBp8ulaQ0gyMSMAkliwjq4HGBerj2QuUGcskJJyhHfVrH/1Tz36n5rtkzJpZ5bsQvuhUyY75qRYirEDcuy9X0RRlV7WAkrnLYIP9JIP5cANKDqMB/aBkJXHYPr0RsO9OdwUUVX1+IZ05xKFQKkEux60nJjup+LONw5QtQk6cTc+cieaMOAtaslruAgJW4nhrgIQ2L00sDP9fA91fAsTl0pt7I2B4Nzo/clkLOsvkhk+gxHBQkorNCck3EL9FddLpY3ZtLYT/U2Fsr7GTaHzcR+0p7G7JZgYHBdaosjos86uq3cfyIZHL9RXsuy6669M9a+c1zWzaA5Kxk2MYom+e8aWgXY6PBIHGzpFxcsYt4xHG/XxjnnzSa+2xGl66SIlWRVnvjDD3OkorIjMbzLsHLiueP+MqSyyap3X4KwSlxvg==
   - SCTX:
     - Begin Bal_eat_morsel
     - StopScript Bal_eat_morsel
+    - StartScript Bal_dump_morsel
     - ;Initially created by Shanjak
     - ''
     - "\tif ( GetItemCount \"ingred_scuttle_01\" > 0 )"
@@ -1527,24 +1510,26 @@
   - SCHD:
       name: Bal_plate
       vars:
-        shorts: 5
+        shorts: 6
         longs: 0
         floats: 0
-      data_size: 1598
-      var_table_size: 45
+      data_size: 2372
+      var_table_size: 56
   - SCVR:
+    - found_food
     - silverfork
     - woodfork
     - chance1
     - chance2
     - HasKnife
-  - SCDT: eJy1lM9PE0EUx2cqbVlEWFGJguBr4GAiMS1cjAkejAkx8WRigqdmpVPadLvbbFsI/x5HL4YD92Xj0mW3nXanyo+0Rmd2W2xDSXrQ287um8/3ve97+57K0ltFTZdUpUJiODIHW1NZvapl0lldz8DmJiSRvIGOGuaF6ZnQpB49dZgNzRb9Ti3qdX1mOTZYcMT4J6tzBl9pvenZLkNoFUuYI2dgK5ararvGQQ8H6FuLnrRtjrF91l2DBoXDDjjATBf8Dusk+nfxKmz/kkF/UsyXd9I7ejFdzqt7xNhXDJIuaPksgTeQjOJyFEVgfRLj5TD+wXX8Pq/iRmQqjnHvMSmJpzsoDtsJeQqJiInw8BwlY/iOBPzMr2684tnwQxQFRfAwLEASDlE4RPELk8Bp/MKN+MhgfKQfP78SZvx4VIVZ3SiItMM8cIBKIXkZcbdObL/JG9CijLtXM1m76XgOWI7nthGKyNPvK6QIH/PaLnwqHcu34jGKYzmGo9eppgZrQPKS0KIubVyYzPa6g1oNepoQUncNUlLyBmSVvHosj7IeIylo51+V9SFrkbyAPutVyCl7BL4YeoFoUMkRCC4nRpRz+zyEUovyjBhqolTSRd0oE3VRnhUvMtViqfdGwpN4fik0f24452HbI33bn91uRWD7CDNGgMcy/MSujWjuvzR8jL7+D8/j+GEMS/1yU9M4xhfPATH4zwJhLx4FMhkxnWqGZHZUvZJLJkU7kJwSSfMV1K2J5eF3wTe9HzZz6dkaWB3mtMzfYJ+B55xTvk1abdd5idC1Bl8PC6HGbF8joKd69BeC7guK2ExN56oNvmCZIQvctu/SOjDXbIzHTYXc14Lb7nF50oMcoIwbXzdrpnU5nLlIQMjwfbFy/55GCDcjrSmlQl7r6YYtnhiYHb5YnSsTON5zag6Dun0Kh+al8xOaptc9t61wfN6RrFJVKx8ULXOzR6u8R5GxeilhjP8APNVkFQ==
+  - SCDT: eJytlc2P20QYxmey3ewGyq5bYKHf79IekKhQvL0gpHJACITECQmpnKxJPElM/BFN7K7y7/UfQBx6RPJGeOONN07sQD+UIJjJ2NtscVZB7S1Wnvm9zzzvzDs3lcrXxNQ6JnHpJu5iVIJqGZduwqO/FXCuGHaTUV3r1j3XNalWVeErqGY69R6uYK69I7Uf6JR2bKPZcjWXkcfU/NZx9AL5dSnfzdA1RoleDM5NNDhIax8Si2i02SzW3pLaq7lhYrrMqGeO1TXBBxeYyMCk29J6xCrmgtR+eJYaM2raL5S1e8WmV+hNc4X+E6n/KNPXHdaueWZNY47jrhVL3bFqlLFesf3bUvx+LmakplmUuBe3PVO3HM/W/4fcs4h9gXxfyvcyeZs0Hc81tJahrziF1+SCnWyB5dXbxbt8LRLGHaztmh9sflZWxr1RAf4JDx9CFSkP0G8j/7kf+TCOo/g4TAMYT+I/4n4czZO0HwbQhyTlf/VnJzCMT8dRMEwR+l3JWDvwXbnl8bq9DAjo10l8NA04KEjS+X0YxfBkBiGk/hCSWTrbf7Ua35PGr1lGty7arnUN8zFlh4RRrW0bDZq5L3P3B9sY570/0x8u7sZrSnUL4+xntSJ+XUJb8GhfeQcJxab8+BRVZRSbiC998AV3wz/KMhcuKwlQBUtUSaL4gm3gNL7gP/qNZf1Grt+7Kx1/XLTDBr8ZwnYZX+Ko0gKlIuU24nkdBcmYN2ESpzy/gZ9Ox2EUQj+MhlOESsrl711qwY+84fBT56myEo951lt4t4w3z8yqy7tAyi1RLR7Go+d+GkTz5Wqj+HhfFHuX0Q4xGDSIYT5VisLHqLJo6KsqB+fCRcp19LPjQYtPXKgxp01tcFsUFov3Cza0+kTIUjeUHfEgiBthOaxLzQrexnv5pTnv8HzMG3nMd1ZvfBFzwdYLwGsGfBQMCtr5NgNeo49vnvEWvlrGlXxz6mVc5k9yjzJ+GfJXYgHVxekzdarXTcdtVasifqSowiIfM/OBGA/JHBI/+jNIh/HJfejP0nDi/wPBCUThs5jPi8l0GH6O0FkNfv3zRzmvsaCrGf0zQU8ERcyecfhyColg+ZIFw2nC5xekQ3+0HleV3C8Fd5pxuellDsQpj/nUH/j9F+edCwOiDJ8Hd6+8Z1PKw9Bs0mkbdlZXNnT5pPDRGb70geOjcBCmcBocwxP/RfgXjP1o/izoy8PyDW0Qz3R/ILZ+Q9kVLdI9q5P1iNcr6FsFY/wv6M4bdQ==
   - SCTX:
     - Begin Bal_plate
     - ''
     - StopScript Bal_plate
     - ''
     - ;Initially created by Shanjaq
+    - short found_food
     - short silverfork
     - short woodfork
     - short chance1
@@ -1554,13 +1539,89 @@
     - ;1 = has wood knife
     - ;2 = has silverware knife
     - ''
+    - "\tset found_food to 0"
+    - "\tif ( GetItemCount \"ingred_scuttle_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"deepnight_travelFood\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_bread_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"food_kwama_egg_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_saltrice_01\" > 1 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"food_kwama_egg_02\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_ash_yam_01\" > 1 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_scrib_jerky_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_scrib_jelly_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_corkbulb_root_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_comberry_01\" > 1 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_crab_meat_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_hound_meat_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_human_meat_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_kagouti_hide_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_muck_01\" > 1 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_rat_meat_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - "\tif ( GetItemCount \"ingred_trama_root_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\t\treturn\t"
+    - "\tendif"
+    - ''
     - if ( found_food == 0 )
-    - "\tmessagebox \"Сначала положите продовольствие в Столовый Комплект\""
+    - "\tmessagebox \"Сначала положите продовольствие в столовый комплект\""
+    - "\tEnablePlayerControls"
     - "\treturn"
     - endif
     - ''
     - if ( hungry  == 0 )
     - "\tmessagebox \"Пробуете есть, но Вы и так сыты!\""
+    - "\tEnablePlayerControls"
     - "\treturn"
     - endif
     - ''
@@ -1597,6 +1658,7 @@
     - "\t\tMessageBox \"Вы бесповоротно затупили вилку\""
     - "\t\tplaySound \"Item Ring Up\""
     - "\t\tRemoveItem \"misc_com_silverware_fork\" 1"
+    - "\t\tEnablePlayerControls"
     - "\telse"
     - "\t\tif ( HasKnife == 1 )"
     - "\t\t\tif ( chance1 > 8 )"
@@ -1613,7 +1675,6 @@
     - "\t\t\tendif"
     - "\t\tendif"
     - "\t\tStartScript Bal_eat_morsel"
-    - "\t\tStartScript Bal_dump_morsel"
     - "\tendif"
     - elseif ( GetItemCount "misc_com_wood_fork" > 0 )
     - ";\tif ((chance1 > 8) && (HasKnife == 0))"
@@ -1621,6 +1682,7 @@
     - "\t\tMessageBox \"Вы окончательно затупили вилку!\""
     - "\t\tplaySound \"repair fail\""
     - "\t\tRemoveItem \"misc_com_wood_fork\" 1"
+    - "\t\tEnablePlayerControls"
     - "\telse"
     - "\t\tif (HasKnife == 1)"
     - "\t\t\tif (chance1 > 8)"
@@ -1637,7 +1699,6 @@
     - "\t\t\tendif"
     - "\t\tendif"
     - "\t\tStartScript Bal_eat_morsel"
-    - "\t\tStartScript Bal_dump_morsel"
     - "\tendif"
     - else
     - "\tif ( chance1 > 1 )"
@@ -1655,10 +1716,8 @@
     - "\t\tMessageBox \"Пища сколизит меж Ваших пальцев!\""
     - "\t\tplaySound \"DefaultLand\""
     - "\t\tStartScript Bal_dump_morsel"
-    - "\t\treturn"
     - "\telse"
     - "\t\tStartScript Bal_eat_morsel"
-    - "\t\tStartScript Bal_dump_morsel"
     - "\tendif"
     - endif
     - End
@@ -3795,7 +3854,7 @@
   
 - SPEL:
   - NAME: vampire touch
-  - FNAM: Прикосновение Вампира
+  - FNAM: Прикосновение вампира
   - SPDT:
       type: Spell
       cost: 0
@@ -3821,7 +3880,7 @@
   
 - SPEL:
   - NAME: vamp restoration damage
-  - FNAM: Ущерб восстановления Вампа
+  - FNAM: Ущерб восстановления вампа
   - SPDT:
       type: Ability
       cost: 0
@@ -3838,7 +3897,7 @@
   
 - SPEL:
   - NAME: Sleepy_really
-  - FNAM: Действительно Сонный
+  - FNAM: Действительно сонный
   - SPDT:
       type: Curse
       cost: 0
@@ -3890,7 +3949,7 @@
   
 - SPEL:
   - NAME: Sleepy_deadly
-  - FNAM: Смертельно Сонный
+  - FNAM: Смертельно сонный
   - SPDT:
       type: Curse
       cost: 0
@@ -3916,7 +3975,7 @@
   
 - SPEL:
   - NAME: Sleepy_little
-  - FNAM: Слегка Сонный
+  - FNAM: Слегка сонный
   - SPDT:
       type: Curse
       cost: 0
@@ -4084,45 +4143,24 @@
   - INAM: deepnight_travelFood
   - INTV: 1
   
+- CONT:
+  - NAME: A1V1_MessKit
+  - MODL: m\Misc_De_Bowl_01.NIF
+  - FNAM: Столовый комплект
+  - CNDT: 10000.0
+  - FLAG: ''
+  - SCRI: A1V1_MessKit_sc
+  
 - MISC:
-  - NAME: A1V1_MesskitItem
-  - MODL: m\Misc_pot_blue_02.nif
+  - NAME: A1V1_MessKitItem
+  - MODL: m\Misc_De_Bowl_01.NIF
   - FNAM: Столовый комплект
   - MCDT:
       weight: 0.0
       value: 0
       is_key: false
-  - SCRI: A1V1_MesskitItem_sc
-  - ITEX: m\tx_pot_blue_02.dds
-  
-- CONT:
-  - NAME: A1V1_MesskitCont
-  - MODL: m\Misc_pot_blue_02.nif
-  - FNAM: Столовый комплект
-  - CNDT: 10000.0
-  - FLAG: ''
-  - SCRI: A1V1_MesskitCont_sc
-  
-- INGR:
-  - NAME: A1V1_MesskitFakeIngred
-  - MODL: n\ingred_bittergreen_01.nif
-  - FNAM: ERROR
-  - IRDT:
-      weight: 0.1
-      value: 20
-      effect_1_index: Light
-      effect_2_index: null
-      effect_3_index: null
-      effect_4_index: null
-      effect_1_skill: null
-      effect_2_skill: null
-      effect_3_skill: null
-      effect_4_skill: null
-      effect_1_attribute: null
-      effect_2_attribute: null
-      effect_3_attribute: null
-      effect_4_attribute: null
-  - ITEX: n\tx_bittergreen_petal_01.dds
+  - SCRI: A1V1_MessKitItem_sc
+  - ITEX: m\Misc_De_Bowl_01.tga
   
 - INGR:
   - NAME: deepnight_travelFood
@@ -4179,7 +4217,7 @@
     - <BR>
     - Если Вы используете Столовый комплект для потребления пищи Вам, вероятно, понадобится по крайней мере вилка, хотя Вы можете есть и пальцами, и прямо с земли. Вилка будет всегда разрешать успешную еду; хотя вилка одна - недостаточно удобна, чтобы резать пищу на куски, и в конечном счете - будет часто ломаться. Для большего успеха, Вы должны иметь и вилку и нож в вашем комплекте. Ножи и вилки имеют неприятное свойство затупляться и даже ломаться при большом усердии едока, потому рекомендуется использовать качественные приборы и посуду.
     - <BR>
-    - Для принятия пищи необходимо достать ваш Столовый комплект и поместить в него посуду и продовольствие, а затем присесть и активировать Комплект.
+    - Для принятия пищи необходимо достать ваш Столовый комплект и поместить в него посуду и продовольствие, а затем присесть и активировать Комплект. Чтобы убрать Столовый комплект, используйте кнопку "Взять все".
     - <BR>
     - <BR>
     - <BR>
@@ -4323,7 +4361,7 @@
 - MISC:
   - NAME: misc_com_bottle_01f
   - MODL: m\Misc_Com_Bottle_01.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 6
@@ -4333,7 +4371,7 @@
 - MISC:
   - NAME: misc_com_bottle_02f
   - MODL: m\Misc_Com_Bottle_02.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4343,7 +4381,7 @@
 - MISC:
   - NAME: misc_com_bottle_03f
   - MODL: m\Misc_Com_Bottle_03.NIF
-  - FNAM: Полный Бутыль
+  - FNAM: Полная бутыль
   - MCDT:
       weight: 3.0
       value: 8
@@ -4353,7 +4391,7 @@
 - MISC:
   - NAME: Misc_Com_Bottle_04f
   - MODL: m\Misc_Com_Bottle_04.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4363,7 +4401,7 @@
 - MISC:
   - NAME: misc_com_bottle_05f
   - MODL: m\Misc_Com_Bottle_05.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4373,7 +4411,7 @@
 - MISC:
   - NAME: misc_com_bottle_06f
   - MODL: m\Misc_Com_Bottle_06.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4383,7 +4421,7 @@
 - MISC:
   - NAME: misc_com_bottle_07f
   - MODL: m\Misc_Com_Bottle_07.NIF
-  - FNAM: Полный Бутыль
+  - FNAM: Полная бутыль
   - MCDT:
       weight: 3.0
       value: 8
@@ -4393,7 +4431,7 @@
 - MISC:
   - NAME: misc_com_bottle_09f
   - MODL: m\Misc_Com_Bottle_09.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 6
@@ -4403,7 +4441,7 @@
 - MISC:
   - NAME: misc_com_bottle_10f
   - MODL: m\Misc_Com_Bottle_10.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4413,7 +4451,7 @@
 - MISC:
   - NAME: misc_com_bottle_11f
   - MODL: m\Misc_Com_Bottle_11.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4423,7 +4461,7 @@
 - MISC:
   - NAME: misc_com_bottle_12f
   - MODL: m\Misc_Com_Bottle_12.NIF
-  - FNAM: Полный Бутыль
+  - FNAM: Полный бутыль
   - MCDT:
       weight: 3.0
       value: 8
@@ -4433,7 +4471,7 @@
 - MISC:
   - NAME: misc_com_bottle_13f
   - MODL: m\Misc_Com_Bottle_13.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 6
@@ -4443,7 +4481,7 @@
 - MISC:
   - NAME: Misc_Com_Bottle_14f
   - MODL: m\Misc_Com_Bottle_14.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4453,7 +4491,7 @@
 - MISC:
   - NAME: misc_com_bottle_15f
   - MODL: m\Misc_Com_Bottle_15.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 6
@@ -4473,7 +4511,7 @@
 - MISC:
   - NAME: Misc_Com_Bucket_Metalf
   - MODL: m\Misc_Com_Bucket_Metal.NIF
-  - FNAM: Полное Металлическое ведерко
+  - FNAM: Полное металлическое ведерко
   - MCDT:
       weight: 8.0
       value: 15
@@ -4483,7 +4521,7 @@
 - MISC:
   - NAME: misc_com_redware_pitcherf
   - MODL: m\Misc_Redware_Pitcher.NIF
-  - FNAM: Полный Кувшин
+  - FNAM: Полный кувшин
   - MCDT:
       weight: 3.5
       value: 22
@@ -4493,7 +4531,7 @@
 - MISC:
   - NAME: misc_imp_silverware_pitcherf
   - MODL: m\Misc_Silverware_Pitcher.NIF
-  - FNAM: Полный Серебрянный Кувшин
+  - FNAM: Полный серебрянный кувшин
   - MCDT:
       weight: 8.0
       value: 30
@@ -4503,7 +4541,7 @@
 - MISC:
   - NAME: Misc_Com_Pitcher_Metal_01f
   - MODL: m\Misc_Com_Pitcher_Metal_01.NIF
-  - FNAM: Полный Кувшин
+  - FNAM: Полный кувшин
   - MCDT:
       weight: 3.0
       value: 10
@@ -4513,7 +4551,7 @@
 - MISC:
   - NAME: Misc_Com_Bottle_08f
   - MODL: m\Misc_Com_Bottle_08.NIF
-  - FNAM: Полная Бутылка
+  - FNAM: Полная бутылка
   - MCDT:
       weight: 2.0
       value: 5
@@ -4534,7 +4572,7 @@
 - MISC:
   - NAME: _dej_pocket_watch
   - MODL: m\misc_ice_dwemWatch.NIF
-  - FNAM: Двемерские Карманные Часы
+  - FNAM: Двемерские карманные часы
   - MCDT:
       weight: 0.5
       value: 300
@@ -5879,7 +5917,7 @@
       y_rot: 0.0
       z_rot: 5.683185
   - FRMR: 64
-  - NAME: A1V1_MesskitItem
+  - NAME: A1V1_MessKitItem
   - DATA:
       x: -11574.35
       y: -71577.92
@@ -6425,26 +6463,7 @@
         x: -20
         y: 25
   - RGNN: Felsaad Coast Region
-  - FRMR: 50334371
-  - NAME: skaal_guard_A3
-  - DATA:
-      x: -159017.84
-      y: 211670.77
-      z: 3054.6404
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.483186
-  - NAM0: 2
-  - FRMR: 50334418
-  - NAME: ex_nord_well_01
-  - XSCL: 0.76000005
-  - DATA:
-      x: -159654.4
-      y: 210574.69
-      z: 3109.308
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+  - NAM0: 1
   - FRMR: 86
   - NAME: a_waterwell
   - XSCL: 1.3000001
