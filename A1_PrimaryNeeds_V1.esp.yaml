@@ -6,13 +6,13 @@
       description:
       - Кушать, пить, спать, что ещё не хватает человеку в игре?
       - Основан на GL_Primary_Needs_2.7_MTB_RUSv1.0, созданном Balor <balor_abyss@mail.ru> и адаптированном Galib <Galleobor@yandex.ru>
-      records: 185
+      records: 184
   - MAST: Morrowind.esm
-  - DATA: 79765994
+  - DATA: 79764287
   - MAST: Tribunal.esm
-  - DATA: 6618333
+  - DATA: 6616539
   - MAST: Bloodmoon.esm
-  - DATA: 11801192
+  - DATA: 11799703
   
 - GLOB:
   - NAME: A1V1_MessKitX
@@ -345,6 +345,113 @@
   
 - SCPT:
   - SCHD:
+      name: A1V1_RstrMessKitSt1_sx
+      vars:
+        shorts: 1
+        longs: 0
+        floats: 0
+      data_size: 1981
+      var_table_size: 6
+  - SCVR:
+    - count
+  - SCDT: eJyF1E1r1EAYB/BkN8liEFuN3druVrfHxUu3IM5hQbzoQbwoiEV0zMtsNuatTia7FMWreBK/gSc/gBRBEE9FRPELFD+FeBWcNWPJJE/aw+4h8/x/z8xkJrqaqcrG4P6f5UG6EiQ+JR7OXBo4+AmJoj28NVIspPBfpijjJaQppxEuPbHQTcVEDxU4Ohzrx/A0BPnPEv+O858UOCr4tYI/K2rsbIr37BiiV9QyraomstR6TLDrBXvuf2s7YjRwCeSmkrvD3ViFcpUJT9LUw+Hcjm1MfB9vbdfgLxL8nsMHaj12Aluf70arzJ5qmajXqscEu1qwS2I9DiW2B6G7EvqIo0mrGoK3ltoMx4T/Aeo3Sd3n6tcWlBNyt5DPiIo4d0NI7bfLqtk20Xq7mhHixULsitHQ9tOcBXgaeOBReCHJHpeft5uyokO/6HBeVE3TPPEa9+On5B9w/7ANJ4XeK3RL1LjUdhrxq1oZ39RMdEWDgvBrdNPYIZSCl/qNJD/j8msNygn5UiGvHlXQ0MkjB9M0BSf+W+IPOf9LawqLFptFi7U4yNzFFHAWRDNC5zYlOEyCCak1eaCXm1zTTbSjN8cr239UN/93zcAGH6QGb3mDfR0KCnpQ0BegKUz4ouun3ij7isFPvdGcrrxkeR6gP5P8x9xnBpSDv9uZmzMWgZfqhwR/5PB3ox6DrxOjiy9a08G53CnLVsdEww6crOgeIbtJ4E/ZomxGoht8dTX9laQ/5frLDpwcjnvL3eujeyN8J2P0NsmyWwG7y7b58vrQwIgPqOpf6T75ig==
+  - SCTX:
+    - begin A1V1_RstrMessKitSt1_sx
+    - ''
+    - short count
+    - ''
+    - set count to ( GetItemCount "ingred_scrib_jelly_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_scrib_jelly_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_scrib_jerky_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_scrib_jerky_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_ash_yam_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_ash_yam_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_saltrice_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_saltrice_01\", count"
+    - endif
+    - set count to ( GetItemCount "food_kwama_egg_02" )
+    - ifx ( count )
+    - "\txRemoveItem \"food_kwama_egg_02\", count"
+    - endif
+    - set count to ( GetItemCount "food_kwama_egg_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"food_kwama_egg_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_bread_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_bread_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_rat_meat_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_rat_meat_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_muck_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_muck_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_kagouti_hide_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_kagouti_hide_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_hound_meat_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_hound_meat_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_crab_meat_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_crab_meat_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_comberry_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_comberry_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_corkbulb_root_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_corkbulb_root_01\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_silverware_knife" )
+    - ifx ( count )
+    - "\txRemoveItem \"misc_com_silverware_knife\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_wood_knife" )
+    - ifx ( count )
+    - "\txRemoveItem \"misc_com_wood_knife\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_silverware_fork" )
+    - ifx ( count )
+    - "\txRemoveItem \"misc_com_silverware_fork\", count"
+    - endif
+    - set count to ( GetItemCount "misc_com_wood_fork" )
+    - ifx ( count )
+    - "\txRemoveItem \"misc_com_wood_fork\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_scuttle_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_scuttle_01\", count"
+    - endif
+    - set count to ( GetItemCount "ingred_trama_root_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_trama_root_01\", count"
+    - endif
+    - set count to ( GetItemCount "deepnight_travelFood" )
+    - ifx ( count )
+    - "\txRemoveItem \"deepnight_travelFood\", count"
+    - endif
+    - ''
+    - StartScript A1V1_RstrMessKitSt2_sc
+    - StopScript A1V1_RstrMessKitSt1_sc
+    - ''
+    - end
+  
+- SCPT:
+  - SCHD:
       name: A1V1_RstrMessKitSt2_sc
       vars:
         shorts: 2
@@ -622,6 +729,294 @@
     - if ( count != 0 )
     - "\tAddItem \"deepnight_travelFood\", count"
     - "\tplayer->RemoveItem \"deepnight_travelFood\", count"
+    - endif
+    - ''
+    - EnablePlayerControls
+    - MessageBox "Гляньте вниз и запихайте ваши приборы и продовольствие в столовый комплект"
+    - ''
+    - StopScript A1V1_RstrMessKitSt2_sc
+    - ''
+    - end
+  
+- SCPT:
+  - SCHD:
+      name: A1V1_RstrMessKitSt2_sx
+      vars:
+        shorts: 2
+        longs: 3
+        floats: 0
+      data_size: 5115
+      var_table_size: 33
+  - SCVR:
+    - count
+    - tempS
+    - countL
+    - content
+    - tempL
+  - SCDT: eJy9l0+IG1Ucx9/k7+YlzZ+N3bXa6hMvqyLtxoMP3YsUWrB6URQFYZgks9lpJpkyM9llD1LEi/QgCPYgCHrRHoSivYheCrp4sKB4EERaXaNls40720aElra0v+xkl/c2b0rfdtJLyMz78H2/z5s3896LK2YE7SaHCy9Mvz6tvqw7zhHDPWg13WkUV8woGiPQTijZD1cKyg6uoIE8SZ6OK46C4gQa+nCk/zeKUEZJHDO1Rd2G5gjaR964mSfWbqNZs/Wq6lRso6we1U1zUT0wjRKKkiZAkRnibKRsBMINlFKKFKEidRCaydEYylDM3CnSswjTX5E4dmqGJVeBvBVAbtX6xMxIde26tO41Tve0gumSIo7ldX8D0gsgQ9fd4+sWBr1pzpy6qDVkVc9HWIGPIph+ERmO5DXPAvWLgApd8SFfcXxzQDXTtY2KLuu4FGWrfzuK6QdRUSZv+Rlw3wi5kT3KWcuqqvUFraGpeq2mHihJaZ6KseVXY5jOx4YjeckTQH0soO6botyTPBFniz8cx/TN+HAkr9gA6riACl1x0lfMDWZM2da1qqxgLcGWPpXAlCa2B/J6LwHz1hDDy4mXmVJIy8y2t9TWXLWhw4+k+tEkq/V4EtNnk6JMXv8IcKqQC/35Tvie2UFfjValLut4aIytPTmG6eTY9jze7ylgnh9iQnd7xHebGPRT12pWyzXUOaMq/bV9LsXW34X6o6mgXN51MoXp/kA2dOe9vvMDg/7mrFazuqOZO4VZiwtg8V9KnMr7JjGm+7CYDN32Yd+2OOitYmvlHckW0qzCj6DwBxaF8qo94BJpETfqTUPFapR125bfA3KeZ9KY/pAWZfKevwPnCbnQPR/1PSe3+rLr5ZZZVm3Lkn6oXoaV+CSD6deZoGBe+Bywfweyd7MMPcMuQyVuPEoy4/GYPx57GoZT6Y+86hjmvG4vaLau1pvGrC41IrEsa/nVLkzP7QqO5sfkT6Cv3YEWT4V7UN98t7d6XNjY7EhLr3HSn2cx/TYrCuV1fwKuLeRCFyW+6IOioZ2FuSdlu5JjLT7MYXo6F5zMO38H9Pk70KGbb37V+FGWdv45z1q8l4fdf16Uydt+CdySkBvZOWHrDN1yXVN6D3KmwJZvFTB9pzAcyUueBOqUgBr1vsO1+2eSnXy1Px1n639tHNP6uDiVNz0O5MkAcmS2VV0/1jRqc26/w3ndPARzSMr2/SLrcLAIZ7+iOHXb+Q/IdwNIxvZCHuVfRN93b63d6F0k7bXOCumQleX1zv/Lq/0by1c7ZP1y5y/v8nXS/+f947W97o0rvXYHWsmVntf12tdXySXv3/XuxUs9hPbmJzbWulcc1x6sd6+6JZhZinIbyAhfjg==
+  - SCTX:
+    - begin A1V1_RstrMessKitSt2_sx
+    - ''
+    - short count
+    - long countL
+    - long content
+    - long tempL
+    - short tempS
+    - ''
+    - set content to A1V1_MessKitCont1
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_scrib_jelly_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_scrib_jelly_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_scrib_jelly_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_scrib_jerky_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_scrib_jerky_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_scrib_jerky_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_ash_yam_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_ash_yam_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_ash_yam_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_saltrice_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_saltrice_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_saltrice_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "food_kwama_egg_02" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"food_kwama_egg_02\", count"
+    - "\tplayer->xRemoveItem \"food_kwama_egg_02\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "food_kwama_egg_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"food_kwama_egg_01\", count"
+    - "\tplayer->xRemoveItem \"food_kwama_egg_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_bread_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_bread_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_bread_01\", count"
+    - endif
+    - set content to A1V1_MessKitCont2
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_rat_meat_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_rat_meat_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_rat_meat_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_muck_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_muck_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_muck_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_kagouti_hide_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_kagouti_hide_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_kagouti_hide_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_hound_meat_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_hound_meat_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_hound_meat_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_crab_meat_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_crab_meat_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_crab_meat_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_comberry_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_comberry_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_comberry_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_corkbulb_root_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_corkbulb_root_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_corkbulb_root_01\", count"
+    - endif
+    - set content to A1V1_MessKitCont3
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_silverware_knife" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"misc_com_silverware_knife\", count"
+    - "\tplayer->xRemoveItem \"misc_com_silverware_knife\", count"
+    - endif
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_wood_knife" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"misc_com_wood_knife\", count"
+    - "\tplayer->xRemoveItem \"misc_com_wood_knife\", count"
+    - endif
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_silverware_fork" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"misc_com_silverware_fork\", count"
+    - "\tplayer->xRemoveItem \"misc_com_silverware_fork\", count"
+    - endif
+    - set tempL to ( content / 2 )
+    - set countL to ( content - 2 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "misc_com_wood_fork" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"misc_com_wood_fork\", count"
+    - "\tplayer->xRemoveItem \"misc_com_wood_fork\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_scuttle_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_scuttle_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_scuttle_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_trama_root_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_trama_root_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_trama_root_01\", count"
+    - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "deepnight_travelFood" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"deepnight_travelFood\", count"
+    - "\tplayer->xRemoveItem \"deepnight_travelFood\", count"
     - endif
     - ''
     - EnablePlayerControls
@@ -6564,399 +6959,4 @@
     - StartScript "PCJail"
     - GotoJail
     - Goodbye
-  
-- SCPT:
-  - SCHD:
-      name: A1V1_RstrMessKitSt1_sx
-      vars:
-        shorts: 1
-        longs: 0
-        floats: 0
-      data_size: 1981
-      var_table_size: 6
-  - SCVR:
-    - count
-  - SCDT: eJyF1E1r1EAYB/BkN8liEFuN3druVrfHxUu3IM5hQbzoQbwoiEV0zMtsNuatTia7FMWreBK/gSc/gBRBEE9FRPELFD+FeBWcNWPJJE/aw+4h8/x/z8xkJrqaqcrG4P6f5UG6EiQ+JR7OXBo4+AmJoj28NVIspPBfpijjJaQppxEuPbHQTcVEDxU4Ohzrx/A0BPnPEv+O858UOCr4tYI/K2rsbIr37BiiV9QyraomstR6TLDrBXvuf2s7YjRwCeSmkrvD3ViFcpUJT9LUw+Hcjm1MfB9vbdfgLxL8nsMHaj12Aluf70arzJ5qmajXqscEu1qwS2I9DiW2B6G7EvqIo0mrGoK3ltoMx4T/Aeo3Sd3n6tcWlBNyt5DPiIo4d0NI7bfLqtk20Xq7mhHixULsitHQ9tOcBXgaeOBReCHJHpeft5uyokO/6HBeVE3TPPEa9+On5B9w/7ANJ4XeK3RL1LjUdhrxq1oZ39RMdEWDgvBrdNPYIZSCl/qNJD/j8msNygn5UiGvHlXQ0MkjB9M0BSf+W+IPOf9LawqLFptFi7U4yNzFFHAWRDNC5zYlOEyCCak1eaCXm1zTTbSjN8cr239UN/93zcAGH6QGb3mDfR0KCnpQ0BegKUz4ouun3ij7isFPvdGcrrxkeR6gP5P8x9xnBpSDv9uZmzMWgZfqhwR/5PB3ox6DrxOjiy9a08G53CnLVsdEww6crOgeIbtJ4E/ZomxGoht8dTX9laQ/5frLDpwcjnvL3eujeyN8J2P0NsmyWwG7y7b58vrQwIgPqOpf6T75ig==
-  - SCTX:
-    - begin A1V1_RstrMessKitSt1_sx
-    - ''
-    - short count
-    - ''
-    - set count to ( GetItemCount "ingred_scrib_jelly_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_scrib_jelly_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_scrib_jerky_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_scrib_jerky_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_ash_yam_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_ash_yam_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_saltrice_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_saltrice_01\", count"
-    - endif
-    - set count to ( GetItemCount "food_kwama_egg_02" )
-    - ifx ( count )
-    - "\txRemoveItem \"food_kwama_egg_02\", count"
-    - endif
-    - set count to ( GetItemCount "food_kwama_egg_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"food_kwama_egg_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_bread_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_bread_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_rat_meat_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_rat_meat_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_muck_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_muck_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_kagouti_hide_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_kagouti_hide_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_hound_meat_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_hound_meat_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_crab_meat_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_crab_meat_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_comberry_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_comberry_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_corkbulb_root_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_corkbulb_root_01\", count"
-    - endif
-    - set count to ( GetItemCount "misc_com_silverware_knife" )
-    - ifx ( count )
-    - "\txRemoveItem \"misc_com_silverware_knife\", count"
-    - endif
-    - set count to ( GetItemCount "misc_com_wood_knife" )
-    - ifx ( count )
-    - "\txRemoveItem \"misc_com_wood_knife\", count"
-    - endif
-    - set count to ( GetItemCount "misc_com_silverware_fork" )
-    - ifx ( count )
-    - "\txRemoveItem \"misc_com_silverware_fork\", count"
-    - endif
-    - set count to ( GetItemCount "misc_com_wood_fork" )
-    - ifx ( count )
-    - "\txRemoveItem \"misc_com_wood_fork\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_scuttle_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_scuttle_01\", count"
-    - endif
-    - set count to ( GetItemCount "ingred_trama_root_01" )
-    - ifx ( count )
-    - "\txRemoveItem \"ingred_trama_root_01\", count"
-    - endif
-    - set count to ( GetItemCount "deepnight_travelFood" )
-    - ifx ( count )
-    - "\txRemoveItem \"deepnight_travelFood\", count"
-    - endif
-    - ''
-    - StartScript A1V1_RstrMessKitSt2_sc
-    - StopScript A1V1_RstrMessKitSt1_sc
-    - ''
-    - end
-  
-- SCPT:
-  - SCHD:
-      name: A1V1_RstrMessKitSt2_sx
-      vars:
-        shorts: 2
-        longs: 3
-        floats: 0
-      data_size: 5115
-      var_table_size: 33
-  - SCVR:
-    - count
-    - tempS
-    - countL
-    - content
-    - tempL
-  - SCDT: eJy9l0+IG1Ucx9/k7+YlzZ+N3bXa6hMvqyLtxoMP3YsUWrB6URQFYZgks9lpJpkyM9llD1LEi/QgCPYgCHrRHoSivYheCrp4sKB4EERaXaNls40720aElra0v+xkl/c2b0rfdtJLyMz78H2/z5s3896LK2YE7SaHCy9Mvz6tvqw7zhHDPWg13WkUV8woGiPQTijZD1cKyg6uoIE8SZ6OK46C4gQa+nCk/zeKUEZJHDO1Rd2G5gjaR964mSfWbqNZs/Wq6lRso6we1U1zUT0wjRKKkiZAkRnibKRsBMINlFKKFKEidRCaydEYylDM3CnSswjTX5E4dmqGJVeBvBVAbtX6xMxIde26tO41Tve0gumSIo7ldX8D0gsgQ9fd4+sWBr1pzpy6qDVkVc9HWIGPIph+ERmO5DXPAvWLgApd8SFfcXxzQDXTtY2KLuu4FGWrfzuK6QdRUSZv+Rlw3wi5kT3KWcuqqvUFraGpeq2mHihJaZ6KseVXY5jOx4YjeckTQH0soO6botyTPBFniz8cx/TN+HAkr9gA6riACl1x0lfMDWZM2da1qqxgLcGWPpXAlCa2B/J6LwHz1hDDy4mXmVJIy8y2t9TWXLWhw4+k+tEkq/V4EtNnk6JMXv8IcKqQC/35Tvie2UFfjValLut4aIytPTmG6eTY9jze7ylgnh9iQnd7xHebGPRT12pWyzXUOaMq/bV9LsXW34X6o6mgXN51MoXp/kA2dOe9vvMDg/7mrFazuqOZO4VZiwtg8V9KnMr7JjGm+7CYDN32Yd+2OOitYmvlHckW0qzCj6DwBxaF8qo94BJpETfqTUPFapR125bfA3KeZ9KY/pAWZfKevwPnCbnQPR/1PSe3+rLr5ZZZVm3Lkn6oXoaV+CSD6deZoGBe+Bywfweyd7MMPcMuQyVuPEoy4/GYPx57GoZT6Y+86hjmvG4vaLau1pvGrC41IrEsa/nVLkzP7QqO5sfkT6Cv3YEWT4V7UN98t7d6XNjY7EhLr3HSn2cx/TYrCuV1fwKuLeRCFyW+6IOioZ2FuSdlu5JjLT7MYXo6F5zMO38H9Pk70KGbb37V+FGWdv45z1q8l4fdf16Uydt+CdySkBvZOWHrDN1yXVN6D3KmwJZvFTB9pzAcyUueBOqUgBr1vsO1+2eSnXy1Px1n639tHNP6uDiVNz0O5MkAcmS2VV0/1jRqc26/w3ndPARzSMr2/SLrcLAIZ7+iOHXb+Q/IdwNIxvZCHuVfRN93b63d6F0k7bXOCumQleX1zv/Lq/0by1c7ZP1y5y/v8nXS/+f947W97o0rvXYHWsmVntf12tdXySXv3/XuxUs9hPbmJzbWulcc1x6sd6+6JZhZinIbyAhfjg==
-  - SCTX:
-    - begin A1V1_RstrMessKitSt2_sx
-    - ''
-    - short count
-    - long countL
-    - long content
-    - long tempL
-    - short tempS
-    - ''
-    - set content to A1V1_MessKitCont1
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_scrib_jelly_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_scrib_jelly_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_scrib_jelly_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_scrib_jerky_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_scrib_jerky_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_scrib_jerky_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_ash_yam_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_ash_yam_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_ash_yam_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_saltrice_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_saltrice_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_saltrice_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "food_kwama_egg_02" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"food_kwama_egg_02\", count"
-    - "\tplayer->xRemoveItem \"food_kwama_egg_02\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "food_kwama_egg_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"food_kwama_egg_01\", count"
-    - "\tplayer->xRemoveItem \"food_kwama_egg_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_bread_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_bread_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_bread_01\", count"
-    - endif
-    - set content to A1V1_MessKitCont2
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_rat_meat_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_rat_meat_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_rat_meat_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_muck_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_muck_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_muck_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_kagouti_hide_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_kagouti_hide_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_kagouti_hide_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_hound_meat_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_hound_meat_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_hound_meat_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_crab_meat_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_crab_meat_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_crab_meat_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_comberry_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_comberry_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_comberry_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_corkbulb_root_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_corkbulb_root_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_corkbulb_root_01\", count"
-    - endif
-    - set content to A1V1_MessKitCont3
-    - set tempL to ( content / 2 )
-    - set countL to ( content - 2 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "misc_com_silverware_knife" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"misc_com_silverware_knife\", count"
-    - "\tplayer->xRemoveItem \"misc_com_silverware_knife\", count"
-    - endif
-    - set tempL to ( content / 2 )
-    - set countL to ( content - 2 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "misc_com_wood_knife" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"misc_com_wood_knife\", count"
-    - "\tplayer->xRemoveItem \"misc_com_wood_knife\", count"
-    - endif
-    - set tempL to ( content / 2 )
-    - set countL to ( content - 2 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "misc_com_silverware_fork" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"misc_com_silverware_fork\", count"
-    - "\tplayer->xRemoveItem \"misc_com_silverware_fork\", count"
-    - endif
-    - set tempL to ( content / 2 )
-    - set countL to ( content - 2 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "misc_com_wood_fork" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"misc_com_wood_fork\", count"
-    - "\tplayer->xRemoveItem \"misc_com_wood_fork\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_scuttle_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_scuttle_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_scuttle_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "ingred_trama_root_01" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"ingred_trama_root_01\", count"
-    - "\tplayer->xRemoveItem \"ingred_trama_root_01\", count"
-    - endif
-    - set tempL to ( content / 8 )
-    - set countL to ( content - 8 * tempL )
-    - set count to countL
-    - set content to tempL
-    - set tempS to ( player->GetItemCount "deepnight_travelFood" )
-    - if ( tempS < count )
-    - "\tset count to tempS"
-    - endif
-    - ifx ( count )
-    - "\txAddItem \"deepnight_travelFood\", count"
-    - "\tplayer->xRemoveItem \"deepnight_travelFood\", count"
-    - endif
-    - ''
-    - EnablePlayerControls
-    - MessageBox "Гляньте вниз и запихайте ваши приборы и продовольствие в столовый комплект"
-    - ''
-    - StopScript A1V1_RstrMessKitSt2_sc
-    - ''
-    - end
   
