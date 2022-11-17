@@ -243,11 +243,11 @@
         shorts: 1
         longs: 0
         floats: 0
-      data_size: 1572
+      data_size: 1654
       var_table_size: 6
   - SCVR:
     - count
-  - SCDT: eJyNlLtOwzAUhpuhSF2g3FpKC6Rv0HRnYGFBLCAhNstJ3MTkYnTstOqD8jhIpDguJTlOu2Q5n7/z+9hx15FO58Z9/+674pLnEbCQyAC4Tz5Ymq7JzOscOU7PLSl3eu/OvvoWqtNzui0uSA5xVZRxjbTrtKKojMmaZogHIYzjWjvOTCeaKuABQyQYUk+yECIkyYpmlLAoIrN5I0mT2Ofw9jr+cgy146SK6gOjIWJo1C3TAKpIxsqPfRq7iLEMtOW4QrIiSBBDvWxW3+rVg6qc0EgUipOYh9ip2DBjm2jbRYXFoshD255wyJjG2nReQQFQ3yZCGcuMA5H5DGDdMuNdxFjutGW4RSDxi9QnIASWyMoZ31T7RhmXwaYhkTxdMlhRYCTJ+YLVjS1kfWJbcvV7cTEbyhiPqz1XWMdFuaG6zA7Wz+B/V8yFIZb3RwaFUilreX92CMv9VLD5qy2HiEN1U8jYZ86jWG24JUsfy9wNEwqVpnF/8OC9eeRFKnhmUj5x9armZfAJVvDKguP8AOCSuZ8=
+  - SCDT: eJyNlLtOwzAUhpuhSF2g3FpKC6QPgNR0Z2BhQSwgITbLSU5TE6dGttOqD8rjIJHiuJTkOGXJcr585/j3pe0pr3Xlv311fXHOFomEmKhIspC8A+drMglaB57X8QvKH9/5k8+ug2p1vHaDS6b/cZWUdQ2M67ikqJqTNc0QD0JYx6VxnNhOlGvJIkAkGFKdZCZETNIVzSiBJCGTaW2SOrHPEex1/M7RN46jctRQAo0RQ63uSENSTTIoPu40dhFr6RnLYYlkeZQihmrZ/n1t/u6V5ZQmIteMzFmM7YoLs7aRsZ2V2Fzki9i1JhyypqExnZZQJGnoEqGMI+NIZCFIuW7IeBexlhtj6W8RmYY5D4kUApvIyVnf2PgGGVPRpiFRjC9BrqgEki7YDKrGBrKa2JZc/RxczIYy1uMbzwXWcVYsqCpzg9U9+NsVc2GI4/1RUa41h4b3Z4dwnE8tN7fasYk4VDXFAB8Llsz1hlsCfyjmrplQqJq3vQ40SjncckE40BkylxssjMNu7z54Dciz0vIJlHpk+kVPiyhGWCEoCp73DZjB0N0=
   - SCTX:
     - begin A1V1_RstrMessKitSt1_sc
     - ''
@@ -337,6 +337,10 @@
     - if ( count != 0 )
     - "\tRemoveItem \"deepnight_travelFood\", count"
     - endif
+    - set count to ( GetItemCount "ingred_hackle-lo_leaf_01" )
+    - if ( count != 0 )
+    - "\tRemoveItem \"ingred_hackle-lo_leaf_01\", count"
+    - endif
     - ''
     - StartScript A1V1_RstrMessKitSt2_sc
     - StopScript A1V1_RstrMessKitSt1_sc
@@ -350,11 +354,11 @@
         shorts: 1
         longs: 0
         floats: 0
-      data_size: 1981
+      data_size: 2083
       var_table_size: 6
   - SCVR:
     - count
-  - SCDT: eJyF1E1r1EAYB/BkN8liEFuN3druVrfHxUu3IM5hQbzoQbwoiEV0zMtsNuatTia7FMWreBK/gSc/gBRBEE9FRPELFD+FeBWcNWPJJE/aw+4h8/x/z8xkJrqaqcrG4P6f5UG6EiQ+JR7OXBo4+AmJoj28NVIspPBfpijjJaQppxEuPbHQTcVEDxU4Ohzrx/A0BPnPEv+O858UOCr4tYI/K2rsbIr37BiiV9QyraomstR6TLDrBXvuf2s7YjRwCeSmkrvD3ViFcpUJT9LUw+Hcjm1MfB9vbdfgLxL8nsMHaj12Aluf70arzJ5qmajXqscEu1qwS2I9DiW2B6G7EvqIo0mrGoK3ltoMx4T/Aeo3Sd3n6tcWlBNyt5DPiIo4d0NI7bfLqtk20Xq7mhHixULsitHQ9tOcBXgaeOBReCHJHpeft5uyokO/6HBeVE3TPPEa9+On5B9w/7ANJ4XeK3RL1LjUdhrxq1oZ39RMdEWDgvBrdNPYIZSCl/qNJD/j8msNygn5UiGvHlXQ0MkjB9M0BSf+W+IPOf9LawqLFptFi7U4yNzFFHAWRDNC5zYlOEyCCak1eaCXm1zTTbSjN8cr239UN/93zcAGH6QGb3mDfR0KCnpQ0BegKUz4ouun3ij7isFPvdGcrrxkeR6gP5P8x9xnBpSDv9uZmzMWgZfqhwR/5PB3ox6DrxOjiy9a08G53CnLVsdEww6crOgeIbtJ4E/ZomxGoht8dTX9laQ/5frLDpwcjnvL3eujeyN8J2P0NsmyWwG7y7b58vrQwIgPqOpf6T75ig==
+  - SCDT: eJyF1M+L00AUB/CkTVoM4q7W7brbrnaPRYTtgjiHgnjRg3hREBfRcZJM25hf62TSsihexZP4H3jyD5BFEMTTIqJ48rb4L4ggXgWnZnbJJC/uoT0k7/t5L5OZmHqia2u9O38We/GSF40ZdXHiMM/GD2kQ7OCNgdZCmvglmjZcQIZ2HOHclRa6plnongZH+0PzPzzzQf6Dwr8W/HsNjkp+JeNPyhqSTPAOCSF6Sc/Tum6hll6OSXY1Y08dtCYBZ55DITdW3C3hhjqUKww8imMX+zMSEkzHY7yxWYI/KvAbAe/p5dgRbHnetVqePVazUKdWjkl2OWMX5PPYjBIXQrcV9L5Ao1oxBC8tIxyHVPwB6mdF3RXqpxqUk3I7k0/IijB1fEjt1vOqVbfQar2YkeLZTGzLuz4Zxyn38MRzwa3wVJFdIT+pV2Vlh27W4bSsmsRp5Faux3fF3xP+fh1OSr2T6S1Z4zBiV+KXjDy+bljoogEF4dfoxKFNGQMP9UtFfizkFwaUk/K5TF4+rGC+nQY2ZnEMDv5b4fcF/8uoCssW61mLldBLnPkIOPGCKWUzwij2I29ES03umvkml00LbZnV8cLyH9bN/h0zsMFbpcEr0WDXhIKS7mX0GWiEkXjo8q5v5H2tIXZ9ozpdeMnqHKA/VfwHwucNKAd/txMn5TwAD9VXBX4n4C+Ncgw+TpzNv2hVG+d8My+3mhbqN+FkQXcp3Y688YTPy6Y0uCqerqQ/V/RHQn/WhJOFV3pwoInjB/RCEOOAkhE0/0+lwzfR4UezOt0fdhbbVwa3B/hmwtkNmiTXPX6Lb4pF7EI3BuKGrv8F4dwVRA==
   - SCTX:
     - begin A1V1_RstrMessKitSt1_sx
     - ''
@@ -444,6 +448,10 @@
     - ifx ( count )
     - "\txRemoveItem \"deepnight_travelFood\", count"
     - endif
+    - set count to ( GetItemCount "ingred_hackle-lo_leaf_01" )
+    - ifx ( count )
+    - "\txRemoveItem \"ingred_hackle-lo_leaf_01\", count"
+    - endif
     - ''
     - StartScript A1V1_RstrMessKitSt2_sc
     - StopScript A1V1_RstrMessKitSt1_sc
@@ -457,7 +465,7 @@
         shorts: 2
         longs: 3
         floats: 0
-      data_size: 4360
+      data_size: 4573
       var_table_size: 33
   - SCVR:
     - count
@@ -465,7 +473,7 @@
     - countL
     - content
     - tempL
-  - SCDT: eJy1l+9r00AYx+86OizK7NR1Tqfe3gpiU9/4Ql+IoKD4RkF8d+THtY1JmnFJV/r3+S/oS6EWx7LVpVtBEDbRpEm3pL0Err2+KUm+z6/PPbnn0iI0C2ADvV5/IX2U8DviOG9196XdciVQhOYKuIICHT1Fj4M7CNbiu0BAD9GjInQgKKJACI0L4eUKANfg6q4pdwkN5AK4hz79LSN7Q281KNGwo1JdwZ+JaXZxVQKrEF5FgRV6hpxxlHHA4AEowVVYKIVP0c5zVP1azohwme5bpkkJLpWFGouyxBHyWCYmoli2Ipb1OI3sNHFXtjg5GN5JBpYsqv47Uf03Jsskmy7VVcIJwHJPEjB10S2o27aGjY5syZg0Grha42rBrHeqBQx52fVLC9Uv5dcvcP03o/qvxz1WKJE1zupnfJO1z4rjytnztiZo3k7tCyq72CLBz3z7IunO2hcpXVRfKhHCWpzDaqsGZ/nTrsnSZzRRZd+Pyq7E8Q25YbddHTd1jXcqZYVIYmTaiMLZjnBuxXmadrulzfMqsQMkUTIsRIHcjUBuxllUKivzcDD9kxhsgyWdd6ptKYRS3g8PljtrX6d0UQgPIoTNixzUUNqmgqlt8zYjM0YSJtsoZw4/Sc7hWgq2xgO7E8FuWbqjhsuJHd3cI7QjU4KNll4nPLg5UZLAeWapJi7ANdlNF6k64wOal4jpn9pNTANRFCiiuM1asHrwuvCgZAdJ8uRYiYKajIj0yvHisNxTI4KlL+lfiaO2XdfkPT4Z3qlPSoa8pEPTpeF36xzzjR2AdWhOWYgG0QjZbemNphsm2iPmq6DnXCDMACkQtkUJfi+D8hvwZfDv+Hy0j/rH3gHy0EFv6P3uHYYPen88NDzxfvgnZyi88n/6fX9wfjrqe4GKTkf+wO+fHaIj/9dwsH80AmC7XBmP+/eOS+OR/8GtBS8ChP8BirThxA==
+  - SCDT: eJy1l99r00AcwO86OizK7NR1TqfeXoVhW1980AcRFBRfFMS345pe25hrMy7pSv8+/wV9FGpxrFtduhUEYRNNmmQm7SVw7fWlJPn+/Nz3vt+7ZiHLgA30av156UMJv6WW9Ua3X5gtuwSykK2AK8iVoyfokfsGwVrw5grQQ7SbhRYEWeQKPOWM97gCwDW4usdIl3JXnAH30Mc/eWRu6K06p1VsaVyv4E+UsS4ulsAqhFeRq4WeImviZeLQ/QBycBVmct5XtPMMFb/kEzz8D/c1USUHl8rCjUVZAg9pLKGKKpYtn2U9CEOsBu6SpiSHwDrKIBKryv+On/+NcJkIs7muUUkAkXmUQChXXYKaaVax0SFNgmm9jotlqRLMWsdKIBAvO//SQvmX0vNXuP6bfv7XgxpXOCVVyexnbKO5zwonmYvnbVnRvJ3qC05s3KTuz3x9ETUX9UVMrqouBR9hLYjRbGuGZPrTptHUZ2Sq0r7vp10I/BukbrZtHTf0quxUSnIRxUjUUYWz7ePcCuI0zHarOs9WEjuIoiRoqAK564PcDKJonFTm4RDaRzHECks67zSzWaGcy148ROaivo7JVSE88BE2L2Nwo9JmFcxNU7YYiT6iMMlKKXP4cXQOl2OwZRnYHR92q6lbmrec2NLZPuUdwik2WnqNyuCmeIkCp6nFirgAV9hNl6E6kwNalkhoH+smoYIqCuRT3BYtWM3dLjIoyU6iPClaqqDCERFfOVkckXlsRIjkS/pXYmlt22ayx6fAOnalFIiXdGja3Lu3zjHfxA5Eh+aUhmqQKqV7Lb3esL1A+5S9dGsuBSJ0EAMRa6gCCTs9vGMQzWB0l5mYUVKTrEqyk1inJ2vl4Lc8yL8Gn4d/Ty7GB6h/MjhEA3TYGw1+9Y68D73fAzQ6HXx3Ts+R9+T8cPrO8OJs3B+4UnQ2doZO//wIHTs/R8OD4zEA2/nC5Ax7Z9k8OMfe22V3d0P4D5mFEVc=
   - SCTX:
     - begin A1V1_RstrMessKitSt2_sc
     - ''
@@ -730,6 +738,18 @@
     - "\tAddItem \"deepnight_travelFood\", count"
     - "\tplayer->RemoveItem \"deepnight_travelFood\", count"
     - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_hackle-lo_leaf_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - if ( count != 0 )
+    - "\tAddItem \"ingred_hackle-lo_leaf_01\", count"
+    - "\tplayer->RemoveItem \"ingred_hackle-lo_leaf_01\", count"
+    - endif
     - ''
     - EnablePlayerControls
     - MessageBox "Гляньте вниз и запихайте ваши приборы и продовольствие в столовый комплект"
@@ -745,7 +765,7 @@
         shorts: 2
         longs: 3
         floats: 0
-      data_size: 5115
+      data_size: 5365
       var_table_size: 33
   - SCVR:
     - count
@@ -753,7 +773,7 @@
     - countL
     - content
     - tempL
-  - SCDT: eJy9l0+IG1Ucx9/k7+YlzZ+N3bXa6hMvqyLtxoMP3YsUWrB6URQFYZgks9lpJpkyM9llD1LEi/QgCPYgCHrRHoSivYheCrp4sKB4EERaXaNls40720aElra0v+xkl/c2b0rfdtJLyMz78H2/z5s3896LK2YE7SaHCy9Mvz6tvqw7zhHDPWg13WkUV8woGiPQTijZD1cKyg6uoIE8SZ6OK46C4gQa+nCk/zeKUEZJHDO1Rd2G5gjaR964mSfWbqNZs/Wq6lRso6we1U1zUT0wjRKKkiZAkRnibKRsBMINlFKKFKEidRCaydEYylDM3CnSswjTX5E4dmqGJVeBvBVAbtX6xMxIde26tO41Tve0gumSIo7ldX8D0gsgQ9fd4+sWBr1pzpy6qDVkVc9HWIGPIph+ERmO5DXPAvWLgApd8SFfcXxzQDXTtY2KLuu4FGWrfzuK6QdRUSZv+Rlw3wi5kT3KWcuqqvUFraGpeq2mHihJaZ6KseVXY5jOx4YjeckTQH0soO6botyTPBFniz8cx/TN+HAkr9gA6riACl1x0lfMDWZM2da1qqxgLcGWPpXAlCa2B/J6LwHz1hDDy4mXmVJIy8y2t9TWXLWhw4+k+tEkq/V4EtNnk6JMXv8IcKqQC/35Tvie2UFfjValLut4aIytPTmG6eTY9jze7ylgnh9iQnd7xHebGPRT12pWyzXUOaMq/bV9LsXW34X6o6mgXN51MoXp/kA2dOe9vvMDg/7mrFazuqOZO4VZiwtg8V9KnMr7JjGm+7CYDN32Yd+2OOitYmvlHckW0qzCj6DwBxaF8qo94BJpETfqTUPFapR125bfA3KeZ9KY/pAWZfKevwPnCbnQPR/1PSe3+rLr5ZZZVm3Lkn6oXoaV+CSD6deZoGBe+Bywfweyd7MMPcMuQyVuPEoy4/GYPx57GoZT6Y+86hjmvG4vaLau1pvGrC41IrEsa/nVLkzP7QqO5sfkT6Cv3YEWT4V7UN98t7d6XNjY7EhLr3HSn2cx/TYrCuV1fwKuLeRCFyW+6IOioZ2FuSdlu5JjLT7MYXo6F5zMO38H9Pk70KGbb37V+FGWdv45z1q8l4fdf16Uydt+CdySkBvZOWHrDN1yXVN6D3KmwJZvFTB9pzAcyUueBOqUgBr1vsO1+2eSnXy1Px1n639tHNP6uDiVNz0O5MkAcmS2VV0/1jRqc26/w3ndPARzSMr2/SLrcLAIZ7+iOHXb+Q/IdwNIxvZCHuVfRN93b63d6F0k7bXOCumQleX1zv/Lq/0by1c7ZP1y5y/v8nXS/+f947W97o0rvXYHWsmVntf12tdXySXv3/XuxUs9hPbmJzbWulcc1x6sd6+6JZhZinIbyAhfjg==
+  - SCDT: eJy9l1+IG0Ucx2fz9zJJ8+dyvbPa6ogvp1Lai4iD3osUWrCKoCgKwrJJ9nJpNtmyu7njHkoRX0ofBME+CIK+aB+Eon0RfSno4YMFxQdBpNUzWi7XeHttRLC0Un+5TY6Zy+zhnBtfQnb3w3d+n5nZnZmoYoTQXnIs9/TMyzPqc7ptH686R8yGM4OiihFGYwSeE0oOwZWC0v0reEAeIQejiq2gKIEHPTjU+xtGKKXEThrakm7B4xA6QF75O0vMvdVGxdLLql2yqkX1hG4YS+rhGRRTlCQBiswSezNlMxBuoISSpwjlqY3QbIZGUIpi5k6eXkKYfo/EsdOzLLkG5F0fcqvWh2dHqmvVpHVvcboXFEyXFXEsr/sDkK4PGbjuPk83129Ns+fVJa0uq3olxAq8E8L0o9BwJK95CajvBFTgivd6iuODDtUMx6qWdFnH5TBb/akwpm+FRZm85QfAfSbkRjaUc6ZZVmuLWl1T9UpFPVyQ0jwfYcsvRzBdiAxH8pJngXpXQP1vinIjeTbKFn8siumr0eFIXrEO1GkBFbjilKeY6c+YoqVrZVnBSowtfTqGKY1tD+T1ngXmtSGGlxMvM4WAlpltb6mlOWpdhx9J9RNxVuuhOKZPxEWZvP5x4FQhF/j4Tnqe6X5b9WapJut4dIytPT6G6dTY9jze71FgnhpiAne733Ob7LdT0ypm06mq89Wy9Nf2yQRbfwfqDyf8cnnXqQSmh3zZwJ33e84T/fbmzWajvKuZO41Zi6tg8UdCnMr7xjGmB7CYDNz2Ps8232+tZGnFXcnmkqzC16DwExaF8qpd4GJJETfqTUPJrBd1y5LfA3KeF5OYfpUUZfKePwLnCrnAPR/wPKe22rJqxaZRVC3TlB5UN8VKvJfC9NOUXzAvfBnYX33Zf7MMPcYuQwWuPwoy/fGg1x/76lW71Ot51a4aC7q1qFm6WmtU53SpHomkWctP9mB6eY9/NN8nPwN9awdaPBX+g/rg3d5qcXFzsyMtvc5Jf5jG9PO0KJTX/Qa4lpALXJR4oveIunYO5p6U7WqGtXg7g+mFjH8y7/wF0Fd2oAM3H3zV+F6Wdv42y1qcycLuPyvK5G0/Bm5ZyI3snLB1hm46jiG9B7mYY8s3c5i+nhuO5CXPAXVeQI163+FYvTPJbr7a74+z9b80jmltXJzKm54G8pwPOTLbsq6fbFQr806vwQXdOApzSMr2zTzrcCQPZ7+8OHXb+Q/IN3zIwG0HH6jBnk4r1Qz9oGGqhq7NyY7vmQnW4/EJTJ+f8E/mrUtAn9qBZsyvZlH2GfRl5+76ne410lpvr5I2WV3ZaP+5sta7sfJXm2zcaP/i3rhNev/c39yW27lzs9tqw1Nys+t23NbtNXLd/X2jc+16F6H92cnNVf4F27H6K/2LTgHeKUX5BzBMlFw=
   - SCTX:
     - begin A1V1_RstrMessKitSt2_sx
     - ''
@@ -1018,6 +1038,18 @@
     - "\txAddItem \"deepnight_travelFood\", count"
     - "\tplayer->xRemoveItem \"deepnight_travelFood\", count"
     - endif
+    - set tempL to ( content / 8 )
+    - set countL to ( content - 8 * tempL )
+    - set count to countL
+    - set content to tempL
+    - set tempS to ( player->GetItemCount "ingred_hackle-lo_leaf_01" )
+    - if ( tempS < count )
+    - "\tset count to tempS"
+    - endif
+    - ifx ( count )
+    - "\txAddItem \"ingred_hackle-lo_leaf_01\", count"
+    - "\tplayer->xRemoveItem \"ingred_hackle-lo_leaf_01\", count"
+    - endif
     - ''
     - EnablePlayerControls
     - MessageBox "Гляньте вниз и запихайте ваши приборы и продовольствие в столовый комплект"
@@ -1033,13 +1065,13 @@
         shorts: 1
         longs: 2
         floats: 0
-      data_size: 1989
+      data_size: 2080
       var_table_size: 21
   - SCVR:
     - count
     - countL
     - content
-  - SCDT: eJy11EtL7DAUAOBkoJd7N97xXt/PuFQ3dlzoShBBF+JKEHchbTOd2LSRNHWYXyn+AEFEYRxl1HGpou2kM/iYXeqqNBy+nOScHAvyEiihFQvGEMygw9cyEiMepccR82sKK0lOKN8WwgO/IPyN0iC0gda60SW09gdakENgZevAyqghtI7SD1pC6Tpa/sSyyJfUy8yQYCmEwiu2ATup2eGcjd1EKU7NzClt/gtZ7GJXhLieHh1XhQw+onaO2oPQyjcUaXSij8aMn1BZJ5Ka0tOa/v853yBiVWqgLmh1clDCRvbO8KZ9YOM9Gse7TG2JSK1aWYQO77XhvN5+PC+sm16Rk3CngJbplbcvhw6VsmGG9mrQQyVxcEiJYapfHk1NJJFXADun2bGcDYgvEsVwjXmGL2dMw0M5HCZuUGitZHpyw+N/777KgO4b1/v+zfd1JCVeMYOq2n2b9Wz6Ud//GbNS3I3HhCvJXFpMojlK4hpukNDMnNXmaH/yS+bgIyqDxo+4nDcK7Tpbd915GZQXwelD8/Ht6qVzjZrootVpXjYfnm7Sv7NO+7Z9+XyDWu27+9vrVgeAmfJIl9pXQtLcS5OE8B3IKpL7
+  - SCDT: eJy11EFv0zAUAGC7UhBcRgdjYzDAHAEhLeUwTkgICQ6IExLiZjnJa2rixMhxVvVXIn4AEpqY1HWojHJk05bUTrVpvdk7RYlePj/7vecAiw7qkO0AlxgR8vmkS+RdXqQKEjpgcSbguZBUAOvT7RBdw/g6aQJfkZ35Hx2ycwMHWGAUNN9R0HAr5CWpH+Qpqb+TZ/PALUOvJQBfC54ONNWK7YJ4K2XigbUZ12bOqJJSu2W7adhVy5ZxpbUAN/OeMW/lvIxpLHM6rLdO+1Jl59HQouEytHcJbSu2QEsudkENmQJX+r6hb1/MNyt4HxzUx0bdXJawk/1u9XX4KaQfoCzfc/1GFvpF0ESY8LbDH5nlN2xh4/qIokpEHlqmLe9CziNQauSGtjVoUcUimgPTfmaxHXNZFYkH9qFh1y2bsVRWmtMBTxwnZ93AKxbOqzjzWitV79xx+5e7r7ek+zbMujftupEClvi5qPrz2Rw2tx+k6dWYPX8nXjKhFY/BT6IWZeWAjljuZj4w5p3Fza94RL+AykZX4gox8tp1oem6H13UfYK+HY3/nv46nu2TMfk5mY33xkf/Duq377Pp4XTv/wGZTH//OdyfzBDa6q7NqY9aKrBenSTGZ9zCpIw=
   - SCTX:
     - begin A1V1_StoreMessKit_sc
     - ''
@@ -1048,6 +1080,12 @@
     - long content
     - ''
     - set content to 0
+    - set count to ( GetItemCount "ingred_hackle-lo_leaf_01" )
+    - if ( count > 7 )
+    - "\tset count to 7"
+    - endif
+    - set countL to count
+    - set content to ( 8 * content + countL )
     - set count to ( GetItemCount "deepnight_travelFood" )
     - if ( count > 7 )
     - "\tset count to 7"
@@ -1432,14 +1470,18 @@
         shorts: 0
         longs: 0
         floats: 0
-      data_size: 1128
+      data_size: 1200
       var_table_size: 0
-  - SCDT: eJyFk01OwzAQhXEXSGxo+BeoQEAcoO0BWLDgDOwsJzZJiB1XUxvUg3bJUZCIZGfSNLa6nTffe+OxPUumb0xSbtWKKg1rIX+TYzKZpR9/SarPqqYAwek6t8ZIQeeL9DWdb5NxnRy9kBPSko+OvORCrJqqKA01wL6FfNeaOzgoIX/n+KlPyEAwjrn7VaS6eT9bK1r/MMWoKIp+3lEdyXtHnncnYtJAlfujLrZJQJgcSl1GUpejeb05W5d0wxSGjuuYmTryCm8Aqox+Cag3eNqwRg44SBl3cBo6PDuHG9+Va6gzKzMKWhv0iKmxzedaZQJgM9r8joBbeHDsRdcCLKNKsD49pIzeqO8ptW34EA9KUd4q1kT4XQn5J8df+6aaFdqaipYV779YRESPW+dx6tuUzWvc3F5xEtk4tFMNpg4IsTO3P7d91YMLD0qOJ+Qf9SFWJg==
+  - SCDT: eJyFk0tOwzAQhnEXSGxoeD9UIDy2SG0PwIIFZ2BnTWI3CbHjyrVBPWiXHAWJSE4mTWOr2/nn++dhzyQav4OgzMollUqvuPiNDsnoOf78i2J1XVSZ5ozmkJaCvwpFBYcFnc7it3i6iYIyOXghR6T2mTifkyZxlVpjBEeDYRzJB0eeM86XVZHlhhoN31x8KMUc7JWQv3X8uKmQaA4M6+5GB/0uaita/oAEyrOs63cQR/LOkaftRCCMLtJm1Nkm8gijfVXngarz0H5hldM1SCw6jGPN2JEX+AK6SOgX1+Uap/VrZI+DEGEHp6HDk3O4arJSpcvEioRqpQx6hNTQ5lMlE671erD5LQG3cO/YszZFQ0Ilh666Txn80fYMlK1YH/dKQd5KqAL8toT8o+Mvm6QSMmVNQfOCdScWENHjxnkcN2nSpiVubic4Cmxc1131uvYIoZnry61/de/BvZLjCfkHUwZsVw==
   - SCTX:
     - Begin Bal_dump_morsel
     - StopScript Bal_dump_morsel
     - "\tEnablePlayerControls"
     - ;Initially created by Shanjak
+    - "\tif ( GetItemCount \"ingred_hackle-lo_leaf_01\" > 0 )"
+    - "\t\tRemoveItem \"ingred_hackle-lo_leaf_01\" 1"
+    - "\t\treturn"
+    - "\tendif"
     - "\tif ( GetItemCount \"ingred_scuttle_01\" > 0 )"
     - "\t\tRemoveItem \"ingred_scuttle_01\" 1"
     - "\t\treturn"
@@ -1521,15 +1563,21 @@
         shorts: 0
         longs: 0
         floats: 0
-      data_size: 2270
+      data_size: 2397
       var_table_size: 0
-  - SCDT: eJydlV1v40QUhpMVC+JmN3wLWGBAXHCRrba9ASFYvrSsxC1ccGc5iUlDnHrlOlT9e/wPpLHjaace+9geq3XZZOs9k4nd7X4obe+SKJrnPe95zzl3Ord+Nm3DMj1j4ri7lv1x57b6YTCdPFr98nr7tTvkzycd4rw12hm61sDY7U89z7aMe5vkPrnX6txt/Tsn+WMmOEkhO+FnJI+olIJ2SSnBn5NCguByQWYgINxotW62H978w3lgejfI5o3OG7/vmbbt7H3ZfrONsM807N2BZT3aGQ23PcNzzX8s+1fHGWjety/wUjiGMIEZkIyecEiQHFIEH9IYMkUuWRZUZUTXwT/S8NurSnuuZQ6aOruKi09WCBYQA757LJh/vTJrT//CsozxnjkxDWs41KzNVud7zYp4UiAtpoIliwgYqY5OgEQBjRtqwuJl5SmEUcZSFJBX6+CfaPjbdUNN23NHfauhP1D0Yllo/XwOKGHpMM9re8+R6Ht+SiVNEtR4GEIGwYJd14ItbfePSkSawUyA5KjEB7E4fakFRQiBYDLQvQ7o6ctasPVK/soFc3fb2DcnjQn3lyb4GUV2GFCSCxpG/JikLGVikcyPiY8VS2WGqJQXFEUkvNLwtVEjmv5eM1TuqGf8bbnj/SZwv+kQHLBAaQgqfD4p1HRl3K8kRuPVBmA/ZPE/PyI0TZnk8ppqbPtczXfLfjTtaIKh1ECgPh4wwa7pxhea/8GK33fccW9q9wzXcbxGwUOlAB9GfL5AWi4jHquI+FAmPIK49iMXbBZRktB8LpUjRVZSZQYKRKuiK45H35n0LNfdb5Lxg+4LBp8ulaQ0gyMSMAkliwjq4HGBerj2QuUGcskJJyhHfVrH/1Tz36n5rtkzJpZ5bsQvuhUyY75qRYirEDcuy9X0RRlV7WAkrnLYIP9JIP5cANKDqMB/aBkJXHYPr0RsO9OdwUUVX1+IZ05xKFQKkEux60nJjup+LONw5QtQk6cTc+cieaMOAtaslruAgJW4nhrgIQ2L00sDP9fA91fAsTl0pt7I2B4Nzo/clkLOsvkhk+gxHBQkorNCck3EL9FddLpY3ZtLYT/U2Fsr7GTaHzcR+0p7G7JZgYHBdaosjos86uq3cfyIZHL9RXsuy6669M9a+c1zWzaA5Kxk2MYom+e8aWgXY6PBIHGzpFxcsYt4xHG/XxjnnzSa+2xGl66SIlWRVnvjDD3OkorIjMbzLsHLiueP+MqSyyap3X4KwSlxvg==
+  - SCDT: eJyllktv20YUha2gadFNor5faTt9LLqQjdibBkWbvpAG6LZddEdQEiOrosyAlmr47/V/FBhSHGs8Q16SQ8hyK9XsHY1E13lAtrOTBWO+M+ece0d36rd+sF3LsQdW3/P3HfeD+m39RXvYf7z85uXaS5+R3/6tE+/d7l7Hd9rWrt3quc6m61muYz+y7m6T++TuRv3exp8zkh+xkEpOxkyyZMaI5Lmal2RChZxLKBpkqiCYkUKB5GpORiAh2trYuFl7ePNX74E9uEG2b9Rf+eXAdl3v4PPaqzXE3zH415b4/dZwMHCdiru54P7DkJpCdsLPSC6oUpJeC/axgb3ZdpzHe93O7sAa+PYfjvuT57UN76uneClMIEpgBCSjJxwSJEcUwWMaQ6bJU5aF5VTQdfD3Dfz28qZN37Hb1T0bmotHlgiWEAOeO5EsoC/k6SO8ltU7sPu25XQ6hrW9Uf/GsARPCqTFFMOcC2CkPD4BIkIaV9SExYubpxCJjKUoIC/XwT808NdXgdruwO+2nIr+QNOLxUVXx+eAEhYO83xl7zkSfc9PqaJJghrHEWQQztl1Ldgxdn+nRaQZjCQojkoCkPPTZ1pQRBBKpkKTdUhPnxXBzrpa2/u71qHdr0y4vzAhyPQ0RSEluaSR4BOSspTJeTKbkABvrLQZstReUBSR8NLA11aNGPpb1VD53ab1u+P3DqvC/WxKsJzosMTjk0JPV8aDUmE1nm8A5qGKv/kxoWnKFFfXVOO652q+XuRRxVEVQ6uBUH88wp1zTTc+Nfx3lvyW5/eaQ7dp+Z43qBQ81ArwYMTnc6TlSvBYVySAacIFxCs/cslGgpKE5jOlHSmyKdVmoEC0SlxxPFpev+n4/mHVjG9NLlh8ulCS0gyOScgUTJkgqIPHBerhxgvdG8gVJ5ygHP1pHf8jw39jxfftptV37HMjfjRRqIwFOooIVyFuXJbr6RMZ1XEwEpc5bJG/FJBgJgHpoSjwP4yMBC67h1dvjjfca19U8eWFeuYUh0K3ALkUU0+m7HiVx6IOV34BVuRh3967SN5aFQHvrJe7hJBNcT1VwDGNitNLAz8xwLeXwJ7d8YaDrrXbbZ8/cjsaOcpmY6bQYzgqiKCjQnFDxD/EJjpdLN+bS2HfM9hbS2x/2OpVFfvCeBuxUYGFwXWqLY6LXDTM2Th+RDG1/kV7osu+/qHxfyvvPbFlQ0jOpgxjFNks51WgDayNAYPCzZJyecUU8RHH/X5hnL83aB6wEV24SopUV1rvjTP0OEtKojIazxoEX1Z8/kigLblsk2q1/wBXV7Bp
   - SCTX:
     - Begin Bal_eat_morsel
     - StopScript Bal_eat_morsel
     - StartScript Bal_dump_morsel
     - ;Initially created by Shanjak
     - ''
+    - "\tif ( GetItemCount \"ingred_hackle-lo_leaf_01\" > 0 )"
+    - "\t\tMessageBox, \"Вы сжевали зеленые листья хакльлоу, чтобы утолить голод.\""
+    - "\t\tset ToEat to 1"
+    - "\t\tplaySound \"Swallow\""
+    - "\t\treturn"
+    - "\tendif"
     - "\tif ( GetItemCount \"ingred_scuttle_01\" > 0 )"
     - "\t\tMessageBox, \"Вы съели порцию скаттла, чтобы утолить голод.\""
     - "\t\tset ToEat to 1"
