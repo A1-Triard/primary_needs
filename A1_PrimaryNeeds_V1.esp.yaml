@@ -1956,7 +1956,7 @@
         shorts: 6
         longs: 0
         floats: 0
-      data_size: 2336
+      data_size: 2388
       var_table_size: 56
   - SCVR:
     - found_food
@@ -1965,7 +1965,7 @@
     - chance1
     - chance2
     - HasKnife
-  - SCDT: eJytlc2P20QYxmey3ewGyq5bYKHfb2gPSFQo3l4QUjkgBELihIRUTtYkniQm/ogmdlf59/oPIA49InkjvPHGGyd26JeSqp3JOLvZ1qkitTdbfub3PvO8M6+vK6Ufiam1TeLSTdzBqACVIsbX4cFLBZxLht1gVNc6Nc91TapVVPgBKplOLWGuvCWVn+mUtm2j0XQ1l5GH1PzZcfS3xFeleDfDVhkleh50Ub7OIVrrgFhEo41GnvKGVF5eGCWmy4xa5lRdC7q/snwGJZ2m1iVWHhOk8vPTnJhR1f6irNXNM7tCbZq56q+k+otMXXNYq+qZVY05jrtGFDXHqlLGunm2b0rppwspI1XNosR9V4MzbdPxbH1tsWcRe6W4LMV7mbhFGo7nGlrT0HNP2hUp38nklldr5e3tjRgYr72mW35w+ZlYEe9GCfgL3L8PFaTcQ/8M/Wd+5MMojuKjMA1gNI7/i3txNEvSXhhAD5KUf+pNj2EQn4yiYJAi9K9yB89ZO/BLsenxqt0MCOjvcXw4CTgoSNLZXRjG8GgKIaT+AJJpOi2frcZ3pO0rltGpiTZrHcN8SNkBYVRr2UadZt6L3Pv+9lm3T/UH8xvwhlLdwjh7rJTE0wW0BQ/KykdIKDbly9eoIqPYRHzpve+4G/5SlLlwWUHGJVEFieILtoHT+IK39BvL+o2Ffu+2dPxl3g7r/B4I20V8gaMKc5SKlJuI53UYJCPehHGc8vz6fjoZhVEIvTAaTBAqKBd/dakFv/N2wx/tx8pKPOZZb+HdIt48Nasu7wIpN0S1eBAPn/lpEM2Wqw3jo7Io9jGjbWIwqBPDfKzkhY9Rad7Qsyr758JFylX0p+NBk89TqDKnRW1wmxTmi8s5G1p9ImSpa8qOGPbiNlgO61CzhLfx3uLCnHd4PuaNRcy3Vm98HnPO1nPAawZ8GPRz2vkhA16jj++f8Ra+XMSlxebUi7jIf7ddypb+CHOoLk6fqVO9Zjpus1IR8SNFFRb5mJn1xXhIZpD40f9BOoiP70JvmoZj/xUExxCFT2M+L8aTQfgtQqc1ts9+uosac7qa0b8R9ERQxOwZhS8mkAiWL1kwmCR8fkE68IfrcVXJ/V5wJxmXm17mQJzymE/8vt97ft65MCDK8Hlw+9InNqU8DM0m7ZZhZ3VlQ5dPCh+d4QsfOD4K+2EKJ8ERPPKfh09g5Eezp0FPHpafaJ14pvsbsfVryq5oke5Z7axHvF5O30oY49ePmBjJ
+  - SCDT: eJytVU1v20YQ3ZVj2WpTm0lbt2m+xk0OBZoWonMpCqSHomhRoKcCBXIjVuJKYkWKwoqMob+XP1D0kGMBRihtmrQokWrzASlIdrWkLTuUISC5idDb9968mZ29oVR+JKbWNYlD13EPoxJUyxjfgIevFLCvGJ0mo7rWq7uOY1KtqsIPUM1wagVz5G2J/ESntNsxmi1Hcxh5RM2fbVt/C/yFBG9ntDVGiV5Emss3OInW3icW0WizWYS8KZFXc6PEdJhRz5yqK5HuLZXPSEmvpfWJVcQJEvnpSU7MqGl/UtbuF5ldgjbNQvSXEv1Zhq7brF1zzZrGbNtZIYq6bdUoY/0i27ck9OMcykhNsyhxLmpwhm3ZbkdfGexapLMUvCvBOxm4TZq26xhay9ALJ+2ahG9lcMutt4tqOxcD49oruuWDy2diWbx3JPjzvDRSb5v0G9PWTEoaBQfWKsA/4MEDqCLlPvp76D33Ig9GcRQfBKkPo3H8bzyIo1mSDgIfBpCk/K/B9AjC+HgU+WGK0D/KXTzn2oJfyi2XK/czQkB/jeOnE58T+Uk6uwfDGB5PIYDUCyGZptPd09P4rrR+zTJ6dTEXWs8wH1G2TxjV2h2jQTPvZe59b/N0PE7w+/Mrcw6pbmCc/axWxK9LaAMe7iofIIFYlx9foaqMYh3xo/e/4274R1nmwmElGZekKkkqfmATOBs/8BZ+bRG/luN38uYUVdjgF0fYLuNLnKo0p1KRcgvxvJ76yYg3YRynPL9DL52MgiiAQRCFE4RKyuVfHWrB77zl8Ef3ibKUHvOsN/B2Ga+fmFUXq0DKTaEWh/HwuZf60WxRbRgf7AqxDxntEoNBgxjmE6UofIwq84aequydCTeTKS4qlzlX0/KhkGrXlS3xQIgbZNmsR80K3sQ7+SU7a/Js0mt50reX1z5PuqD6AuIVM764+PeW8cWtfPeMN/DVMq7kxamXcZk/0X3KFl6ROakuBtDUqV43badVrYr4kaIKi3zTzA7FhkhmkHjRf34axkf3YDBNg7H3GvwjiIJnMV8Z40kYfIvQicbm6UOda8zZ1Yz9a8GeCBaxfkbBywkkgsuTXBBOEr7CIA294Wq8quT9XvBOMl5uepEH4pTHfOwdeoMXZ50LA0KGr4Q7Vz7qUMrD0Dqk2zY6ma5s6OKk8O0ZvPSA00fBYZDCsX8Aj70Xwf8w8qLZM38gh+Un2iCu6fxGOvp1ZVu0SHetbtYjrlfQtwrG+A2eZzPE
   - SCTX:
     - Begin Bal_plate
     - ''
@@ -2037,6 +2037,9 @@
     - "\tif ( GetItemCount \"ingred_trama_root_01\" > 0 )"
     - "\t\tset found_food to 1"
     - "\tendif"
+    - "\tif ( GetItemCount \"ingred_hackle-lo_leaf_01\" > 0 )"
+    - "\t\tset found_food to 1"
+    - "\tendif"
     - ''
     - if ( found_food == 0 )
     - "\tmessagebox \"Сначала положите продовольствие в столовый комплект\""
@@ -2094,7 +2097,7 @@
     - "\t\tendif"
     - "\t\tif ( HasKnife == 2 )"
     - "\t\t\tif ( chance2 > 38 )"
-    - "\t\t\t\tMessageBox \"You have broken the knife!\""
+    - "\t\t\t\tMessageBox \"Вы бесповоротно затупили нож!\""
     - "\t\t\t\tplaySound \"Item Ring Up\""
     - "\t\t\t\tRemoveItem \"misc_com_silverware_knife\" 1"
     - "\t\t\tendif"
@@ -2111,7 +2114,7 @@
     - "\telse"
     - "\t\tif (HasKnife == 1)"
     - "\t\t\tif (chance1 > 8)"
-    - "\t\t\t\tMessageBox \"Вы безповоротно затупили нож!\""
+    - "\t\t\t\tMessageBox \"Вы бесповоротно затупили нож!\""
     - "\t\t\t\tplaySound \"repair fail\""
     - "\t\t\t\tRemoveItem \"misc_com_wood_knife\" 1"
     - "\t\t\tendif"
