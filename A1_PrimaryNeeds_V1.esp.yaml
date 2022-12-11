@@ -13,97 +13,97 @@
   - DATA: 6616539
   - MAST: Bloodmoon.esm
   - DATA: 11799703
-  
+
 - GLOB:
   - NAME: A1V1_MessKitX
   - FNAM: f
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: A1V1_MessKitY
   - FNAM: f
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: A1V1_MessKitZ
   - FNAM: f
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: A1V1_MessKitCont1
   - FNAM: l
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: A1V1_MessKitCont2
   - FNAM: l
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: A1V1_MessKitCont3
   - FNAM: l
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: PCInJail
   - FNAM: s
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: JailDaysLeft
   - FNAM: l
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: PlayerSlept
   - FNAM: s
   - FLTV: 1.8309747e-38
-  
+
 - GLOB:
   - NAME: Drain_fatique
   - FNAM: f
   - FLTV: 1.8309713e-38
-  
+
 - GLOB:
   - NAME: Drunk_from_well
   - FNAM: s
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: Global_thirst
   - FNAM: s
   - FLTV: 1.8217911e-38
-  
+
 - GLOB:
   - NAME: Glo_energize
   - FNAM: s
   - FLTV: 1.9045373e-38
-  
+
 - GLOB:
   - NAME: ToEat
   - FNAM: s
   - FLTV: 1.8952696e-38
-  
+
 - GLOB:
   - NAME: hungry
   - FNAM: f
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: sleep_mod
   - FNAM: f
   - FLTV: 0.5
-  
+
 - GLOB:
   - NAME: InvEatCheck
   - FNAM: s
   - FLTV: 0.0
-  
+
 - GLOB:
   - NAME: sixh_playertransformed
   - FNAM: s
   - FLTV: 0.0
-  
+
 - SOUN:
   - NAME: magic sound
   - FNAM: Fx\magic\sound.wav
@@ -111,7 +111,7 @@
       volume: 0
       range_min: 0
       range_max: 0
-  
+
 - SOUN:
   - NAME: _waterWell
   - FNAM: Fx\envrn\watr_stream2.wav
@@ -119,7 +119,7 @@
       volume: 255
       range_min: 0
       range_max: 0
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_MessKit_sc
@@ -133,7 +133,9 @@
     - init
     - actiStage
     - tempF
-  - SCDT: eJyFkcFqwkAUReemNTItwguUtmAXb9EPcHTtot2UUrqpUKKbICUFQVGc+Qp/xd9xp/gngi+ZJARU3N5zZ+5794UINMc74n6fzTqCeoVGiDvNNlCZ2AvRFAfnjk4DIgfcCYEXjg/Ec3ozvyb5Tq39mrhPl85y35aaCPbUpoccD9x8mRaexP5pyfA5t1VOV76sckyR0yt9N5WvRN0n8qj2ygst8UKV40K8Zk8N/ENF/NGqjxure4pFV2fpUOjwIh0JHWX0WhUbOtGhNNr0mMs/1i0LNHBGyvFLZJ0/+638iquofgBT1Kvfx9NkMR271DcFHAGfnFod
+  - SCDT: "eJyFkcFqwkAUReemNTItwguUtmAXb9EPcHTtot2UUrqpUKKbICUFQVGc+Qp/xd9xp/gngi+ZJARU3N5zZ+5794UINMc74n6fzTqCeoVGiDvNNlCZ\
+           2AvRFAfnjk4DIgfcCYEXjg/Ec3ozvyb5Tq39mrhPl85y35aaCPbUpoccD9x8mRaexP5pyfA5t1VOV76sckyR0yt9N5WvRN0n8qj2ygst8UKV40K8\
+           Zk8N/ENF/NGqjxure4pFV2fpUOjwIh0JHWX0WhUbOtGhNNr0mMs/1i0LNHBGyvFLZJ0/+638iquofgBT1Kvfx9NkMR271DcFHAGfnFod"
   - SCTX:
     - begin A1V1_MessKit_sc
     - ''
@@ -203,7 +205,7 @@
     - endif
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_MessKitItem_sc
@@ -215,7 +217,8 @@
       var_table_size: 9
   - SCVR:
     - OnPCDrop
-  - SCDT: eJxlyDEORUAUBdB7JSaZny8ZO3iFBZgFKGhIRCtDo1Kox64sido6yFRCd3IUIy3uMFIUYreUyKipqLR4ImTMW5HkMeuktL2dutn7dlmdEvczDu8fwg+fH8OPOM3/2QTQVMBuNMkLoIkdfw==
+  - SCDT: "eJxlyDEORUAUBdB7JSaZny8ZO3iFBZgFKGhIRCtDo1Kox64sido6yFRCd3IUIy3uMFIUYreUyKipqLR4ImTMW5HkMeuktL2dutn7dlmdEvczDu8f\
+           wg+fH8OPOM3/2QTQVMBuNMkLoIkdfw=="
   - SCTX:
     - begin A1V1_MessKitItem_sc
     - ''
@@ -235,7 +238,7 @@
     - endif
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_RstrMessKitSt1_sc
@@ -247,7 +250,11 @@
       var_table_size: 6
   - SCVR:
     - count
-  - SCDT: eJyNlLtOwzAUhpuhSF2g3FpKC6QPgNR0Z2BhQSwgITbLSU5TE6dGttOqD8rjIJHiuJTkOGXJcr585/j3pe0pr3Xlv311fXHOFomEmKhIspC8A+drMglaB57X8QvKH9/5k8+ug2p1vHaDS6b/cZWUdQ2M67ikqJqTNc0QD0JYx6VxnNhOlGvJIkAkGFKdZCZETNIVzSiBJCGTaW2SOrHPEex1/M7RN46jctRQAo0RQ63uSENSTTIoPu40dhFr6RnLYYlkeZQihmrZ/n1t/u6V5ZQmIteMzFmM7YoLs7aRsZ2V2Fzki9i1JhyypqExnZZQJGnoEqGMI+NIZCFIuW7IeBexlhtj6W8RmYY5D4kUApvIyVnf2PgGGVPRpiFRjC9BrqgEki7YDKrGBrKa2JZc/RxczIYy1uMbzwXWcVYsqCpzg9U9+NsVc2GI4/1RUa41h4b3Z4dwnE8tN7fasYk4VDXFAB8Llsz1hlsCfyjmrplQqJq3vQ40SjncckE40BkylxssjMNu7z54Dciz0vIJlHpk+kVPiyhGWCEoCp73DZjB0N0=
+  - SCDT: "eJyNlLtOwzAUhpuhSF2g3FpKC6QPgNR0Z2BhQSwgITbLSU5TE6dGttOqD8rjIJHiuJTkOGXJcr585/j3pe0pr3Xlv311fXHOFomEmKhIspC8A+dr\
+           MglaB57X8QvKH9/5k8+ug2p1vHaDS6b/cZWUdQ2M67ikqJqTNc0QD0JYx6VxnNhOlGvJIkAkGFKdZCZETNIVzSiBJCGTaW2SOrHPEex1/M7RN46j\
+           ctRQAo0RQ63uSENSTTIoPu40dhFr6RnLYYlkeZQihmrZ/n1t/u6V5ZQmIteMzFmM7YoLs7aRsZ2V2Fzki9i1JhyypqExnZZQJGnoEqGMI+NIZCFI\
+           uW7IeBexlhtj6W8RmYY5D4kUApvIyVnf2PgGGVPRpiFRjC9BrqgEki7YDKrGBrKa2JZc/RxczIYy1uMbzwXWcVYsqCpzg9U9+NsVc2GI4/1RUa41\
+           h4b3Z4dwnE8tN7fasYk4VDXFAB8Llsz1hlsCfyjmrplQqJq3vQ40SjncckE40BkylxssjMNu7z54Dciz0vIJlHpk+kVPiyhGWCEoCp73DZjB0N0="
   - SCTX:
     - begin A1V1_RstrMessKitSt1_sc
     - ''
@@ -346,7 +353,7 @@
     - StopScript A1V1_RstrMessKitSt1_sc
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_RstrMessKitSt1_sx
@@ -358,7 +365,14 @@
       var_table_size: 6
   - SCVR:
     - count
-  - SCDT: eJyF1M+L00AUB/CkTVoM4q7W7brbrnaPRYTtgjiHgnjRg3hREBfRcZJM25hf62TSsihexZP4H3jyD5BFEMTTIqJ48rb4L4ggXgWnZnbJJC/uoT0k7/t5L5OZmHqia2u9O38We/GSF40ZdXHiMM/GD2kQ7OCNgdZCmvglmjZcQIZ2HOHclRa6plnongZH+0PzPzzzQf6Dwr8W/HsNjkp+JeNPyhqSTPAOCSF6Sc/Tum6hll6OSXY1Y08dtCYBZ55DITdW3C3hhjqUKww8imMX+zMSEkzHY7yxWYI/KvAbAe/p5dgRbHnetVqePVazUKdWjkl2OWMX5PPYjBIXQrcV9L5Ao1oxBC8tIxyHVPwB6mdF3RXqpxqUk3I7k0/IijB1fEjt1vOqVbfQar2YkeLZTGzLuz4Zxyn38MRzwa3wVJFdIT+pV2Vlh27W4bSsmsRp5Faux3fF3xP+fh1OSr2T6S1Z4zBiV+KXjDy+bljoogEF4dfoxKFNGQMP9UtFfizkFwaUk/K5TF4+rGC+nQY2ZnEMDv5b4fcF/8uoCssW61mLldBLnPkIOPGCKWUzwij2I29ES03umvkml00LbZnV8cLyH9bN/h0zsMFbpcEr0WDXhIKS7mX0GWiEkXjo8q5v5H2tIXZ9ozpdeMnqHKA/VfwHwucNKAd/txMn5TwAD9VXBX4n4C+Ncgw+TpzNv2hVG+d8My+3mhbqN+FkQXcp3Y688YTPy6Y0uCqerqQ/V/RHQn/WhJOFV3pwoInjB/RCEOOAkhE0/0+lwzfR4UezOt0fdhbbVwa3B/hmwtkNmiTXPX6Lb4pF7EI3BuKGrv8F4dwVRA==
+  - SCDT: "eJyF1M+L00AUB/CkTVoM4q7W7brbrnaPRYTtgjiHgnjRg3hREBfRcZJM25hf62TSsihexZP4H3jyD5BFEMTTIqJ48rb4L4ggXgWnZnbJJC/uoT0k\
+           7/t5L5OZmHqia2u9O38We/GSF40ZdXHiMM/GD2kQ7OCNgdZCmvglmjZcQIZ2HOHclRa6plnongZH+0PzPzzzQf6Dwr8W/HsNjkp+JeNPyhqSTPAO\
+           CSF6Sc/Tum6hll6OSXY1Y08dtCYBZ55DITdW3C3hhjqUKww8imMX+zMSEkzHY7yxWYI/KvAbAe/p5dgRbHnetVqePVazUKdWjkl2OWMX5PPYjBIX\
+           QrcV9L5Ao1oxBC8tIxyHVPwB6mdF3RXqpxqUk3I7k0/IijB1fEjt1vOqVbfQar2YkeLZTGzLuz4Zxyn38MRzwa3wVJFdIT+pV2Vlh27W4bSsmsRp\
+           5Faux3fF3xP+fh1OSr2T6S1Z4zBiV+KXjDy+bljoogEF4dfoxKFNGQMP9UtFfizkFwaUk/K5TF4+rGC+nQY2ZnEMDv5b4fcF/8uoCssW61mLldBL\
+           nPkIOPGCKWUzwij2I29ES03umvkml00LbZnV8cLyH9bN/h0zsMFbpcEr0WDXhIKS7mX0GWiEkXjo8q5v5H2tIXZ9ozpdeMnqHKA/VfwHwucNKAd/\
+           txMn5TwAD9VXBX4n4C+Ncgw+TpzNv2hVG+d8My+3mhbqN+FkQXcp3Y688YTPy6Y0uCqerqQ/V/RHQn/WhJOFV3pwoInjB/RCEOOAkhE0/0+lwzfR\
+           4UezOt0fdhbbVwa3B/hmwtkNmiTXPX6Lb4pF7EI3BuKGrv8F4dwVRA=="
   - SCTX:
     - begin A1V1_RstrMessKitSt1_sx
     - ''
@@ -457,7 +471,7 @@
     - StopScript A1V1_RstrMessKitSt1_sc
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_RstrMessKitSt2_sc
@@ -473,7 +487,15 @@
     - countL
     - content
     - tempL
-  - SCDT: eJy1l99r00AcwO86OizK7NR1TqfeXoVhW1980AcRFBRfFMS345pe25hrMy7pSv8+/wV9FGpxrFtduhUEYRNNmmQm7SVw7fWlJPn+/Nz3vt+7ZiHLgA30av156UMJv6WW9Ua3X5gtuwSykK2AK8iVoyfokfsGwVrw5grQQ7SbhRYEWeQKPOWM97gCwDW4usdIl3JXnAH30Mc/eWRu6K06p1VsaVyv4E+UsS4ulsAqhFeRq4WeImviZeLQ/QBycBVmct5XtPMMFb/kEzz8D/c1USUHl8rCjUVZAg9pLKGKKpYtn2U9CEOsBu6SpiSHwDrKIBKryv+On/+NcJkIs7muUUkAkXmUQChXXYKaaVax0SFNgmm9jotlqRLMWsdKIBAvO//SQvmX0vNXuP6bfv7XgxpXOCVVyexnbKO5zwonmYvnbVnRvJ3qC05s3KTuz3x9ETUX9UVMrqouBR9hLYjRbGuGZPrTptHUZ2Sq0r7vp10I/BukbrZtHTf0quxUSnIRxUjUUYWz7ePcCuI0zHarOs9WEjuIoiRoqAK564PcDKJonFTm4RDaRzHECks67zSzWaGcy148ROaivo7JVSE88BE2L2Nwo9JmFcxNU7YYiT6iMMlKKXP4cXQOl2OwZRnYHR92q6lbmrec2NLZPuUdwik2WnqNyuCmeIkCp6nFirgAV9hNl6E6kwNalkhoH+smoYIqCuRT3BYtWM3dLjIoyU6iPClaqqDCERFfOVkckXlsRIjkS/pXYmlt22ayx6fAOnalFIiXdGja3Lu3zjHfxA5Eh+aUhmqQKqV7Lb3esL1A+5S9dGsuBSJ0EAMRa6gCCTs9vGMQzWB0l5mYUVKTrEqyk1inJ2vl4Lc8yL8Gn4d/Ty7GB6h/MjhEA3TYGw1+9Y68D73fAzQ6HXx3Ts+R9+T8cPrO8OJs3B+4UnQ2doZO//wIHTs/R8OD4zEA2/nC5Ax7Z9k8OMfe22V3d0P4D5mFEVc=
+  - SCDT: "eJy1l99r00AcwO86OizK7NR1TqfeXoVhW1980AcRFBRfFMS345pe25hrMy7pSv8+/wV9FGpxrFtduhUEYRNNmmQm7SVw7fWlJPn+/Nz3vt+7ZiHL\
+           gA30av156UMJv6WW9Ua3X5gtuwSykK2AK8iVoyfokfsGwVrw5grQQ7SbhRYEWeQKPOWM97gCwDW4usdIl3JXnAH30Mc/eWRu6K06p1VsaVyv4E+U\
+           sS4ulsAqhFeRq4WeImviZeLQ/QBycBVmct5XtPMMFb/kEzz8D/c1USUHl8rCjUVZAg9pLKGKKpYtn2U9CEOsBu6SpiSHwDrKIBKryv+On/+NcJkI\
+           s7muUUkAkXmUQChXXYKaaVax0SFNgmm9jotlqRLMWsdKIBAvO//SQvmX0vNXuP6bfv7XgxpXOCVVyexnbKO5zwonmYvnbVnRvJ3qC05s3KTuz3x9\
+           ETUX9UVMrqouBR9hLYjRbGuGZPrTptHUZ2Sq0r7vp10I/BukbrZtHTf0quxUSnIRxUjUUYWz7ePcCuI0zHarOs9WEjuIoiRoqAK564PcDKJonFTm\
+           4RDaRzHECks67zSzWaGcy148ROaivo7JVSE88BE2L2Nwo9JmFcxNU7YYiT6iMMlKKXP4cXQOl2OwZRnYHR92q6lbmrec2NLZPuUdwik2WnqNyuCm\
+           eIkCp6nFirgAV9hNl6E6kwNalkhoH+smoYIqCuRT3BYtWM3dLjIoyU6iPClaqqDCERFfOVkckXlsRIjkS/pXYmlt22ayx6fAOnalFIiXdGja3Lu3\
+           zjHfxA5Eh+aUhmqQKqV7Lb3esL1A+5S9dGsuBSJ0EAMRa6gCCTs9vGMQzWB0l5mYUVKTrEqyk1inJ2vl4Lc8yL8Gn4d/Ty7GB6h/MjhEA3TYGw1+\
+           9Y68D73fAzQ6HXx3Ts+R9+T8cPrO8OJs3B+4UnQ2doZO//wIHTs/R8OD4zEA2/nC5Ax7Z9k8OMfe22V3d0P4D5mFEVc="
   - SCTX:
     - begin A1V1_RstrMessKitSt2_sc
     - ''
@@ -757,7 +779,7 @@
     - StopScript A1V1_RstrMessKitSt2_sc
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_RstrMessKitSt2_sx
@@ -773,7 +795,19 @@
     - countL
     - content
     - tempL
-  - SCDT: eJy9l1+IG0Ucx2fz9zJJ8+dyvbPa6ogvp1Lai4iD3osUWrCKoCgKwrJJ9nJpNtmyu7njHkoRX0ofBME+CIK+aB+Eon0RfSno4YMFxQdBpNUzWi7XeHttRLC0Un+5TY6Zy+zhnBtfQnb3w3d+n5nZnZmoYoTQXnIs9/TMyzPqc7ptH686R8yGM4OiihFGYwSeE0oOwZWC0v0reEAeIQejiq2gKIEHPTjU+xtGKKXEThrakm7B4xA6QF75O0vMvdVGxdLLql2yqkX1hG4YS+rhGRRTlCQBiswSezNlMxBuoISSpwjlqY3QbIZGUIpi5k6eXkKYfo/EsdOzLLkG5F0fcqvWh2dHqmvVpHVvcboXFEyXFXEsr/sDkK4PGbjuPk83129Ns+fVJa0uq3olxAq8E8L0o9BwJK95CajvBFTgivd6iuODDtUMx6qWdFnH5TBb/akwpm+FRZm85QfAfSbkRjaUc6ZZVmuLWl1T9UpFPVyQ0jwfYcsvRzBdiAxH8pJngXpXQP1vinIjeTbKFn8siumr0eFIXrEO1GkBFbjilKeY6c+YoqVrZVnBSowtfTqGKY1tD+T1ngXmtSGGlxMvM4WAlpltb6mlOWpdhx9J9RNxVuuhOKZPxEWZvP5x4FQhF/j4Tnqe6X5b9WapJut4dIytPT6G6dTY9jze71FgnhpiAne733Ob7LdT0ypm06mq89Wy9Nf2yQRbfwfqDyf8cnnXqQSmh3zZwJ33e84T/fbmzWajvKuZO41Zi6tg8UdCnMr7xjGmB7CYDNz2Ps8232+tZGnFXcnmkqzC16DwExaF8qpd4GJJETfqTUPJrBd1y5LfA3KeF5OYfpUUZfKePwLnCrnAPR/wPKe22rJqxaZRVC3TlB5UN8VKvJfC9NOUXzAvfBnYX33Zf7MMPcYuQwWuPwoy/fGg1x/76lW71Ot51a4aC7q1qFm6WmtU53SpHomkWctP9mB6eY9/NN8nPwN9awdaPBX+g/rg3d5qcXFzsyMtvc5Jf5jG9PO0KJTX/Qa4lpALXJR4oveIunYO5p6U7WqGtXg7g+mFjH8y7/wF0Fd2oAM3H3zV+F6Wdv42y1qcycLuPyvK5G0/Bm5ZyI3snLB1hm46jiG9B7mYY8s3c5i+nhuO5CXPAXVeQI163+FYvTPJbr7a74+z9b80jmltXJzKm54G8pwPOTLbsq6fbFQr806vwQXdOApzSMr2zTzrcCQPZ7+8OHXb+Q/IN3zIwG0HH6jBnk4r1Qz9oGGqhq7NyY7vmQnW4/EJTJ+f8E/mrUtAn9qBZsyvZlH2GfRl5+76ne410lpvr5I2WV3ZaP+5sta7sfJXm2zcaP/i3rhNev/c39yW27lzs9tqw1Nys+t23NbtNXLd/X2jc+16F6H92cnNVf4F27H6K/2LTgHeKUX5BzBMlFw=
+  - SCDT: "eJy9l1+IG0Ucx2fz9zJJ8+dyvbPa6ogvp1Lai4iD3osUWrCKoCgKwrJJ9nJpNtmyu7njHkoRX0ofBME+CIK+aB+Eon0RfSno4YMFxQdBpNUzWi7X\
+           eHttRLC0Un+5TY6Zy+zhnBtfQnb3w3d+n5nZnZmoYoTQXnIs9/TMyzPqc7ptH686R8yGM4OiihFGYwSeE0oOwZWC0v0reEAeIQejiq2gKIEHPTjU\
+           +xtGKKXEThrakm7B4xA6QF75O0vMvdVGxdLLql2yqkX1hG4YS+rhGRRTlCQBiswSezNlMxBuoISSpwjlqY3QbIZGUIpi5k6eXkKYfo/EsdOzLLkG\
+           5F0fcqvWh2dHqmvVpHVvcboXFEyXFXEsr/sDkK4PGbjuPk83129Ns+fVJa0uq3olxAq8E8L0o9BwJK95CajvBFTgivd6iuODDtUMx6qWdFnH5TBb\
+           /akwpm+FRZm85QfAfSbkRjaUc6ZZVmuLWl1T9UpFPVyQ0jwfYcsvRzBdiAxH8pJngXpXQP1vinIjeTbKFn8siumr0eFIXrEO1GkBFbjilKeY6c+Y\
+           oqVrZVnBSowtfTqGKY1tD+T1ngXmtSGGlxMvM4WAlpltb6mlOWpdhx9J9RNxVuuhOKZPxEWZvP5x4FQhF/j4Tnqe6X5b9WapJut4dIytPT6G6dTY\
+           9jze71FgnhpiAne733Ob7LdT0ypm06mq89Wy9Nf2yQRbfwfqDyf8cnnXqQSmh3zZwJ33e84T/fbmzWajvKuZO41Zi6tg8UdCnMr7xjGmB7CYDNz2\
+           Ps8232+tZGnFXcnmkqzC16DwExaF8qpd4GJJETfqTUPJrBd1y5LfA3KeF5OYfpUUZfKePwLnCrnAPR/wPKe22rJqxaZRVC3TlB5UN8VKvJfC9NOU\
+           XzAvfBnYX33Zf7MMPcYuQwWuPwoy/fGg1x/76lW71Ot51a4aC7q1qFm6WmtU53SpHomkWctP9mB6eY9/NN8nPwN9awdaPBX+g/rg3d5qcXFzsyMt\
+           vc5Jf5jG9PO0KJTX/Qa4lpALXJR4oveIunYO5p6U7WqGtXg7g+mFjH8y7/wF0Fd2oAM3H3zV+F6Wdv42y1qcycLuPyvK5G0/Bm5ZyI3snLB1hm46\
+           jiG9B7mYY8s3c5i+nhuO5CXPAXVeQI163+FYvTPJbr7a74+z9b80jmltXJzKm54G8pwPOTLbsq6fbFQr806vwQXdOApzSMr2zTzrcCQPZ7+8OHXb\
+           +Q/IN3zIwG0HH6jBnk4r1Qz9oGGqhq7NyY7vmQnW4/EJTJ+f8E/mrUtAn9qBZsyvZlH2GfRl5+76ne410lpvr5I2WV3ZaP+5sta7sfJXm2zcaP/i\
+           3rhNev/c39yW27lzs9tqw1Nys+t23NbtNXLd/X2jc+16F6H92cnNVf4F27H6K/2LTgHeKUX5BzBMlFw="
   - SCTX:
     - begin A1V1_RstrMessKitSt2_sx
     - ''
@@ -1057,7 +1091,7 @@
     - StopScript A1V1_RstrMessKitSt2_sc
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: A1V1_StoreMessKit_sc
@@ -1071,7 +1105,12 @@
     - count
     - countL
     - content
-  - SCDT: eJy11EFv0zAUAGC7UhBcRgdjYzDAHAEhLeUwTkgICQ6IExLiZjnJa2rixMhxVvVXIn4AEpqY1HWojHJk05bUTrVpvdk7RYlePj/7vecAiw7qkO0AlxgR8vmkS+RdXqQKEjpgcSbguZBUAOvT7RBdw/g6aQJfkZ35Hx2ycwMHWGAUNN9R0HAr5CWpH+Qpqb+TZ/PALUOvJQBfC54ONNWK7YJ4K2XigbUZ12bOqJJSu2W7adhVy5ZxpbUAN/OeMW/lvIxpLHM6rLdO+1Jl59HQouEytHcJbSu2QEsudkENmQJX+r6hb1/MNyt4HxzUx0bdXJawk/1u9XX4KaQfoCzfc/1GFvpF0ESY8LbDH5nlN2xh4/qIokpEHlqmLe9CziNQauSGtjVoUcUimgPTfmaxHXNZFYkH9qFh1y2bsVRWmtMBTxwnZ93AKxbOqzjzWitV79xx+5e7r7ek+zbMujftupEClvi5qPrz2Rw2tx+k6dWYPX8nXjKhFY/BT6IWZeWAjljuZj4w5p3Fza94RL+AykZX4gox8tp1oem6H13UfYK+HY3/nv46nu2TMfk5mY33xkf/Duq377Pp4XTv/wGZTH//OdyfzBDa6q7NqY9aKrBenSTGZ9zCpIw=
+  - SCDT: "eJy11EFv0zAUAGC7UhBcRgdjYzDAHAEhLeUwTkgICQ6IExLiZjnJa2rixMhxVvVXIn4AEpqY1HWojHJk05bUTrVpvdk7RYlePj/7vecAiw7qkO0A\
+           lxgR8vmkS+RdXqQKEjpgcSbguZBUAOvT7RBdw/g6aQJfkZ35Hx2ycwMHWGAUNN9R0HAr5CWpH+Qpqb+TZ/PALUOvJQBfC54ONNWK7YJ4K2XigbUZ\
+           12bOqJJSu2W7adhVy5ZxpbUAN/OeMW/lvIxpLHM6rLdO+1Jl59HQouEytHcJbSu2QEsudkENmQJX+r6hb1/MNyt4HxzUx0bdXJawk/1u9XX4KaQf\
+           oCzfc/1GFvpF0ESY8LbDH5nlN2xh4/qIokpEHlqmLe9CziNQauSGtjVoUcUimgPTfmaxHXNZFYkH9qFh1y2bsVRWmtMBTxwnZ93AKxbOqzjzWitV\
+           79xx+5e7r7ek+zbMujftupEClvi5qPrz2Rw2tx+k6dWYPX8nXjKhFY/BT6IWZeWAjljuZj4w5p3Fza94RL+AykZX4gox8tp1oem6H13UfYK+HY3/\
+           nv46nu2TMfk5mY33xkf/Duq377Pp4XTv/wGZTH//OdyfzBDa6q7NqY9aKrBenSTGZ9zCpIw="
   - SCTX:
     - begin A1V1_StoreMessKit_sc
     - ''
@@ -1224,7 +1263,7 @@
     - StopScript A1V1_StoreMessKit_sc
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: Act_Well
@@ -1234,7 +1273,14 @@
         floats: 0
       data_size: 3735
       var_table_size: 0
-  - SCDT: eJy11k1rE0EYB/AdxUBE7VZrafqCA4onkZ2851APKuRU8Nbclk2ckCWTFyYbQ85e/Fx+Br3HkGDc0FiaS6G+7WZI7G5292lhes38efbHk90/E0Mf47i0o+LDQ0xiCG3h4v0ia5UNpls1k3cs/Aprd1Bx4y3vNut6lbcaeo8ydguTOHLy27j0aROX7+rHhkX5sXPiTtJebF76JY7uoVibGX3KY+j2Li79VnFrgzbaVl/vuaFO3Wy6z1nFvqr+Y6SsDr+oD6pdxi6fKeqB8vkCfx/8nE1PJtMJHg7O8bf56eiPjYez0eyHongRWCAeN6nBWT+aEhySDHoiQFviWTWDVUM9gRnJnAPBeeg+xDvMhwlI3OhmIjGBmRvaTMPsVPSK8zWUW5bFqK4R/2bWEx7Ko/XzquvZ/+/5Oz4bO5izi6k9F5qXV+YkQU4S4CRlclIgJwVwUgvOXhDn13U1aVCTBjRpmcvJgJwMwMnI5GRBThbgZGVyciAnB3ByMjl5kJMHOHmZnALIKQCcgkQO0SAO0aI5RJPJAUuZAKVMZJYyAUuZAKVMkvJakICdTIBOJimZywFLmQClTGSWMgFLmQClTOSUcrdSp1bk9WKZCOMszxechPe6Yw9GoZblJfnInfTGmfRaTDqilsH8l+TAkEe0HRjxv8+LO9h4ND61ZyGsZ4KVWI17Z1qVGuVi3vqmwoMe3m5oLPCTs+fD88lJCPGpIO6s/gNO3/cMTvW2GO0ThuY8wERY6vq+58K3t5hoNtp6x2QfKI8gRkU9yv2I4NWgcYTQP7unxe0=
+  - SCDT: "eJy11k1rE0EYB/AdxUBE7VZrafqCA4onkZ2851APKuRU8Nbclk2ckCWTFyYbQ85e/Fx+Br3HkGDc0FiaS6G+7WZI7G5292lhes38efbHk90/E0Mf\
+           47i0o+LDQ0xiCG3h4v0ia5UNpls1k3cs/Aprd1Bx4y3vNut6lbcaeo8ydguTOHLy27j0aROX7+rHhkX5sXPiTtJebF76JY7uoVibGX3KY+j2Li79\
+           VnFrgzbaVl/vuaFO3Wy6z1nFvqr+Y6SsDr+oD6pdxi6fKeqB8vkCfx/8nE1PJtMJHg7O8bf56eiPjYez0eyHongRWCAeN6nBWT+aEhySDHoiQFvi\
+           WTWDVUM9gRnJnAPBeeg+xDvMhwlI3OhmIjGBmRvaTMPsVPSK8zWUW5bFqK4R/2bWEx7Ko/XzquvZ/+/5Oz4bO5izi6k9F5qXV+YkQU4S4CRlclIg\
+           JwVwUgvOXhDn13U1aVCTBjRpmcvJgJwMwMnI5GRBThbgZGVyciAnB3ByMjl5kJMHOHmZnALIKQCcgkQO0SAO0aI5RJPJAUuZAKVMZJYyAUuZAKVM\
+           kvJakICdTIBOJimZywFLmQClTGSWMgFLmQClTOSUcrdSp1bk9WKZCOMszxechPe6Yw9GoZblJfnInfTGmfRaTDqilsH8l+TAkEe0HRjxv8+LO9h4\
+           ND61ZyGsZ4KVWI17Z1qVGuVi3vqmwoMe3m5oLPCTs+fD88lJCPGpIO6s/gNO3/cMTvW2GO0ThuY8wERY6vq+58K3t5hoNtp6x2QfKI8gRkU9yv2I\
+           4NWgcYTQP7unxe0="
   - SCTX:
     - begin Act_Well
     - ''
@@ -1400,7 +1446,7 @@
     - "\tEndIf"
     - end
     - ''
-  
+
 - SCPT:
   - SCHD:
       name: Bal_bedroll_script
@@ -1414,7 +1460,10 @@
     - choice
     - MessageOn
     - chosen
-  - SCDT: eJxdkDFLw1AQx+8S8+RBh+ekk9zQD9DoXAQXv0K3kNo3FF5ISOrgZ/JbOAoOBTeXUAmGliY2Ig5m8JK0lHa6u///7v+DE4iSRqRoOCS3jxIF2ixcdAKoPrykS3r+o5+iyquM8k1ZrOrPYpFWNW3KdFWv8+UN2GJesgJyvsi+1t/cnb7mv9lHAQ4mFljkcrWb2hAYyWJLYBnBodGlgsYR7GDrDASe8GB3a5na5gzaA4uuHbyTidE68oJw0uYe3rs9FJHxH3X8ps5vfRPGiReF8cwfG+2N9SQOjeEg1ZvOdEDBNLmnh+hdPZ0h7BEdUu7eso2+Ol5o/ob4D45eWqw=
+  - SCDT: "eJxdkDFLw1AQx+8S8+RBh+ekk9zQD9DoXAQXv0K3kNo3FF5ISOrgZ/JbOAoOBTeXUAmGliY2Ig5m8JK0lHa6u///7v+DE4iSRqRoOCS3jxIF2ixc\
+           dAKoPrykS3r+o5+iyquM8k1ZrOrPYpFWNW3KdFWv8+UN2GJesgJyvsi+1t/cnb7mv9lHAQ4mFljkcrWb2hAYyWJLYBnBodGlgsYR7GDrDASe8GB3\
+           a5na5gzaA4uuHbyTidE68oJw0uYe3rs9FJHxH3X8ps5vfRPGiReF8cwfG+2N9SQOjeEg1ZvOdEDBNLmnh+hdPZ0h7BEdUu7eso2+Ol5o/ob4D45e\
+           Wqw="
   - SCTX:
     - begin Bal_bedroll_script
     - ''
@@ -1462,7 +1511,7 @@
     - endif
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: Bal_dump_morsel
@@ -1472,7 +1521,11 @@
         floats: 0
       data_size: 1200
       var_table_size: 0
-  - SCDT: eJyFk0tOwzAQhnEXSGxoeD9UIDy2SG0PwIIFZ2BnTWI3CbHjyrVBPWiXHAWJSE4mTWOr2/nn++dhzyQav4OgzMollUqvuPiNDsnoOf78i2J1XVSZ5ozmkJaCvwpFBYcFnc7it3i6iYIyOXghR6T2mTifkyZxlVpjBEeDYRzJB0eeM86XVZHlhhoN31x8KMUc7JWQv3X8uKmQaA4M6+5GB/0uaita/oAEyrOs63cQR/LOkaftRCCMLtJm1Nkm8gijfVXngarz0H5hldM1SCw6jGPN2JEX+AK6SOgX1+Uap/VrZI+DEGEHp6HDk3O4arJSpcvEioRqpQx6hNTQ5lMlE671erD5LQG3cO/YszZFQ0Ilh666Txn80fYMlK1YH/dKQd5KqAL8toT8o+Mvm6QSMmVNQfOCdScWENHjxnkcN2nSpiVubic4Cmxc1131uvYIoZnry61/de/BvZLjCfkHUwZsVw==
+  - SCDT: "eJyFk0tOwzAQhnEXSGxoeD9UIDy2SG0PwIIFZ2BnTWI3CbHjyrVBPWiXHAWJSE4mTWOr2/nn++dhzyQav4OgzMollUqvuPiNDsnoOf78i2J1XVSZ\
+           5ozmkJaCvwpFBYcFnc7it3i6iYIyOXghR6T2mTifkyZxlVpjBEeDYRzJB0eeM86XVZHlhhoN31x8KMUc7JWQv3X8uKmQaA4M6+5GB/0uaita/oAE\
+           yrOs63cQR/LOkaftRCCMLtJm1Nkm8gijfVXngarz0H5hldM1SCw6jGPN2JEX+AK6SOgX1+Uap/VrZI+DEGEHp6HDk3O4arJSpcvEioRqpQx6hNTQ\
+           5lMlE671erD5LQG3cO/YszZFQ0Ilh666Txn80fYMlK1YH/dKQd5KqAL8toT8o+Mvm6QSMmVNQfOCdScWENHjxnkcN2nSpiVubic4Cmxc1131uvYI\
+           oZnry61/de/BvZLjCfkHUwZsVw=="
   - SCTX:
     - Begin Bal_dump_morsel
     - StopScript Bal_dump_morsel
@@ -1555,7 +1608,7 @@
     - "\t\treturn"
     - "\tendif"
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_eat_morsel
@@ -1565,7 +1618,18 @@
         floats: 0
       data_size: 2397
       var_table_size: 0
-  - SCDT: eJyllktv20YUha2gadFNor5faTt9LLqQjdibBkWbvpAG6LZddEdQEiOrosyAlmr47/V/FBhSHGs8Q16SQ8hyK9XsHY1E13lAtrOTBWO+M+ece0d36rd+sF3LsQdW3/P3HfeD+m39RXvYf7z85uXaS5+R3/6tE+/d7l7Hd9rWrt3quc6m61muYz+y7m6T++TuRv3exp8zkh+xkEpOxkyyZMaI5Lmal2RChZxLKBpkqiCYkUKB5GpORiAh2trYuFl7ePNX74E9uEG2b9Rf+eXAdl3v4PPaqzXE3zH415b4/dZwMHCdiru54P7DkJpCdsLPSC6oUpJeC/axgb3ZdpzHe93O7sAa+PYfjvuT57UN76uneClMIEpgBCSjJxwSJEcUwWMaQ6bJU5aF5VTQdfD3Dfz28qZN37Hb1T0bmotHlgiWEAOeO5EsoC/k6SO8ltU7sPu25XQ6hrW9Uf/GsARPCqTFFMOcC2CkPD4BIkIaV9SExYubpxCJjKUoIC/XwT808NdXgdruwO+2nIr+QNOLxUVXx+eAEhYO83xl7zkSfc9PqaJJghrHEWQQztl1Ldgxdn+nRaQZjCQojkoCkPPTZ1pQRBBKpkKTdUhPnxXBzrpa2/u71qHdr0y4vzAhyPQ0RSEluaSR4BOSspTJeTKbkABvrLQZstReUBSR8NLA11aNGPpb1VD53ab1u+P3DqvC/WxKsJzosMTjk0JPV8aDUmE1nm8A5qGKv/kxoWnKFFfXVOO652q+XuRRxVEVQ6uBUH88wp1zTTc+Nfx3lvyW5/eaQ7dp+Z43qBQ81ArwYMTnc6TlSvBYVySAacIFxCs/cslGgpKE5jOlHSmyKdVmoEC0SlxxPFpev+n4/mHVjG9NLlh8ulCS0gyOScgUTJkgqIPHBerhxgvdG8gVJ5ygHP1pHf8jw39jxfftptV37HMjfjRRqIwFOooIVyFuXJbr6RMZ1XEwEpc5bJG/FJBgJgHpoSjwP4yMBC67h1dvjjfca19U8eWFeuYUh0K3ALkUU0+m7HiVx6IOV34BVuRh3967SN5aFQHvrJe7hJBNcT1VwDGNitNLAz8xwLeXwJ7d8YaDrrXbbZ8/cjsaOcpmY6bQYzgqiKCjQnFDxD/EJjpdLN+bS2HfM9hbS2x/2OpVFfvCeBuxUYGFwXWqLY6LXDTM2Th+RDG1/kV7osu+/qHxfyvvPbFlQ0jOpgxjFNks51WgDayNAYPCzZJyecUU8RHH/X5hnL83aB6wEV24SopUV1rvjTP0OEtKojIazxoEX1Z8/kigLblsk2q1/wBXV7Bp
+  - SCDT: "eJyllktv20YUha2gadFNor5faTt9LLqQjdibBkWbvpAG6LZddEdQEiOrosyAlmr47/V/FBhSHGs8Q16SQ8hyK9XsHY1E13lAtrOTBWO+M+ece0d3\
+           6rd+sF3LsQdW3/P3HfeD+m39RXvYf7z85uXaS5+R3/6tE+/d7l7Hd9rWrt3quc6m61muYz+y7m6T++TuRv3exp8zkh+xkEpOxkyyZMaI5Lmal2RC\
+           hZxLKBpkqiCYkUKB5GpORiAh2trYuFl7ePNX74E9uEG2b9Rf+eXAdl3v4PPaqzXE3zH415b4/dZwMHCdiru54P7DkJpCdsLPSC6oUpJeC/axgb3Z\
+           dpzHe93O7sAa+PYfjvuT57UN76uneClMIEpgBCSjJxwSJEcUwWMaQ6bJU5aF5VTQdfD3Dfz28qZN37Hb1T0bmotHlgiWEAOeO5EsoC/k6SO8ltU7\
+           sPu25XQ6hrW9Uf/GsARPCqTFFMOcC2CkPD4BIkIaV9SExYubpxCJjKUoIC/XwT808NdXgdruwO+2nIr+QNOLxUVXx+eAEhYO83xl7zkSfc9PqaJJ\
+           ghrHEWQQztl1Ldgxdn+nRaQZjCQojkoCkPPTZ1pQRBBKpkKTdUhPnxXBzrpa2/u71qHdr0y4vzAhyPQ0RSEluaSR4BOSspTJeTKbkABvrLQZstRe\
+           UBSR8NLA11aNGPpb1VD53ab1u+P3DqvC/WxKsJzosMTjk0JPV8aDUmE1nm8A5qGKv/kxoWnKFFfXVOO652q+XuRRxVEVQ6uBUH88wp1zTTc+Nfx3\
+           lvyW5/eaQ7dp+Z43qBQ81ArwYMTnc6TlSvBYVySAacIFxCs/cslGgpKE5jOlHSmyKdVmoEC0SlxxPFpev+n4/mHVjG9NLlh8ulCS0gyOScgUTJkg\
+           qIPHBerhxgvdG8gVJ5ygHP1pHf8jw39jxfftptV37HMjfjRRqIwFOooIVyFuXJbr6RMZ1XEwEpc5bJG/FJBgJgHpoSjwP4yMBC67h1dvjjfca19U\
+           8eWFeuYUh0K3ALkUU0+m7HiVx6IOV34BVuRh3967SN5aFQHvrJe7hJBNcT1VwDGNitNLAz8xwLeXwJ7d8YaDrrXbbZ8/cjsaOcpmY6bQYzgqiKCj\
+           QnFDxD/EJjpdLN+bS2HfM9hbS2x/2OpVFfvCeBuxUYGFwXWqLY6LXDTM2Th+RDG1/kV7osu+/qHxfyvvPbFlQ0jOpgxjFNks51WgDayNAYPCzZJy\
+           ecUU8RHH/X5hnL83aB6wEV24SopUV1rvjTP0OEtKojIazxoEX1Z8/kigLblsk2q1/wBXV7Bp"
   - SCTX:
     - Begin Bal_eat_morsel
     - StopScript Bal_eat_morsel
@@ -1687,7 +1751,7 @@
     - "\t\treturn"
     - "\tendif"
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_hunger
@@ -1715,7 +1779,18 @@
     - lostpersonality
     - btemp
     - dtemp
-  - SCDT: eJzFVd1u00gUnknrvzQUR7t0hXa1Ogi4al3ibku10pa96K5MuaoAIe6QgYRWtGmVBkTveAGeCQlxxVOkwKBAGjd2L4JIBJwzEzt2mopLFCn2nPm+8/PNmWOdaxbcBRtWVsDVOf8FvKm16tP//frqRvnBY2nWeMaWg5LB+SVu4Q8Z58ArrG74Na9cvVX362W4sAKOe0lt2uCZ66tr1Rv+5pb0RXaN75kMveB+ETxrffWOv727WSsPgslN1+T8T/Bm9jafbdzb3fL3y7V6za/uVXZq2+WHFKMUIynQrxbgYlBE8Qx4+saT6qPaPlwjXLySMXMmVCYZbRS4rjxfttHCNI7/CCF/BNKyoHkbLQTS0iA9C3JttBBIT4OMLGjZRguBDAWyuFJrGouYlEVgzpUcK6B4nr9dvr7zpEZwzkzwJv/z94m8R7mSWhyfS/jMsQn4q5TnhgloywTELApwd8GGf1YAccSeYBrB2MABnmhOviqyC7PSo0VwcEswa/EpmeOZs4B5kP5JJiN5aT8lLxNNGos7SFPtlaNuXpehbm2Vd+uD7coEA6C/obyAcoMDC4swCwtwhcKMHoA51l1Juvtj1N1syuFJVxY3eB7NJiueyEHnhgW4A9dkL59ewu+nlDA+e6kjEn47JdNxSaoLrhUkBdPBw2F5PpFZS6d5acEl+YkvW+oSqmMz6BANeYjqzCYxnnZ7B+cKdQXWOp2sqcpl5OiqmQbmwW3BuTE9dE6HoO7PTPbe41RQAfE9z4vJe7r9cPZdtKXUqWHA2POXchioSeFSl42Q5kZI8zFJY2pyjCMtjZCWYxIpUzHGk66MkNyYpDM1fiQpI68zxWPpSK48P58ROpFzaHVPPThHZiEHpmq8oSpOVrJ/5bSz1NxU2KEYTlapBKsn2GE5TrbWBGsk2KFeTlZMidVGmkOnlh1XP7YTsy+zVz0IDr6IVjPsz0ETInEkOn04CFpCQFccQtiLevOMXSwa97d28AP3cBCRtJ3CeEUcPXr87Ul3Jk61q8wG9qbxQUThN8BAYUu8+9SAo07wLmgF7xsUFH3jx+5shucuMvsce92YI9IP0QuIPk91vBcfw+htM2q3+u0AJKndG8dYxMpn2KvGZwWCoCvafQibLdG+MAa+hPASBQgPRScSae9zEHaCLq6jjjg4lnUeNaNGuylOOEKFlv5m9rLMNGh9aPdibjcKnCiA8IsIIzqEdqMr4Cg47IhIQKhCHcs6cil/2A1XSyQw+jvGxFrNQVLBR5Vo/+s83FxbR2LSJi+wTRiz4guC84Tz7341Nac=
+  - SCDT: "eJzFVd1u00gUnknrvzQUR7t0hXa1Ogi4al3ibku10pa96K5MuaoAIe6QgYRWtGmVBkTveAGeCQlxxVOkwKBAGjd2L4JIBJwzEzt2mopLFCn2nPm+\
+           8/PNmWOdaxbcBRtWVsDVOf8FvKm16tP//frqRvnBY2nWeMaWg5LB+SVu4Q8Z58ArrG74Na9cvVX362W4sAKOe0lt2uCZ66tr1Rv+5pb0RXaN75kM\
+           veB+ETxrffWOv727WSsPgslN1+T8T/Bm9jafbdzb3fL3y7V6za/uVXZq2+WHFKMUIynQrxbgYlBE8Qx4+saT6qPaPlwjXLySMXMmVCYZbRS4rjxf\
+           ttHCNI7/CCF/BNKyoHkbLQTS0iA9C3JttBBIT4OMLGjZRguBDAWyuFJrGouYlEVgzpUcK6B4nr9dvr7zpEZwzkzwJv/z94m8R7mSWhyfS/jMsQn4\
+           q5TnhgloywTELApwd8GGf1YAccSeYBrB2MABnmhOviqyC7PSo0VwcEswa/EpmeOZs4B5kP5JJiN5aT8lLxNNGos7SFPtlaNuXpehbm2Vd+uD7coE\
+           A6C/obyAcoMDC4swCwtwhcKMHoA51l1Juvtj1N1syuFJVxY3eB7NJiueyEHnhgW4A9dkL59ewu+nlDA+e6kjEn47JdNxSaoLrhUkBdPBw2F5PpFZ\
+           S6d5acEl+YkvW+oSqmMz6BANeYjqzCYxnnZ7B+cKdQXWOp2sqcpl5OiqmQbmwW3BuTE9dE6HoO7PTPbe41RQAfE9z4vJe7r9cPZdtKXUqWHA2POX\
+           chioSeFSl42Q5kZI8zFJY2pyjCMtjZCWYxIpUzHGk66MkNyYpDM1fiQpI68zxWPpSK48P58ROpFzaHVPPThHZiEHpmq8oSpOVrJ/5bSz1NxU2KEY\
+           TlapBKsn2GE5TrbWBGsk2KFeTlZMidVGmkOnlh1XP7YTsy+zVz0IDr6IVjPsz0ETInEkOn04CFpCQFccQtiLevOMXSwa97d28AP3cBCRtJ3CeEUc\
+           PXr87Ul3Jk61q8wG9qbxQUThN8BAYUu8+9SAo07wLmgF7xsUFH3jx+5shucuMvsce92YI9IP0QuIPk91vBcfw+htM2q3+u0AJKndG8dYxMpn2KvG\
+           ZwWCoCvafQibLdG+MAa+hPASBQgPRScSae9zEHaCLq6jjjg4lnUeNaNGuylOOEKFlv5m9rLMNGh9aPdibjcKnCiA8IsIIzqEdqMr4Cg47IhIQKhC\
+           Hcs6cil/2A1XSyQw+jvGxFrNQVLBR5Vo/+s83FxbR2LSJi+wTRiz4guC84Tz7341Nac="
   - SCTX:
     - Begin Bal_hunger
     - ''
@@ -1948,7 +2023,7 @@
     - "\tset warning1 to 0"
     - endif
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_plate
@@ -1965,7 +2040,18 @@
     - chance1
     - chance2
     - HasKnife
-  - SCDT: eJytVU1v20YQ3ZVj2WpTm0lbt2m+xk0OBZoWonMpCqSHomhRoKcCBXIjVuJKYkWKwoqMob+XP1D0kGMBRihtmrQokWrzASlIdrWkLTuUISC5idDb9968mZ29oVR+JKbWNYlD13EPoxJUyxjfgIevFLCvGJ0mo7rWq7uOY1KtqsIPUM1wagVz5G2J/ESntNsxmi1Hcxh5RM2fbVt/C/yFBG9ntDVGiV5Emss3OInW3icW0WizWYS8KZFXc6PEdJhRz5yqK5HuLZXPSEmvpfWJVcQJEvnpSU7MqGl/UtbuF5ldgjbNQvSXEv1Zhq7brF1zzZrGbNtZIYq6bdUoY/0i27ck9OMcykhNsyhxLmpwhm3ZbkdfGexapLMUvCvBOxm4TZq26xhay9ALJ+2ahG9lcMutt4tqOxcD49oruuWDy2diWbx3JPjzvDRSb5v0G9PWTEoaBQfWKsA/4MEDqCLlPvp76D33Ig9GcRQfBKkPo3H8bzyIo1mSDgIfBpCk/K/B9AjC+HgU+WGK0D/KXTzn2oJfyi2XK/czQkB/jeOnE58T+Uk6uwfDGB5PIYDUCyGZptPd09P4rrR+zTJ6dTEXWs8wH1G2TxjV2h2jQTPvZe59b/N0PE7w+/Mrcw6pbmCc/axWxK9LaAMe7iofIIFYlx9foaqMYh3xo/e/4274R1nmwmElGZekKkkqfmATOBs/8BZ+bRG/luN38uYUVdjgF0fYLuNLnKo0p1KRcgvxvJ76yYg3YRynPL9DL52MgiiAQRCFE4RKyuVfHWrB77zl8Ef3ibKUHvOsN/B2Ga+fmFUXq0DKTaEWh/HwuZf60WxRbRgf7AqxDxntEoNBgxjmE6UofIwq84aequydCTeTKS4qlzlX0/KhkGrXlS3xQIgbZNmsR80K3sQ7+SU7a/Js0mt50reX1z5PuqD6AuIVM764+PeW8cWtfPeMN/DVMq7kxamXcZk/0X3KFl6ROakuBtDUqV43badVrYr4kaIKi3zTzA7FhkhmkHjRf34axkf3YDBNg7H3GvwjiIJnMV8Z40kYfIvQicbm6UOda8zZ1Yz9a8GeCBaxfkbBywkkgsuTXBBOEr7CIA294Wq8quT9XvBOMl5uepEH4pTHfOwdeoMXZ50LA0KGr4Q7Vz7qUMrD0Dqk2zY6ma5s6OKk8O0ZvPSA00fBYZDCsX8Aj70Xwf8w8qLZM38gh+Un2iCu6fxGOvp1ZVu0SHetbtYjrlfQtwrG+A2eZzPE
+  - SCDT: "eJytVU1v20YQ3ZVj2WpTm0lbt2m+xk0OBZoWonMpCqSHomhRoKcCBXIjVuJKYkWKwoqMob+XP1D0kGMBRihtmrQokWrzASlIdrWkLTuUISC5idDb\
+           9968mZ29oVR+JKbWNYlD13EPoxJUyxjfgIevFLCvGJ0mo7rWq7uOY1KtqsIPUM1wagVz5G2J/ESntNsxmi1Hcxh5RM2fbVt/C/yFBG9ntDVGiV5E\
+           mss3OInW3icW0WizWYS8KZFXc6PEdJhRz5yqK5HuLZXPSEmvpfWJVcQJEvnpSU7MqGl/UtbuF5ldgjbNQvSXEv1Zhq7brF1zzZrGbNtZIYq6bdUo\
+           Y/0i27ck9OMcykhNsyhxLmpwhm3ZbkdfGexapLMUvCvBOxm4TZq26xhay9ALJ+2ahG9lcMutt4tqOxcD49oruuWDy2diWbx3JPjzvDRSb5v0G9PW\
+           TEoaBQfWKsA/4MEDqCLlPvp76D33Ig9GcRQfBKkPo3H8bzyIo1mSDgIfBpCk/K/B9AjC+HgU+WGK0D/KXTzn2oJfyi2XK/czQkB/jeOnE58T+Uk6\
+           uwfDGB5PIYDUCyGZptPd09P4rrR+zTJ6dTEXWs8wH1G2TxjV2h2jQTPvZe59b/N0PE7w+/Mrcw6pbmCc/axWxK9LaAMe7iofIIFYlx9foaqMYh3x\
+           o/e/4274R1nmwmElGZekKkkqfmATOBs/8BZ+bRG/luN38uYUVdjgF0fYLuNLnKo0p1KRcgvxvJ76yYg3YRynPL9DL52MgiiAQRCFE4RKyuVfHWrB\
+           77zl8Ef3ibKUHvOsN/B2Ga+fmFUXq0DKTaEWh/HwuZf60WxRbRgf7AqxDxntEoNBgxjmE6UofIwq84aequydCTeTKS4qlzlX0/KhkGrXlS3xQIgb\
+           ZNmsR80K3sQ7+SU7a/Js0mt50reX1z5PuqD6AuIVM764+PeW8cWtfPeMN/DVMq7kxamXcZk/0X3KFl6ROakuBtDUqV43badVrYr4kaIKi3zTzA7F\
+           hkhmkHjRf34axkf3YDBNg7H3GvwjiIJnMV8Z40kYfIvQicbm6UOda8zZ1Yz9a8GeCBaxfkbBywkkgsuTXBBOEr7CIA294Wq8quT9XvBOMl5uepEH\
+           4pTHfOwdeoMXZ50LA0KGr4Q7Vz7qUMrD0Dqk2zY6ma5s6OKk8O0ZvPSA00fBYZDCsX8Aj70Xwf8w8qLZM38gh+Un2iCu6fxGOvp1ZVu0SHetbtYj\
+           rlfQtwrG+A2eZzPE"
   - SCTX:
     - Begin Bal_plate
     - ''
@@ -2149,7 +2235,7 @@
     - "\tendif"
     - endif
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_PocketWatch
@@ -2163,7 +2249,13 @@
     - OnPCEquip
     - ClockHour
     - ClockMinute
-  - SCDT: eJy11sFr01AcB/D3pimNqOzs6XcRQXFk6qbbmk5x2Cru5MljsIktzgaa9LB/bxdBxFn8Bx5pnlXX90witIeA9aV4qOnWl2TdpaWhfH98+P3ey0/Bzgq6CrVyzXhv1u1uBynYwujGzBMQ/4C7sKnB7bUNuFPCL1RwMAJdh/USVq5BTdm3224zeaCVMFZBBEBFhy20qqOPJBgSxmIKYxLG8Iv/JIPYI38iuLmmWdta8gk+m0x/wtcooIzRHzDw6MCPL4nSIqx2ec84RKiM8ZVpdlVU1tDqrix8Gmm3oWEcZohXcTmlWU9pHmfTzFb8QsLQoxGBHj9hI7Js0ML4edC9FGgnP+iYBh4fJTUXW7ZzW85KnmfcLzZls8WGNJyMCPj8mz9ZDKnkhpydPU95cP4Rsy04injA+xxC6knaUs2tEfGvzDd2uyG+zIbMs5HyVPN7ejSg/ncWQ5/7Es1OEc1+qwGvTaMjo2ymKLuFWiMO5oh6oj3R0g9/0plu+5YDdbP1tunKPA9TnqeFPMc8PKE+o5mmrVLE9NJw3Eyz9mgpDfp3Wj/3meQi0Itg6mLQ3KbV6pgyzVZK8+Q8mk9i4AYX0ZxnHdtxLePg4BTO9f/enelV4HnhS7r3exiQMZtecBneonrxg7TXdd5JYUvYCo7omAbJHvLhQtachfEqVrGCxQK3ApqKMf4LgHUWDg==
+  - SCDT: "eJy11sFr01AcB/D3pimNqOzs6XcRQXFk6qbbmk5x2Cru5MljsIktzgaa9LB/bxdBxFn8Bx5pnlXX90witIeA9aV4qOnWl2TdpaWhfH98+P3ey0/B\
+           zgq6CrVyzXhv1u1uBynYwujGzBMQ/4C7sKnB7bUNuFPCL1RwMAJdh/USVq5BTdm3224zeaCVMFZBBEBFhy20qqOPJBgSxmIKYxLG8Iv/JIPYI38i\
+           uLmmWdta8gk+m0x/wtcooIzRHzDw6MCPL4nSIqx2ec84RKiM8ZVpdlVU1tDqrix8Gmm3oWEcZohXcTmlWU9pHmfTzFb8QsLQoxGBHj9hI7Js0ML4\
+           edC9FGgnP+iYBh4fJTUXW7ZzW85KnmfcLzZls8WGNJyMCPj8mz9ZDKnkhpydPU95cP4Rsy04injA+xxC6knaUs2tEfGvzDd2uyG+zIbMs5HyVPN7\
+           ejSg/ncWQ5/7Es1OEc1+qwGvTaMjo2ymKLuFWiMO5oh6oj3R0g9/0plu+5YDdbP1tunKPA9TnqeFPMc8PKE+o5mmrVLE9NJw3Eyz9mgpDfp3Wj/3\
+           meQi0Itg6mLQ3KbV6pgyzVZK8+Q8mk9i4AYX0ZxnHdtxLePg4BTO9f/enelV4HnhS7r3exiQMZtecBneonrxg7TXdd5JYUvYCo7omAbJHvLhQtac\
+           hfEqVrGCxQK3ApqKMf4LgHUWDg=="
   - SCTX:
     - begin Bal_PocketWatch
     - Short OnPCEquip
@@ -2251,7 +2343,7 @@
     - endif
     - ''
     - end Balors_PocketWatch
-  
+
 - SCPT:
   - SCHD:
       name: Bal_stamina_drain
@@ -2271,7 +2363,11 @@
     - fMaxFat
     - fCurFat
     - fDiff
-  - SCDT: eJxlkUtLw0AQx3fSZtv1AalQTyIjeFJbk6LioYkFxV49SW8lYIoB+zCtoGevnvpxPPpJBI2IbSKNBw8t1N3tg1Avy8z8fzM7DwrAsIIamiYa28CAAmSwzC5OL+16y/WcuLCJ5fW2e39dbd3YD47X8exGu9b06s4VbpmoC2oF6ESksvCThsVF5SDTXHt8VqGWJEvIH6ysabhLIZuWnoUFqSmoz1N4IEVUrHQ1QoFyLiU4PVaSlDbO4zid4txUxTc8gcdwn/tp4XNbxHLSZ8gfzBm4E6vIQ0RMneS0SrCIet6goDBsAxHjGqWMCtxW0GCQhuSyxCyBHc45sbyTGaczYP9X1J2siDeiiMaU6T5SADIk0ygkmJQsE4+JdkRehvgThf2eHwwxeB1EYW/0Fe7hbxQGPvbDDz/y8Tt8D8bRaDDmBAbh22eekFlJX5MHzWJ59cyz3Ua1Znfc2ztHfCCvxUEgmUVZ5CdEl4n51figwrPMfCG+PCATVrYP8AdICokV
+  - SCDT: "eJxlkUtLw0AQx3fSZtv1AalQTyIjeFJbk6LioYkFxV49SW8lYIoB+zCtoGevnvpxPPpJBI2IbSKNBw8t1N3tg1Avy8z8fzM7DwrAsIIamiYa28CA\
+           AmSwzC5OL+16y/WcuLCJ5fW2e39dbd3YD47X8exGu9b06s4VbpmoC2oF6ESksvCThsVF5SDTXHt8VqGWJEvIH6ysabhLIZuWnoUFqSmoz1N4IEVU\
+           rHQ1QoFyLiU4PVaSlDbO4zid4txUxTc8gcdwn/tp4XNbxHLSZ8gfzBm4E6vIQ0RMneS0SrCIet6goDBsAxHjGqWMCtxW0GCQhuSyxCyBHc45sbyT\
+           GaczYP9X1J2siDeiiMaU6T5SADIk0ygkmJQsE4+JdkRehvgThf2eHwwxeB1EYW/0Fe7hbxQGPvbDDz/y8Tt8D8bRaDDmBAbh22eekFlJX5MHzWJ5\
+           9cyz3Ua1Znfc2ztHfCCvxUEgmUVZ5CdEl4n51figwrPMfCG+PCATVrYP8AdICokV"
   - SCTX:
     - Begin Bal_stamina_drain
     - "\t\t\t\t\t\t\t\t\t\t\t;Drain stamina if PC is tired."
@@ -2355,7 +2451,7 @@
     - "\tset drain_timer to 0"
     - endif
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_startscript
@@ -2365,7 +2461,8 @@
         floats: 0
       data_size: 314
       var_table_size: 0
-  - SCDT: eJxtj8sKwjAURMmmUEWMICi+iHsX/kA34h+4cRdie7GBJA1J1N+XxCuk2u2ZMwNTELJg1y09MD06CcXbh7mDY1XFjmuakZIUP2ZopfMhNz8kmSs0J5G/QDhpwHuU+zD5S/THFwVgzxCg/k7nKLk7dGdxxgehpRG8cUIabPwHqbfH3jzGT6Etv6mua3o/BrOSbOgUN13wtZM2EPIG209X5A==
+  - SCDT: "eJxtj8sKwjAURMmmUEWMICi+iHsX/kA34h+4cRdie7GBJA1J1N+XxCuk2u2ZMwNTELJg1y09MD06CcXbh7mDY1XFjmuakZIUP2ZopfMhNz8kmSs0\
+           J5G/QDhpwHuU+zD5S/THFwVgzxCg/k7nKLk7dGdxxgehpRG8cUIabPwHqbfH3jzGT6Etv6mua3o/BrOSbOgUN13wtZM2EPIG209X5A=="
   - SCTX:
     - Begin Bal_startscript
     - ''
@@ -2402,7 +2499,7 @@
     - StopScript Bal_startscript
     - ''
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_thirst
@@ -2431,7 +2528,26 @@
     - lostspeed
     - lostpersonality
     - btemp
-  - SCDT: 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
+  - SCDT: "eJzlmt9P21YUx68pCQmlxbSFtmvXHbRW1QShcfhZqRRpdMs6rRJapap7ilLqiKjhh5ywjrf9A/ubplXTHibtbXs3aQwuSQyJNUEFKzv33iTYxsHV\
+           IJqKXxL73nOOz/l87w/dOEFBCMNTEGFyEqSbQlgICkIvxLum55JKXF54nEvmZOifhEi9U4R4aGb64cLXyXSm4RQQsmHSBlHs74F4eGb6SXJ+Ka3I\
+           zKDWKYUE4QbE+7LpH+YSS5nkiqzklORCNrWozMvP6TOidUv6oEthwBsWICj0hCDVTuA+NcEL9qQ2bAuwti4hyOPdErGFoEmAmtAo1ChoNxoSsYUa\
+           Ba1GHXYjScQWatRhNQrZjcZFbKFGIW4UFjij85i6wFKn6baRLkQWT87LXy0uK9RcICGItz9IrlBntGxjjM7g9wh+t5MzMBztFDpCgG22B2IWXfA0\
+           JsK9SUA76t1GAtSM1AJEO4Q2dsmdJRhgEcPUHKQoDISFsyzHc92AeVDqjUwceQX+l7xC2BQg9XETqEl9EeJnZ9ijHmfkpVytO4WRgH4c4AXEDRGI\
+           jcAAxOAOfYxTgJBruCgLd90ZbsAS8HCosNAhdGJzmPQcyiEodIQBe+A+G8HNS7jWpAT37BlHdLjcJFO3JMOMbKCLuWA6KA7pFM7Y7lnQTtaSrcVp\
+           J3zWcbFCVLoQu+NK4bpBeyk7Puz7GpMUZy83xutOOnmzoUMDBledT0UGxzJ9CfnxZzZ9+dyW6LhwOA06nIbqTkHC57qb06jDabzuRKtKhdyd7jic\
+           pLpTB+ELBnOyoYmcpfdBvoZRJlcsTPouQ7z7gbK88CKRUhbnEy/lDF9BiXiLvNqFsrqpF/XKHuQLRt4o7oEOm0ZBzWMjrKlrBXOIytZjiXiwBNqg\
+           RexEp+wLoQ1VxM5xyr4c2mqN2EFM2RdFG8uIHfQUpWQZTgeU0O0QktpSGhQuNyq1CNN7FZ7+I8Li+dRyJpN4ibuTkn2RXrBZ/SU6egVCxDGKOL9L\
+           EUNZK5WN1was6YUNo1LVQV+HVXOr8G5DRehm1ShamTfi/ileWpCTSmbFGd1e3YelSzZIPIh/wom71u7g3oQPEb9xoX8AfdDBHH5h7VDVNrWtPZwF\
+           RaNMpwd+5/WyQ5MLc8lMyl+KfMwVcancoYcrGyI+OY4aq7g07WiwrZUsksCmWam6zhWagV/nir1297ni5EPEL483V7ZxPTusRi9/mjy/lFvxjxzA\
+           5XAv3qFHM0JE/O4/CUI1qKtSMfIVrTQEf5hrZQOnzRvUKG8UzH6bRt0+U+cGV+fifDo7m5jF7f/ZYi6XkRNRKeXQxs2EKjNIldErTBmmSHW3uIGX\
+           UClqr3EzP2Irv3A4pG95x7x5xxjvzyhvg45sY4dy5cBNKBT3GWutrO8z2LtesGO+hT3sDXv4hGEP+xb2iDfskROGPeJb2KPesEcZ7DuWDRU3Rtwe\
+           C9rWml4ytPoSzjfV/f33W7lHfYt8zBv52AmP7zHfwh73hj3ekvE97lvkE97IJ1qCfMK3yO96I7/bEuR3/YpcinoiR5MWIJeivkXufcSUJCvygnlC\
+           yH17ypS8T5kSP2VKHHlR3VBPCLpvT5uS92lTGm7J0uLbM6fkfeaURlqC3LcnT8n75Cm15OQp+fDkuTz7Qs4d/Rttw8QD+YZaMHfeG3k96mlH3s+R\
+           9z2ilU9j5Z/zyh/JOXxX5KDexMoDfF7Dy/qrC3fwva6BTzv7m5z91caoU+TnL5OKnFhK52bnZMWJv7mh19A38zt6+UgFrjSLfdpFuM1FuM7qT88v\
+           JbLpzPeycpQOR9oeX4prR4Q/7Wrc4mp81FgPZnjdfEFw2QiOsDy+ElebBj89OvSEAW9rf32t/c3u3iQME/E2+V1d06qVfXillmBd/duoakWjgq/9\
+           t4ySsa1X9+C1sVU0kFnI4jlOxG5KHc31qgabaMctOusWUoyIN8iviD6PPxO/Nd+qGhpW9OJe2XzX0MHqEYsSEchv2KOCsa2V97i1AQVjU9tAd0yx\
+           0u/wGSPivZpPpaRtYfLUY10tmdt6UaUe+I5cfVOgWep0kGhv8Gq7akTK+qpZ2LPGQzwxLOwLQlHga3mtgD9i07fr7B07HWBI48B1EHBkbWtglrZo\
+           aUYVjFVtPW+s6XkVf/umgdsOAk/Q4pCYiVniOHVaD8G3D2esA/MnFJIQq5Co3BWIn4tnFp/h8MzNpZVsjv7dNsX+H+voCLDmsCAI/wILy5/3"
   - SCTX:
     - Begin Bal_thirst
     - ''
@@ -3304,7 +3420,7 @@
     - endif
     - ''
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bal_vamp_bloodthirst
@@ -3333,7 +3449,18 @@
     - lostpersonality
     - Drain_health
     - btemp
-  - SCDT: eJy1VV1v22QUPq+bOHFSmANiG1NBJ4JOk/JBXK1lSHRC2qQgcTMJhHI3WcWBSk1T0hZpP4L/wE9BFeKiEgiuuOHCi+LMzYcTJ0LZlKBy3td2bDf0CnFj+fh9nud8vedYZiyHVeXJoy/1xtF+y8D8LmrvM4XJjClYQxV3ww9prCcAH2JlnclHB/ozo7WVq2cB+GFCwWMGHF1JsroE61hNV/WG8WnztAX0hUEaq4nH+jMAUN+CP0wXN8uVehF/soYL8YplKaT40CQjUQm1wMOa8KAt/ctMymDtQe4z3zEBpEh47+ZufUd5Ycs4Pmm29JP95iF+pTf0rw2FMoqoyHewls8VsflaUIcvmqd73wjVCCyxibW/VYLdPjT2Ws2GfrhntI6f6o3TA+Pk6enh/rdXGZHwwqjfuTYsPwONhydyXpacSpiEDNIDa2+oWBD94dZD3PEOfVrE+cb1WWkyu7PUltltX2sXt0C9CWdzHC2siYW9sdNeYMd5Pp/ZZd4O4Yf7S4BH17BEVhaySA+slCsaj02iQzmIWwbP2sbSMrhNFeCHT3iKHJoKoCnwrCi0HIOmA2gaPCsK1WJQJYAq4FlR6L0QmsJ6BjxkhiMzceSHPjLoiXQD6TbzQVle0ujtphZKwZW9QVdW8q6s/5lqLb2J1ewTIf35gXF04h+vzkwMRdQ0U/6FysNegw2kR4SOBSRBLOHWfSysisssqQgGdXwnw9ZCQ6ilhbkjWhs2mnSOk2TRg1tZUY8UyxFoHXJR58K1zF4n2XUhq/2HtFNMEUHduibF/zM7r+PlyKS87SHoPcNuLt+vjkApugLSWHtPJdR2/Pb/GBuNQmxyOacY55QDTjgjq5y7cc69gBNOwCrngzhHCzjhgK1ytuMcb0Ri80OcWEFLWW4ngsnI0WQkwN9EfJOR8bHYPhtwbnatiXuJZ+YAX5h/OROr7y7EKuI7KB2B3wc1x5dV1+qbwbq6inkA6l2O6VgX7qRtk9hi6KDzavpKULpmtzONEjMBUaNg8pzpTsy+jbOx9aI9n5kXxOZwp2t2hvNB/gppB9TH8DOJmp4ouk5vPH1Jvopou654o8zcMv4+dmak1Z6P7MkCZwvrojS0n087fqoRXV6lj0AtwDlfx0VvKxfx/Ldfz/7M4y/TLsmcC2dDa2B1+pf5vAhL8uh8q1dAfQRn5ksbB9OZNbQvqbI9Zziz+7ZLUiNn4gyoDGYP+e4fW+2xORFn2MbedNab4sga9U0q0bLp31PT+b/fb2uFzwpj/wDeKDZ8
+  - SCDT: "eJy1VV1v22QUPq+bOHFSmANiG1NBJ4JOk/JBXK1lSHRC2qQgcTMJhHI3WcWBSk1T0hZpP4L/wE9BFeKiEgiuuOHCi+LMzYcTJ0LZlKBy3td2bDf0\
+           CnFj+fh9nud8vedYZiyHVeXJoy/1xtF+y8D8LmrvM4XJjClYQxV3ww9prCcAH2JlnclHB/ozo7WVq2cB+GFCwWMGHF1JsroE61hNV/WG8WnztAX0\
+           hUEaq4nH+jMAUN+CP0wXN8uVehF/soYL8YplKaT40CQjUQm1wMOa8KAt/ctMymDtQe4z3zEBpEh47+ZufUd5Ycs4Pmm29JP95iF+pTf0rw2FMoqo\
+           yHewls8VsflaUIcvmqd73wjVCCyxibW/VYLdPjT2Ws2GfrhntI6f6o3TA+Pk6enh/rdXGZHwwqjfuTYsPwONhydyXpacSpiEDNIDa2+oWBD94dZD\
+           3PEOfVrE+cb1WWkyu7PUltltX2sXt0C9CWdzHC2siYW9sdNeYMd5Pp/ZZd4O4Yf7S4BH17BEVhaySA+slCsaj02iQzmIWwbP2sbSMrhNFeCHT3iK\
+           HJoKoCnwrCi0HIOmA2gaPCsK1WJQJYAq4FlR6L0QmsJ6BjxkhiMzceSHPjLoiXQD6TbzQVle0ujtphZKwZW9QVdW8q6s/5lqLb2J1ewTIf35gXF0\
+           4h+vzkwMRdQ0U/6FysNegw2kR4SOBSRBLOHWfSysisssqQgGdXwnw9ZCQ6ilhbkjWhs2mnSOk2TRg1tZUY8UyxFoHXJR58K1zF4n2XUhq/2HtFNM\
+           EUHduibF/zM7r+PlyKS87SHoPcNuLt+vjkApugLSWHtPJdR2/Pb/GBuNQmxyOacY55QDTjgjq5y7cc69gBNOwCrngzhHCzjhgK1ytuMcb0Ri80Oc\
+           WEFLWW4ngsnI0WQkwN9EfJOR8bHYPhtwbnatiXuJZ+YAX5h/OROr7y7EKuI7KB2B3wc1x5dV1+qbwbq6inkA6l2O6VgX7qRtk9hi6KDzavpKULpm\
+           tzONEjMBUaNg8pzpTsy+jbOx9aI9n5kXxOZwp2t2hvNB/gppB9TH8DOJmp4ouk5vPH1Jvopou654o8zcMv4+dmak1Z6P7MkCZwvrojS0n087fqoR\
+           XV6lj0AtwDlfx0VvKxfx/Ldfz/7M4y/TLsmcC2dDa2B1+pf5vAhL8uh8q1dAfQRn5ksbB9OZNbQvqbI9Zziz+7ZLUiNn4gyoDGYP+e4fW+2xORFn\
+           2MbedNab4sga9U0q0bLp31PT+b/fb2uFzwpj/wDeKDZ8"
   - SCTX:
     - Begin Bal_vamp_bloodthirst
     - ''
@@ -3523,7 +3650,7 @@
     - "\tendif "
     - endif
     - End Balors_vamp_bloothirst
-  
+
 - SCPT:
   - SCHD:
       name: Bal_weariness
@@ -3553,7 +3680,24 @@
     - lostspeed
     - lostintelligence
     - btemp
-  - SCDT: eJzFV8tu20YUnZH1IGUnZZI6QdokvUYfCGpZFRXnUSBOCjiAmq6MGCiyMwSYbgTIj8oKEHfVH+g3FcgmQIEs2i+gadFmRHEiUgjkQkLcO0NSImW5dRC0XZEzc+5jzr1zhkxTKsNjUGBhAdTPqEzTlE5DaWrxSblW0jaW6+W6BjMLMBcuKlCSlhYfbnxXrlQHRim6LZMEFHD9HJTkpcXvy+tblZomAMGiKlF6DUoXtyvPnqxsVcs7Wq1eK29sr23W1rVVHqMQInmgaRlwIByk6XkJ1lIE7nEIviT4s3TmQa1c2VhZK9crPz7VRPQE4tICN0XTfozPFZwhaJbmZtwzB2XioLyCMxyUiYKkOEhVcIaDpChIjoOuKzjDQbIPkqnP21ncTlJsh28hQaaQxlJ5Xft282mNwymRoJR8UN7hxohMCN4S+JzH5wSZgGIhSzMS4FwsIGYxBY+LCtxdAMRxa0pSHEYCB4UMTYhX31iFWeFR5nBQCzAr00mR45kPAPPglRhkMpJX6n/J6wJOpUjYSym/0dIXoDS5JEItV7WterC8NkEuRqgFpBrmoDjPnY/Sjt0a7askOQ9ojv27XdW0rZX1zVX4kvc2TmJIicpjQhbE8hXfcBh29h8Cp6aExT3khhKSpROxsfCZFTM4hDnR9H6qPksS50wSI06RTDN0GkFZcu7Y3vHwyIAr3Lf6d7QdN31fxjJUFq+XTmDnvyBGFh2UkQWG1wv78kPUt1J1c0Xb0Go/VH4KVSo+ifkT5Sx53gPHhI7HWrbp9AgRGjjK4Uwgg0ITTvIetRCnaC0Zat0nA1LT9Oq4AqXpx7iDpF/ELL0cl8OQgDnhUxJAMRqRyEswMgGFfOEmzEZ1UwilP0IXERUl5Of7cfUUcumPotB8DCqFUF6ZNSkOVWNQOYTKxB9FodcH0KS/wbucFXrKUhZ9GZ4cNERu/DEYKRKWI+WTexfmB6lcO3dmmbf7zkq1Uq9XtTELNa1cre5EFpRgQXtWr2nrWmwtNFrVyqvVHWxifgndkIah7wRztwdGV//VFCSalIPQalHEngBVHRP8vWJMDGLcCmPcjMQ4vSvRFOMaoUiUb8gLvWlbju5YJhgHu6zRtmwGz3U3By5zbMtgrteH1212aOv5fB5e6OB2TQ8OGqzNjP5RnovOMWUIClLw7/YE3k8ZoS43iLLMJQP97Xb2G7rpmW4fXHjNXMPcN41Dq2VBt2O4nqG3LEwBjJ7LmuwV6E3PMhyezFuwYI95zB+B1fAskYQfUYpEu02UxSCa63RsC0NFAuWANRy9ycBwTTD/NFHHWg7bY3zfTq+Fj4MGp6UV954NvasqUR6R5/ohMK/RewO7PRtdNDAp3WNd08kBhg59hwKZh989ZnnchL1xOpi/Y7pNZvcxj118HJonRbtJlKrYDHOsFicuB44emnYwqI18vWGckYDBDoLANXePcIzTdqeL3uEl1rltNhwmaHmt4wpPsGVhNph2Ey1afZd5kTwylBJlfVzdHJNhSCyPhQOv3WmwFm7Z4+t5+ENvQkvHbhL86Jx72wROTR8atuWZdt+JVtbiNwlm5OpveXRfiC5FpH/av7vwPcu/eLdD7TydjM9FP70kePypgtZqXMF/jck7fmCN2OTiNvnQZqjzx22+iNtcD22GKn7c5qu4jRraDC+JWfFTMbzO5yb5OO3fmJy4j/AYpMP/AxpoiTiBl8lv+r7puUe8QbEke009aCBkXZyfADtPlCyv+mDxRH0dqtUC3CHKBW7VNnVe4MB6Zrz5MYUc9ZvMhn5VlKuL3HG3bR4Yva7+aug85vs0yvgucW8RJcfjui2z7TdtyAi87OzjyG2zrhO2udefGbtTX4vf8S7w08Qfw2z4faZ+TZT7PJsGs/edHnC5cZhheX2spzXUlRygqHdNOND3UDBCITBgD0+wX2bfJX4wFfFD7oqoM27Q5j78/fEjmYdHD5eipfsFW5GfzaDZ8A+O0r8A24+oTA==
+  - SCDT: "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"
   - SCTX:
     - Begin Bal_weariness
     - ''
@@ -3863,7 +4007,7 @@
     - 'endif '
     - ''
     - End
-  
+
 - SCPT:
   - SCHD:
       name: Bed_Standard
@@ -3890,7 +4034,7 @@
     - endif
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: deepnight_campement
@@ -3916,7 +4060,24 @@
     - BOOST_MEAL
     - i
     - timer
-  - SCDT: eJyNlt9vE0cQx3cd/4gJaQ9CS1tUOqi0qDQE/wwFCXhpm761UnmI+hIZYpIIEyPHFPHW/in9T9qo7UMFVFSq6Eur9dlLLj7f+u6MSVQb0tm7vficuEAiJXd7u7Of+c7M7sTo2kESgXycRhOwNkEuXkwTLUsetDuOa7gc7OfNDdYEi8EGb5nPp2HLFbUe2GyjZrh90Nk2mKzO7f4MITE6F7tS/qxQHYP0uRhFaxFInaRJGqfH0PgYGs/FaeQIzFNtGirxr0qFu8UKXIJ8OoPTxwbTaQLm39KQJRhO0Kk4ncBRJkfRCNqLoL0U0d4n6wgh3EavCzroPWebb4Lj8ja3DGjaHfcEXPhIwuGCCKSTNEavUzIO+AfS8DE6HpfPl3IHafyWR5Q5hJqQ3dfs8GvOe/WMIFiSJmgsTscUT1ptkwr74//6XoHk952cUJrIuQckWpyO41CC+B6Ow/wPGoqTJdo0We+BxaElHnMZEyW+Lzw63TZFt/Mc2qIuGp0ThBzVEjRCtDflsk7TZI2ezuTCUKTWaCAGbuj5oQjxAyL5hPGkTwhn0moF6n1UWnV0YbMtY79Zz+mIlrxSrlxbhi9vV49qvq1Y4K0nlh9dop0lj5hzAT6YSV2fhp+51fefYQYeuQJwo67w0tBpcJOhy5cjc+NzhZvFL8q3K3PRTwt3SfTAA7chulbH7ZPDD//lDs7CHD1jGbVOo0+0hzq35UdFSRIP/rj3y/0fA1aZeFGSQA8xGU77KkwqVP9bDOaPa8TXJqrCJVdmA8GiZJCo+fCgn9QD24Mv2UApf8Oo2jAYzgXZFaMl7z/X5LQxNS1PtGNkWJ+2bdSFK3SZFpdJUvtddEXD6m1irjw1hEVeu89bFqYHdE1eY+SNe8xEsZuCw87mUwFNnbUYmfpJmP3t4bHXf7NZjcn6r9uGyUlindvcaZKDDwVakBsYDpk89Rd/8gQchjE6tVfhWT/+VxX8bEhUfIxL9+I0EYi7W2aYMQDzz/CgKB9ZLBZvra4sLVcXqpXCt8XS5+XyIlbGYPKf2sg5lBDtuFcEbeHavGaYBuxRxs9aSZHePb6857VJMgYZFaAALx3GO6bwXl9ZXaoUFxeuVoqFxYVUeg/Z3s8S6h08s1DTx8yWSFY4Ni8GSu8ByoSB3lVAh66j7ws37hRuFhaKS0v7kfZPkFAn/cJmdp1ZEqvl54ixCaJlctdPCB9PomRTIb5MwDyMl30lvMzL8DISb0biCUx0jJ/QGQLWvHQdwgMHXJvhkzEAzYdBc6NBc2HQ9xTolIrctUrh6sLNYqG6X8lRUyTsaU9LeWghpy6criHL1Ox7cW4OldQAdDYfvkFTo0nzIyVVGMtIsFysjIj4vgmS8sMwZZsjlyMrQ/dKXOj46JX0gDAzRDg7mnA2THhcER5WAGuFUrWycq24H3HEDMl4VjLuHm+haqkz2zJsBsaGI48iOYRnUShBc+G4Z4dZJxXruRDrxAvVDJd+8hUrDTXZPcOUzaVyCRcUVovVVwlShISPuFEmKHlpXX8vFdxgWBeur18TpbTxmNdt3toJOjp1wQq3xS2ZBHii+9EHR4Du8JZcKWpYfEarhy9N0WoLi1uurDW8iermTsNw0cym4+oq1/F2ssW2gBMqJjE4jz//d2z4kYmoyHwSG+oIZfsQ99uH4BI9R7RvvMao8xi3yqi0ZdN42bZGXG9g4IcNYaLzm9BkFncD18OX567bmEcJSon2NvmVmf1pwC06sM4ceObKVMPlOMPr/oLL+h8tdYiQ7y4r8PMSfHDPx+mUugHPewsOeA3o/GFNtqAxvwXN+Hd8UvoZ0WKLlZXVG2ghKRU6qfRJqm5VjafS3p5/axEt8fWdQqlUviOZUZatjo6R6MgGzeG1HTA7W9vysAm3uZPDfe3koIUb9LdJSul/YQd0hA==
+  - SCDT: "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\
+           oIUb9LdJSul/YQd0hA=="
   - SCTX:
     - begin deepnight_campement
     - ''
@@ -4208,7 +4369,7 @@
     - endif
     - ''
     - end
-  
+
 - SCPT:
   - SCHD:
       name: PCJail
@@ -4221,7 +4382,8 @@
   - SCVR:
     - CurrentDay
     - DoOnce
-  - SCDT: eJxljjEKwkAURHfWuOaDaMDWYjyAsHuAtYmwKBa5QgoFQWzWxtv71yIkpJz/582Mw6Zhqrv28r72zxdjZHCwwmxNEX6JDFMzVef+a4wqayyDwKHaMa0LpJ98uz8+PNEru6USPMQRM0mYQrOQwKNghYUah1n2v6M0+33jurbcBALgB156JLo=
+  - SCDT: "eJxljjEKwkAURHfWuOaDaMDWYjyAsHuAtYmwKBa5QgoFQWzWxtv71yIkpJz/582Mw6Zhqrv28r72zxdjZHCwwmxNEX6JDFMzVef+a4wqayyDwKHa\
+           Ma0LpJ98uz8+PNEru6USPMQRM0mYQrOQwKNghYUah1n2v6M0+33jurbcBALgB156JLo="
   - SCTX:
     - begin PCJail
     - ''
@@ -4246,7 +4408,7 @@
     - endif
     - ''
     - End PCJail
-  
+
 - SCPT:
   - SCHD:
       name: SleepDetect
@@ -4258,7 +4420,8 @@
       var_table_size: 6
   - SCVR:
     - timer
-  - SCDT: eJxljKEKgDAARL3BxqZl6A9ct2wfMKtVsKwaZloQsfi3fooiK2I5uLvHU4BhvCxDoJcYmykvZ9rnnLZD0GvIjp+xgCuqmk8wtpa9gtBvG8on6H4yZ2AA3Gv0FpY=
+  - SCDT: "eJxljKEKgDAARL3BxqZl6A9ct2wfMKtVsKwaZloQsfi3fooiK2I5uLvHU4BhvCxDoJcYmykvZ9rnnLZD0GvIjp+xgCuqmk8wtpa9gtBvG8on6H4y\
+           Z2AA3Gv0FpY="
   - SCTX:
     - begin SleepDetect
     - ; That script detects and flags if player has rested.
@@ -4275,11 +4438,11 @@
     - endif
     - ''
     - end SleepDetect
-  
+
 - SSCR:
   - DATA: '385431384142845816'
   - NAME: Bal_startscript
-  
+
 - SPEL:
   - NAME: vampire touch
   - FNAM: Прикосновение вампира
@@ -4305,7 +4468,7 @@
       duration: 1
       magnitude_min: 10
       magnitude_max: 30
-  
+
 - SPEL:
   - NAME: vamp restoration damage
   - FNAM: Ущерб восстановления вампа
@@ -4322,7 +4485,7 @@
       duration: 1
       magnitude_min: 5
       magnitude_max: 10
-  
+
 - SPEL:
   - NAME: Sleepy_really
   - FNAM: Действительно сонный
@@ -4348,7 +4511,7 @@
       duration: 0
       magnitude_min: 20
       magnitude_max: 20
-  
+
 - SPEL:
   - NAME: Sleepy_extremely
   - FNAM: Чрезвычайно сонный
@@ -4374,7 +4537,7 @@
       duration: 0
       magnitude_min: 30
       magnitude_max: 30
-  
+
 - SPEL:
   - NAME: Sleepy_deadly
   - FNAM: Смертельно сонный
@@ -4400,7 +4563,7 @@
       duration: 0
       magnitude_min: 50
       magnitude_max: 50
-  
+
 - SPEL:
   - NAME: Sleepy_little
   - FNAM: Слегка сонный
@@ -4426,7 +4589,7 @@
       duration: 0
       magnitude_min: 10
       magnitude_max: 10
-  
+
 - SPEL:
   - NAME: Energize
   - FNAM: Энергичность
@@ -4443,7 +4606,7 @@
       duration: 1
       magnitude_min: 20
       magnitude_max: 20
-  
+
 - SPEL:
   - NAME: needed_napkin
   - FNAM: Обляпались, нужна салфетка
@@ -4469,7 +4632,7 @@
       duration: 40
       magnitude_min: 5
       magnitude_max: 6
-  
+
 - SPEL:
   - NAME: bloated
   - FNAM: Вздутие
@@ -4504,7 +4667,7 @@
       duration: 60
       magnitude_min: 5
       magnitude_max: 5
-  
+
 - LEVI:
   - NAME: random_de_cheapfood_01_nc
   - DATA: 0
@@ -4530,7 +4693,7 @@
   - INTV: 1
   - INAM: deepnight_travelFood
   - INTV: 1
-  
+
 - LEVI:
   - NAME: random_de_cheapfood_01_ne
   - DATA: 0
@@ -4548,7 +4711,7 @@
   - INTV: 1
   - INAM: deepnight_travelFood
   - INTV: 1
-  
+
 - LEVI:
   - NAME: random_food
   - DATA: 0
@@ -4570,7 +4733,7 @@
   - INTV: 1
   - INAM: deepnight_travelFood
   - INTV: 1
-  
+
 - CONT:
   - NAME: A1V1_MessKit
   - MODL: m\Misc_De_Bowl_01.NIF
@@ -4578,7 +4741,7 @@
   - CNDT: 10000.0
   - FLAG: ''
   - SCRI: A1V1_MessKit_sc
-  
+
 - MISC:
   - NAME: A1V1_MessKitItem
   - MODL: m\Misc_De_Bowl_01.NIF
@@ -4589,7 +4752,7 @@
       is_key: false
   - SCRI: A1V1_MessKitItem_sc
   - ITEX: m\Misc_De_Bowl_01.tga
-  
+
 - INGR:
   - NAME: deepnight_travelFood
   - MODL: n\Ingred_bread_01.NIF
@@ -4610,7 +4773,7 @@
       effect_3_attribute: null
       effect_4_attribute: null
   - ITEX: m\Tx_bread_01.tga
-  
+
 - BOOK:
   - NAME: deepnight_labelAdvCrate
   - MODL: m\Misc_paper_plain_01.nif
@@ -4625,7 +4788,7 @@
   - TEXT:
     - <DIV ALIGN="CENTER"><FONT COLOR="000000" SIZE="3" FACE="Волшебные карты"><BR>
     - Обращаться с осторожностью<BR>
-  
+
 - BOOK:
   - NAME: bk_MessKitInstructions
   - MODL: m\Text_Octavo_06.nif
@@ -4675,7 +4838,7 @@
     - Не забудьте захватить с собой ткань (салфетки), тем более, при еде без посуды. Ваше проворство может пострадать от скользких рук, не говоря уже о людях, которым, вероятно будет смешно видеть вымазанную пищей физиономию ... <BR>
     - <BR>
     - ''
-  
+
 - LIGH:
   - NAME: deepnight_campement01
   - MODL: l\light_pitfire00.NIF
@@ -4690,7 +4853,7 @@
       flags: DYNAMIC CAN_CARRY FLICKER FIRE
   - SCRI: deepnight_campement
   - SNAM: Fire 50
-  
+
 - CONT:
   - NAME: deepnight_foodCrate
   - MODL: o\Contain_crate_01.NIF
@@ -4709,7 +4872,7 @@
   - NPCO:
       count: 1
       item_id: deepnight_campement01
-  
+
 - CONT:
   - NAME: _Balors_items_chest
   - MODL: o\Contain_De_Chest_01.nif
@@ -4725,7 +4888,7 @@
   - NPCO:
       count: 5
       item_id: empty_waterskin
-  
+
 - MISC:
   - NAME: full_waterskin
   - MODL: m\misc_ice_waterskin_Full.NIF
@@ -4735,7 +4898,7 @@
       value: 15
       is_key: false
   - ITEX: m\ice_ws_full.dds
-  
+
 - MISC:
   - NAME: nearlyfull_waterskin
   - MODL: m\misc_ice_waterskin_Full.NIF
@@ -4745,7 +4908,7 @@
       value: 15
       is_key: false
   - ITEX: m\ice_ws_4uses.dds
-  
+
 - MISC:
   - NAME: halffull_waterskin
   - MODL: m\misc_ice_waterskin_Full.NIF
@@ -4755,7 +4918,7 @@
       value: 15
       is_key: false
   - ITEX: m\ice_ws_3uses.dds
-  
+
 - MISC:
   - NAME: nearlyhalf_waterskin
   - MODL: m\misc_ice_waterskin_Full.NIF
@@ -4765,7 +4928,7 @@
       value: 15
       is_key: false
   - ITEX: m\ice_ws_2uses.dds
-  
+
 - MISC:
   - NAME: nearlyempty_waterskin
   - MODL: m\misc_ice_waterskin_Empty.NIF
@@ -4775,7 +4938,7 @@
       value: 15
       is_key: false
   - ITEX: m\ice_ws_1use.dds
-  
+
 - MISC:
   - NAME: empty_waterskin
   - MODL: m\misc_ice_waterskin_Empty.NIF
@@ -4785,7 +4948,7 @@
       value: 15
       is_key: false
   - ITEX: m\ice_ws_empty.dds
-  
+
 - MISC:
   - NAME: misc_com_bottle_01f
   - MODL: m\Misc_Com_Bottle_01.NIF
@@ -4795,7 +4958,7 @@
       value: 6
       is_key: false
   - ITEX: m\Misc_Com_Bottle_01.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_02f
   - MODL: m\Misc_Com_Bottle_02.NIF
@@ -4805,7 +4968,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_02.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_03f
   - MODL: m\Misc_Com_Bottle_03.NIF
@@ -4815,7 +4978,7 @@
       value: 8
       is_key: false
   - ITEX: m\Misc_Com_Bottle_03.tga
-  
+
 - MISC:
   - NAME: Misc_Com_Bottle_04f
   - MODL: m\Misc_Com_Bottle_04.NIF
@@ -4825,7 +4988,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_04.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_05f
   - MODL: m\Misc_Com_Bottle_05.NIF
@@ -4835,7 +4998,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_05.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_06f
   - MODL: m\Misc_Com_Bottle_06.NIF
@@ -4845,7 +5008,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_06.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_07f
   - MODL: m\Misc_Com_Bottle_07.NIF
@@ -4855,7 +5018,7 @@
       value: 8
       is_key: false
   - ITEX: m\Misc_Com_Bottle_07.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_09f
   - MODL: m\Misc_Com_Bottle_09.NIF
@@ -4865,7 +5028,7 @@
       value: 6
       is_key: false
   - ITEX: m\Misc_Com_Bottle_09.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_10f
   - MODL: m\Misc_Com_Bottle_10.NIF
@@ -4875,7 +5038,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_10.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_11f
   - MODL: m\Misc_Com_Bottle_11.NIF
@@ -4885,7 +5048,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_11.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_12f
   - MODL: m\Misc_Com_Bottle_12.NIF
@@ -4895,7 +5058,7 @@
       value: 8
       is_key: false
   - ITEX: m\Misc_Com_Bottle_12.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_13f
   - MODL: m\Misc_Com_Bottle_13.NIF
@@ -4905,7 +5068,7 @@
       value: 6
       is_key: false
   - ITEX: m\Misc_Com_Bottle_13.tga
-  
+
 - MISC:
   - NAME: Misc_Com_Bottle_14f
   - MODL: m\Misc_Com_Bottle_14.NIF
@@ -4915,7 +5078,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_14.tga
-  
+
 - MISC:
   - NAME: misc_com_bottle_15f
   - MODL: m\Misc_Com_Bottle_15.NIF
@@ -4925,7 +5088,7 @@
       value: 6
       is_key: false
   - ITEX: m\Misc_Com_Bottle_15.tga
-  
+
 - MISC:
   - NAME: misc_com_bucket_01f
   - MODL: m\Misc_Com_Bucket_01.NIF
@@ -4935,7 +5098,7 @@
       value: 10
       is_key: false
   - ITEX: m\Misc_Com_Bucket_01.tga
-  
+
 - MISC:
   - NAME: Misc_Com_Bucket_Metalf
   - MODL: m\Misc_Com_Bucket_Metal.NIF
@@ -4945,7 +5108,7 @@
       value: 15
       is_key: false
   - ITEX: m\Misc_Com_Bucket_Metal.tga
-  
+
 - MISC:
   - NAME: misc_com_redware_pitcherf
   - MODL: m\Misc_Redware_Pitcher.NIF
@@ -4955,7 +5118,7 @@
       value: 22
       is_key: false
   - ITEX: m\Misc_Redware_Pitcher.tga
-  
+
 - MISC:
   - NAME: misc_imp_silverware_pitcherf
   - MODL: m\Misc_Silverware_Pitcher.NIF
@@ -4965,7 +5128,7 @@
       value: 30
       is_key: false
   - ITEX: m\Misc_Silverware_Pitcher.tga
-  
+
 - MISC:
   - NAME: Misc_Com_Pitcher_Metal_01f
   - MODL: m\Misc_Com_Pitcher_Metal_01.NIF
@@ -4975,7 +5138,7 @@
       value: 10
       is_key: false
   - ITEX: m\Misc_Com_Pitcher_Metal_01.tga
-  
+
 - MISC:
   - NAME: Misc_Com_Bottle_08f
   - MODL: m\Misc_Com_Bottle_08.NIF
@@ -4985,7 +5148,7 @@
       value: 5
       is_key: false
   - ITEX: m\Misc_Com_Bottle_08.tga
-  
+
 - MISC:
   - NAME: Balors_portable_Bedroll
   - MODL: f\Active_De_Bedroll.nif
@@ -4996,7 +5159,7 @@
       is_key: false
   - SCRI: Bal_bedroll_script
   - ITEX: m\tx_clothbolt_02.dds
-  
+
 - MISC:
   - NAME: _dej_pocket_watch
   - MODL: m\misc_ice_dwemWatch.NIF
@@ -5007,13 +5170,13 @@
       is_key: true
   - SCRI: Bal_PocketWatch
   - ITEX: m\misc_ice_dwemWatch.dds
-  
+
 - ACTI:
   - NAME: a_waterwell
   - MODL: f\furn_well00.nif
   - FNAM: Ручной водяной насос (колодец)
   - SCRI: Act_Well
-  
+
 - CELL:
   - NAME: Holamayan
   - DATA:
@@ -5034,7 +5197,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.0000002
-  
+
 - CELL:
   - NAME: Sadrith Mora
   - DATA:
@@ -5055,7 +5218,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.183187
-  
+
 - CELL:
   - NAME: Wolverine Hall
   - DATA:
@@ -5085,7 +5248,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.982694
-  
+
 - CELL:
   - NAME: Sadrith Mora
   - DATA:
@@ -5106,7 +5269,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.883188
-  
+
 - CELL:
   - NAME: Nchurdamz
   - DATA:
@@ -5127,7 +5290,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.4
-  
+
 - CELL:
   - NAME: Tel Aruhn
   - DATA:
@@ -5138,7 +5301,7 @@
         y: 5
   - RGNN: Azura's Coast Region
   - NAM5: 6333898
-  
+
 - CELL:
   - NAME: Tel Branora
   - DATA:
@@ -5159,7 +5322,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.083186
-  
+
 - CELL:
   - NAME: Tel Mora
   - DATA:
@@ -5180,7 +5343,7 @@
       x_rot: 0.17802358
       y_rot: 0.02094395
       z_rot: 3.7869718
-  
+
 - CELL:
   - NAME: Erabenimsun Camp
   - DATA:
@@ -5201,7 +5364,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.283187
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5211,7 +5374,7 @@
         x: 13
         y: -11
   - RGNN: Azura's Coast Region
-  
+
 - CELL:
   - NAME: Vos
   - DATA:
@@ -5232,7 +5395,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.40000033
-  
+
 - CELL:
   - NAME: Yansirramus
   - DATA:
@@ -5243,7 +5406,7 @@
         y: 4
   - RGNN: Azura's Coast Region
   - NAM5: 6333898
-  
+
 - CELL:
   - NAME: Molag Mar
   - DATA:
@@ -5264,7 +5427,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.1000004
-  
+
 - CELL:
   - NAME: Ahemmusa Camp
   - DATA:
@@ -5285,7 +5448,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.89999974
-  
+
 - CELL:
   - NAME: Vos
   - DATA:
@@ -5306,7 +5469,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.1999996
-  
+
 - CELL:
   - NAME: Mount Kand
   - DATA:
@@ -5327,7 +5490,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.7000003
-  
+
 - CELL:
   - NAME: Tel Vos
   - DATA:
@@ -5348,7 +5511,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.983186
-  
+
 - CELL:
   - NAME: Zainab Camp
   - DATA:
@@ -5369,7 +5532,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.2999999
-  
+
 - CELL:
   - NAME: Falensarano
   - DATA:
@@ -5399,7 +5562,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Telasero
   - DATA:
@@ -5429,7 +5592,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.2831855
-  
+
 - CELL:
   - NAME: Nchuleft Ruin
   - DATA:
@@ -5450,7 +5613,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.0831857
-  
+
 - CELL:
   - NAME: Mzahnch Ruin
   - DATA:
@@ -5471,7 +5634,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.0831857
-  
+
 - CELL:
   - NAME: Bal Fell
   - DATA:
@@ -5492,7 +5655,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.5831857
-  
+
 - CELL:
   - NAME: Dagon Fel
   - DATA:
@@ -5513,7 +5676,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.3000002
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5533,7 +5696,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.0
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5544,7 +5707,7 @@
         y: -9
   - RGNN: Ascadian Isles Region
   - NAM5: 7216750
-  
+
 - CELL:
   - NAME: Mzuleft Ruin
   - DATA:
@@ -5565,7 +5728,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.4831865
-  
+
 - CELL:
   - NAME: Rotheran
   - DATA:
@@ -5586,7 +5749,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.0831857
-  
+
 - CELL:
   - NAME: Suran
   - DATA:
@@ -5607,7 +5770,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.6000011
-  
+
 - CELL:
   - NAME: Suran
   - DATA:
@@ -5629,7 +5792,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.7831872
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5649,7 +5812,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.383185
-  
+
 - CELL:
   - NAME: Vivec
   - DATA:
@@ -5679,7 +5842,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.5
-  
+
 - CELL:
   - NAME: Tureynulal
   - DATA:
@@ -5700,7 +5863,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.383186
-  
+
 - CELL:
   - NAME: Marandus
   - DATA:
@@ -5730,7 +5893,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.9999998
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5750,7 +5913,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.4000006
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5770,7 +5933,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 6.183185
-  
+
 - CELL:
   - NAME: Vivec, Arena
   - DATA:
@@ -5791,7 +5954,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.7831848
-  
+
 - CELL:
   - NAME: Odrosal
   - DATA:
@@ -5812,7 +5975,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.2
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5832,7 +5995,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.0000007
-  
+
 - CELL:
   - NAME: Vivec
   - DATA:
@@ -5853,7 +6016,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.183187
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5863,7 +6026,7 @@
         x: 2
         y: 9
   - RGNN: Red Mountain Region
-  
+
 - CELL:
   - NAME: Dagoth Ur
   - DATA:
@@ -5884,7 +6047,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Ghostgate
   - DATA:
@@ -5905,7 +6068,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.1999998
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -5925,7 +6088,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.083186
-  
+
 - CELL:
   - NAME: Arvel Plantation
   - DATA:
@@ -5946,7 +6109,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.2000002
-  
+
 - CELL:
   - NAME: Dren Plantation
   - DATA:
@@ -5976,7 +6139,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.416815
-  
+
 - CELL:
   - NAME: Sanctus Shrine
   - DATA:
@@ -5997,7 +6160,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.4831853
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -6007,7 +6170,7 @@
         x: 1
         y: 17
   - RGNN: Ashlands Region
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -6027,7 +6190,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.0000001
-  
+
 - CELL:
   - NAME: Ebonheart
   - DATA:
@@ -6048,7 +6211,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.4000002
-  
+
 - CELL:
   - NAME: Kogoruhn
   - DATA:
@@ -6069,7 +6232,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.8000001
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -6079,7 +6242,7 @@
         x: 0
         y: 0
   - RGNN: Ashlands Region
-  
+
 - CELL:
   - NAME: Pelagiad
   - DATA:
@@ -6109,7 +6272,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.5999997
-  
+
 - CELL:
   - NAME: Pelagiad
   - DATA:
@@ -6130,7 +6293,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -6140,7 +6303,7 @@
         x: 0
         y: -9
   - RGNN: Ascadian Isles Region
-  
+
 - CELL:
   - NAME: Valenvaryon
   - DATA:
@@ -6161,7 +6324,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.283186
-  
+
 - CELL:
   - NAME: Moonmoth Legion Fort
   - DATA:
@@ -6182,7 +6345,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.7831864
-  
+
 - CELL:
   - NAME: Falasmaryon
   - DATA:
@@ -6203,7 +6366,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.7831855
-  
+
 - CELL:
   - NAME: Ald-ruhn
   - DATA:
@@ -6224,7 +6387,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.5
-  
+
 - CELL:
   - NAME: Buckmoth Legion Fort
   - DATA:
@@ -6245,7 +6408,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.2999997
-  
+
 - CELL:
   - NAME: Caldera
   - DATA:
@@ -6284,7 +6447,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.3000002
-  
+
 - CELL:
   - NAME: Balmora
   - DATA:
@@ -6305,7 +6468,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.099999905
-  
+
 - CELL:
   - NAME: Seyda Neen
   - DATA:
@@ -6353,7 +6516,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Maar Gan
   - DATA:
@@ -6374,7 +6537,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.3000007
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -6384,7 +6547,7 @@
         x: -3
         y: 5
   - RGNN: Ashlands Region
-  
+
 - CELL:
   - NAME: Balmora
   - DATA:
@@ -6404,7 +6567,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 6.2831855
-  
+
 - CELL:
   - NAME: Balmora
   - DATA:
@@ -6425,7 +6588,7 @@
       x_rot: 5.8119464
       y_rot: 5.4628806
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Ald Redaynia
   - DATA:
@@ -6446,7 +6609,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Urshilaku Camp
   - DATA:
@@ -6467,7 +6630,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.3000005
-  
+
 - CELL:
   - NAME: Balmora
   - DATA:
@@ -6488,7 +6651,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.2
-  
+
 - CELL:
   - NAME: Odai Plateau
   - DATA:
@@ -6509,7 +6672,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.5
-  
+
 - CELL:
   - NAME: Hlormaren
   - DATA:
@@ -6530,7 +6693,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.1999998
-  
+
 - CELL:
   - NAME: Hla Oad
   - DATA:
@@ -6551,7 +6714,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 3.3831854
-  
+
 - CELL:
   - NAME: Gnaar Mok
   - DATA:
@@ -6582,7 +6745,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.9
-  
+
 - CELL:
   - NAME: ''
   - DATA:
@@ -6592,7 +6755,7 @@
         x: -8
         y: -4
   - RGNN: Bitter Coast Region
-  
+
 - CELL:
   - NAME: Khuul
   - DATA:
@@ -6613,7 +6776,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.383186
-  
+
 - CELL:
   - NAME: Andasreth
   - DATA:
@@ -6634,7 +6797,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 2.7999997
-  
+
 - CELL:
   - NAME: Berandas
   - DATA:
@@ -6664,7 +6827,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Ald Velothi
   - DATA:
@@ -6685,7 +6848,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.4000006
-  
+
 - CELL:
   - NAME: Gnisis
   - DATA:
@@ -6706,7 +6869,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.3831854
-  
+
 - CELL:
   - NAME: 'Balmora, Ra''Virr: Trader'
   - DATA:
@@ -6750,7 +6913,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.0
-  
+
 - CELL:
   - NAME: Seyda Neen, Arrille's Tradehouse
   - DATA:
@@ -6850,7 +7013,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.883187
-  
+
 - CELL:
   - NAME: Thirsk
   - DATA:
@@ -6871,7 +7034,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 4.9831867
-  
+
 - CELL:
   - NAME: Skaal Village
   - DATA:
@@ -6881,7 +7044,7 @@
         x: -20
         y: 26
   - RGNN: Felsaad Coast Region
-  
+
 - CELL:
   - NAME: Skaal Village
   - DATA:
@@ -6902,7 +7065,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 5.0831857
-  
+
 - CELL:
   - NAME: Solstheim, Lake Fjalding
   - DATA:
@@ -6912,7 +7075,7 @@
         x: -20
         y: 23
   - RGNN: Felsaad Coast Region
-  
+
 - CELL:
   - NAME: Fort Frostmoth
   - DATA:
@@ -6942,7 +7105,7 @@
       x_rot: 6.265732
       y_rot: 0.08726646
       z_rot: 1.1519173
-  
+
 - CELL:
   - NAME: Raven Rock
   - DATA:
@@ -6963,7 +7126,7 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 1.9000002
-  
+
 - CELL:
   - NAME: Raven Rock
   - DATA:
@@ -6984,11 +7147,11 @@
       x_rot: 0.0
       y_rot: 0.0
       z_rot: 0.90000004
-  
+
 - DIAL:
   - NAME: Greeting 0
   - DATA: Greeting
-  
+
 - INFO:
   - INAM: '20172142971264027114'
   - PNAM: '2768210666929210763'
@@ -7010,4 +7173,3 @@
     - StartScript "PCJail"
     - GotoJail
     - Goodbye
-  
