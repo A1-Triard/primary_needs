@@ -88,7 +88,7 @@ def write_records_count(esp_path):
 
 def check_espa_version():
   espa = subprocess.run(['espa', '-V'], stdout=PIPE, check=True, universal_newlines=True)
-  if not espa.stdout.startswith('0.9.'):
+  if not espa.stdout.startswith('0.10.'):
     print('wrong espa version {}'.format(espa.stdout))
     sys.exit(1)
 

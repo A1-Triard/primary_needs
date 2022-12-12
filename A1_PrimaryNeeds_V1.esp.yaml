@@ -5191,12 +5191,14 @@
   - FRMR: 1
   - NAME: a_waterwell
   - DATA:
-      x: 158493.23
-      y: -30982.008
-      z: 1992.6199
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.0000002
+      pos:
+        x: 158493.23
+        y: -30982.008
+        z: 1992.6199
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.0000002
 
 - CELL:
   - NAME: Sadrith Mora
@@ -5212,12 +5214,14 @@
   - FRMR: 2
   - NAME: a_waterwell
   - DATA:
-      x: 149018.78
-      y: 38972.277
-      z: 811.124
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.183187
+      pos:
+        x: 149018.78
+        y: 38972.277
+        z: 811.124
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.183187
 
 - CELL:
   - NAME: Wolverine Hall
@@ -5233,21 +5237,25 @@
   - FRMR: 17250542
   - NAME: ex_nord_well_01
   - DATA:
-      x: 148608.0
-      y: 29728.0
-      z: 768.0
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: 148608.0
+        y: 29728.0
+        z: 768.0
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
   - FRMR: 3
   - NAME: a_waterwell
   - DATA:
-      x: 149335.66
-      y: 30107.803
-      z: 677.999
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.982694
+      pos:
+        x: 149335.66
+        y: 30107.803
+        z: 677.999
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.982694
 
 - CELL:
   - NAME: Sadrith Mora
@@ -5263,12 +5271,14 @@
   - FRMR: 4
   - NAME: a_waterwell
   - DATA:
-      x: 147008.78
-      y: 34967.496
-      z: 568.98206
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.883188
+      pos:
+        x: 147008.78
+        y: 34967.496
+        z: 568.98206
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.883188
 
 - CELL:
   - NAME: Nchurdamz
@@ -5284,12 +5294,14 @@
   - FRMR: 5
   - NAME: a_waterwell
   - DATA:
-      x: 142621.9
-      y: -44154.074
-      z: 2546.7092
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.4
+      pos:
+        x: 142621.9
+        y: -44154.074
+        z: 2546.7092
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.4
 
 - CELL:
   - NAME: Tel Aruhn
@@ -5316,12 +5328,14 @@
   - FRMR: 6
   - NAME: a_waterwell
   - DATA:
-      x: 125269.25
-      y: -105450.484
-      z: 673.746
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.083186
+      pos:
+        x: 125269.25
+        y: -105450.484
+        z: 673.746
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.083186
 
 - CELL:
   - NAME: Tel Mora
@@ -5337,12 +5351,14 @@
   - FRMR: 7
   - NAME: a_waterwell
   - DATA:
-      x: 109118.11
-      y: 116365.766
-      z: 237.33363
-      x_rot: 0.17802358
-      y_rot: 0.02094395
-      z_rot: 3.7869718
+      pos:
+        x: 109118.11
+        y: 116365.766
+        z: 237.33363
+      rot:
+        x: 0.17802358
+        y: 0.02094395
+        z: 3.7869718
 
 - CELL:
   - NAME: Erabenimsun Camp
@@ -5358,12 +5374,14 @@
   - FRMR: 8
   - NAME: a_waterwell
   - DATA:
-      x: 108752.38
-      y: -4285.6924
-      z: 580.9642
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.283187
+      pos:
+        x: 108752.38
+        y: -4285.6924
+        z: 580.9642
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.283187
 
 - CELL:
   - NAME: ''
@@ -5389,12 +5407,14 @@
   - FRMR: 9
   - NAME: a_waterwell
   - DATA:
-      x: 98499.74
-      y: 112712.79
-      z: 140.50241
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.40000033
+      pos:
+        x: 98499.74
+        y: 112712.79
+        z: 140.50241
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.40000033
 
 - CELL:
   - NAME: Yansirramus
@@ -5421,12 +5441,14 @@
   - FRMR: 10
   - NAME: a_waterwell
   - DATA:
-      x: 104957.086
-      y: -61197.21
-      z: 609.5212
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.1000004
+      pos:
+        x: 104957.086
+        y: -61197.21
+        z: 609.5212
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.1000004
 
 - CELL:
   - NAME: Ahemmusa Camp
@@ -5442,12 +5464,14 @@
   - FRMR: 11
   - NAME: a_waterwell
   - DATA:
-      x: 94586.62
-      y: 133913.22
-      z: 822.5706
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.89999974
+      pos:
+        x: 94586.62
+        y: 133913.22
+        z: 822.5706
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.89999974
 
 - CELL:
   - NAME: Vos
@@ -5463,12 +5487,14 @@
   - FRMR: 12
   - NAME: a_waterwell
   - DATA:
-      x: 94546.945
-      y: 116604.984
-      z: 1749.3967
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.1999996
+      pos:
+        x: 94546.945
+        y: 116604.984
+        z: 1749.3967
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.1999996
 
 - CELL:
   - NAME: Mount Kand
@@ -5484,12 +5510,14 @@
   - FRMR: 13
   - NAME: a_waterwell
   - DATA:
-      x: 93812.57
-      y: -34030.39
-      z: 5851.6255
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.7000003
+      pos:
+        x: 93812.57
+        y: -34030.39
+        z: 5851.6255
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.7000003
 
 - CELL:
   - NAME: Tel Vos
@@ -5505,12 +5533,14 @@
   - FRMR: 14
   - NAME: a_waterwell
   - DATA:
-      x: 87219.46
-      y: 117456.19
-      z: 3371.407
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.983186
+      pos:
+        x: 87219.46
+        y: 117456.19
+        z: 3371.407
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.983186
 
 - CELL:
   - NAME: Zainab Camp
@@ -5526,12 +5556,14 @@
   - FRMR: 15
   - NAME: a_waterwell
   - DATA:
-      x: 77536.63
-      y: 84573.15
-      z: 803.11066
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.2999999
+      pos:
+        x: 77536.63
+        y: 84573.15
+        z: 803.11066
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.2999999
 
 - CELL:
   - NAME: Falensarano
@@ -5547,21 +5579,25 @@
   - FRMR: 16
   - NAME: a_waterwell
   - DATA:
-      x: 77142.25
-      y: 52983.887
-      z: 1631.9988
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.8
+      pos:
+        x: 77142.25
+        y: 52983.887
+        z: 1631.9988
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.8
   - FRMR: 17
   - NAME: nearlyfull_waterskin
   - DATA:
-      x: 77212.73
-      y: 53068.414
-      z: 1615.8508
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: 77212.73
+        y: 53068.414
+        z: 1615.8508
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: Telasero
@@ -5577,21 +5613,25 @@
   - FRMR: 18
   - NAME: a_waterwell
   - DATA:
-      x: 75958.32
-      y: -53185.176
-      z: 1386.6016
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.5
+      pos:
+        x: 75958.32
+        y: -53185.176
+        z: 1386.6016
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.5
   - FRMR: 19
   - NAME: nearlyfull_waterskin
   - DATA:
-      x: 75954.01
-      y: -53183.59
-      z: 1418.359
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.2831855
+      pos:
+        x: 75954.01
+        y: -53183.59
+        z: 1418.359
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.2831855
 
 - CELL:
   - NAME: Nchuleft Ruin
@@ -5607,12 +5647,14 @@
   - FRMR: 20
   - NAME: a_waterwell
   - DATA:
-      x: 67089.69
-      y: 103287.734
-      z: 1887.3185
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.0831857
+      pos:
+        x: 67089.69
+        y: 103287.734
+        z: 1887.3185
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.0831857
 
 - CELL:
   - NAME: Mzahnch Ruin
@@ -5628,12 +5670,14 @@
   - FRMR: 21
   - NAME: a_waterwell
   - DATA:
-      x: 70840.805
-      y: -73942.516
-      z: 233.01102
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.0831857
+      pos:
+        x: 70840.805
+        y: -73942.516
+        z: 233.01102
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.0831857
 
 - CELL:
   - NAME: Bal Fell
@@ -5649,12 +5693,14 @@
   - FRMR: 22
   - NAME: a_waterwell
   - DATA:
-      x: 73716.97
-      y: -96445.16
-      z: 735.9987
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.5831857
+      pos:
+        x: 73716.97
+        y: -96445.16
+        z: 735.9987
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.5831857
 
 - CELL:
   - NAME: Dagon Fel
@@ -5670,12 +5716,14 @@
   - FRMR: 23
   - NAME: a_waterwell
   - DATA:
-      x: 60712.176
-      y: 182451.17
-      z: 476.38092
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.3000002
+      pos:
+        x: 60712.176
+        y: 182451.17
+        z: 476.38092
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.3000002
 
 - CELL:
   - NAME: ''
@@ -5690,12 +5738,14 @@
   - FRMR: 24
   - NAME: a_waterwell
   - DATA:
-      x: 58966.402
-      y: -62457.254
-      z: 183.38629
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.0
+      pos:
+        x: 58966.402
+        y: -62457.254
+        z: 183.38629
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.0
 
 - CELL:
   - NAME: ''
@@ -5722,12 +5772,14 @@
   - FRMR: 25
   - NAME: a_waterwell
   - DATA:
-      x: 55918.527
-      y: 176288.28
-      z: 832.32416
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.4831865
+      pos:
+        x: 55918.527
+        y: 176288.28
+        z: 832.32416
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.4831865
 
 - CELL:
   - NAME: Rotheran
@@ -5743,12 +5795,14 @@
   - FRMR: 26
   - NAME: a_waterwell
   - DATA:
-      x: 54260.3
-      y: 154409.03
-      z: 1812.4021
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.0831857
+      pos:
+        x: 54260.3
+        y: 154409.03
+        z: 1812.4021
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.0831857
 
 - CELL:
   - NAME: Suran
@@ -5764,12 +5818,14 @@
   - FRMR: 27
   - NAME: a_waterwell
   - DATA:
-      x: 53154.426
-      y: -48298.246
-      z: 558.47186
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.6000011
+      pos:
+        x: 53154.426
+        y: -48298.246
+        z: 558.47186
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.6000011
 
 - CELL:
   - NAME: Suran
@@ -5786,12 +5842,14 @@
   - NAME: a_waterwell
   - XSCL: 1.1
   - DATA:
-      x: 56557.48
-      y: -55188.633
-      z: 1234.1106
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.7831872
+      pos:
+        x: 56557.48
+        y: -55188.633
+        z: 1234.1106
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.7831872
 
 - CELL:
   - NAME: ''
@@ -5806,12 +5864,14 @@
   - FRMR: 29
   - NAME: a_waterwell
   - DATA:
-      x: 45330.586
-      y: -49267.05
-      z: 942.71735
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.383185
+      pos:
+        x: 45330.586
+        y: -49267.05
+        z: 942.71735
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.383185
 
 - CELL:
   - NAME: Vivec
@@ -5827,21 +5887,25 @@
   - FRMR: 30
   - NAME: a_waterwell
   - DATA:
-      x: 47218.83
-      y: -75424.03
-      z: 1190.947
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.083186
+      pos:
+        x: 47218.83
+        y: -75424.03
+        z: 1190.947
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.083186
   - FRMR: 31
   - NAME: full_waterskin
   - DATA:
-      x: 47215.535
-      y: -75428.16
-      z: 1222.7045
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.5
+      pos:
+        x: 47215.535
+        y: -75428.16
+        z: 1222.7045
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.5
 
 - CELL:
   - NAME: Tureynulal
@@ -5857,12 +5921,14 @@
   - FRMR: 32
   - NAME: a_waterwell
   - DATA:
-      x: 34475.63
-      y: 75557.664
-      z: 14365.118
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.383186
+      pos:
+        x: 34475.63
+        y: 75557.664
+        z: 14365.118
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.383186
 
 - CELL:
   - NAME: Marandus
@@ -5878,21 +5944,25 @@
   - FRMR: 33
   - NAME: a_waterwell
   - DATA:
-      x: 36434.82
-      y: -22998.303
-      z: 1405.9987
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: 36434.82
+        y: -22998.303
+        z: 1405.9987
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
   - FRMR: 34
   - NAME: a_waterwell
   - DATA:
-      x: 40159.17
-      y: -24468.629
-      z: 791.465
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.9999998
+      pos:
+        x: 40159.17
+        y: -24468.629
+        z: 791.465
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.9999998
 
 - CELL:
   - NAME: ''
@@ -5907,12 +5977,14 @@
   - FRMR: 35
   - NAME: a_waterwell
   - DATA:
-      x: 35414.46
-      y: -37415.996
-      z: 714.478
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.4000006
+      pos:
+        x: 35414.46
+        y: -37415.996
+        z: 714.478
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.4000006
 
 - CELL:
   - NAME: ''
@@ -5927,12 +5999,14 @@
   - FRMR: 36
   - NAME: a_waterwell
   - DATA:
-      x: 37377.438
-      y: -62088.906
-      z: 739.69696
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 6.183185
+      pos:
+        x: 37377.438
+        y: -62088.906
+        z: 739.69696
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 6.183185
 
 - CELL:
   - NAME: Vivec, Arena
@@ -5948,12 +6022,14 @@
   - FRMR: 37
   - NAME: a_waterwell
   - DATA:
-      x: 34015.73
-      y: -86465.33
-      z: 1823.9985
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.7831848
+      pos:
+        x: 34015.73
+        y: -86465.33
+        z: 1823.9985
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.7831848
 
 - CELL:
   - NAME: Odrosal
@@ -5969,12 +6045,14 @@
   - FRMR: 38
   - NAME: a_waterwell
   - DATA:
-      x: 26287.096
-      y: 59797.793
-      z: 10962.733
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.2
+      pos:
+        x: 26287.096
+        y: 59797.793
+        z: 10962.733
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.2
 
 - CELL:
   - NAME: ''
@@ -5989,12 +6067,14 @@
   - FRMR: 39
   - NAME: a_waterwell
   - DATA:
-      x: 29934.133
-      y: -45908.69
-      z: 724.2296
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.0000007
+      pos:
+        x: 29934.133
+        y: -45908.69
+        z: 724.2296
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.0000007
 
 - CELL:
   - NAME: Vivec
@@ -6010,12 +6090,14 @@
   - FRMR: 40
   - NAME: a_waterwell
   - DATA:
-      x: 31254.988
-      y: -71927.6
-      z: 965.7968
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.183187
+      pos:
+        x: 31254.988
+        y: -71927.6
+        z: 965.7968
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.183187
 
 - CELL:
   - NAME: ''
@@ -6041,12 +6123,14 @@
   - FRMR: 41
   - NAME: a_waterwell
   - DATA:
-      x: 19082.732
-      y: 69909.06
-      z: 11863.521
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: 19082.732
+        y: 69909.06
+        z: 11863.521
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: Ghostgate
@@ -6062,12 +6146,14 @@
   - FRMR: 42
   - NAME: a_waterwell
   - DATA:
-      x: 21625.041
-      y: 38015.906
-      z: 1120.5825
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.1999998
+      pos:
+        x: 21625.041
+        y: 38015.906
+        z: 1120.5825
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.1999998
 
 - CELL:
   - NAME: ''
@@ -6082,12 +6168,14 @@
   - FRMR: 43
   - NAME: a_waterwell
   - DATA:
-      x: 17104.3
-      y: -33745.43
-      z: 542.9832
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.083186
+      pos:
+        x: 17104.3
+        y: -33745.43
+        z: 542.9832
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.083186
 
 - CELL:
   - NAME: Arvel Plantation
@@ -6103,12 +6191,14 @@
   - FRMR: 44
   - NAME: a_waterwell
   - DATA:
-      x: 20950.13
-      y: -45349.813
-      z: 813.00934
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.2000002
+      pos:
+        x: 20950.13
+        y: -45349.813
+        z: 813.00934
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.2000002
 
 - CELL:
   - NAME: Dren Plantation
@@ -6123,22 +6213,26 @@
   - FRMR: 16956262
   - NAME: Aebondeius Jucanis
   - DATA:
-      x: 22836.24
-      y: -53086.543
-      z: 823.62555
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.2
+      pos:
+        x: 22836.24
+        y: -53086.543
+        z: 823.62555
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.2
   - NAM0: 1
   - FRMR: 45
   - NAME: a_waterwell
   - DATA:
-      x: 22807.734
-      y: -52833.254
-      z: 818.26556
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.416815
+      pos:
+        x: 22807.734
+        y: -52833.254
+        z: 818.26556
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.416815
 
 - CELL:
   - NAME: Sanctus Shrine
@@ -6154,12 +6248,14 @@
   - FRMR: 46
   - NAME: a_waterwell
   - DATA:
-      x: 12030.912
-      y: 173362.38
-      z: 1912.4076
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.4831853
+      pos:
+        x: 12030.912
+        y: 173362.38
+        z: 1912.4076
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.4831853
 
 - CELL:
   - NAME: ''
@@ -6184,12 +6280,14 @@
   - FRMR: 47
   - NAME: a_waterwell
   - DATA:
-      x: 10376.0625
-      y: -65207.504
-      z: 416.38522
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.0000001
+      pos:
+        x: 10376.0625
+        y: -65207.504
+        z: 416.38522
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.0000001
 
 - CELL:
   - NAME: Ebonheart
@@ -6205,12 +6303,14 @@
   - FRMR: 48
   - NAME: a_waterwell
   - DATA:
-      x: 15144.534
-      y: -101106.42
-      z: 676.97003
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.4000002
+      pos:
+        x: 15144.534
+        y: -101106.42
+        z: 676.97003
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.4000002
 
 - CELL:
   - NAME: Kogoruhn
@@ -6226,12 +6326,14 @@
   - FRMR: 49
   - NAME: a_waterwell
   - DATA:
-      x: 6425.1943
-      y: 120787.67
-      z: 1466.6077
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.8000001
+      pos:
+        x: 6425.1943
+        y: 120787.67
+        z: 1466.6077
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.8000001
 
 - CELL:
   - NAME: ''
@@ -6257,21 +6359,25 @@
   - FRMR: 50
   - NAME: a_waterwell
   - DATA:
-      x: 4263.577
-      y: -55686.117
-      z: 1684.6256
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.5000005
+      pos:
+        x: 4263.577
+        y: -55686.117
+        z: 1684.6256
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.5000005
   - FRMR: 51
   - NAME: a_waterwell
   - DATA:
-      x: 672.79144
-      y: -52727.77
-      z: 530.0586
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.5999997
+      pos:
+        x: 672.79144
+        y: -52727.77
+        z: 530.0586
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.5999997
 
 - CELL:
   - NAME: Pelagiad
@@ -6287,12 +6393,14 @@
   - FRMR: 52
   - NAME: _Balors_items_chest
   - DATA:
-      x: 4316.058
-      y: -58462.348
-      z: 1390.3845
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: 4316.058
+        y: -58462.348
+        z: 1390.3845
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: ''
@@ -6318,12 +6426,14 @@
   - FRMR: 53
   - NAME: a_waterwell
   - DATA:
-      x: -2818.8022
-      y: 151819.47
-      z: 2359.9988
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.283186
+      pos:
+        x: -2818.8022
+        y: 151819.47
+        z: 2359.9988
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.283186
 
 - CELL:
   - NAME: Moonmoth Legion Fort
@@ -6339,12 +6449,14 @@
   - FRMR: 54
   - NAME: a_waterwell
   - DATA:
-      x: -5586.2734
-      y: -19313.27
-      z: 1104.3617
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.7831864
+      pos:
+        x: -5586.2734
+        y: -19313.27
+        z: 1104.3617
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.7831864
 
 - CELL:
   - NAME: Falasmaryon
@@ -6360,12 +6472,14 @@
   - FRMR: 55
   - NAME: a_waterwell
   - DATA:
-      x: -11248.937
-      y: 124807.79
-      z: 1399.3208
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.7831855
+      pos:
+        x: -11248.937
+        y: 124807.79
+        z: 1399.3208
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.7831855
 
 - CELL:
   - NAME: Ald-ruhn
@@ -6381,12 +6495,14 @@
   - FRMR: 56
   - NAME: a_waterwell
   - DATA:
-      x: -13127.583
-      y: 53692.824
-      z: 2358.1838
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.5
+      pos:
+        x: -13127.583
+        y: 53692.824
+        z: 2358.1838
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.5
 
 - CELL:
   - NAME: Buckmoth Legion Fort
@@ -6402,12 +6518,14 @@
   - FRMR: 57
   - NAME: a_waterwell
   - DATA:
-      x: -12984.377
-      y: 44478.465
-      z: 2598.8325
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.2999997
+      pos:
+        x: -12984.377
+        y: 44478.465
+        z: 2598.8325
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.2999997
 
 - CELL:
   - NAME: Caldera
@@ -6423,30 +6541,36 @@
   - FRMR: 16917896
   - NAME: ex_drystonewall_d_01
   - DATA:
-      x: -11796.704
-      y: 21148.654
-      z: 1789.2678
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.6457963
+      pos:
+        x: -11796.704
+        y: 21148.654
+        z: 1789.2678
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.6457963
   - FRMR: 58
   - NAME: a_waterwell
   - DATA:
-      x: -11591.292
-      y: 21347.564
-      z: 1703.4336
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.1
+      pos:
+        x: -11591.292
+        y: 21347.564
+        z: 1703.4336
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.1
   - FRMR: 59
   - NAME: a_waterwell
   - DATA:
-      x: -9865.869
-      y: 17583.719
-      z: 1256.9484
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.3000002
+      pos:
+        x: -9865.869
+        y: 17583.719
+        z: 1256.9484
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.3000002
 
 - CELL:
   - NAME: Balmora
@@ -6462,12 +6586,14 @@
   - FRMR: 60
   - NAME: a_waterwell
   - DATA:
-      x: -16025.798
-      y: -13480.369
-      z: 411.8536
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.099999905
+      pos:
+        x: -16025.798
+        y: -13480.369
+        z: 411.8536
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.099999905
 
 - CELL:
   - NAME: Seyda Neen
@@ -6483,39 +6609,47 @@
   - FRMR: 61
   - NAME: a_waterwell
   - DATA:
-      x: -11563.672
-      y: -71597.96
-      z: 182.76997
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.100001
+      pos:
+        x: -11563.672
+        y: -71597.96
+        z: 182.76997
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.100001
   - FRMR: 62
   - NAME: empty_waterskin
   - DATA:
-      x: -11628.157
-      y: -71583.305
-      z: 152.261
-      x_rot: 0.0
-      y_rot: 0.19198622
-      z_rot: 5.583186
+      pos:
+        x: -11628.157
+        y: -71583.305
+        z: 152.261
+      rot:
+        x: 0.0
+        y: 0.19198622
+        z: 5.583186
   - FRMR: 63
   - NAME: bk_MessKitInstructions
   - DATA:
-      x: -11553.928
-      y: -71603.234
-      z: 201.68462
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.683185
+      pos:
+        x: -11553.928
+        y: -71603.234
+        z: 201.68462
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.683185
   - FRMR: 64
   - NAME: A1V1_MessKitItem
   - DATA:
-      x: -11574.35
-      y: -71577.92
-      z: 205.0
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: -11574.35
+        y: -71577.92
+        z: 205.0
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: Maar Gan
@@ -6531,12 +6665,14 @@
   - FRMR: 65
   - NAME: a_waterwell
   - DATA:
-      x: -21940.23
-      y: 101841.586
-      z: 2054.8616
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.3000007
+      pos:
+        x: -21940.23
+        y: 101841.586
+        z: 2054.8616
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.3000007
 
 - CELL:
   - NAME: ''
@@ -6561,12 +6697,14 @@
   - FRMR: 66
   - NAME: a_waterwell
   - DATA:
-      x: -24550.63
-      y: -15629.993
-      z: 533.9834
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 6.2831855
+      pos:
+        x: -24550.63
+        y: -15629.993
+        z: 533.9834
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 6.2831855
 
 - CELL:
   - NAME: Balmora
@@ -6582,12 +6720,14 @@
   - FRMR: 67
   - NAME: deepnight_foodCrate
   - DATA:
-      x: -19904.19
-      y: -19497.246
-      z: -33.012
-      x_rot: 5.8119464
-      y_rot: 5.4628806
-      z_rot: 0.0
+      pos:
+        x: -19904.19
+        y: -19497.246
+        z: -33.012
+      rot:
+        x: 5.8119464
+        y: 5.4628806
+        z: 0.0
 
 - CELL:
   - NAME: Ald Redaynia
@@ -6603,12 +6743,14 @@
   - FRMR: 68
   - NAME: a_waterwell
   - DATA:
-      x: -30634.09
-      y: 178713.31
-      z: 2376.3323
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: -30634.09
+        y: 178713.31
+        z: 2376.3323
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: Urshilaku Camp
@@ -6624,12 +6766,14 @@
   - FRMR: 69
   - NAME: a_waterwell
   - DATA:
-      x: -29286.578
-      y: 150561.89
-      z: 744.4557
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.3000005
+      pos:
+        x: -29286.578
+        y: 150561.89
+        z: 744.4557
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.3000005
 
 - CELL:
   - NAME: Balmora
@@ -6645,12 +6789,14 @@
   - FRMR: 70
   - NAME: a_waterwell
   - DATA:
-      x: -25385.947
-      y: -12056.2705
-      z: 988.9729
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.2
+      pos:
+        x: -25385.947
+        y: -12056.2705
+        z: 988.9729
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.2
 
 - CELL:
   - NAME: Odai Plateau
@@ -6666,12 +6812,14 @@
   - FRMR: 71
   - NAME: a_waterwell
   - DATA:
-      x: -35025.5
-      y: -37165.043
-      z: 1908.999
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.5
+      pos:
+        x: -35025.5
+        y: -37165.043
+        z: 1908.999
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.5
 
 - CELL:
   - NAME: Hlormaren
@@ -6687,12 +6835,14 @@
   - FRMR: 72
   - NAME: a_waterwell
   - DATA:
-      x: -44096.793
-      y: -3919.0452
-      z: 2335.9988
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.1999998
+      pos:
+        x: -44096.793
+        y: -3919.0452
+        z: 2335.9988
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.1999998
 
 - CELL:
   - NAME: Hla Oad
@@ -6708,12 +6858,14 @@
   - FRMR: 73
   - NAME: a_waterwell
   - DATA:
-      x: -46006.15
-      y: -39239.97
-      z: 227.00095
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.3831854
+      pos:
+        x: -46006.15
+        y: -39239.97
+        z: 227.00095
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.3831854
 
 - CELL:
   - NAME: Gnaar Mok
@@ -6730,21 +6882,25 @@
   - NAME: flora_bc_tree_07
   - XSCL: 2.0
   - DATA:
-      x: -60798.84
-      y: 26741.705
-      z: 676.9991
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.1831853
+      pos:
+        x: -60798.84
+        y: 26741.705
+        z: 676.9991
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.1831853
   - FRMR: 74
   - NAME: a_waterwell
   - DATA:
-      x: -61649.063
-      y: 28069.766
-      z: 527.52814
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.9
+      pos:
+        x: -61649.063
+        y: 28069.766
+        z: 527.52814
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.9
 
 - CELL:
   - NAME: ''
@@ -6770,12 +6926,14 @@
   - FRMR: 75
   - NAME: a_waterwell
   - DATA:
-      x: -67622.5
-      y: 138914.14
-      z: 217.30646
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.383186
+      pos:
+        x: -67622.5
+        y: 138914.14
+        z: 217.30646
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.383186
 
 - CELL:
   - NAME: Andasreth
@@ -6791,12 +6949,14 @@
   - FRMR: 76
   - NAME: a_waterwell
   - DATA:
-      x: -67601.97
-      y: 47101.13
-      z: 1759.9985
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.7999997
+      pos:
+        x: -67601.97
+        y: 47101.13
+        z: 1759.9985
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.7999997
 
 - CELL:
   - NAME: Berandas
@@ -6812,21 +6972,25 @@
   - FRMR: 77
   - NAME: a_waterwell
   - DATA:
-      x: -76604.64
-      y: 76234.75
-      z: 2290.2644
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.8
+      pos:
+        x: -76604.64
+        y: 76234.75
+        z: 2290.2644
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.8
   - FRMR: 78
   - NAME: nearlyfull_waterskin
   - DATA:
-      x: -76641.14
-      y: 76294.42
-      z: 2274.116
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: -76641.14
+        y: 76294.42
+        z: 2274.116
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: Ald Velothi
@@ -6842,12 +7006,14 @@
   - FRMR: 79
   - NAME: a_waterwell
   - DATA:
-      x: -85732.24
-      y: 126825.69
-      z: 420.6632
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.4000006
+      pos:
+        x: -85732.24
+        y: 126825.69
+        z: 420.6632
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.4000006
 
 - CELL:
   - NAME: Gnisis
@@ -6863,12 +7029,14 @@
   - FRMR: 80
   - NAME: a_waterwell
   - DATA:
-      x: -85428.28
-      y: 91545.98
-      z: 1042.9244
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.3831854
+      pos:
+        x: -85428.28
+        y: 91545.98
+        z: 1042.9244
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.3831854
 
 - CELL:
   - NAME: 'Balmora, Ra''Virr: Trader'
@@ -6895,24 +7063,28 @@
   - KNAM: _dej_pocket_watch
   - TNAM: viperbite
   - DATA:
-      x: -314.9829
-      y: -389.32816
-      z: 16.30626
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 3.183187
+      pos:
+        x: -314.9829
+        y: -389.32816
+        z: 16.30626
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 3.183187
   - FRMR: 82
   - NAME: _dej_pocket_watch
   - ANAM: ra'virr
   - INTV: 0.0
   - NAM9: 1
   - DATA:
-      x: -215.38
-      y: -364.763
-      z: 69.001
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.0
+      pos:
+        x: -215.38
+        y: -364.763
+        z: 69.001
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.0
 
 - CELL:
   - NAME: Seyda Neen, Arrille's Tradehouse
@@ -6935,24 +7107,28 @@
   - INTV: 1e-45
   - NAM9: 1
   - DATA:
-      x: -188.6768
-      y: -269.39722
-      z: 439.40076
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.20000002
+      pos:
+        x: -188.6768
+        y: -269.39722
+        z: 439.40076
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.20000002
   - FRMR: 17108731
   - NAME: active_com_bed_02
   - ANAM: arrille
   - INTV: 0.0
   - NAM9: 1
   - DATA:
-      x: 49.49031
-      y: -488.92963
-      z: 415.3
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.5707964
+      pos:
+        x: 49.49031
+        y: -488.92963
+        z: 415.3
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.5707964
   - FRMR: 17108735
   - NAME: chest_small_01_gold_10
   - ANAM: arrille
@@ -6960,33 +7136,39 @@
   - NAM9: 1
   - FLTV: 7e-44
   - DATA:
-      x: -260.778
-      y: -190.109
-      z: 199.323
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.099483766
+      pos:
+        x: -260.778
+        y: -190.109
+        z: 199.323
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.099483766
   - FRMR: 17108840
   - NAME: Furn_Com_RM_Bar_04
   - DATA:
-      x: -199.05116
-      y: -192.0
-      z: 160.0
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.712389
+      pos:
+        x: -199.05116
+        y: -192.0
+        z: 160.0
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.712389
   - FRMR: 17146311
   - NAME: p_fortify_luck_s
   - ANAM: arrille
   - INTV: 0.0
   - NAM9: 1
   - DATA:
-      x: -11.6149435
-      y: -5609.465
-      z: -402.005
-      x_rot: 1.5707964
-      y_rot: 5.883505
-      z_rot: 0.0
+      pos:
+        x: -11.6149435
+        y: -5609.465
+        z: -402.005
+      rot:
+        x: 1.5707964
+        y: 5.883505
+        z: 0.0
   - FRMR: 83
   - NAME: _Balors_items_chest
   - XSCL: 0.5
@@ -6994,12 +7176,14 @@
   - INTV: 0.0
   - NAM9: 1
   - DATA:
-      x: -82.49855
-      y: -530.819
-      z: 408.898
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.683187
+      pos:
+        x: -82.49855
+        y: -530.819
+        z: 408.898
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.683187
   - FRMR: 84
   - NAME: _dej_pocket_watch
   - XSCL: 0.8
@@ -7007,12 +7191,14 @@
   - INTV: 0.0
   - NAM9: 1
   - DATA:
-      x: 41.180283
-      y: -28.271954
-      z: 190.21384
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.883187
+      pos:
+        x: 41.180283
+        y: -28.271954
+        z: 190.21384
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.883187
 
 - CELL:
   - NAME: Thirsk
@@ -7028,12 +7214,14 @@
   - NAME: a_waterwell
   - XSCL: 1.3000001
   - DATA:
-      x: -154370.56
-      y: 191168.69
-      z: 1830.0494
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 4.9831867
+      pos:
+        x: -154370.56
+        y: 191168.69
+        z: 1830.0494
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 4.9831867
 
 - CELL:
   - NAME: Skaal Village
@@ -7059,12 +7247,14 @@
   - NAME: a_waterwell
   - XSCL: 1.3000001
   - DATA:
-      x: -158372.81
-      y: 212200.7
-      z: 2948.299
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 5.0831857
+      pos:
+        x: -158372.81
+        y: 212200.7
+        z: 2948.299
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 5.0831857
 
 - CELL:
   - NAME: Solstheim, Lake Fjalding
@@ -7090,21 +7280,25 @@
   - NAME: a_waterwell
   - XSCL: 1.2
   - DATA:
-      x: -173049.64
-      y: 143311.55
-      z: 934.834
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 2.2999997
+      pos:
+        x: -173049.64
+        y: 143311.55
+        z: 934.834
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 2.2999997
   - FRMR: 88
   - NAME: empty_waterskin
   - DATA:
-      x: -173015.6
-      y: 143384.22
-      z: 909.622
-      x_rot: 6.265732
-      y_rot: 0.08726646
-      z_rot: 1.1519173
+      pos:
+        x: -173015.6
+        y: 143384.22
+        z: 909.622
+      rot:
+        x: 6.265732
+        y: 0.08726646
+        z: 1.1519173
 
 - CELL:
   - NAME: Raven Rock
@@ -7120,12 +7314,14 @@
   - NAME: a_waterwell
   - XSCL: 1.2
   - DATA:
-      x: -193349.23
-      y: 160748.38
-      z: 1021.005
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 1.9000002
+      pos:
+        x: -193349.23
+        y: 160748.38
+        z: 1021.005
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 1.9000002
 
 - CELL:
   - NAME: Raven Rock
@@ -7141,12 +7337,14 @@
   - NAME: a_waterwell
   - XSCL: 1.2
   - DATA:
-      x: -200924.98
-      y: 160329.88
-      z: 1039.4246
-      x_rot: 0.0
-      y_rot: 0.0
-      z_rot: 0.90000004
+      pos:
+        x: -200924.98
+        y: 160329.88
+        z: 1039.4246
+      rot:
+        x: 0.0
+        y: 0.0
+        z: 0.90000004
 
 - DIAL:
   - NAME: Greeting 0
