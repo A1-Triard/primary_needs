@@ -2348,13 +2348,12 @@
   - SCHD:
       name: Bal_stamina_drain
       vars:
-        shorts: 1
+        shorts: 0
         longs: 0
         floats: 8
-      data_size: 615
-      var_table_size: 77
+      data_size: 534
+      var_table_size: 72
   - SCVR:
-    - jDis
     - bogustemp
     - deathly_tired
     - drain_timer
@@ -2363,11 +2362,11 @@
     - fMaxFat
     - fCurFat
     - fDiff
-  - SCDT: "eJxlkUtLw0AQx3fSZtv1AalQTyIjeFJbk6LioYkFxV49SW8lYIoB+zCtoGevnvpxPPpJBI2IbSKNBw8t1N3tg1Avy8z8fzM7DwrAsIIamiYa28CA\
-           AmSwzC5OL+16y/WcuLCJ5fW2e39dbd3YD47X8exGu9b06s4VbpmoC2oF6ESksvCThsVF5SDTXHt8VqGWJEvIH6ysabhLIZuWnoUFqSmoz1N4IEVU\
-           rHQ1QoFyLiU4PVaSlDbO4zid4txUxTc8gcdwn/tp4XNbxHLSZ8gfzBm4E6vIQ0RMneS0SrCIet6goDBsAxHjGqWMCtxW0GCQhuSyxCyBHc45sbyT\
-           GaczYP9X1J2siDeiiMaU6T5SADIk0ygkmJQsE4+JdkRehvgThf2eHwwxeB1EYW/0Fe7hbxQGPvbDDz/y8Tt8D8bRaDDmBAbh22eekFlJX5MHzWJ5\
-           9cyz3Ua1Znfc2ztHfCCvxUEgmUVZ5CdEl4n51figwrPMfCG+PCATVrYP8AdICokV"
+  - SCDT: "eJxlUM1LAkEUn7fm6EjBKtQp4gWdKk0lokMrQZHXTuFNFlppIT9aDerctZN/Tsf+kqA2It0Jt0MHBXsza7LYZZjfx/u9Dw4gsIYmWhaWtkAAB8hi\
+           VZyfXNjNjus5cWEDq2td9+6q3rm27x2v59mtbqPtNZ1L3LSwqFzLwCOR6+BHE48Wlf1sO/fwlITGEssgPVjLmbjDIZPWqIJlrRlYnJcQkWJJrPVN\
+           xoGTL6V8xVgkO14/i9v5zE7fpGpDBcThHuG0wvRXXF5jgfRgvoTbsUSimPi/UT/aiOoMlWPMxk8BaIqmVqdKCC1VLDxk5gF7HuN3KIcDPxhj8DIK\
+           5WDyKXfxJ5SBj0P57oc+fsm3YBpORlNyYCBfPwqM/UX6pr7/KlZXTj3bbdUbds+9uXVUA31cMgLLLsqqPqGmTMyPbAiNKlahHN8VWOTV4wP8AkCJ\
+           gBw="
   - SCTX:
     - Begin Bal_stamina_drain
     - "\t\t\t\t\t\t\t\t\t\t\t;Drain stamina if PC is tired."
@@ -2375,11 +2374,10 @@
     - float deathly_tired
     - float drain_timer
     - float fTimer
-    - 'float fRatio '
-    - 'float fMaxFat '
-    - 'float fCurFat '
-    - 'float fDiff '
-    - short jDis
+    - float fRatio
+    - float fMaxFat
+    - float fCurFat
+    - float fDiff
     - ''
     - "if ( MenuMode == 1 ) \t\t\t\t\t;Bad idea to do that in MenuMode..."
     - "\treturn"
@@ -2412,20 +2410,6 @@
     - "\t\tset fDiff to ( fDiff * -1 ) "
     - "\t\tplayer->ModCurrentFatigue, fDiff "
     - "\tendif "
-    - "\tif ( fRatio < 0.1 )"
-    - "\t\tif ( jDis != 1 )"
-    - "\t\t\tDisablePlayerJumping"
-    - ";\t\t\tMessageBox, \"Вы устали и не можете прыгать!\""
-    - "\t\t\tset jDis to 1"
-    - "\t\tendif"
-    - "\telseif ( fRatio > 0.15 )"
-    - "\t\tif ( jDis == 1 )"
-    - "\t\t\tEnablePlayerJumping"
-    - ";\t\t\tMessageBox, \"Теперь Вы способны прыгать\""
-    - "\t\t\tset jDis to 0"
-    - "\t\tendif"
-    - "\tendif"
-    - ''
     - 'endif '
     - if ( player->getfatigue <= 0 )
     - "\tset deathly_tired to deathly_tired + GetSecondsPassed"
