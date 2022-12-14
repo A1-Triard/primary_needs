@@ -59,7 +59,6 @@ def merge_mwse_scripts(path):
     with open(path, 'r', encoding='utf-8') as f:
         records = yaml.load(f, Loader=yaml.FullLoader)
         mwse_scripts = extract_mwse_scripts(records)
-        merged = 0
         for record in records:
             if is_a(record, 'SCPT'):
                 schd = content(field(record, 'SCHD'))
@@ -67,8 +66,6 @@ def merge_mwse_scripts(path):
                 if mwse_script is not None:
                     del_field(mwse_script, 'SCTX')
                     merge(record, mwse_script)
-                    merged += 1
-        records[0]['TES3'][0]['HEDR']['records'] -= 2
     with open(path, 'w', encoding='utf-8') as f:
         yaml.dump(records, f, allow_unicode=True)
 
@@ -83,10 +80,10 @@ def reformat(path):
     subprocess.run(['espa', '-p', 'ru', '-vd', path], stdout=stdout, stderr=stderr, check=True)
 
 def write_records_count(esp_path):
-    with open(esp_path, 'r', encoding='utf-8') as f:
+    with open(esp_path, 'r', encoding='utf-8', newline='\n') as f:
         esp = yaml.load(f, Loader=yaml.FullLoader)
     esp[0]['TES3'][0]['HEDR']['records'] = len(esp) - 1
-    with open(esp_path, 'w', encoding='utf-8') as f:
+    with open(esp_path, 'w', encoding='utf-8', newline='\n') as f:
         yaml.dump(esp, f, allow_unicode=True)
 
 def check_espa_version():
@@ -96,8 +93,8 @@ def check_espa_version():
     sys.exit(1)
 
 def prepare_text(path, d):
-    with open(path.upper(), 'r', encoding='utf-8') as utf8:
-        with open(d + path + '.txt', 'w', encoding='cp1251') as cp1251:
+    with open(path.upper(), 'r', encoding='utf-8', newline='\n') as utf8:
+        with open(d + path + '.txt', 'w', encoding='cp1251', newline='\r\n') as cp1251:
             cp1251.write(utf8.read())
 
 def make_archive(name, dir):
