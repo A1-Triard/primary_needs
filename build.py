@@ -59,6 +59,7 @@ def merge_mwse_scripts(path):
     with open(path, 'r', encoding='utf-8') as f:
         records = yaml.load(f, Loader=yaml.FullLoader)
         mwse_scripts = extract_mwse_scripts(records)
+        merged = 0
         for record in records:
             if is_a(record, 'SCPT'):
                 schd = content(field(record, 'SCHD'))
@@ -66,6 +67,8 @@ def merge_mwse_scripts(path):
                 if mwse_script is not None:
                     del_field(mwse_script, 'SCTX')
                     merge(record, mwse_script)
+                    merged += 1
+        records[0]['TES3'][0]['HEDR']['records'] -= 2
     with open(path, 'w', encoding='utf-8') as f:
         yaml.dump(records, f, allow_unicode=True)
 
@@ -88,7 +91,7 @@ def write_records_count(esp_path):
 
 def check_espa_version():
   espa = subprocess.run(['espa', '-V'], stdout=PIPE, check=True, universal_newlines=True)
-  if not espa.stdout.startswith('0.10.'):
+  if not espa.stdout.startswith('0.11.'):
     print('wrong espa version {}'.format(espa.stdout))
     sys.exit(1)
 
@@ -123,7 +126,7 @@ def main():
     merge_mwse_scripts('ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     write_records_count('ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     assembly_plugin('ar/Data Files/A1_PrimaryNeeds_V1.esp', 2004, 2, 13, 18, 53, 0)
-    make_archive('A1_PrimaryNeeds_0.3', 'ar')
+    make_archive('A1_PrimaryNeeds_0.4', 'ar')
     rmtree('ar')
 
 if __name__ == "__main__":
