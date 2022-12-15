@@ -92,9 +92,9 @@ def check_espa_version():
     print('wrong espa version {}'.format(espa.stdout))
     sys.exit(1)
 
-def prepare_text(path, d):
-    with open(path.upper(), 'r', encoding='utf-8', newline='\n') as utf8:
-        with open(d + path + '.txt', 'w', encoding='cp1251', newline='\r\n') as cp1251:
+def prepare_text(path, name, d):
+    with open(path, 'r', encoding='utf-8', newline='\n') as utf8:
+        with open(d + name + '.txt', 'w', encoding='cp1251', newline='\r\n') as cp1251:
             cp1251.write(utf8.read())
 
 def make_archive(name, dir):
@@ -116,14 +116,12 @@ def main():
         rmtree('ar')
     mkdir('ar')
     copytree('Data Files', 'ar/Data Files')
-    #prepare_text('Readme', 'ar/')
-    #prepare_text('Versions', 'ar/')
-    #copytree('Screenshots', 'ar/Screenshots')
+    prepare_text('README.md', 'Readme', 'ar/')
     copyfile('A1_PrimaryNeeds_V1.esp.yaml', 'ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     merge_mwse_scripts('ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     write_records_count('ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     assembly_plugin('ar/Data Files/A1_PrimaryNeeds_V1.esp', 2004, 2, 13, 18, 53, 0)
-    make_archive('A1_PrimaryNeeds_0.4', 'ar')
+    make_archive('A1_PrimaryNeeds_0.5', 'ar')
     rmtree('ar')
 
 if __name__ == "__main__":
