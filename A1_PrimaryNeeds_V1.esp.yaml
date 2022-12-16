@@ -4026,7 +4026,7 @@
         shorts: 13
         longs: 1
         floats: 1
-      data_size: 3110
+      data_size: 3013
       var_table_size: 129
   - SCVR:
     - installed
@@ -4044,24 +4044,23 @@
     - BOOST_MEAL
     - i
     - timer
-  - SCDT: "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\
-           oIUb9LdJSul/YQd0hA=="
+  - SCDT: "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"
   - SCTX:
     - begin deepnight_campement
     - ''
@@ -4138,13 +4137,7 @@
     - if ( campState==0 )
     - "\tset PCskipEquip to 1"
     - "\tif ( onPCdrop==1 )"
-    - "\t\tif ( GetCurrentWeather > 3 )"
-    - "\t\t\tMessageBox \"Вы не можете разбить лагерь в плохую погоду!\""
-    - "\t\t\tActivate"
-    - "\t\telse"
-    - "\t\t\tMessageBox \"Вы укладываете лагерь.\""
-    - "\t\t\tset installed to 1"
-    - "\t\tendif"
+    - "\t\tset installed to 1"
     - "\t\tset onPCdrop to 0"
     - "\tendif"
     - endif
