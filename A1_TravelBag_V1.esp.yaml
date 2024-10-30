@@ -1,0 +1,3069 @@
+- TES3:
+  - HEDR:
+      version: 1067869798
+      file_type: ESP
+      author: A1
+      description:
+      - Дорожный мешок, позволяющий быстро выкладывать еду и походные вещи.
+      records: 56
+  - MAST: Morrowind.esm
+  - DATA: 79764287
+  - MAST: Tribunal.esm
+  - DATA: 6616539
+  - MAST: Bloodmoon.esm
+  - DATA: 11799703
+
+- GLOB:
+  - NAME: A1V1_TravelBagX
+  - FNAM: f
+  - FLTV: 0.0
+
+- GLOB:
+  - NAME: A1V1_TravelBagY
+  - FNAM: f
+  - FLTV: 0.0
+
+- GLOB:
+  - NAME: A1V1_TravelBagZ
+  - FNAM: f
+  - FLTV: 0.0
+
+- GLOB:
+  - NAME: A1V1_TravelBagAngle
+  - FNAM: f
+  - FLTV: 0.0
+
+- GLOB:
+  - NAME: A1V1_TravelBagExt
+  - FNAM: s
+  - FLTV: 0.0
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagCont_1_sc
+      vars:
+        shorts: 6
+        longs: 7
+        floats: 4
+      data_size: 4119
+      var_table_size: 135
+  - SCVR:
+    - doOnce
+    - doRemove
+    - doDisable
+    - temp
+    - doActivate
+    - waitActivate
+    - invItem
+    - invCount
+    - invRef
+    - pcRef
+    - invRefType
+    - tempLong
+    - invNextRef
+    - cx
+    - cy
+    - cz
+    - invWeight
+  - SCDT:
+      stmts:
+      - func: If
+        args:
+        - 6
+        - " s\x03\0 > 20"
+      - func: If
+        args:
+        - 4
+        - " XЬ\x10 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - " 2 G\x13A1V1_TravelBagExt 2 / *"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagExt
+        - " s\x04\0\0"
+      - func: SetDelete
+        args: 1
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 2
+        - " s\x03\0 > 20"
+      - func: Disable
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 3
+        - " s\x03\0 > 0"
+      - func: AddItem
+        args:
+        - A1V1_TravelBagFakeIngred
+        - 2
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - " s\x03\0 1 +"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 2
+        - " XЬ\x10 == 1"
+      - func: Enable
+        args: null
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 1'
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x06\0 == 2"
+      - func: If
+        args:
+        - 4
+        - " X \x10 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - ' 0'
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_1 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 1'
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: ElseIf
+        args:
+        - 4
+        - " s\x06\0 == 1"
+      - func: If
+        args:
+        - 1
+        - " X \x10 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - ' 2'
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 1
+        - " X \x10 == 1"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: MwsePushS
+        args: 0
+      - func: MwsePushS
+        args: 115
+      - func: MwseGetLocal
+        args: null
+      - func: MwsePop
+        args: 4
+      - func: MwseJumpShortZero
+        args: 367
+      raw:
+      - 0A 38 B1 02 05 01 73 04 00 22 20 32 20 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 45
+      - 78 74 20 32 20 2F 20 2A 20 31 20 2B 05 01 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63
+      - 45 78 74 05 20 73 04 00 00 DE 10 05 01 73 01 00 02 20 31 05 01 66 01 00 11 20 47 0D 41 31 56 37
+      - 5F 52 6F 61 64 42 61 67 58 00 05 01 66 02 00 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42 61 67 59
+      - 00 05 01 66 03 00 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42 61 67 5A 00 0B 10 58 66 01 00 00 0B
+      - 10 59 66 02 00 00 0B 10 5A 66 03 00 00 2A 3C 13 38 00 00 13 38 6C 00 02 3C 13 38 01 00 13 38 6C
+      - 00 02 3C 13 38 02 00 13 38 6C 00 02 3C 13 38 01 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 84 02 13
+      - 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 29 3C 2A 3C 13 38 00 00 13 38 6C 00 02
+      - 3C 13 38 01 00 13 38 6C 00 02 3C 13 38 02 00 13 38 6C 00 02 3C 0A 38 38 02 D4 10 16 41 31 56 37
+      - 5F 52 6F 61 64 42 61 67 4D 69 73 63 49 74 65 6D 5F 31 01 00 05 01 6C 03 00 02 20 30 05 01 73 02
+      - 00 02 20 31 24 01 06 01 04 09 20 73 05 00 20 3D 3D 20 31 05 01 73 06 00 02 20 31 05 01 73 05 00
+      - 02 20 30 17 10 24 01 09 01 06 01 04 0A 20 73 02 00 20 3D 3D 20 31 30 05 01 73 02 00 02 20 30 00
+      - 10 11 00 CF F0 E5 E4 EC E5 F2 FB 20 E2 FB EB EE E6 E5 ED FB 00 00 DD 10 24 01 09 01 06 01 01 08
+      - 20 73 02 00 20 3E 20 35 05 01 73 04 00 02 20 31 07 01 01 05 01 73 04 00 02 20 30 09 01 13 38 03
+      - 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 DE 0F 13 38 42 03 0A 38 4A 03 06 70 6C 61 79 65 72 00 1D
+      - 3C 13 38 03 00 13 38 6C 00 02 3C 13 38 03 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 DC 0F 13 38 02
+      - 00 13 38 6C 00 00 3C 13 38 03 00 13 38 6C 00 00 3C 18 3C 03 3F 13 38 00 00 13 38 6C 00 02 3C 13
+      - 38 01 00 13 38 6C 00 02 3C 13 38 04 00 13 38 6C 00 02 3C 13 38 05 00 13 38 6C 00 02 3C 13 38 03
+      - 00 13 38 66 00 02 3C 13 38 05 00 13 38 6C 00 02 3C 13 38 06 00 13 38 6C 00 02 3C 13 38 00 00 13
+      - 38 6C 00 00 3C 0F 38 04 00 0C 38 9F 0F 05 01 73 04 00 02 20 31 13 38 03 00 13 38 73 00 00 3C 0F
+      - 38 04 00 0C 38 3F 04 13 38 FA 03 0A 38 12 04 16 69 6E 67 72 65 64 5F 72 61 77 5F 53 74 61 6C 68
+      - 72 69 6D 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01
+      - 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38
+      - 04 00 0C 38 9A 04 13 38 59 04 0A 38 6D 04 13 69 6E 67 72 65 64 5F 72 61 77 5F 67 6C 61 73 73 5F
+      - 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00
+      - 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 F9
+      - 04 13 38 B4 04 0A 38 CC 04 16 69 6E 67 72 65 64 5F 72 61 77 5F 67 6C 61 73 73 5F 74 69 6E 6F 73
+      - 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20
+      - 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 54 05
+      - 13 38 13 05 0A 38 27 05 13 69 6E 67 72 65 64 5F 72 61 77 5F 65 62 6F 6E 79 5F 30 31 13 38 00 00
+      - 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05
+      - 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 B5 05 13 38 6E 05 0A
+      - 38 88 05 18 69 6E 67 72 65 64 5F 61 64 61 6D 61 6E 74 69 75 6D 5F 6F 72 65 5F 30 31 00 13 38 00
+      - 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30
+      - 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 0C 06 13 38 CF 05
+      - 0A 38 DF 05 0E 69 6E 67 72 65 64 5F 72 75 62 79 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C
+      - 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09
+      - 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 65 06 13 38 26 06 0A 38 38 06 11 69 6E 67 72
+      - 65 64 5F 65 6D 65 72 61 6C 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C
+      - 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38
+      - 73 00 00 3C 0F 38 04 00 0C 38 C4 06 13 38 7F 06 0A 38 97 06 17 69 6E 67 72 65 64 5F 65 6D 65 72
+      - 61 6C 64 5F 70 69 6E 65 74 65 61 72 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00
+      - 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73
+      - 00 00 3C 0F 38 04 00 0C 38 1B 07 13 38 DE 06 0A 38 EE 06 0F 69 6E 67 72 65 64 5F 70 65 61 72 6C
+      - 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06
+      - 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38
+      - 74 07 13 38 35 07 0A 38 47 07 11 69 6E 67 72 65 64 5F 64 69 61 6D 6F 6E 64 5F 30 31 13 38 00 00
+      - 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05
+      - 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 D1 07 13 38 8E 07 0A
+      - 38 A4 07 14 64 65 65 70 6E 69 67 68 74 5F 74 72 61 76 65 6C 46 6F 6F 64 00 13 38 00 00 13 38 6C
+      - 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04
+      - 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 28 08 13 38 EB 07 0A 38 FB 07
+      - 0F 69 6E 67 72 65 64 5F 62 72 65 61 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00
+      - 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03
+      - 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 81 08 13 38 42 08 0A 38 54 08 11 66 6F 6F 64 5F 6B 77 61
+      - 6D 61 5F 65 67 67 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06
+      - 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C
+      - 0F 38 04 00 0C 38 DA 08 13 38 9B 08 0A 38 AD 08 11 66 6F 6F 64 5F 6B 77 61 6D 61 5F 65 67 67 5F
+      - 30 32 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00
+      - 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 33
+      - 09 13 38 F4 08 0A 38 06 09 11 69 6E 67 72 65 64 5F 61 73 68 5F 79 61 6D 5F 30 31 13 38 00 00 13
+      - 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01
+      - 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 90 09 13 38 4D 09 0A 38
+      - 63 09 15 69 6E 67 72 65 64 5F 73 63 72 69 62 5F 6A 65 72 6B 79 5F 30 31 13 38 00 00 13 38 6C 00
+      - 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00
+      - 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 EB 09 13 38 AA 09 0A 38 BE 09 13
+      - 69 6E 67 72 65 64 5F 63 72 61 62 5F 6D 65 61 74 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13
+      - 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01
+      - 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 48 0A 13 38 05 0A 0A 38 1B 0A 14 69 6E 67 72 65
+      - 64 5F 68 6F 75 6E 64 5F 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00
+      - 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03
+      - 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 A5 0A 13 38 62 0A 0A 38 78 0A 14 69 6E 67 72 65 64 5F 68
+      - 75 6D 61 6E 5F 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C
+      - 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38
+      - 73 00 00 3C 0F 38 04 00 0C 38 00 0B 13 38 BF 0A 0A 38 D3 0A 12 69 6E 67 72 65 64 5F 72 61 74 5F
+      - 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01
+      - 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F
+      - 38 04 00 0C 38 59 0B 13 38 1A 0B 0A 38 2C 0B 11 69 6E 67 72 65 64 5F 73 63 75 74 74 6C 65 5F 30
+      - 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20
+      - 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 B4 0B
+      - 13 38 73 0B 0A 38 87 0B 12 69 6E 67 72 65 64 5F 73 61 6C 74 72 69 63 65 5F 30 31 00 13 38 00 00
+      - 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05
+      - 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 11 0C 13 38 CE 0B 0A
+      - 38 E4 0B 15 64 65 65 70 6E 69 67 68 74 5F 63 61 6D 70 65 6D 65 6E 74 30 31 13 38 00 00 13 38 6C
+      - 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04
+      - 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 70 0C 13 38 2B 0C 0A 38 43 0C
+      - 17 42 61 6C 6F 72 73 5F 70 6F 72 74 61 62 6C 65 5F 42 65 64 72 6F 6C 6C 13 38 00 00 13 38 6C 00
+      - 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00
+      - 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 CF 0C 13 38 8A 0C 0A 38 A2 0C 16
+      - 6D 69 73 63 5F 64 65 5F 6D 75 63 6B 5F 73 68 6F 76 65 6C 5F 30 31 00 13 38 00 00 13 38 6C 00 00
+      - 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02
+      - 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 26 0D 13 38 E9 0C 0A 38 F9 0C 0E 66
+      - 75 6C 6C 5F 77 61 74 65 72 73 6B 69 6E 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38
+      - 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13
+      - 38 73 00 00 3C 0F 38 04 00 0C 38 81 0D 13 38 40 0D 0A 38 54 0D 12 68 61 6C 66 66 75 6C 6C 5F 77
+      - 61 74 65 72 73 6B 69 6E 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06
+      - 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C
+      - 0F 38 04 00 0C 38 DE 0D 13 38 9B 0D 0A 38 B1 0D 14 6E 65 61 72 6C 79 66 75 6C 6C 5F 77 61 74 65
+      - 72 73 6B 69 6E 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09
+      - 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04
+      - 00 0C 38 3B 0E 13 38 F8 0D 0A 38 0E 0E 15 6E 65 61 72 6C 79 65 6D 70 74 79 5F 77 61 74 65 72 73
+      - 6B 69 6E 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06
+      - 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38
+      - 92 0E 13 38 55 0E 0A 38 65 0E 0F 65 6D 70 74 79 5F 77 61 74 65 72 73 6B 69 6E 13 38 00 00 13 38
+      - 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73
+      - 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 39 0F 13 38 AC 0E 0A 38 B4
+      - 0E 06 69 6E 64 65 78 5F 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06
+      - 01 01 08 20 6C 06 00 20 3E 20 30 05 01 6C 06 00 02 20 31 07 01 01 05 01 6C 06 00 02 20 30 09 01
+      - 13 38 05 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 39 0F 13 38 05 0F 0A 38 0D 0F 07 69 6E 64 65 78
+      - 5F 7A 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 08 20 6C 06 00
+      - 20 3C 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 4F 0F
+      - 0A 38 9F 0F 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 13 38 03 00 13 38 6C 00
+      - 00 3C 18 3C 29 3C 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 28 3C 05 01 6C 03
+      - 00 02 20 30 05 01 6C 04 00 02 20 30 05 01 73 02 00 02 20 31 06 01 01 08 20 73 02 00 20 3E 20 31
+      - 05 01 6C 03 00 05 20 6C 07 00 00 09 01 06 01 02 09 20 6C 07 00 20 3D 3D 20 30 05 01 6C 04 00 02
+      - 20 30 05 01 73 02 00 03 20 31 30 09 01 0A 38 56 03 24 01 06 01 02 08 20 73 02 00 20 3E 20 30 05
+      - 01 73 02 00 08 20 73 02 00 20 31 20 2B 24 01 09 01 06 01 02 09 20 58 18 10 20 3D 3D 20 31 05 01
+      - 73 05 00 02 20 31 24 01 09 01 01 01
+  - SCTX:
+    - Begin A1V1_TravelBagCont_1_sc
+    - ''
+    - short doOnce
+    - short doRemove
+    - short doDisable
+    - short temp
+    - float cx
+    - float cy
+    - float cz
+    - long invItem
+    - long invCount
+    - long invRef
+    - long pcRef
+    - long invRefType
+    - long tempLong
+    - float invWeight
+    - long invNextRef
+    - short doActivate
+    - short waitActivate
+    - ''
+    - if ( doDisable > 20 )
+    - "\tif ( GetDisabled == 1 )"
+    - "\t\tset temp to 2 * ( A1V1_TravelBagExt / 2 )"
+    - "\t\tset A1V1_TravelBagExt to temp"
+    - "\t\tSetDelete 1"
+    - "\t\treturn"
+    - "\tendif"
+    - endif
+    - ''
+    - if ( doDisable > 20 )
+    - "\tDisable"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doDisable > 0 )
+    - "\tAddItem \"A1V1_TravelBagFakeIngred\", 2"
+    - "\tset doDisable to ( doDisable + 1 )"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( GetDisabled == 1 )
+    - "\tEnable"
+    - "\tset doDisable to 1"
+    - endif
+    - ''
+    - if ( waitActivate == 2 )
+    - "\tif ( MenuMode == 0 )"
+    - "\t\tset waitActivate to 0"
+    - "\t\tif ( GetItemCount A1V1_TravelBagItem_1 == 0 )"
+    - "\t\t\tset doDisable to 1"
+    - "\t\tendif"
+    - "\tendif"
+    - "\treturn"
+    - elseif ( waitActivate == 1 )
+    - "\tif ( MenuMode == 1 )"
+    - "\t\tset waitActivate to 2"
+    - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( MenuMode == 1 )
+    - "\treturn"
+    - endif
+    - ''
+    - ifx ( doOnce )
+    - else
+    - "\tset temp to 2 * ( A1V1_TravelBagExt / 2 ) + 1"
+    - "\tset A1V1_TravelBagExt to temp"
+    - "\tDisablePlayerControls"
+    - "\tset doOnce to 1"
+    - "\tset cx to A1V1_TravelBagX"
+    - "\tset cy to A1V1_TravelBagY"
+    - "\tset cz to A1V1_TravelBagZ"
+    - "\tSetPos X cx"
+    - "\tSetPos Y cy"
+    - "\tSetPos Z cz"
+    - "\tsetx invItem,invCount,invRef to xInventory"
+    - "\twhilex ( invCount )"
+    - "\t\txRemoveItem invItem invCount"
+    - "\t\tsetx invItem,invCount,invRef to xInventory"
+    - "\tendwhile"
+    - "\tAddItem \"A1V1_TravelBagItem_1\", 1"
+    - "\tset invRef to 0"
+    - "\tset doRemove to 1"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doActivate == 1 )
+    - "\tset waitActivate to 1"
+    - "\tset doActivate to 0"
+    - "\tActivate"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove == 10 )
+    - "\tset doRemove to 0"
+    - "\tMessageBox \"Предметы выложены\""
+    - "\tEnablePlayerControls"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove > 5 )
+    - "\tset temp to 1"
+    - else
+    - "\tset temp to 0"
+    - endif
+    - ''
+    - ifx ( temp )
+    - "\tsetx pcRef to xGetRef \"player\""
+    - "\twhilex ( pcRef )"
+    - "\t\tsetx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef"
+    - "\t\tifx ( invItem )"
+    - "\t\t\tset temp to 1"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_Stalhrim_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_glass_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_glass_tinos\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_ebony_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_adamantium_ore_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_ruby_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_emerald_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_emerald_pinetear\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_pearl_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_diamond_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"deepnight_travelFood\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_bread_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"food_kwama_egg_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"food_kwama_egg_02\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_ash_yam_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_scrib_jerky_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_crab_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_hound_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_human_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_rat_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_scuttle_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_saltrice_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"deepnight_campement01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"Balors_portable_Bedroll\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"misc_de_muck_shovel_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"full_waterskin\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"halffull_waterskin\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"nearlyfull_waterskin\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"nearlyempty_waterskin\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"empty_waterskin\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"index_\""
+    - "\t\t\t\tif ( tempLong > 0 )"
+    - "\t\t\t\t\tset tempLong to 1"
+    - "\t\t\t\telse"
+    - "\t\t\t\t\tset tempLong to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\t\tifx ( tempLong )"
+    - "\t\t\t\t\tsetx tempLong to xStringCompare invItem, \"index_z\""
+    - "\t\t\t\t\tif ( tempLong < 0 )"
+    - "\t\t\t\t\t\tset temp to 0"
+    - "\t\t\t\t\tendif"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\telse"
+    - "\t\t\t\tpcRef->xRemoveItem invItem invCount"
+    - "\t\t\t\txAddItem invItem invCount"
+    - "\t\t\t\tset invRef to 0"
+    - "\t\t\t\tset pcRef to 0"
+    - "\t\t\t\tset doRemove to 1"
+    - "\t\t\tendif"
+    - "\t\tendif"
+    - "\t\tif ( doRemove > 1 )"
+    - "\t\t\tset invRef to invNextRef"
+    - "\t\tendif"
+    - "\t\tif ( invNextRef == 0 )"
+    - "\t\t\tset pcRef to 0"
+    - "\t\t\tset doRemove to 10"
+    - "\t\tendif"
+    - "\tendwhile"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove > 0 )
+    - "\tset doRemove to ( doRemove + 1 )"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( OnActivate == 1 )
+    - "\tset doActivate to 1"
+    - "\treturn"
+    - endif
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagCont_2_sc
+      vars:
+        shorts: 6
+        longs: 7
+        floats: 4
+      data_size: 3501
+      var_table_size: 135
+  - SCVR:
+    - doOnce
+    - doRemove
+    - doDisable
+    - temp
+    - doActivate
+    - waitActivate
+    - invItem
+    - invCount
+    - invRef
+    - pcRef
+    - invRefType
+    - tempLong
+    - invNextRef
+    - cx
+    - cy
+    - cz
+    - invWeight
+  - SCDT:
+      stmts:
+      - func: If
+        args:
+        - 8
+        - " s\x03\0 > 20"
+      - func: If
+        args:
+        - 6
+        - " XЬ\x10 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - " G\x13A1V1_TravelBagExt 2 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - " s\x04\0 2 s\x04\0 2 / * -"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - " G\x13A1V1_TravelBagExt 2 s\x04\0 * -"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagExt
+        - " s\x04\0\0"
+      - func: SetDelete
+        args: 1
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 2
+        - " s\x03\0 > 20"
+      - func: Disable
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 3
+        - " s\x03\0 > 0"
+      - func: AddItem
+        args:
+        - A1V1_TravelBagFakeIngred
+        - 2
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - " s\x03\0 1 +"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 2
+        - " XЬ\x10 == 1"
+      - func: Enable
+        args: null
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 1'
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x06\0 == 2"
+      - func: If
+        args:
+        - 4
+        - " X \x10 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - ' 0'
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_2 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 1'
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: ElseIf
+        args:
+        - 4
+        - " s\x06\0 == 1"
+      - func: If
+        args:
+        - 1
+        - " X \x10 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - ' 2'
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 1
+        - " X \x10 == 1"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: MwsePushS
+        args: 0
+      - func: MwsePushS
+        args: 115
+      - func: MwseGetLocal
+        args: null
+      - func: MwsePop
+        args: 4
+      - func: MwseJumpShortZero
+        args: 425
+      raw:
+      - 0A 38 25 03 05 01 73 04 00 1A 20 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 45 78 74
+      - 20 32 20 2F 05 01 73 04 00 12 20 73 04 00 20 32 20 73 04 00 20 32 20 2F 20 2A 20 2D 05 01 73 04
+      - 00 24 20 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 45 78 74 20 32 20 73 04 00 20 2A
+      - 20 2D 20 32 20 2B 05 01 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 45 78 74 05 20 73
+      - 04 00 00 DE 10 05 01 73 01 00 02 20 31 05 01 66 01 00 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42
+      - 61 67 58 00 05 01 66 02 00 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42 61 67 59 00 05 01 66 03 00
+      - 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42 61 67 5A 00 0B 10 58 66 01 00 00 0B 10 59 66 02 00 00
+      - 0B 10 5A 66 03 00 00 2A 3C 13 38 00 00 13 38 6C 00 02 3C 13 38 01 00 13 38 6C 00 02 3C 13 38 02
+      - 00 13 38 6C 00 02 3C 13 38 01 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 F8 02 13 38 01 00 13 38 6C
+      - 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 29 3C 2A 3C 13 38 00 00 13 38 6C 00 02 3C 13 38 01 00 13
+      - 38 6C 00 02 3C 13 38 02 00 13 38 6C 00 02 3C 0A 38 AC 02 D4 10 16 41 31 56 37 5F 52 6F 61 64 42
+      - 61 67 4D 69 73 63 49 74 65 6D 5F 32 01 00 05 01 6C 03 00 02 20 30 05 01 73 02 00 02 20 31 24 01
+      - 06 01 04 09 20 73 05 00 20 3D 3D 20 31 05 01 73 06 00 02 20 31 05 01 73 05 00 02 20 30 17 10 24
+      - 01 09 01 06 01 04 0A 20 73 02 00 20 3D 3D 20 31 30 05 01 73 02 00 02 20 30 00 10 11 00 CF F0 E5
+      - E4 EC E5 F2 FB 20 E2 FB EB EE E6 E5 ED FB 00 00 DD 10 24 01 09 01 06 01 01 08 20 73 02 00 20 3E
+      - 20 35 05 01 73 04 00 02 20 31 07 01 01 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00
+      - 3C 0F 38 04 00 0C 38 74 0D 13 38 B6 03 0A 38 BE 03 06 70 6C 61 79 65 72 00 1D 3C 13 38 03 00 13
+      - 38 6C 00 02 3C 13 38 03 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 72 0D 13 38 02 00 13 38 6C 00 00
+      - 3C 13 38 03 00 13 38 6C 00 00 3C 18 3C 03 3F 13 38 00 00 13 38 6C 00 02 3C 13 38 01 00 13 38 6C
+      - 00 02 3C 13 38 04 00 13 38 6C 00 02 3C 13 38 05 00 13 38 6C 00 02 3C 13 38 03 00 13 38 66 00 02
+      - 3C 13 38 05 00 13 38 6C 00 02 3C 13 38 06 00 13 38 6C 00 02 3C 13 38 00 00 13 38 6C 00 00 3C 0F
+      - 38 04 00 0C 38 35 0D 05 01 73 04 00 02 20 31 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 B3
+      - 04 13 38 6E 04 0A 38 86 04 16 69 6E 67 72 65 64 5F 72 61 77 5F 53 74 61 6C 68 72 69 6D 5F 30 31
+      - 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20
+      - 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 0E 05
+      - 13 38 CD 04 0A 38 E1 04 13 69 6E 67 72 65 64 5F 72 61 77 5F 67 6C 61 73 73 5F 30 31 13 38 00 00
+      - 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05
+      - 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 6D 05 13 38 28 05 0A
+      - 38 40 05 16 69 6E 67 72 65 64 5F 72 61 77 5F 67 6C 61 73 73 5F 74 69 6E 6F 73 00 13 38 00 00 13
+      - 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01
+      - 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 C8 05 13 38 87 05 0A 38
+      - 9B 05 13 69 6E 67 72 65 64 5F 72 61 77 5F 65 62 6F 6E 79 5F 30 31 13 38 00 00 13 38 6C 00 00 3C
+      - 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20
+      - 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 29 06 13 38 E2 05 0A 38 FC 05 18 69 6E
+      - 67 72 65 64 5F 61 64 61 6D 61 6E 74 69 75 6D 5F 6F 72 65 5F 30 31 00 13 38 00 00 13 38 6C 00 00
+      - 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02
+      - 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 80 06 13 38 43 06 0A 38 53 06 0E 69
+      - 6E 67 72 65 64 5F 72 75 62 79 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38
+      - 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13
+      - 38 73 00 00 3C 0F 38 04 00 0C 38 D9 06 13 38 9A 06 0A 38 AC 06 11 69 6E 67 72 65 64 5F 65 6D 65
+      - 72 61 6C 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01
+      - 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38
+      - 04 00 0C 38 38 07 13 38 F3 06 0A 38 0B 07 17 69 6E 67 72 65 64 5F 65 6D 65 72 61 6C 64 5F 70 69
+      - 6E 65 74 65 61 72 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09
+      - 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04
+      - 00 0C 38 8F 07 13 38 52 07 0A 38 62 07 0F 69 6E 67 72 65 64 5F 70 65 61 72 6C 5F 30 31 13 38 00
+      - 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30
+      - 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 E8 07 13 38 A9 07
+      - 0A 38 BB 07 11 69 6E 67 72 65 64 5F 64 69 61 6D 6F 6E 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C
+      - 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20
+      - 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 45 08 13 38 02 08 0A 38 18 08 14 64 65
+      - 65 70 6E 69 67 68 74 5F 74 72 61 76 65 6C 46 6F 6F 64 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13
+      - 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01
+      - 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 9C 08 13 38 5F 08 0A 38 6F 08 0F 69 6E 67 72 65
+      - 64 5F 62 72 65 61 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C
+      - 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00
+      - 3C 0F 38 04 00 0C 38 F5 08 13 38 B6 08 0A 38 C8 08 11 66 6F 6F 64 5F 6B 77 61 6D 61 5F 65 67 67
+      - 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06
+      - 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38
+      - 4E 09 13 38 0F 09 0A 38 21 09 11 66 6F 6F 64 5F 6B 77 61 6D 61 5F 65 67 67 5F 30 32 13 38 00 00
+      - 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05
+      - 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 A7 09 13 38 68 09 0A
+      - 38 7A 09 11 69 6E 67 72 65 64 5F 61 73 68 5F 79 61 6D 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F
+      - 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30
+      - 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 04 0A 13 38 C1 09 0A 38 D7 09 15 69 6E 67
+      - 72 65 64 5F 73 63 72 69 62 5F 6A 65 72 6B 79 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38
+      - 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13
+      - 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 5F 0A 13 38 1E 0A 0A 38 32 0A 13 69 6E 67 72 65 64
+      - 5F 63 72 61 62 5F 6D 65 61 74 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C
+      - 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38
+      - 73 00 00 3C 0F 38 04 00 0C 38 BC 0A 13 38 79 0A 0A 38 8F 0A 14 69 6E 67 72 65 64 5F 68 6F 75 6E
+      - 64 5F 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C
+      - 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00
+      - 3C 0F 38 04 00 0C 38 19 0B 13 38 D6 0A 0A 38 EC 0A 14 69 6E 67 72 65 64 5F 68 75 6D 61 6E 5F 6D
+      - 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01
+      - 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38
+      - 04 00 0C 38 74 0B 13 38 33 0B 0A 38 47 0B 12 69 6E 67 72 65 64 5F 72 61 74 5F 6D 65 61 74 5F 30
+      - 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00
+      - 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 CD
+      - 0B 13 38 8E 0B 0A 38 A0 0B 11 69 6E 67 72 65 64 5F 73 63 75 74 74 6C 65 5F 30 31 13 38 00 00 13
+      - 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01
+      - 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 28 0C 13 38 E7 0B 0A 38
+      - FB 0B 12 69 6E 67 72 65 64 5F 73 61 6C 74 72 69 63 65 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C
+      - 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20
+      - 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 CF 0C 13 38 42 0C 0A 38 4A 0C 06 69 6E
+      - 64 65 78 5F 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 08 20
+      - 6C 06 00 20 3E 20 30 05 01 6C 06 00 02 20 31 07 01 01 05 01 6C 06 00 02 20 30 09 01 13 38 05 00
+      - 13 38 6C 00 00 3C 0F 38 04 00 0C 38 CF 0C 13 38 9B 0C 0A 38 A3 0C 07 69 6E 64 65 78 5F 7A 13 38
+      - 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 08 20 6C 06 00 20 3C 20 30
+      - 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 E5 0C 0A 38 35 0D
+      - 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 13 38 03 00 13 38 6C 00 00 3C 18 3C
+      - 29 3C 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 28 3C 05 01 6C 03 00 02 20 30
+      - 05 01 6C 04 00 02 20 30 05 01 73 02 00 02 20 31 06 01 01 08 20 73 02 00 20 3E 20 31 05 01 6C 03
+      - 00 05 20 6C 07 00 00 09 01 06 01 02 09 20 6C 07 00 20 3D 3D 20 30 05 01 6C 04 00 02 20 30 05 01
+      - 73 02 00 03 20 31 30 09 01 0A 38 CA 03 24 01 06 01 02 08 20 73 02 00 20 3E 20 30 05 01 73 02 00
+      - 08 20 73 02 00 20 31 20 2B 24 01 09 01 06 01 02 09 20 58 18 10 20 3D 3D 20 31 05 01 73 05 00 02
+      - 20 31 24 01 09 01 01 01
+  - SCTX:
+    - Begin A1V1_TravelBagCont_2_sc
+    - ''
+    - short doOnce
+    - short doRemove
+    - short doDisable
+    - short temp
+    - float cx
+    - float cy
+    - float cz
+    - long invItem
+    - long invCount
+    - long invRef
+    - long pcRef
+    - long invRefType
+    - long tempLong
+    - float invWeight
+    - long invNextRef
+    - short doActivate
+    - short waitActivate
+    - ''
+    - if ( doDisable > 20 )
+    - "\tif ( GetDisabled == 1 )"
+    - "\t\tset temp to A1V1_TravelBagExt / 2"
+    - "\t\tset temp to temp - 2 * ( temp / 2 )"
+    - "\t\tset temp to A1V1_TravelBagExt - 2 * temp"
+    - "\t\tset A1V1_TravelBagExt to temp"
+    - "\t\tSetDelete 1"
+    - "\t\treturn"
+    - "\tendif"
+    - endif
+    - ''
+    - if ( doDisable > 20 )
+    - "\tDisable"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doDisable > 0 )
+    - "\tAddItem \"A1V1_TravelBagFakeIngred\", 2"
+    - "\tset doDisable to ( doDisable + 1 )"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( GetDisabled == 1 )
+    - "\tEnable"
+    - "\tset doDisable to 1"
+    - endif
+    - ''
+    - if ( waitActivate == 2 )
+    - "\tif ( MenuMode == 0 )"
+    - "\t\tset waitActivate to 0"
+    - "\t\tif ( GetItemCount A1V1_TravelBagItem_2 == 0 )"
+    - "\t\t\tset doDisable to 1"
+    - "\t\tendif"
+    - "\tendif"
+    - "\treturn"
+    - elseif ( waitActivate == 1 )
+    - "\tif ( MenuMode == 1 )"
+    - "\t\tset waitActivate to 2"
+    - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( MenuMode == 1 )
+    - "\treturn"
+    - endif
+    - ''
+    - ifx ( doOnce )
+    - else
+    - "\tset temp to A1V1_TravelBagExt / 2"
+    - "\tset temp to temp - 2 * ( temp / 2 )"
+    - "\tset temp to A1V1_TravelBagExt - 2 * temp + 2"
+    - "\tset A1V1_TravelBagExt to temp"
+    - "\tDisablePlayerControls"
+    - "\tset doOnce to 1"
+    - "\tset cx to A1V1_TravelBagX"
+    - "\tset cy to A1V1_TravelBagY"
+    - "\tset cz to A1V1_TravelBagZ"
+    - "\tSetPos X cx"
+    - "\tSetPos Y cy"
+    - "\tSetPos Z cz"
+    - "\tsetx invItem,invCount,invRef to xInventory"
+    - "\twhilex ( invCount )"
+    - "\t\txRemoveItem invItem invCount"
+    - "\t\tsetx invItem,invCount,invRef to xInventory"
+    - "\tendwhile"
+    - "\tAddItem \"A1V1_TravelBagItem_2\", 1"
+    - "\tset invRef to 0"
+    - "\tset doRemove to 1"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doActivate == 1 )
+    - "\tset waitActivate to 1"
+    - "\tset doActivate to 0"
+    - "\tActivate"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove == 10 )
+    - "\tset doRemove to 0"
+    - "\tMessageBox \"Предметы выложены\""
+    - "\tEnablePlayerControls"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove > 5 )
+    - "\tset temp to 1"
+    - else
+    - "\tset temp to 0"
+    - endif
+    - ''
+    - ifx ( temp )
+    - "\tsetx pcRef to xGetRef \"player\""
+    - "\twhilex ( pcRef )"
+    - "\t\tsetx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef"
+    - "\t\tifx ( invItem )"
+    - "\t\t\tset temp to 1"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_Stalhrim_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_glass_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_glass_tinos\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_ebony_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_adamantium_ore_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_ruby_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_emerald_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_emerald_pinetear\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_pearl_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_diamond_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"deepnight_travelFood\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_bread_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"food_kwama_egg_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"food_kwama_egg_02\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_ash_yam_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_scrib_jerky_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_crab_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_hound_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_human_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_rat_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_scuttle_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_saltrice_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"index_\""
+    - "\t\t\t\tif ( tempLong > 0 )"
+    - "\t\t\t\t\tset tempLong to 1"
+    - "\t\t\t\telse"
+    - "\t\t\t\t\tset tempLong to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\t\tifx ( tempLong )"
+    - "\t\t\t\t\tsetx tempLong to xStringCompare invItem, \"index_z\""
+    - "\t\t\t\t\tif ( tempLong < 0 )"
+    - "\t\t\t\t\t\tset temp to 0"
+    - "\t\t\t\t\tendif"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\telse"
+    - "\t\t\t\tpcRef->xRemoveItem invItem invCount"
+    - "\t\t\t\txAddItem invItem invCount"
+    - "\t\t\t\tset invRef to 0"
+    - "\t\t\t\tset pcRef to 0"
+    - "\t\t\t\tset doRemove to 1"
+    - "\t\t\tendif"
+    - "\t\tendif"
+    - "\t\tif ( doRemove > 1 )"
+    - "\t\t\tset invRef to invNextRef"
+    - "\t\tendif"
+    - "\t\tif ( invNextRef == 0 )"
+    - "\t\t\tset pcRef to 0"
+    - "\t\t\tset doRemove to 10"
+    - "\t\tendif"
+    - "\tendwhile"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove > 0 )
+    - "\tset doRemove to ( doRemove + 1 )"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( OnActivate == 1 )
+    - "\tset doActivate to 1"
+    - "\treturn"
+    - endif
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagCont_3_sc
+      vars:
+        shorts: 6
+        longs: 7
+        floats: 4
+      data_size: 3453
+      var_table_size: 135
+  - SCVR:
+    - doOnce
+    - doRemove
+    - doDisable
+    - temp
+    - doActivate
+    - waitActivate
+    - invItem
+    - invCount
+    - invRef
+    - pcRef
+    - invRefType
+    - tempLong
+    - invNextRef
+    - cx
+    - cy
+    - cz
+    - invWeight
+  - SCDT:
+      stmts:
+      - func: If
+        args:
+        - 7
+        - " s\x03\0 > 20"
+      - func: If
+        args:
+        - 5
+        - " XЬ\x10 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - " G\x13A1V1_TravelBagExt 4 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - " G\x13A1V1_TravelBagExt 4 s\x04\0 * -"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagExt
+        - " s\x04\0\0"
+      - func: SetDelete
+        args: 1
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 2
+        - " s\x03\0 > 20"
+      - func: Disable
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 3
+        - " s\x03\0 > 0"
+      - func: AddItem
+        args:
+        - A1V1_TravelBagFakeIngred
+        - 2
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - " s\x03\0 1 +"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 2
+        - " XЬ\x10 == 1"
+      - func: Enable
+        args: null
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 1'
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x06\0 == 2"
+      - func: If
+        args:
+        - 4
+        - " X \x10 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - ' 0'
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_3 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 1'
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: ElseIf
+        args:
+        - 4
+        - " s\x06\0 == 1"
+      - func: If
+        args:
+        - 1
+        - " X \x10 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - ' 2'
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 1
+        - " X \x10 == 1"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: MwsePushS
+        args: 0
+      - func: MwsePushS
+        args: 115
+      - func: MwseGetLocal
+        args: null
+      - func: MwsePop
+        args: 4
+      - func: MwseJumpShortZero
+        args: 401
+      raw:
+      - 0A 38 F5 02 05 01 73 04 00 1A 20 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 45 78 74
+      - 20 34 20 2F 05 01 73 04 00 24 20 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 45 78 74
+      - 20 34 20 73 04 00 20 2A 20 2D 20 34 20 2B 05 01 47 13 41 31 56 37 5F 52 6F 61 64 42 61 67 4D 69
+      - 73 63 45 78 74 05 20 73 04 00 00 DE 10 05 01 73 01 00 02 20 31 05 01 66 01 00 11 20 47 0D 41 31
+      - 56 37 5F 52 6F 61 64 42 61 67 58 00 05 01 66 02 00 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42 61
+      - 67 59 00 05 01 66 03 00 11 20 47 0D 41 31 56 37 5F 52 6F 61 64 42 61 67 5A 00 0B 10 58 66 01 00
+      - 00 0B 10 59 66 02 00 00 0B 10 5A 66 03 00 00 2A 3C 13 38 00 00 13 38 6C 00 02 3C 13 38 01 00 13
+      - 38 6C 00 02 3C 13 38 02 00 13 38 6C 00 02 3C 13 38 01 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 C8
+      - 02 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 29 3C 2A 3C 13 38 00 00 13 38 6C
+      - 00 02 3C 13 38 01 00 13 38 6C 00 02 3C 13 38 02 00 13 38 6C 00 02 3C 0A 38 7C 02 D4 10 16 41 31
+      - 56 37 5F 52 6F 61 64 42 61 67 4D 69 73 63 49 74 65 6D 5F 33 01 00 05 01 6C 03 00 02 20 30 05 01
+      - 73 02 00 02 20 31 24 01 06 01 04 09 20 73 05 00 20 3D 3D 20 31 05 01 73 06 00 02 20 31 05 01 73
+      - 05 00 02 20 30 17 10 24 01 09 01 06 01 04 0A 20 73 02 00 20 3D 3D 20 31 30 05 01 73 02 00 02 20
+      - 30 00 10 11 00 CF F0 E5 E4 EC E5 F2 FB 20 E2 FB EB EE E6 E5 ED FB 00 00 DD 10 24 01 09 01 06 01
+      - 01 08 20 73 02 00 20 3E 20 35 05 01 73 04 00 02 20 31 07 01 01 05 01 73 04 00 02 20 30 09 01 13
+      - 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 44 0D 13 38 86 03 0A 38 8E 03 06 70 6C 61 79 65 72
+      - 00 1D 3C 13 38 03 00 13 38 6C 00 02 3C 13 38 03 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 42 0D 13
+      - 38 02 00 13 38 6C 00 00 3C 13 38 03 00 13 38 6C 00 00 3C 18 3C 03 3F 13 38 00 00 13 38 6C 00 02
+      - 3C 13 38 01 00 13 38 6C 00 02 3C 13 38 04 00 13 38 6C 00 02 3C 13 38 05 00 13 38 6C 00 02 3C 13
+      - 38 03 00 13 38 66 00 02 3C 13 38 05 00 13 38 6C 00 02 3C 13 38 06 00 13 38 6C 00 02 3C 13 38 00
+      - 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 05 0D 05 01 73 04 00 02 20 31 13 38 03 00 13 38 73 00 00
+      - 3C 0F 38 04 00 0C 38 83 04 13 38 3E 04 0A 38 56 04 16 69 6E 67 72 65 64 5F 72 61 77 5F 53 74 61
+      - 6C 68 72 69 6D 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06
+      - 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C
+      - 0F 38 04 00 0C 38 DE 04 13 38 9D 04 0A 38 B1 04 13 69 6E 67 72 65 64 5F 72 61 77 5F 67 6C 61 73
+      - 73 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C
+      - 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C
+      - 38 3D 05 13 38 F8 04 0A 38 10 05 16 69 6E 67 72 65 64 5F 72 61 77 5F 67 6C 61 73 73 5F 74 69 6E
+      - 6F 73 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06
+      - 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38
+      - 98 05 13 38 57 05 0A 38 6B 05 13 69 6E 67 72 65 64 5F 72 61 77 5F 65 62 6F 6E 79 5F 30 31 13 38
+      - 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20
+      - 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 F9 05 13 38 B2
+      - 05 0A 38 CC 05 18 69 6E 67 72 65 64 5F 61 64 61 6D 61 6E 74 69 75 6D 5F 6F 72 65 5F 30 31 00 13
+      - 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D
+      - 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 50 06 13 38
+      - 13 06 0A 38 23 06 0E 69 6E 67 72 65 64 5F 72 75 62 79 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C
+      - 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20
+      - 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 A9 06 13 38 6A 06 0A 38 7C 06 11 69 6E
+      - 67 72 65 64 5F 65 6D 65 72 61 6C 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13
+      - 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00
+      - 13 38 73 00 00 3C 0F 38 04 00 0C 38 08 07 13 38 C3 06 0A 38 DB 06 17 69 6E 67 72 65 64 5F 65 6D
+      - 65 72 61 6C 64 5F 70 69 6E 65 74 65 61 72 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38
+      - 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13
+      - 38 73 00 00 3C 0F 38 04 00 0C 38 5F 07 13 38 22 07 0A 38 32 07 0F 69 6E 67 72 65 64 5F 70 65 61
+      - 72 6C 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20
+      - 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00
+      - 0C 38 B8 07 13 38 79 07 0A 38 8B 07 11 69 6E 67 72 65 64 5F 64 69 61 6D 6F 6E 64 5F 30 31 13 38
+      - 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20
+      - 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 15 08 13 38 D2
+      - 07 0A 38 E8 07 14 64 65 65 70 6E 69 67 68 74 5F 74 72 61 76 65 6C 46 6F 6F 64 00 13 38 00 00 13
+      - 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01
+      - 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 6C 08 13 38 2F 08 0A 38
+      - 3F 08 0F 69 6E 67 72 65 64 5F 62 72 65 61 64 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38
+      - 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13
+      - 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 C5 08 13 38 86 08 0A 38 98 08 11 66 6F 6F 64 5F 6B
+      - 77 61 6D 61 5F 65 67 67 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02
+      - 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00
+      - 00 3C 0F 38 04 00 0C 38 1E 09 13 38 DF 08 0A 38 F1 08 11 66 6F 6F 64 5F 6B 77 61 6D 61 5F 65 67
+      - 67 5F 30 32 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C
+      - 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C
+      - 38 77 09 13 38 38 09 0A 38 4A 09 11 69 6E 67 72 65 64 5F 61 73 68 5F 79 61 6D 5F 30 31 13 38 00
+      - 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30
+      - 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 D4 09 13 38 91 09
+      - 0A 38 A7 09 15 69 6E 67 72 65 64 5F 73 63 72 69 62 5F 6A 65 72 6B 79 5F 30 31 13 38 00 00 13 38
+      - 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73
+      - 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 2F 0A 13 38 EE 09 0A 38 02
+      - 0A 13 69 6E 67 72 65 64 5F 63 72 61 62 5F 6D 65 61 74 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F
+      - 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30
+      - 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 8C 0A 13 38 49 0A 0A 38 5F 0A 14 69 6E 67
+      - 72 65 64 5F 68 6F 75 6E 64 5F 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38
+      - 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13
+      - 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 E9 0A 13 38 A6 0A 0A 38 BC 0A 14 69 6E 67 72 65 64
+      - 5F 68 75 6D 61 6E 5F 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13
+      - 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00
+      - 13 38 73 00 00 3C 0F 38 04 00 0C 38 44 0B 13 38 03 0B 0A 38 17 0B 12 69 6E 67 72 65 64 5F 72 61
+      - 74 5F 6D 65 61 74 5F 30 31 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C
+      - 06 01 01 09 20 6C 06 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00
+      - 3C 0F 38 04 00 0C 38 9D 0B 13 38 5E 0B 0A 38 70 0B 11 69 6E 67 72 65 64 5F 73 63 75 74 74 6C 65
+      - 5F 30 31 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06
+      - 00 20 3D 3D 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38
+      - F8 0B 13 38 B7 0B 0A 38 CB 0B 12 69 6E 67 72 65 64 5F 73 61 6C 74 72 69 63 65 5F 30 31 00 13 38
+      - 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 09 20 6C 06 00 20 3D 3D 20
+      - 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00 0C 38 9F 0C 13 38 12
+      - 0C 0A 38 1A 0C 06 69 6E 64 65 78 5F 00 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C
+      - 00 02 3C 06 01 01 08 20 6C 06 00 20 3E 20 30 05 01 6C 06 00 02 20 31 07 01 01 05 01 6C 06 00 02
+      - 20 30 09 01 13 38 05 00 13 38 6C 00 00 3C 0F 38 04 00 0C 38 9F 0C 13 38 6B 0C 0A 38 73 0C 07 69
+      - 6E 64 65 78 5F 7A 13 38 00 00 13 38 6C 00 00 3C 2F 3C 13 38 05 00 13 38 6C 00 02 3C 06 01 01 08
+      - 20 6C 06 00 20 3C 20 30 05 01 73 04 00 02 20 30 09 01 13 38 03 00 13 38 73 00 00 3C 0F 38 04 00
+      - 0C 38 B5 0C 0A 38 05 0D 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 13 38 03 00
+      - 13 38 6C 00 00 3C 18 3C 29 3C 13 38 01 00 13 38 6C 00 00 3C 13 38 00 00 13 38 6C 00 00 3C 28 3C
+      - 05 01 6C 03 00 02 20 30 05 01 6C 04 00 02 20 30 05 01 73 02 00 02 20 31 06 01 01 08 20 73 02 00
+      - 20 3E 20 31 05 01 6C 03 00 05 20 6C 07 00 00 09 01 06 01 02 09 20 6C 07 00 20 3D 3D 20 30 05 01
+      - 6C 04 00 02 20 30 05 01 73 02 00 03 20 31 30 09 01 0A 38 9A 03 24 01 06 01 02 08 20 73 02 00 20
+      - 3E 20 30 05 01 73 02 00 08 20 73 02 00 20 31 20 2B 24 01 09 01 06 01 02 09 20 58 18 10 20 3D 3D
+      - 20 31 05 01 73 05 00 02 20 31 24 01 09 01 01 01
+  - SCTX:
+    - Begin A1V1_TravelBagCont_3_sc
+    - ''
+    - short doOnce
+    - short doRemove
+    - short doDisable
+    - short temp
+    - float cx
+    - float cy
+    - float cz
+    - long invItem
+    - long invCount
+    - long invRef
+    - long pcRef
+    - long invRefType
+    - long tempLong
+    - float invWeight
+    - long invNextRef
+    - short doActivate
+    - short waitActivate
+    - ''
+    - if ( doDisable > 20 )
+    - "\tif ( GetDisabled == 1 )"
+    - "\t\tset temp to A1V1_TravelBagExt / 4"
+    - "\t\tset temp to A1V1_TravelBagExt - 4 * temp"
+    - "\t\tset A1V1_TravelBagExt to temp"
+    - "\t\tSetDelete 1"
+    - "\t\treturn"
+    - "\tendif"
+    - endif
+    - ''
+    - if ( doDisable > 20 )
+    - "\tDisable"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doDisable > 0 )
+    - "\tAddItem \"A1V1_TravelBagFakeIngred\", 2"
+    - "\tset doDisable to ( doDisable + 1 )"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( GetDisabled == 1 )
+    - "\tEnable"
+    - "\tset doDisable to 1"
+    - endif
+    - ''
+    - if ( waitActivate == 2 )
+    - "\tif ( MenuMode == 0 )"
+    - "\t\tset waitActivate to 0"
+    - "\t\tif ( GetItemCount A1V1_TravelBagItem_3 == 0 )"
+    - "\t\t\tset doDisable to 1"
+    - "\t\tendif"
+    - "\tendif"
+    - "\treturn"
+    - elseif ( waitActivate == 1 )
+    - "\tif ( MenuMode == 1 )"
+    - "\t\tset waitActivate to 2"
+    - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( MenuMode == 1 )
+    - "\treturn"
+    - endif
+    - ''
+    - ifx ( doOnce )
+    - else
+    - "\tset temp to A1V1_TravelBagExt / 4"
+    - "\tset temp to A1V1_TravelBagExt - 4 * temp + 4"
+    - "\tset A1V1_TravelBagExt to temp"
+    - "\tDisablePlayerControls"
+    - "\tset doOnce to 1"
+    - "\tset cx to A1V1_TravelBagX"
+    - "\tset cy to A1V1_TravelBagY"
+    - "\tset cz to A1V1_TravelBagZ"
+    - "\tSetPos X cx"
+    - "\tSetPos Y cy"
+    - "\tSetPos Z cz"
+    - "\tsetx invItem,invCount,invRef to xInventory"
+    - "\twhilex ( invCount )"
+    - "\t\txRemoveItem invItem invCount"
+    - "\t\tsetx invItem,invCount,invRef to xInventory"
+    - "\tendwhile"
+    - "\tAddItem \"A1V1_TravelBagItem_3\", 1"
+    - "\tset invRef to 0"
+    - "\tset doRemove to 1"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doActivate == 1 )
+    - "\tset waitActivate to 1"
+    - "\tset doActivate to 0"
+    - "\tActivate"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove == 10 )
+    - "\tset doRemove to 0"
+    - "\tMessageBox \"Предметы выложены\""
+    - "\tEnablePlayerControls"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove > 5 )
+    - "\tset temp to 1"
+    - else
+    - "\tset temp to 0"
+    - endif
+    - ''
+    - ifx ( temp )
+    - "\tsetx pcRef to xGetRef \"player\""
+    - "\twhilex ( pcRef )"
+    - "\t\tsetx invItem,invCount,invRefType,tempLong,invWeight,tempLong,invNextRef to pcRef->xContentList invRef"
+    - "\t\tifx ( invItem )"
+    - "\t\t\tset temp to 1"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_Stalhrim_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_glass_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_glass_tinos\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_raw_ebony_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_adamantium_ore_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_ruby_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_emerald_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_emerald_pinetear\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_pearl_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_diamond_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"deepnight_travelFood\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_bread_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"food_kwama_egg_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"food_kwama_egg_02\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_ash_yam_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_scrib_jerky_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_crab_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_hound_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_human_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_rat_meat_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_scuttle_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"ingred_saltrice_01\""
+    - "\t\t\t\tif ( tempLong == 0 )"
+    - "\t\t\t\t\tset temp to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\t\tsetx tempLong to xStringCompare invItem, \"index_\""
+    - "\t\t\t\tif ( tempLong > 0 )"
+    - "\t\t\t\t\tset tempLong to 1"
+    - "\t\t\t\telse"
+    - "\t\t\t\t\tset tempLong to 0"
+    - "\t\t\t\tendif"
+    - "\t\t\t\tifx ( tempLong )"
+    - "\t\t\t\t\tsetx tempLong to xStringCompare invItem, \"index_z\""
+    - "\t\t\t\t\tif ( tempLong < 0 )"
+    - "\t\t\t\t\t\tset temp to 0"
+    - "\t\t\t\t\tendif"
+    - "\t\t\t\tendif"
+    - "\t\t\tendif"
+    - "\t\t\tifx ( temp )"
+    - "\t\t\telse"
+    - "\t\t\t\tpcRef->xRemoveItem invItem invCount"
+    - "\t\t\t\txAddItem invItem invCount"
+    - "\t\t\t\tset invRef to 0"
+    - "\t\t\t\tset pcRef to 0"
+    - "\t\t\t\tset doRemove to 1"
+    - "\t\t\tendif"
+    - "\t\tendif"
+    - "\t\tif ( doRemove > 1 )"
+    - "\t\t\tset invRef to invNextRef"
+    - "\t\tendif"
+    - "\t\tif ( invNextRef == 0 )"
+    - "\t\t\tset pcRef to 0"
+    - "\t\t\tset doRemove to 10"
+    - "\t\tendif"
+    - "\tendwhile"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( doRemove > 0 )
+    - "\tset doRemove to ( doRemove + 1 )"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( OnActivate == 1 )
+    - "\tset doActivate to 1"
+    - "\treturn"
+    - endif
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagDel_1_sc
+      vars:
+        shorts: 0
+        longs: 0
+        floats: 0
+      data_size: 114
+      var_table_size: 0
+  - SCDT:
+      stmts:
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_1 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_1
+        - 1
+      - func: EndIf
+        args: null
+      - func: StopScript
+        args: A1V1_TravelBagDel_1_sc
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_TravelBagDel_1_sc
+    - ''
+    - if ( player->GetItemCount A1V1_TravelBagItem_1 == 1 )
+    - "\tplayer->RemoveItem A1V1_TravelBagItem_1, 1"
+    - endif
+    - ''
+    - StopScript A1V1_TravelBagDel_1_sc
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagDel_2_sc
+      vars:
+        shorts: 0
+        longs: 0
+        floats: 0
+      data_size: 114
+      var_table_size: 0
+  - SCDT:
+      stmts:
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_2 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_2
+        - 1
+      - func: EndIf
+        args: null
+      - func: StopScript
+        args: A1V1_TravelBagDel_2_sc
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_TravelBagDel_2_sc
+    - ''
+    - if ( player->GetItemCount A1V1_TravelBagItem_2 == 1 )
+    - "\tplayer->RemoveItem A1V1_TravelBagItem_2, 1"
+    - endif
+    - ''
+    - StopScript A1V1_TravelBagDel_2_sc
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagDel_3_sc
+      vars:
+        shorts: 0
+        longs: 0
+        floats: 0
+      data_size: 114
+      var_table_size: 0
+  - SCDT:
+      stmts:
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_3 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_3
+        - 1
+      - func: EndIf
+        args: null
+      - func: StopScript
+        args: A1V1_TravelBagDel_3_sc
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_TravelBagDel_3_sc
+    - ''
+    - if ( player->GetItemCount A1V1_TravelBagItem_3 == 1 )
+    - "\tplayer->RemoveItem A1V1_TravelBagItem_3, 1"
+    - endif
+    - ''
+    - StopScript A1V1_TravelBagDel_3_sc
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagItem_1_sc
+      vars:
+        shorts: 6
+        longs: 0
+        floats: 0
+      data_size: 892
+      var_table_size: 44
+  - SCVR:
+    - wait
+    - OnPCEquip
+    - OnPCAdd
+    - OnPCDrop
+    - temp1
+    - temp2
+  - SCDT:
+      stmts:
+      - func: If
+        args:
+        - 2
+        - " XЬ\x10 == 1"
+      - func: SetDelete
+        args: 1
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 8
+        - " s\x01\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " X\x1E\x10\0"
+      - func: If
+        args:
+        - 2
+        - " s\x05\0 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 0'
+      - func: StartScript
+        args: A1V1_TravelBagDel_1_sc
+      - func: ElseIf
+        args:
+        - 1
+        - " s\x05\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 0'
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x03\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 0'
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_2 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_2
+        - 1
+      - func: EndIf
+        args: null
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_3 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_3
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 18
+        - " s\x04\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - ' 0'
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagX
+        - " X\n\x10X\0"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagY
+        - " X\n\x10Y\0"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagZ
+        - " X\n\x10Z\0"
+      - func: PlaceAtPC
+        args:
+        - A1V1_TravelBagCont_1
+        - 1
+        - kind: Val
+          val: 50.0
+        - 0
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 10
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_2 == 0"
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 8
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_3 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " G\x13A1V1_TravelBagExt 2 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - " s\x05\0 2 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " s\x05\0 2 s\x06\0 * -"
+      - func: If
+        args:
+        - 1
+        - " s\x05\0 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagItem_2
+        - 1
+      - func: ElseIf
+        args:
+        - 1
+        - " s\x06\0 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagItem_3
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: Disable
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x02\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 2
+        - ' 0'
+      - func: If
+        args:
+        - 2
+        - " G\x13A1V1_TravelBagExt == 0"
+      - func: MessageBox
+        args:
+        - Вы действительно не хотите пользоваться походным мешком?
+        - []
+        - - "Да\0"
+          - "Нет\0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 1'
+      - func: Else
+        args: 1
+      - func: MessageBox
+        args:
+        - По миру разбросаны ваши походные мешки.
+        - []
+        - []
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_TravelBagItem_1_sc
+    - ''
+    - short wait
+    - short OnPCEquip
+    - short OnPCAdd
+    - short OnPCDrop
+    - short temp1
+    - short temp2
+    - ''
+    - if ( GetDisabled == 1 )
+    - "\tSetDelete 1"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( wait == 1 )
+    - "\tset temp1 to GetButtonPressed"
+    - "\tif ( temp1 == 0 )"
+    - "\t\tset wait to 0"
+    - "\t\tStartScript A1V1_TravelBagDel_1_sc"
+    - "\telseif ( temp1 == 1 )"
+    - "\t\tset wait to 0"
+    - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( OnPCAdd == 1 )
+    - "\tset OnPCAdd to 0"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_2 == 1 )"
+    - "\t\tplayer->RemoveItem A1V1_TravelBagItem_2, 1"
+    - "\tendif"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_3 == 1 )"
+    - "\t\tplayer->RemoveItem A1V1_TravelBagItem_3, 1"
+    - "\tendif"
+    - endif
+    - ''
+    - if ( OnPCDrop == 1 )
+    - "\tset OnPCDrop to 0"
+    - "\tset A1V1_TravelBagX to ( GetPos X )"
+    - "\tset A1V1_TravelBagY to ( GetPos Y )"
+    - "\tset A1V1_TravelBagZ to ( GetPos Z )"
+    - "\tPlaceAtPC A1V1_TravelBagCont_1 1, 50, 0"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_2 == 0 )"
+    - "\t\tif ( player->GetItemCount A1V1_TravelBagItem_3 == 0 )"
+    - "\t\t\tset temp1 to ( A1V1_TravelBagExt / 2 )\t\t\t\t; temp1 = flags div 2"
+    - "\t\t\tset temp2 to ( temp1 / 2 )\t\t\t\t\t\t\t\t\t; temp2 = (flags div 2) div 2 ~ flags & 0b100"
+    - "\t\t\tset temp1 to ( temp1 - 2 * temp2 )\t\t\t\t\t\t\t; temp1 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010"
+    - "\t\t\tif ( temp1 == 0 )"
+    - "\t\t\t\tplayer->AddItem A1V1_TravelBagItem_2, 1"
+    - "\t\t\telseif ( temp2 == 0 )"
+    - "\t\t\t\tplayer->AddItem A1V1_TravelBagItem_3, 1"
+    - "\t\t\tendif"
+    - "\t\tendif"
+    - "\tendif"
+    - "\tDisable"
+    - endif
+    - ''
+    - if ( OnPCEquip == 1 )
+    - "\tset OnPCEquip to 0"
+    - "\tif ( A1V1_TravelBagExt == 0 )"
+    - "\t\tMessageBox \"Вы действительно не хотите пользоваться походным мешком?\" \"Да\" \"Нет\""
+    - "\t\tset wait to 1"
+    - "\telse"
+    - "\t\tMessageBox \"По миру разбросаны ваши походные мешки.\""
+    - "\tendif"
+    - endif
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagItem_2_sc
+      vars:
+        shorts: 6
+        longs: 0
+        floats: 0
+      data_size: 910
+      var_table_size: 44
+  - SCVR:
+    - wait
+    - OnPCEquip
+    - OnPCAdd
+    - OnPCDrop
+    - temp1
+    - temp2
+  - SCDT:
+      stmts:
+      - func: If
+        args:
+        - 2
+        - " XЬ\x10 == 1"
+      - func: SetDelete
+        args: 1
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 8
+        - " s\x01\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " X\x1E\x10\0"
+      - func: If
+        args:
+        - 2
+        - " s\x05\0 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 0'
+      - func: StartScript
+        args: A1V1_TravelBagDel_2_sc
+      - func: ElseIf
+        args:
+        - 1
+        - " s\x05\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 0'
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x03\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 0'
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_1 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_1
+        - 1
+      - func: EndIf
+        args: null
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_3 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_3
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 18
+        - " s\x04\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - ' 0'
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagX
+        - " X\n\x10X\0"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagY
+        - " X\n\x10Y\0"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagZ
+        - " X\n\x10Z\0"
+      - func: PlaceAtPC
+        args:
+        - A1V1_TravelBagCont_2
+        - 1
+        - kind: Val
+          val: 50.0
+        - 0
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 10
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_1 == 0"
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 8
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_3 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " G\x13A1V1_TravelBagExt 2 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - " G\x13A1V1_TravelBagExt 2 s\x05\0 * -"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " s\x05\0 2 /"
+      - func: If
+        args:
+        - 1
+        - " s\x06\0 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagItem_1
+        - 1
+      - func: ElseIf
+        args:
+        - 1
+        - " s\x05\0 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagItem_3
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: Disable
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x02\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 2
+        - ' 0'
+      - func: If
+        args:
+        - 2
+        - " G\x13A1V1_TravelBagExt == 0"
+      - func: MessageBox
+        args:
+        - Вы действительно не хотите пользоваться походным мешком?
+        - []
+        - - "Да\0"
+          - "Нет\0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 1'
+      - func: Else
+        args: 1
+      - func: MessageBox
+        args:
+        - По миру разбросаны ваши походные мешки.
+        - []
+        - []
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_TravelBagItem_2_sc
+    - ''
+    - short wait
+    - short OnPCEquip
+    - short OnPCAdd
+    - short OnPCDrop
+    - short temp1
+    - short temp2
+    - ''
+    - if ( GetDisabled == 1 )
+    - "\tSetDelete 1"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( wait == 1 )
+    - "\tset temp1 to GetButtonPressed"
+    - "\tif ( temp1 == 0 )"
+    - "\t\tset wait to 0"
+    - "\t\tStartScript A1V1_TravelBagDel_2_sc"
+    - "\telseif ( temp1 == 1 )"
+    - "\t\tset wait to 0"
+    - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( OnPCAdd == 1 )
+    - "\tset OnPCAdd to 0"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_1 == 1 )"
+    - "\t\tplayer->RemoveItem A1V1_TravelBagItem_1, 1"
+    - "\tendif"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_3 == 1 )"
+    - "\t\tplayer->RemoveItem A1V1_TravelBagItem_3, 1"
+    - "\tendif"
+    - endif
+    - ''
+    - if ( OnPCDrop == 1 )
+    - "\tset OnPCDrop to 0"
+    - "\tset A1V1_TravelBagX to ( GetPos X )"
+    - "\tset A1V1_TravelBagY to ( GetPos Y )"
+    - "\tset A1V1_TravelBagZ to ( GetPos Z )"
+    - "\tPlaceAtPC A1V1_TravelBagCont_2 1, 50, 0"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_1 == 0 )"
+    - "\t\tif ( player->GetItemCount A1V1_TravelBagItem_3 == 0 )"
+    - "\t\t\tset temp1 to ( A1V1_TravelBagExt / 2 )\t\t\t\t; temp1 = flags div 2"
+    - "\t\t\tset temp2 to ( A1V1_TravelBagExt - 2 * temp1 )\t; temp2 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001"
+    - "\t\t\tset temp1 to ( temp1 / 2 )\t\t\t\t\t\t\t\t\t; temp1 = (flags div 2) div 2 ~ flags & 0b100"
+    - "\t\t\tif ( temp2 == 0 )"
+    - "\t\t\t\tplayer->AddItem A1V1_TravelBagItem_1, 1"
+    - "\t\t\telseif ( temp1 == 0 )"
+    - "\t\t\t\tplayer->AddItem A1V1_TravelBagItem_3, 1"
+    - "\t\t\tendif"
+    - "\t\tendif"
+    - "\tendif"
+    - "\tDisable"
+    - endif
+    - ''
+    - if ( OnPCEquip == 1 )
+    - "\tset OnPCEquip to 0"
+    - "\tif ( A1V1_TravelBagExt == 0 )"
+    - "\t\tMessageBox \"Вы действительно не хотите пользоваться походным мешком?\" \"Да\" \"Нет\""
+    - "\t\tset wait to 1"
+    - "\telse"
+    - "\t\tMessageBox \"По миру разбросаны ваши походные мешки.\""
+    - "\tendif"
+    - endif
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_TravelBagItem_3_sc
+      vars:
+        shorts: 6
+        longs: 0
+        floats: 0
+      data_size: 930
+      var_table_size: 44
+  - SCVR:
+    - wait
+    - OnPCEquip
+    - OnPCAdd
+    - OnPCDrop
+    - temp1
+    - temp2
+  - SCDT:
+      stmts:
+      - func: If
+        args:
+        - 2
+        - " XЬ\x10 == 1"
+      - func: SetDelete
+        args: 1
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 8
+        - " s\x01\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " X\x1E\x10\0"
+      - func: If
+        args:
+        - 2
+        - " s\x05\0 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 0'
+      - func: StartScript
+        args: A1V1_TravelBagDel_3_sc
+      - func: ElseIf
+        args:
+        - 1
+        - " s\x05\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 0'
+      - func: EndIf
+        args: null
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x03\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 3
+        - ' 0'
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_1 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_1
+        - 1
+      - func: EndIf
+        args: null
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_2 == 1"
+      - func: SetRef
+        args: player
+      - func: RemoveItem
+        args:
+        - A1V1_TravelBagItem_2
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 19
+        - " s\x04\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 4
+        - ' 0'
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagX
+        - " X\n\x10X\0"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagY
+        - " X\n\x10Y\0"
+      - func: Set
+        args:
+        - kind: Global
+          name: A1V1_TravelBagZ
+        - " X\n\x10Z\0"
+      - func: PlaceAtPC
+        args:
+        - A1V1_TravelBagCont_3
+        - 1
+        - kind: Val
+          val: 50.0
+        - 0
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 11
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_1 == 0"
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 9
+        - " Xэ\x10 o\x16A1V1_TravelBagItem_2 == 0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " G\x13A1V1_TravelBagExt 2 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - " s\x05\0 2 /"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 6
+        - " s\x05\0 2 s\x06\0 * -"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 5
+        - " G\x13A1V1_TravelBagExt 2 s\x05\0 * -"
+      - func: If
+        args:
+        - 1
+        - " s\x05\0 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagItem_1
+        - 1
+      - func: ElseIf
+        args:
+        - 1
+        - " s\x06\0 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagItem_2
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: Disable
+        args: null
+      - func: EndIf
+        args: null
+      - func: If
+        args:
+        - 7
+        - " s\x02\0 == 1"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 2
+        - ' 0'
+      - func: If
+        args:
+        - 2
+        - " G\x13A1V1_TravelBagExt == 0"
+      - func: MessageBox
+        args:
+        - Вы действительно не хотите пользоваться походным мешком?
+        - []
+        - - "Да\0"
+          - "Нет\0"
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 1'
+      - func: Else
+        args: 1
+      - func: MessageBox
+        args:
+        - По миру разбросаны ваши походные мешки.
+        - []
+        - []
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_TravelBagItem_3_sc
+    - ''
+    - short wait
+    - short OnPCEquip
+    - short OnPCAdd
+    - short OnPCDrop
+    - short temp1
+    - short temp2
+    - ''
+    - if ( GetDisabled == 1 )
+    - "\tSetDelete 1"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( wait == 1 )
+    - "\tset temp1 to GetButtonPressed"
+    - "\tif ( temp1 == 0 )"
+    - "\t\tset wait to 0"
+    - "\t\tStartScript A1V1_TravelBagDel_3_sc"
+    - "\telseif ( temp1 == 1 )"
+    - "\t\tset wait to 0"
+    - "\tendif"
+    - "\treturn"
+    - endif
+    - ''
+    - if ( OnPCAdd == 1 )
+    - "\tset OnPCAdd to 0"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_1 == 1 )"
+    - "\t\tplayer->RemoveItem A1V1_TravelBagItem_1, 1"
+    - "\tendif"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_2 == 1 )"
+    - "\t\tplayer->RemoveItem A1V1_TravelBagItem_2, 1"
+    - "\tendif"
+    - endif
+    - ''
+    - if ( OnPCDrop == 1 )
+    - "\tset OnPCDrop to 0"
+    - "\tset A1V1_TravelBagX to ( GetPos X )"
+    - "\tset A1V1_TravelBagY to ( GetPos Y )"
+    - "\tset A1V1_TravelBagZ to ( GetPos Z )"
+    - "\tPlaceAtPC A1V1_TravelBagCont_3 1, 50, 0"
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_1 == 0 )"
+    - "\t\tif ( player->GetItemCount A1V1_TravelBagItem_2 == 0 )"
+    - "\t\t\tset temp1 to ( A1V1_TravelBagExt / 2 )\t\t\t\t; temp1 = flags div 2"
+    - "\t\t\tset temp2 to ( temp1 / 2 )\t\t\t\t\t\t\t\t\t; temp2 = (flags div 2) div 2"
+    - "\t\t\tset temp2 to ( temp1 - 2 * temp2 )\t\t\t\t\t\t\t; temp2 = flags div 2 - 2 ((flags div 2) div 2) = (flags div 2) mod 2 ~ flags & 0b010"
+    - "\t\t\tset temp1 to ( A1V1_TravelBagExt - 2 * temp1 )\t; temp1 = flags - 2 (flags div 2) = flags mod 2 ~ flags & 0b001"
+    - "\t\t\tif ( temp1 == 0 )"
+    - "\t\t\t\tplayer->AddItem A1V1_TravelBagItem_1, 1"
+    - "\t\t\telseif ( temp2 == 0 )"
+    - "\t\t\t\tplayer->AddItem A1V1_TravelBagItem_2, 1"
+    - "\t\t\tendif"
+    - "\t\tendif"
+    - "\tendif"
+    - "\tDisable"
+    - endif
+    - ''
+    - if ( OnPCEquip == 1 )
+    - "\tset OnPCEquip to 0"
+    - "\tif ( A1V1_TravelBagExt == 0 )"
+    - "\t\tMessageBox \"Вы действительно не хотите пользоваться походным мешком?\" \"Да\" \"Нет\""
+    - "\t\tset wait to 1"
+    - "\telse"
+    - "\t\tMessageBox \"По миру разбросаны ваши походные мешки.\""
+    - "\tendif"
+    - endif
+    - ''
+    - End
+
+- SCPT:
+  - SCHD:
+      name: A1V1_StartTravelBag
+      vars:
+        shorts: 1
+        longs: 0
+        floats: 0
+      data_size: 233
+      var_table_size: 7
+  - SCVR:
+    - doOnce
+  - SCDT:
+      stmts:
+      - func: StopScript
+        args: A1V1_StartTravelBag
+      - func: If
+        args:
+        - 1
+        - " s\x01\0 == 1"
+      - func: Return
+        args: null
+      - func: EndIf
+        args: null
+      - func: Set
+        args:
+        - kind: Local
+          owner: null
+          type: Short
+          index: 1
+        - ' 1'
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 5
+        - " Xэ\x10 o\x16A1V1_TravelBagAlchItem_1 == 0"
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 3
+        - " Xэ\x10 o\x16A1V1_TravelBagAlchItem_2 == 0"
+      - func: SetRef
+        args: player
+      - func: If
+        args:
+        - 1
+        - " Xэ\x10 o\x16A1V1_TravelBagAlchItem_3 == 0"
+      - func: SetRef
+        args: player
+      - func: AddItem
+        args:
+        - A1V1_TravelBagAlchItem_1
+        - 1
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: EndIf
+        args: null
+      - func: End
+        args: null
+      raw: []
+  - SCTX:
+    - Begin A1V1_StartTravelBag
+    - ''
+    - short doOnce
+    - ''
+    - StopScript A1V1_StartTravelBag
+    - ''
+    - if ( doOnce == 1 )
+    - "\treturn"
+    - endif
+    - set doOnce to 1
+    - ''
+    - if ( player->GetItemCount A1V1_TravelBagItem_1 == 0 )
+    - "\tif ( player->GetItemCount A1V1_TravelBagItem_2 == 0 )"
+    - "\t\tif ( player->GetItemCount A1V1_TravelBagItem_3 == 0 )"
+    - "\t\t\tplayer->AddItem A1V1_TravelBagItem_1, 1"
+    - "\t\tendif"
+    - "\tendif"
+    - endif
+    - ''
+    - End
+
+- SSCR:
+  - DATA: '789011789164707584'
+  - NAME: A1V1_StartTravelBag
+
+- INGR:
+  - NAME: A1V1_TravelBagFakeIngred
+  - MODL: n\ingred_bittergreen_01.nif
+  - FNAM: ERROR
+  - IRDT:
+      weight: 0.1
+      value: 20
+      effect_1_index: Light
+      effect_2_index: null
+      effect_3_index: null
+      effect_4_index: null
+      effect_1_skill: null
+      effect_2_skill: null
+      effect_3_skill: null
+      effect_4_skill: null
+      effect_1_attribute: null
+      effect_2_attribute: null
+      effect_3_attribute: null
+      effect_4_attribute: null
+  - ITEX: n\tx_bittergreen_petal_01.dds
+
+- CONT:
+  - NAME: A1V1_TravelBagCont_1
+  - MODL: o\Contain_Com_Sack_02.NIF
+  - FNAM: Походный мешок
+  - CNDT: 10000.0
+  - FLAG: ''
+  - SCRI: A1V1_TravelBagCont_1_sc
+
+- CONT:
+  - NAME: A1V1_TravelBagCont_2
+  - MODL: o\Contain_Com_Sack_02.NIF
+  - FNAM: Походный мешок
+  - CNDT: 10000.0
+  - FLAG: ''
+  - SCRI: A1V1_TravelBagCont_2_sc
+
+- CONT:
+  - NAME: A1V1_TravelBagCont_3
+  - MODL: o\Contain_Com_Sack_02.NIF
+  - FNAM: Походный мешок
+  - CNDT: 10000.0
+  - FLAG: ''
+  - SCRI: A1V1_TravelBagCont_3_sc
+
+- MISC:
+  - NAME: A1V1_TravelBagItem_1
+  - MODL: o\contain_com_sack_02.nif
+  - FNAM: Походный мешок
+  - MCDT:
+      weight: 0.0
+      value: 0
+      is_key: false
+  - SCRI: A1V1_TravelBagItem_1_sc
+  - ITEX: m\a1_alchemy_sack.dds
+
+- MISC:
+  - NAME: A1V1_TravelBagItem_2
+  - MODL: o\contain_com_sack_02.nif
+  - FNAM: Походный мешок
+  - MCDT:
+      weight: 0.0
+      value: 0
+      is_key: false
+  - SCRI: A1V1_TravelBagItem_2_sc
+  - ITEX: m\a1_alchemy_sack.dds
+
+- MISC:
+  - NAME: A1V1_TravelBagItem_3
+  - MODL: o\contain_com_sack_02.nif
+  - FNAM: Походный мешок
+  - MCDT:
+      weight: 0.0
+      value: 0
+      is_key: false
+  - SCRI: A1V1_TravelBagItem_3_sc
+  - ITEX: m\a1_alchemy_sack.dds
