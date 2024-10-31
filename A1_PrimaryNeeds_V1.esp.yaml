@@ -15865,6 +15865,6 @@
   - BNAM:
     - Set JailDaysLeft to ( GetPCCrimeLevel / 100 )
     - Set PCInJail to 1
-    - StartScript "PCJail"
+    - StartScript PCJail
     - GotoJail
     - Goodbye
