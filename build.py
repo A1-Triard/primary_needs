@@ -121,7 +121,11 @@ def main():
     merge_mwse_scripts('ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     write_records_count('ar/Data Files/A1_PrimaryNeeds_V1.esp.yaml')
     assembly_plugin('ar/Data Files/A1_PrimaryNeeds_V1.esp', 2004, 2, 13, 18, 53, 0)
-    make_archive('A1_PrimaryNeeds_0.7', 'ar')
+    copyfile('A1_TravelBag_V1.esp.yaml', 'ar/Data Files/A1_TravelBag_V1.esp.yaml')
+    merge_mwse_scripts('ar/Data Files/A1_TravelBag_V1.esp.yaml')
+    write_records_count('ar/Data Files/A1_TravelBag_V1.esp.yaml')
+    assembly_plugin('ar/Data Files/A1_TravelBag_V1.esp', 2004, 2, 14, 18, 53, 0)
+    make_archive('A1_PrimaryNeeds_0.8', 'ar')
     rmtree('ar')
 
 if __name__ == "__main__":
