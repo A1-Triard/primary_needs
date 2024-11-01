@@ -8376,7 +8376,7 @@
       value: 0
       is_key: false
   - SCRI: A1V1_TravelBagItem_1_sc
-  - ITEX: m\a1_alchemy_sack.dds
+  - ITEX: m\a1_travel_bag.dds
 
 - MISC:
   - NAME: A1V1_TravelBagItem_2
@@ -8387,7 +8387,7 @@
       value: 0
       is_key: false
   - SCRI: A1V1_TravelBagItem_2_sc
-  - ITEX: m\a1_alchemy_sack.dds
+  - ITEX: m\a1_travel_bag.dds
 
 - MISC:
   - NAME: A1V1_TravelBagItem_3
@@ -8398,4 +8398,4 @@
       value: 0
       is_key: false
   - SCRI: A1V1_TravelBagItem_3_sc
-  - ITEX: m\a1_alchemy_sack.dds
+  - ITEX: m\a1_travel_bag.dds
