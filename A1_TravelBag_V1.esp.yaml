@@ -2241,7 +2241,7 @@
 
 - SCPT:
   - SCHD:
-      name: "A1V1_TravelBagInitSt1_sx\0x"
+      name: A1V1_TravelBagInitSt1_sx
       vars:
         shorts: 1
         longs: 0
@@ -3851,7 +3851,7 @@
 
 - SCPT:
   - SCHD:
-      name: "A1V1_TravelBagInitSt2_sx\0x"
+      name: A1V1_TravelBagInitSt2_sx
       vars:
         shorts: 1
         longs: 0
